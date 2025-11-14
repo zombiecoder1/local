@@ -815,3 +815,73 @@
 2025-11-15 01:57:45,815 - __main__ - INFO - [CONNECT] Establishing tunnel to api3.qoder.sh:443
 2025-11-15 01:57:45,873 - __main__ - INFO - [SUCCESS] Connected to api3.qoder.sh:443
 2025-11-15 01:57:45,874 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-15 02:11:28,551 - __main__ - INFO - ======================================================================
+2025-11-15 02:11:28,552 - __main__ - INFO - Proxy Server Starting
+2025-11-15 02:11:28,552 - __main__ - INFO - ======================================================================
+2025-11-15 02:11:28,552 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-15 02:11:28,553 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-15 02:11:28,553 - __main__ - INFO - [WHITELIST] Supporting 21 patterns
+2025-11-15 02:11:28,553 - __main__ - INFO - 
+2025-11-15 02:11:28,553 - __main__ - INFO - Supported hosts:
+2025-11-15 02:11:28,553 - __main__ - INFO -    *.cursor.com
+2025-11-15 02:11:28,553 - __main__ - INFO -    *.cursor.sh
+2025-11-15 02:11:28,554 - __main__ - INFO -    *.cursorapi.com
+2025-11-15 02:11:28,554 - __main__ - INFO -    *.qoder.com
+2025-11-15 02:11:28,554 - __main__ - INFO -    *.qoder.sh
+2025-11-15 02:11:28,555 - __main__ - INFO -    api.cursor.sh
+2025-11-15 02:11:28,555 - __main__ - INFO -    api1.qoder.sh
+2025-11-15 02:11:28,555 - __main__ - INFO -    api2.cursor.sh
+2025-11-15 02:11:28,555 - __main__ - INFO -    api2.qoder.sh
+2025-11-15 02:11:28,556 - __main__ - INFO -    api3.qoder.sh
+2025-11-15 02:11:28,556 - __main__ - INFO -    center.qoder.sh
+2025-11-15 02:11:28,556 - __main__ - INFO -    cursor.sh
+2025-11-15 02:11:28,556 - __main__ - INFO -    cursorapi.com
+2025-11-15 02:11:28,557 - __main__ - INFO -    download.qoder.com
+2025-11-15 02:11:28,557 - __main__ - INFO -    example.com
+2025-11-15 02:11:28,558 - __main__ - INFO -    github.com
+2025-11-15 02:11:28,558 - __main__ - INFO -    google.com
+2025-11-15 02:11:28,559 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-15 02:11:28,559 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-15 02:11:28,560 - __main__ - INFO -    qts2.qoder.sh
+2025-11-15 02:11:28,560 - __main__ - INFO -    repo2.qoder.sh
+2025-11-15 02:11:28,561 - __main__ - INFO - 
+2025-11-15 02:11:28,561 - __main__ - INFO - ======================================================================
+2025-11-15 02:11:29,002 - __main__ - INFO - [ALLOW] Host allowed (exact): api3.qoder.sh
+2025-11-15 02:11:29,003 - __main__ - INFO - [CONNECT] Establishing tunnel to api3.qoder.sh:443
+2025-11-15 02:11:29,064 - __main__ - INFO - [SUCCESS] Connected to api3.qoder.sh:443
+2025-11-15 02:11:29,067 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-15 02:14:19,841 - __main__ - INFO - ======================================================================
+2025-11-15 02:14:19,842 - __main__ - INFO - Proxy Server Starting
+2025-11-15 02:14:19,842 - __main__ - INFO - ======================================================================
+2025-11-15 02:14:19,842 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-15 02:14:19,843 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-15 02:14:19,843 - __main__ - INFO - [WHITELIST] Supporting 21 patterns
+2025-11-15 02:14:19,843 - __main__ - INFO - 
+2025-11-15 02:14:19,843 - __main__ - INFO - Supported hosts:
+2025-11-15 02:14:19,844 - __main__ - INFO -    *.cursor.com
+2025-11-15 02:14:19,844 - __main__ - INFO -    *.cursor.sh
+2025-11-15 02:14:19,844 - __main__ - INFO -    *.cursorapi.com
+2025-11-15 02:14:19,844 - __main__ - INFO -    *.qoder.com
+2025-11-15 02:14:19,844 - __main__ - INFO -    *.qoder.sh
+2025-11-15 02:14:19,845 - __main__ - INFO -    api.cursor.sh
+2025-11-15 02:14:19,845 - __main__ - INFO -    api1.qoder.sh
+2025-11-15 02:14:19,845 - __main__ - INFO -    api2.cursor.sh
+2025-11-15 02:14:19,845 - __main__ - INFO -    api2.qoder.sh
+2025-11-15 02:14:19,846 - __main__ - INFO -    api3.qoder.sh
+2025-11-15 02:14:19,846 - __main__ - INFO -    center.qoder.sh
+2025-11-15 02:14:19,846 - __main__ - INFO -    cursor.sh
+2025-11-15 02:14:19,846 - __main__ - INFO -    cursorapi.com
+2025-11-15 02:14:19,847 - __main__ - INFO -    download.qoder.com
+2025-11-15 02:14:19,848 - __main__ - INFO -    example.com
+2025-11-15 02:14:19,848 - __main__ - INFO -    github.com
+2025-11-15 02:14:19,848 - __main__ - INFO -    google.com
+2025-11-15 02:14:19,849 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-15 02:14:19,849 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-15 02:14:19,849 - __main__ - INFO -    qts2.qoder.sh
+2025-11-15 02:14:19,849 - __main__ - INFO -    repo2.qoder.sh
+2025-11-15 02:14:19,850 - __main__ - INFO - 
+2025-11-15 02:14:19,850 - __main__ - INFO - ======================================================================
+2025-11-15 02:14:20,940 - __main__ - INFO - [ALLOW] Host allowed (exact): api3.qoder.sh
+2025-11-15 02:14:20,941 - __main__ - INFO - [CONNECT] Establishing tunnel to api3.qoder.sh:443
+2025-11-15 02:14:21,005 - __main__ - INFO - [SUCCESS] Connected to api3.qoder.sh:443
+2025-11-15 02:14:21,006 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active

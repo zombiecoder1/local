@@ -2260,3 +2260,13 @@ Please note that you may need to restart your runtime after installation.
  * Running on http://127.0.0.1:8001
  * Running on http://192.168.1.218:8001
 2025-11-15 02:10:45,245 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-15 02:11:50,185 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-15 02:11:52,251 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-15 02:11:52,251 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-15 02:11:52,253 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-15 02:11:52,273 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-15 02:11:52,274 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-15 02:12:51,054 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:12:51] "GET /health HTTP/1.1" 200 -
