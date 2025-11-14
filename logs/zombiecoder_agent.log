@@ -2270,3 +2270,152 @@ Please note that you may need to restart your runtime after installation.
  * Running on http://192.168.1.218:8001
 2025-11-15 02:11:52,274 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
 2025-11-15 02:12:51,054 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:12:51] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:16:51,047 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-15 02:16:53,149 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-15 02:16:53,149 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-15 02:16:53,152 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-15 02:16:53,176 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-15 02:16:53,176 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-15 02:40:25,001 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-15 02:40:25,002 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-15 02:40:27,073 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-15 02:40:27,073 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-15 02:40:27,088 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-15 02:44:34,323 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-15 02:44:34,324 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-15 02:44:34,352 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8155
+2025-11-15 02:44:34,353 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8155
+2025-11-15 02:44:34,355 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-15 02:44:34,383 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-15 02:44:34,383 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-15 02:45:22,245 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:45:22] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:46:23,230 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:46:23] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:47:03,854 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:47:03] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:47:10,315 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:47:10] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:47:24,247 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:47:24] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:47:47,104 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:47:47] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:48:25,248 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:48:25] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:49:26,233 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:49:26] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:50:27,257 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:50:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:51:27,262 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:51:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:52:27,244 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:52:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:53:27,258 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:53:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:54:27,232 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:54:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:55:27,243 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:55:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:56:27,253 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:56:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:57:27,247 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:57:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:58:27,240 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:58:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:59:27,276 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:59:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:00:27,253 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:00:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:01:27,696 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:01:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:02:27,338 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:02:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:03:27,246 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:03:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:04:27,243 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:04:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:05:27,265 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:05:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:06:27,246 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:06:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:07:27,238 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:07:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:08:27,270 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:08:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:09:27,249 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:09:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:10:27,263 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:10:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:11:27,241 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:11:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:12:27,242 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:12:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:13:27,254 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:13:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:14:27,288 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:14:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:15:27,257 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:15:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:16:18,349 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:16:18] "GET / HTTP/1.1" 200 -
+2025-11-15 03:16:18,428 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:16:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-15 03:16:27,253 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:16:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:17:27,237 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:17:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:18:27,254 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:18:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:19:27,241 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:19:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:20:27,258 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:20:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:21:27,247 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:21:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:22:27,255 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:22:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:23:27,254 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:23:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:24:27,255 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:24:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:25:27,254 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:25:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:26:27,248 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:26:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:27:27,262 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:27:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:28:27,239 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:28:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:29:27,242 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:29:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:30:27,259 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:30:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:31:27,250 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:31:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:32:27,252 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:32:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:33:27,239 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:33:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:34:27,242 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:34:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:34:58,236 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:34:58] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:35:00,514 - __main__ - INFO - Adjustment logic check approved: বাংলায় comment যোগ করো
+2025-11-15 03:35:00,595 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'gpt-3.5-turbo' not found"}
+2025-11-15 03:35:00,622 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'gpt-3.5-turbo' not found"}
+2025-11-15 03:35:00,648 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'gpt-3.5-turbo' not found"}
+2025-11-15 03:35:27,249 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 03:35:27] "GET /health HTTP/1.1" 200 -
+2025-11-15 03:35:34,430 - __main__ - INFO - Adjustment logic check approved: Generate a REST API endpoint for user management
+2025-11-15 03:35:34,529 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'codex' not found"}
+2025-11-15 03:35:34,630 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'codex' not found"}
+2025-11-15 03:35:34,731 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'codex' not found"}
+2025-11-15 03:36:14,552 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'gpt-4' not found"}
+2025-11-15 03:36:14,711 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'gpt-4' not found"}
+2025-11-15 03:36:15,061 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'gpt-4' not found"}
+2025-11-15 04:09:30,832 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-15 04:09:30,832 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-15 04:09:32,911 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-15 04:09:32,912 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-15 04:09:32,929 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-15 04:09:32,996 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-15 04:09:33,010 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-15 04:42:00,755 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 04:42:00] "GET / HTTP/1.1" 200 -
+2025-11-15 04:42:01,271 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 04:42:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-15 04:48:06,215 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-15 04:48:06,215 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-15 04:48:08,244 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-15 04:48:08,244 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-15 04:48:08,258 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-15 04:48:08,291 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-15 04:48:08,293 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-15 04:58:38,964 - __main__ - ERROR - Chat completions endpoint error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-11-15 04:58:38,966 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 04:58:38] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-15 04:58:50,318 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-15 05:00:50,338 - __main__ - ERROR - Model server timeout after 120s
+2025-11-15 05:02:42,561 - __main__ - INFO - LangChain orchestrator model 'microsoft/phi-2' লোড হয়েছে
+2025-11-15 05:07:43,197 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-15 05:07:43,197 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-15 05:07:43,244 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8155
+2025-11-15 05:07:43,245 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8155
+2025-11-15 05:07:43,249 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-15 05:07:43,289 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-15 05:07:43,290 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-15 05:31:20,438 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-15 05:31:20,439 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-15 05:31:20,464 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8155
+2025-11-15 05:31:20,464 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8155
+2025-11-15 05:31:20,466 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-15 05:31:20,516 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-15 05:31:20,516 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-15 05:34:34,044 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-15 05:34:34,044 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-15 05:34:34,073 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8155
+2025-11-15 05:34:34,074 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8155
+2025-11-15 05:34:34,078 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-15 05:34:34,121 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-15 05:34:34,127 - werkzeug - INFO - [33mPress CTRL+C to quit[0m

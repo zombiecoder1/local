@@ -1,0 +1,24 @@
+{
+    "name": "zombiecoder-multiprocessing-service",
+    "version": "1.0.0",
+    "description": "Multiprocessing Service for ZombieCoder Advanced System",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "cors": "^2.8.5",
+        "helmet": "^7.1.0",
+        "dotenv": "^16.3.1"
+    },
+    "keywords": [
+        "multiprocessing",
+        "process",
+        "zombiecoder",
+        "parallel"
+    ],
+    "author": "ZombieCoder",
+    "license": "MIT"
+}
