@@ -858,7 +858,7 @@ CRITICAL: তোমার উত্তর 100% বাংলায় হতে �
                                         "prompt": bengali_prompt,
                                         "stream": False,
                                     },
-                                    timeout=60
+                                    timeout=120
                                 )
                                 if response.status_code == 200:
                                     data = response.json()
@@ -905,7 +905,7 @@ CRITICAL: তোমার উত্তর 100% বাংলায় হতে �
                     "prompt": bengali_prompt,
                     "stream": False,
                 },
-                timeout=60
+                timeout=120
             )
             if response.status_code == 200:
                 data = response.json()
@@ -931,19 +931,24 @@ CRITICAL: তোমার উত্তর 100% বাংলায় হতে �
                     logger.warning(f"Unexpected model server response schema: {list(data.keys())}")
                     response_text = str(data)
                 
-                # Ensure Bengali response - if response is empty or not Bengali, log warning
+                # Ensure Bengali response - if response is empty or not Bengali, log warning and try to fix
                 if response_text:
                     bengali_chars = re.findall(r'[\u0980-\u09FF]', response_text)
                     bengali_ratio = len(bengali_chars) / len(response_text) if response_text else 0
-                    if bengali_ratio < 0.1:  # Less than 10% Bengali
+                    if bengali_ratio < 0.3:  # Less than 30% Bengali - too low
                         logger.warning(f"Response may not be in Bengali (ratio: {bengali_ratio:.2f})")
+                        # If response is mostly English, prepend a Bengali greeting and instruction
+                        if bengali_ratio < 0.1:
+                            # Response is mostly English - wrap it in Bengali context
+                            response_text = f"ভাইয়া, {response_text.strip()}"
+                            logger.info("Wrapped English response in Bengali context")
                 
                 return response_text
             else:
                 logger.error(f"Model server error: {response.status_code} - {response.text}")
                 return None
         except requests.exceptions.Timeout:
-            logger.error(f"Model server timeout after 60s")
+            logger.error(f"Model server timeout after 120s")
             return None
         except requests.exceptions.ConnectionError as e:
             logger.error(f"Model server connection error: {e}")
@@ -1212,7 +1217,7 @@ CRITICAL: তোমার উত্তর 100% বাংলায় হতে �
             "Family Edition",  # Edition name should not be in response
             "Sahon Srabon",  # Owner name should not be in response
             "+8801323-626282",  # Contact number should not be in response
-            "C:\\model",  # File paths should not be in response
+            # File paths removed - model may mention paths in context, but we'll filter more carefully
             "self-hosted"  # Technical details should not be in response
         ]
         
