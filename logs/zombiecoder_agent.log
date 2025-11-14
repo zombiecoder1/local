@@ -2240,3 +2240,23 @@ Please note that you may need to restart your runtime after installation.
  * Running on http://127.0.0.1:8001
  * Running on http://192.168.1.218:8001
 2025-11-15 01:52:38,602 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-15 02:05:42,342 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-15 02:05:44,368 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-15 02:05:44,369 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-15 02:05:44,371 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-15 02:05:44,406 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-15 02:05:44,407 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-15 02:05:44,498 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 02:05:44] "GET /health HTTP/1.1" 200 -
+2025-11-15 02:10:37,151 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-15 02:10:37,151 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-15 02:10:45,176 - __main__ - WARNING - No Ollama server detected on ports 8007, 8155, or 11434
+2025-11-15 02:10:45,179 - __main__ - WARNING - Running in offline mode - Ollama server not available
+2025-11-15 02:10:45,188 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-15 02:10:45,244 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-15 02:10:45,245 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
