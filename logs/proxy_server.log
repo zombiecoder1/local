@@ -133,3 +133,650 @@
 2025-11-14 09:40:16,370 - __main__ - INFO - [CONNECT] Establishing tunnel to qts2.qoder.sh:443
 2025-11-14 09:40:16,484 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
 2025-11-14 09:40:16,508 - __main__ - INFO - [REQUEST] POST /v1/chat/completions to 127.0.0.1:5010
+2025-11-14 09:51:17,256 - __main__ - INFO - ======================================================================
+2025-11-14 09:51:17,257 - __main__ - INFO - Proxy Server Starting
+2025-11-14 09:51:17,257 - __main__ - INFO - ======================================================================
+2025-11-14 09:51:17,258 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 09:51:17,258 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-14 09:51:17,258 - __main__ - INFO - [WHITELIST] Supporting 21 patterns
+2025-11-14 09:51:17,258 - __main__ - INFO - 
+2025-11-14 09:51:17,259 - __main__ - INFO - Supported hosts:
+2025-11-14 09:51:17,259 - __main__ - INFO -    *.cursor.com
+2025-11-14 09:51:17,260 - __main__ - INFO -    *.cursor.sh
+2025-11-14 09:51:17,260 - __main__ - INFO -    *.cursorapi.com
+2025-11-14 09:51:17,260 - __main__ - INFO -    *.qoder.com
+2025-11-14 09:51:17,261 - __main__ - INFO -    *.qoder.sh
+2025-11-14 09:51:17,261 - __main__ - INFO -    api.cursor.sh
+2025-11-14 09:51:17,262 - __main__ - INFO -    api1.qoder.sh
+2025-11-14 09:51:17,264 - __main__ - INFO -    api2.cursor.sh
+2025-11-14 09:51:17,264 - __main__ - INFO -    api2.qoder.sh
+2025-11-14 09:51:17,265 - __main__ - INFO -    api3.qoder.sh
+2025-11-14 09:51:17,266 - __main__ - INFO -    center.qoder.sh
+2025-11-14 09:51:17,266 - __main__ - INFO -    cursor.sh
+2025-11-14 09:51:17,267 - __main__ - INFO -    cursorapi.com
+2025-11-14 09:51:17,268 - __main__ - INFO -    download.qoder.com
+2025-11-14 09:51:17,268 - __main__ - INFO -    example.com
+2025-11-14 09:51:17,269 - __main__ - INFO -    github.com
+2025-11-14 09:51:17,269 - __main__ - INFO -    google.com
+2025-11-14 09:51:17,269 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-14 09:51:17,270 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-14 09:51:17,270 - __main__ - INFO -    qts2.qoder.sh
+2025-11-14 09:51:17,270 - __main__ - INFO -    repo2.qoder.sh
+2025-11-14 09:51:17,271 - __main__ - INFO - 
+2025-11-14 09:51:17,271 - __main__ - INFO - ======================================================================
+2025-11-14 09:51:21,025 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 09:51:21,027 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 09:51:21,335 - __main__ - INFO - [SUCCESS] Connected to center.qoder.sh:443
+2025-11-14 09:51:21,337 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 09:51:38,891 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 09:51:38,893 - __main__ - INFO - [ALLOW] Host allowed (exact): api3.qoder.sh
+2025-11-14 09:51:38,894 - __main__ - INFO - [CONNECT] Establishing tunnel to api3.qoder.sh:443
+2025-11-14 09:51:38,977 - __main__ - INFO - [SUCCESS] Connected to api3.qoder.sh:443
+2025-11-14 09:51:38,979 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 09:54:50,195 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 09:54:50,196 - __main__ - INFO - [ALLOW] Host allowed (exact): qts2.qoder.sh
+2025-11-14 09:54:50,196 - __main__ - INFO - [CONNECT] Establishing tunnel to qts2.qoder.sh:443
+2025-11-14 09:54:50,325 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 09:54:50,367 - __main__ - INFO - [REQUEST] GET / to 127.0.0.1:5010
+2025-11-14 10:04:50,378 - __main__ - ERROR - [ERROR] Request handler: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 10:04:50,405 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 10:04:50,405 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 10:04:50,531 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 10:04:50,561 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 10:04:50,564 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 10:04:50,684 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 10:04:50,711 - __main__ - INFO - [ALLOW] Host allowed (exact): repo2.qoder.sh
+2025-11-14 10:04:50,711 - __main__ - INFO - [CONNECT] Establishing tunnel to repo2.qoder.sh:443
+2025-11-14 10:04:51,003 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 10:04:51,023 - __main__ - INFO - [REQUEST] GET / to 127.0.0.1:5010
+2025-11-14 10:14:51,032 - __main__ - ERROR - [ERROR] Request handler: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 10:14:51,081 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 10:14:51,081 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 10:14:51,205 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 10:14:51,233 - __main__ - INFO - [REQUEST] GET / to 127.0.0.1:5010
+2025-11-14 11:40:44,922 - __main__ - INFO - ======================================================================
+2025-11-14 11:40:44,924 - __main__ - INFO - Proxy Server Starting
+2025-11-14 11:40:44,925 - __main__ - INFO - ======================================================================
+2025-11-14 11:40:44,926 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 11:40:44,927 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-14 11:40:44,927 - __main__ - INFO - [WHITELIST] Supporting 26 patterns
+2025-11-14 11:40:44,927 - __main__ - INFO - 
+2025-11-14 11:40:44,927 - __main__ - INFO - Supported hosts:
+2025-11-14 11:40:44,928 - __main__ - INFO -    *.cursor.com
+2025-11-14 11:40:44,930 - __main__ - INFO -    *.cursor.sh
+2025-11-14 11:40:44,935 - __main__ - INFO -    *.cursorapi.com
+2025-11-14 11:40:44,939 - __main__ - INFO -    *.qoder.com
+2025-11-14 11:40:44,944 - __main__ - INFO -    *.qoder.sh
+2025-11-14 11:40:44,945 - __main__ - INFO -    *.tree.ai
+2025-11-14 11:40:44,949 - __main__ - INFO -    api.cursor.sh
+2025-11-14 11:40:44,950 - __main__ - INFO -    api.tree.ai
+2025-11-14 11:40:44,951 - __main__ - INFO -    api1.qoder.sh
+2025-11-14 11:40:44,952 - __main__ - INFO -    api1.tree.ai
+2025-11-14 11:40:44,959 - __main__ - INFO -    api2.cursor.sh
+2025-11-14 11:40:44,960 - __main__ - INFO -    api2.qoder.sh
+2025-11-14 11:40:44,961 - __main__ - INFO -    api2.tree.ai
+2025-11-14 11:40:44,962 - __main__ - INFO -    api3.qoder.sh
+2025-11-14 11:40:44,968 - __main__ - INFO -    center.qoder.sh
+2025-11-14 11:40:44,968 - __main__ - INFO -    cursor.sh
+2025-11-14 11:40:44,972 - __main__ - INFO -    cursorapi.com
+2025-11-14 11:40:44,973 - __main__ - INFO -    download.qoder.com
+2025-11-14 11:40:44,973 - __main__ - INFO -    example.com
+2025-11-14 11:40:44,974 - __main__ - INFO -    github.com
+2025-11-14 11:40:44,974 - __main__ - INFO -    google.com
+2025-11-14 11:40:44,974 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-14 11:40:44,975 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-14 11:40:44,975 - __main__ - INFO -    qts2.qoder.sh
+2025-11-14 11:40:44,975 - __main__ - INFO -    repo2.qoder.sh
+2025-11-14 11:40:44,976 - __main__ - INFO -    tree.ai
+2025-11-14 11:40:44,976 - __main__ - INFO - 
+2025-11-14 11:40:44,976 - __main__ - INFO - ======================================================================
+2025-11-14 11:40:45,229 - __main__ - INFO - [ALLOW] Host allowed (exact): repo2.qoder.sh
+2025-11-14 11:40:45,230 - __main__ - INFO - [CONNECT] Establishing tunnel to repo2.qoder.sh:443
+2025-11-14 11:40:45,595 - __main__ - INFO - [SUCCESS] Connected to repo2.qoder.sh:443
+2025-11-14 11:40:45,599 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 11:41:01,675 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 11:41:01,677 - __main__ - INFO - [ALLOW] Host allowed (exact): qts2.qoder.sh
+2025-11-14 11:41:01,678 - __main__ - INFO - [CONNECT] Establishing tunnel to qts2.qoder.sh:443
+2025-11-14 11:41:02,034 - __main__ - INFO - [SUCCESS] Connected to qts2.qoder.sh:443
+2025-11-14 11:41:02,035 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 11:43:56,276 - __main__ - INFO - ======================================================================
+2025-11-14 11:43:56,278 - __main__ - INFO - Proxy Server Starting
+2025-11-14 11:43:56,278 - __main__ - INFO - ======================================================================
+2025-11-14 11:43:56,278 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 11:43:56,279 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-14 11:43:56,279 - __main__ - INFO - [WHITELIST] Supporting 26 patterns
+2025-11-14 11:43:56,279 - __main__ - INFO - 
+2025-11-14 11:43:56,280 - __main__ - INFO - Supported hosts:
+2025-11-14 11:43:56,281 - __main__ - INFO -    *.cursor.com
+2025-11-14 11:43:56,282 - __main__ - INFO -    *.cursor.sh
+2025-11-14 11:43:56,282 - __main__ - INFO -    *.cursorapi.com
+2025-11-14 11:43:56,285 - __main__ - INFO -    *.qoder.com
+2025-11-14 11:43:56,285 - __main__ - INFO -    *.qoder.sh
+2025-11-14 11:43:56,286 - __main__ - INFO -    *.tree.ai
+2025-11-14 11:43:56,286 - __main__ - INFO -    api.cursor.sh
+2025-11-14 11:43:56,287 - __main__ - INFO -    api.tree.ai
+2025-11-14 11:43:56,287 - __main__ - INFO -    api1.qoder.sh
+2025-11-14 11:43:56,288 - __main__ - INFO -    api1.tree.ai
+2025-11-14 11:43:56,288 - __main__ - INFO -    api2.cursor.sh
+2025-11-14 11:43:56,288 - __main__ - INFO -    api2.qoder.sh
+2025-11-14 11:43:56,289 - __main__ - INFO -    api2.tree.ai
+2025-11-14 11:43:56,289 - __main__ - INFO -    api3.qoder.sh
+2025-11-14 11:43:56,289 - __main__ - INFO -    center.qoder.sh
+2025-11-14 11:43:56,290 - __main__ - INFO -    cursor.sh
+2025-11-14 11:43:56,290 - __main__ - INFO -    cursorapi.com
+2025-11-14 11:43:56,290 - __main__ - INFO -    download.qoder.com
+2025-11-14 11:43:56,291 - __main__ - INFO -    example.com
+2025-11-14 11:43:56,291 - __main__ - INFO -    github.com
+2025-11-14 11:43:56,291 - __main__ - INFO -    google.com
+2025-11-14 11:43:56,292 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-14 11:43:56,293 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-14 11:43:56,294 - __main__ - INFO -    qts2.qoder.sh
+2025-11-14 11:43:56,295 - __main__ - INFO -    repo2.qoder.sh
+2025-11-14 11:43:56,295 - __main__ - INFO -    tree.ai
+2025-11-14 11:43:56,295 - __main__ - INFO - 
+2025-11-14 11:43:56,297 - __main__ - INFO - ======================================================================
+2025-11-14 11:44:16,009 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 11:44:16,010 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 11:44:16,115 - __main__ - INFO - [SUCCESS] Connected to center.qoder.sh:443
+2025-11-14 11:44:16,119 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 12:13:26,674 - __main__ - INFO - ======================================================================
+2025-11-14 12:13:26,675 - __main__ - INFO - Proxy Server Starting
+2025-11-14 12:13:26,675 - __main__ - INFO - ======================================================================
+2025-11-14 12:13:26,675 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 12:13:26,675 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-14 12:13:26,675 - __main__ - INFO - [WHITELIST] Supporting 26 patterns
+2025-11-14 12:13:26,675 - __main__ - INFO - 
+2025-11-14 12:13:26,676 - __main__ - INFO - Supported hosts:
+2025-11-14 12:13:26,676 - __main__ - INFO -    *.cursor.com
+2025-11-14 12:13:26,676 - __main__ - INFO -    *.cursor.sh
+2025-11-14 12:13:26,676 - __main__ - INFO -    *.cursorapi.com
+2025-11-14 12:13:26,676 - __main__ - INFO -    *.qoder.com
+2025-11-14 12:13:26,677 - __main__ - INFO -    *.qoder.sh
+2025-11-14 12:13:26,677 - __main__ - INFO -    *.tree.ai
+2025-11-14 12:13:26,677 - __main__ - INFO -    api.cursor.sh
+2025-11-14 12:13:26,677 - __main__ - INFO -    api.tree.ai
+2025-11-14 12:13:26,677 - __main__ - INFO -    api1.qoder.sh
+2025-11-14 12:13:26,678 - __main__ - INFO -    api1.tree.ai
+2025-11-14 12:13:26,678 - __main__ - INFO -    api2.cursor.sh
+2025-11-14 12:13:26,678 - __main__ - INFO -    api2.qoder.sh
+2025-11-14 12:13:26,678 - __main__ - INFO -    api2.tree.ai
+2025-11-14 12:13:26,678 - __main__ - INFO -    api3.qoder.sh
+2025-11-14 12:13:26,679 - __main__ - INFO -    center.qoder.sh
+2025-11-14 12:13:26,679 - __main__ - INFO -    cursor.sh
+2025-11-14 12:13:26,679 - __main__ - INFO -    cursorapi.com
+2025-11-14 12:13:26,679 - __main__ - INFO -    download.qoder.com
+2025-11-14 12:13:26,679 - __main__ - INFO -    example.com
+2025-11-14 12:13:26,679 - __main__ - INFO -    github.com
+2025-11-14 12:13:26,680 - __main__ - INFO -    google.com
+2025-11-14 12:13:26,680 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-14 12:13:26,680 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-14 12:13:26,680 - __main__ - INFO -    qts2.qoder.sh
+2025-11-14 12:13:26,680 - __main__ - INFO -    repo2.qoder.sh
+2025-11-14 12:13:26,680 - __main__ - INFO -    tree.ai
+2025-11-14 12:13:26,680 - __main__ - INFO - 
+2025-11-14 12:13:26,681 - __main__ - INFO - ======================================================================
+2025-11-14 12:13:27,559 - __main__ - INFO - [ALLOW] Host allowed (exact): repo2.qoder.sh
+2025-11-14 12:13:27,560 - __main__ - INFO - [CONNECT] Establishing tunnel to repo2.qoder.sh:443
+2025-11-14 12:13:27,932 - __main__ - INFO - [SUCCESS] Connected to repo2.qoder.sh:443
+2025-11-14 12:13:27,935 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 12:13:43,449 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 12:13:52,560 - __main__ - INFO - [ALLOW] Host allowed (exact): qts2.qoder.sh
+2025-11-14 12:13:52,561 - __main__ - INFO - [CONNECT] Establishing tunnel to qts2.qoder.sh:443
+2025-11-14 12:13:52,889 - __main__ - INFO - [SUCCESS] Connected to qts2.qoder.sh:443
+2025-11-14 12:13:52,893 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 13:12:13,692 - __main__ - INFO - ======================================================================
+2025-11-14 13:12:13,692 - __main__ - INFO - Proxy Server Starting
+2025-11-14 13:12:13,693 - __main__ - INFO - ======================================================================
+2025-11-14 13:12:13,693 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 13:12:13,693 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-14 13:12:13,693 - __main__ - INFO - [WHITELIST] Supporting 26 patterns
+2025-11-14 13:12:13,693 - __main__ - INFO - 
+2025-11-14 13:12:13,694 - __main__ - INFO - Supported hosts:
+2025-11-14 13:12:13,694 - __main__ - INFO -    *.cursor.com
+2025-11-14 13:12:13,694 - __main__ - INFO -    *.cursor.sh
+2025-11-14 13:12:13,695 - __main__ - INFO -    *.cursorapi.com
+2025-11-14 13:12:13,695 - __main__ - INFO -    *.qoder.com
+2025-11-14 13:12:13,696 - __main__ - INFO -    *.qoder.sh
+2025-11-14 13:12:13,696 - __main__ - INFO -    *.tree.ai
+2025-11-14 13:12:13,696 - __main__ - INFO -    api.cursor.sh
+2025-11-14 13:12:13,696 - __main__ - INFO -    api.tree.ai
+2025-11-14 13:12:13,697 - __main__ - INFO -    api1.qoder.sh
+2025-11-14 13:12:13,697 - __main__ - INFO -    api1.tree.ai
+2025-11-14 13:12:13,697 - __main__ - INFO -    api2.cursor.sh
+2025-11-14 13:12:13,698 - __main__ - INFO -    api2.qoder.sh
+2025-11-14 13:12:13,698 - __main__ - INFO -    api2.tree.ai
+2025-11-14 13:12:13,699 - __main__ - INFO -    api3.qoder.sh
+2025-11-14 13:12:13,699 - __main__ - INFO -    center.qoder.sh
+2025-11-14 13:12:13,700 - __main__ - INFO -    cursor.sh
+2025-11-14 13:12:13,700 - __main__ - INFO -    cursorapi.com
+2025-11-14 13:12:13,700 - __main__ - INFO -    download.qoder.com
+2025-11-14 13:12:13,701 - __main__ - INFO -    example.com
+2025-11-14 13:12:13,701 - __main__ - INFO -    github.com
+2025-11-14 13:12:13,701 - __main__ - INFO -    google.com
+2025-11-14 13:12:13,707 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-14 13:12:13,707 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-14 13:12:13,708 - __main__ - INFO -    qts2.qoder.sh
+2025-11-14 13:12:13,711 - __main__ - INFO -    repo2.qoder.sh
+2025-11-14 13:12:13,713 - __main__ - INFO -    tree.ai
+2025-11-14 13:12:13,714 - __main__ - INFO - 
+2025-11-14 13:12:13,715 - __main__ - INFO - ======================================================================
+2025-11-14 13:32:36,187 - __main__ - INFO - ======================================================================
+2025-11-14 13:32:36,188 - __main__ - INFO - Proxy Server Starting
+2025-11-14 13:32:36,189 - __main__ - INFO - ======================================================================
+2025-11-14 13:32:36,190 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 13:32:36,190 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-14 13:32:36,193 - __main__ - INFO - [WHITELIST] Supporting 26 patterns
+2025-11-14 13:32:36,193 - __main__ - INFO - 
+2025-11-14 13:32:36,193 - __main__ - INFO - Supported hosts:
+2025-11-14 13:32:36,193 - __main__ - INFO -    *.cursor.com
+2025-11-14 13:32:36,194 - __main__ - INFO -    *.cursor.sh
+2025-11-14 13:32:36,194 - __main__ - INFO -    *.cursorapi.com
+2025-11-14 13:32:36,194 - __main__ - INFO -    *.qoder.com
+2025-11-14 13:32:36,194 - __main__ - INFO -    *.qoder.sh
+2025-11-14 13:32:36,194 - __main__ - INFO -    *.tree.ai
+2025-11-14 13:32:36,194 - __main__ - INFO -    api.cursor.sh
+2025-11-14 13:32:36,194 - __main__ - INFO -    api.tree.ai
+2025-11-14 13:32:36,195 - __main__ - INFO -    api1.qoder.sh
+2025-11-14 13:32:36,195 - __main__ - INFO -    api1.tree.ai
+2025-11-14 13:32:36,195 - __main__ - INFO -    api2.cursor.sh
+2025-11-14 13:32:36,195 - __main__ - INFO -    api2.qoder.sh
+2025-11-14 13:32:36,196 - __main__ - INFO -    api2.tree.ai
+2025-11-14 13:32:36,197 - __main__ - INFO -    api3.qoder.sh
+2025-11-14 13:32:36,197 - __main__ - INFO -    center.qoder.sh
+2025-11-14 13:32:36,197 - __main__ - INFO -    cursor.sh
+2025-11-14 13:32:36,197 - __main__ - INFO -    cursorapi.com
+2025-11-14 13:32:36,197 - __main__ - INFO -    download.qoder.com
+2025-11-14 13:32:36,197 - __main__ - INFO -    example.com
+2025-11-14 13:32:36,197 - __main__ - INFO -    github.com
+2025-11-14 13:32:36,197 - __main__ - INFO -    google.com
+2025-11-14 13:32:36,198 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-14 13:32:36,198 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-14 13:32:36,198 - __main__ - INFO -    qts2.qoder.sh
+2025-11-14 13:32:36,199 - __main__ - INFO -    repo2.qoder.sh
+2025-11-14 13:32:36,199 - __main__ - INFO -    tree.ai
+2025-11-14 13:32:36,200 - __main__ - INFO - 
+2025-11-14 13:32:36,201 - __main__ - INFO - ======================================================================
+2025-11-14 13:32:57,523 - __main__ - INFO - [REQUEST] GET /health to 127.0.0.1:5010
+2025-11-14 13:42:57,542 - __main__ - ERROR - [ERROR] Request handler: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 13:42:57,581 - __main__ - INFO - [REQUEST] GET /health to 127.0.0.1:5010
+2025-11-14 13:52:57,600 - __main__ - ERROR - [ERROR] Request handler: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 13:52:57,645 - __main__ - INFO - [REQUEST] GET /health to 127.0.0.1:5010
+2025-11-14 13:56:30,211 - __main__ - INFO - ======================================================================
+2025-11-14 13:56:30,212 - __main__ - INFO - Proxy Server Starting
+2025-11-14 13:56:30,212 - __main__ - INFO - ======================================================================
+2025-11-14 13:56:30,212 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 13:56:30,214 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-14 13:56:30,214 - __main__ - INFO - [WHITELIST] Supporting 26 patterns
+2025-11-14 13:56:30,215 - __main__ - INFO - 
+2025-11-14 13:56:30,215 - __main__ - INFO - Supported hosts:
+2025-11-14 13:56:30,215 - __main__ - INFO -    *.cursor.com
+2025-11-14 13:56:30,215 - __main__ - INFO -    *.cursor.sh
+2025-11-14 13:56:30,215 - __main__ - INFO -    *.cursorapi.com
+2025-11-14 13:56:30,216 - __main__ - INFO -    *.qoder.com
+2025-11-14 13:56:30,216 - __main__ - INFO -    *.qoder.sh
+2025-11-14 13:56:30,216 - __main__ - INFO -    *.tree.ai
+2025-11-14 13:56:30,217 - __main__ - INFO -    api.cursor.sh
+2025-11-14 13:56:30,217 - __main__ - INFO -    api.tree.ai
+2025-11-14 13:56:30,217 - __main__ - INFO -    api1.qoder.sh
+2025-11-14 13:56:30,218 - __main__ - INFO -    api1.tree.ai
+2025-11-14 13:56:30,218 - __main__ - INFO -    api2.cursor.sh
+2025-11-14 13:56:30,218 - __main__ - INFO -    api2.qoder.sh
+2025-11-14 13:56:30,218 - __main__ - INFO -    api2.tree.ai
+2025-11-14 13:56:30,219 - __main__ - INFO -    api3.qoder.sh
+2025-11-14 13:56:30,220 - __main__ - INFO -    center.qoder.sh
+2025-11-14 13:56:30,221 - __main__ - INFO -    cursor.sh
+2025-11-14 13:56:30,221 - __main__ - INFO -    cursorapi.com
+2025-11-14 13:56:30,222 - __main__ - INFO -    download.qoder.com
+2025-11-14 13:56:30,222 - __main__ - INFO -    example.com
+2025-11-14 13:56:30,223 - __main__ - INFO -    github.com
+2025-11-14 13:56:30,224 - __main__ - INFO -    google.com
+2025-11-14 13:56:30,224 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-14 13:56:30,225 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-14 13:56:30,226 - __main__ - INFO -    qts2.qoder.sh
+2025-11-14 13:56:30,227 - __main__ - INFO -    repo2.qoder.sh
+2025-11-14 13:56:30,227 - __main__ - INFO -    tree.ai
+2025-11-14 13:56:30,228 - __main__ - INFO - 
+2025-11-14 13:56:30,230 - __main__ - INFO - ======================================================================
+2025-11-14 13:56:34,020 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 13:56:34,021 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 13:56:34,125 - __main__ - INFO - [SUCCESS] Connected to center.qoder.sh:443
+2025-11-14 13:56:34,129 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 13:56:50,997 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 13:56:51,000 - __main__ - INFO - [ALLOW] Host allowed (exact): api3.qoder.sh
+2025-11-14 13:56:51,003 - __main__ - INFO - [CONNECT] Establishing tunnel to api3.qoder.sh:443
+2025-11-14 13:56:51,062 - __main__ - INFO - [SUCCESS] Connected to api3.qoder.sh:443
+2025-11-14 13:56:51,066 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 13:58:03,182 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 13:58:03,185 - __main__ - INFO - [ALLOW] Host allowed (exact): qts2.qoder.sh
+2025-11-14 13:58:03,187 - __main__ - INFO - [CONNECT] Establishing tunnel to qts2.qoder.sh:443
+2025-11-14 13:58:03,449 - __main__ - INFO - [SUCCESS] Connected to qts2.qoder.sh:443
+2025-11-14 13:58:03,456 - __main__ - DEBUG - [TUNNEL] Client->Server: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 13:58:03,456 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 13:58:03,554 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 13:58:03,556 - __main__ - INFO - [REQUEST] GET /health to 127.0.0.1:5010
+2025-11-14 14:03:09,022 - __main__ - INFO - ======================================================================
+2025-11-14 14:03:09,023 - __main__ - INFO - Proxy Server Starting
+2025-11-14 14:03:09,023 - __main__ - INFO - ======================================================================
+2025-11-14 14:03:09,023 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 14:03:09,023 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-14 14:03:09,023 - __main__ - INFO - [WHITELIST] Supporting 26 patterns
+2025-11-14 14:03:09,023 - __main__ - INFO - 
+2025-11-14 14:03:09,023 - __main__ - INFO - Supported hosts:
+2025-11-14 14:03:09,024 - __main__ - INFO -    *.cursor.com
+2025-11-14 14:03:09,024 - __main__ - INFO -    *.cursor.sh
+2025-11-14 14:03:09,024 - __main__ - INFO -    *.cursorapi.com
+2025-11-14 14:03:09,024 - __main__ - INFO -    *.qoder.com
+2025-11-14 14:03:09,024 - __main__ - INFO -    *.qoder.sh
+2025-11-14 14:03:09,025 - __main__ - INFO -    *.tree.ai
+2025-11-14 14:03:09,025 - __main__ - INFO -    api.cursor.sh
+2025-11-14 14:03:09,025 - __main__ - INFO -    api.tree.ai
+2025-11-14 14:03:09,026 - __main__ - INFO -    api1.qoder.sh
+2025-11-14 14:03:09,026 - __main__ - INFO -    api1.tree.ai
+2025-11-14 14:03:09,026 - __main__ - INFO -    api2.cursor.sh
+2025-11-14 14:03:09,026 - __main__ - INFO -    api2.qoder.sh
+2025-11-14 14:03:09,026 - __main__ - INFO -    api2.tree.ai
+2025-11-14 14:03:09,026 - __main__ - INFO -    api3.qoder.sh
+2025-11-14 14:03:09,027 - __main__ - INFO -    center.qoder.sh
+2025-11-14 14:03:09,027 - __main__ - INFO -    cursor.sh
+2025-11-14 14:03:09,027 - __main__ - INFO -    cursorapi.com
+2025-11-14 14:03:09,027 - __main__ - INFO -    download.qoder.com
+2025-11-14 14:03:09,027 - __main__ - INFO -    example.com
+2025-11-14 14:03:09,027 - __main__ - INFO -    github.com
+2025-11-14 14:03:09,027 - __main__ - INFO -    google.com
+2025-11-14 14:03:09,028 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-14 14:03:09,028 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-14 14:03:09,029 - __main__ - INFO -    qts2.qoder.sh
+2025-11-14 14:03:09,029 - __main__ - INFO -    repo2.qoder.sh
+2025-11-14 14:03:09,029 - __main__ - INFO -    tree.ai
+2025-11-14 14:03:09,030 - __main__ - INFO - 
+2025-11-14 14:03:09,030 - __main__ - INFO - ======================================================================
+2025-11-14 14:03:34,014 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 14:03:34,014 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 14:03:34,119 - __main__ - INFO - [SUCCESS] Connected to center.qoder.sh:443
+2025-11-14 14:03:34,120 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 14:03:50,313 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 14:03:50,315 - __main__ - INFO - [ALLOW] Host allowed (exact): api3.qoder.sh
+2025-11-14 14:03:50,316 - __main__ - INFO - [CONNECT] Establishing tunnel to api3.qoder.sh:443
+2025-11-14 14:03:50,389 - __main__ - INFO - [SUCCESS] Connected to api3.qoder.sh:443
+2025-11-14 14:03:50,392 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 14:04:51,103 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 14:04:51,104 - __main__ - INFO - [ALLOW] Host allowed (exact): qts2.qoder.sh
+2025-11-14 14:04:51,105 - __main__ - INFO - [CONNECT] Establishing tunnel to qts2.qoder.sh:443
+2025-11-14 14:04:51,201 - __main__ - INFO - [SUCCESS] Connected to qts2.qoder.sh:443
+2025-11-14 14:04:51,202 - __main__ - DEBUG - [TUNNEL] Client->Server: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 14:04:51,202 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 14:04:51,296 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 14:04:51,297 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 14:04:51,299 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 14:04:51,401 - __main__ - INFO - [SUCCESS] Connected to center.qoder.sh:443
+2025-11-14 14:04:51,402 - __main__ - DEBUG - [TUNNEL] Client->Server: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 14:04:51,403 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 14:04:51,502 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 14:04:51,503 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 14:04:51,504 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 14:04:51,608 - __main__ - INFO - [SUCCESS] Connected to center.qoder.sh:443
+2025-11-14 14:04:51,609 - __main__ - DEBUG - [TUNNEL] Client->Server: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 14:04:51,609 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 14:04:51,703 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 14:05:04,029 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 14:05:04,030 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 14:05:04,137 - __main__ - INFO - [SUCCESS] Connected to center.qoder.sh:443
+2025-11-14 14:05:04,138 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 14:05:20,180 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 14:05:20,185 - __main__ - INFO - [ALLOW] Host allowed (exact): api3.qoder.sh
+2025-11-14 14:05:20,186 - __main__ - INFO - [CONNECT] Establishing tunnel to api3.qoder.sh:443
+2025-11-14 14:05:20,268 - __main__ - INFO - [SUCCESS] Connected to api3.qoder.sh:443
+2025-11-14 14:05:20,271 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 14:06:20,484 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 14:06:20,486 - __main__ - INFO - [ALLOW] Host allowed (exact): qts2.qoder.sh
+2025-11-14 14:06:20,487 - __main__ - INFO - [CONNECT] Establishing tunnel to qts2.qoder.sh:443
+2025-11-14 14:06:20,585 - __main__ - INFO - [SUCCESS] Connected to qts2.qoder.sh:443
+2025-11-14 14:06:20,587 - __main__ - DEBUG - [TUNNEL] Client->Server: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 14:06:20,587 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 14:06:20,683 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 14:06:20,685 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 14:06:20,685 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 14:06:20,779 - __main__ - INFO - [SUCCESS] Connected to center.qoder.sh:443
+2025-11-14 14:06:20,779 - __main__ - DEBUG - [TUNNEL] Client->Server: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 14:06:20,780 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 14:06:20,869 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 14:06:20,870 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 14:06:20,871 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 14:06:20,988 - __main__ - INFO - [SUCCESS] Connected to center.qoder.sh:443
+2025-11-14 14:06:20,991 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 14:06:49,163 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 14:06:49,163 - __main__ - INFO - [ALLOW] Host allowed (exact): api3.qoder.sh
+2025-11-14 14:06:49,163 - __main__ - INFO - [CONNECT] Establishing tunnel to api3.qoder.sh:443
+2025-11-14 14:06:49,232 - __main__ - INFO - [SUCCESS] Connected to api3.qoder.sh:443
+2025-11-14 14:06:49,233 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 14:08:03,158 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 14:08:03,158 - __main__ - INFO - [ALLOW] Host allowed (exact): qts2.qoder.sh
+2025-11-14 14:08:03,159 - __main__ - INFO - [CONNECT] Establishing tunnel to qts2.qoder.sh:443
+2025-11-14 14:08:03,251 - __main__ - INFO - [SUCCESS] Connected to qts2.qoder.sh:443
+2025-11-14 14:08:03,252 - __main__ - DEBUG - [TUNNEL] Client->Server: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 14:08:03,252 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 14:08:03,341 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 14:08:03,342 - __main__ - INFO - [REQUEST] GET /health to 127.0.0.1:5010
+2025-11-14 14:18:03,345 - __main__ - ERROR - [ERROR] Request handler: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 14:18:03,377 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 14:18:03,377 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 14:18:03,490 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 14:18:03,498 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 14:18:03,498 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 14:18:03,598 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 14:18:03,609 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 14:18:03,609 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 14:18:03,696 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 14:18:03,706 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 14:18:03,706 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 14:18:03,818 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 14:18:03,827 - __main__ - INFO - [REQUEST] GET /health to 127.0.0.1:5010
+2025-11-14 14:28:03,824 - __main__ - ERROR - [ERROR] Request handler: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 14:28:03,869 - __main__ - INFO - [REQUEST] GET /health to 127.0.0.1:5010
+2025-11-14 14:33:44,623 - __main__ - INFO - ======================================================================
+2025-11-14 14:33:44,623 - __main__ - INFO - Proxy Server Starting
+2025-11-14 14:33:44,624 - __main__ - INFO - ======================================================================
+2025-11-14 14:33:44,624 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 14:33:44,624 - __main__ - INFO - [CONFIG] Timeout: 30 seconds
+2025-11-14 14:33:44,625 - __main__ - INFO - [WHITELIST] Supporting 6 patterns
+2025-11-14 14:33:44,626 - __main__ - INFO - 
+2025-11-14 14:33:44,626 - __main__ - INFO - Supported hosts:
+2025-11-14 14:33:44,626 - __main__ - INFO -    127.0.0.1
+2025-11-14 14:33:44,627 - __main__ - INFO -    127.0.0.1:8001
+2025-11-14 14:33:44,627 - __main__ - INFO -    127.0.0.1:8007
+2025-11-14 14:33:44,627 - __main__ - INFO -    localhost
+2025-11-14 14:33:44,628 - __main__ - INFO -    localhost:8001
+2025-11-14 14:33:44,628 - __main__ - INFO -    localhost:8007
+2025-11-14 14:33:44,628 - __main__ - INFO - 
+2025-11-14 14:33:44,629 - __main__ - INFO - ======================================================================
+2025-11-14 14:38:21,485 - __main__ - INFO - ======================================================================
+2025-11-14 14:38:21,486 - __main__ - INFO - Proxy Server Starting
+2025-11-14 14:38:21,486 - __main__ - INFO - ======================================================================
+2025-11-14 14:38:21,486 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 14:38:21,487 - __main__ - INFO - [CONFIG] Timeout: 30 seconds
+2025-11-14 14:38:21,487 - __main__ - INFO - [WHITELIST] Supporting 6 patterns
+2025-11-14 14:38:21,487 - __main__ - INFO - 
+2025-11-14 14:38:21,488 - __main__ - INFO - Supported hosts:
+2025-11-14 14:38:21,488 - __main__ - INFO -    127.0.0.1
+2025-11-14 14:38:21,488 - __main__ - INFO -    127.0.0.1:8001
+2025-11-14 14:38:21,490 - __main__ - INFO -    127.0.0.1:8007
+2025-11-14 14:38:21,490 - __main__ - INFO -    localhost
+2025-11-14 14:38:21,491 - __main__ - INFO -    localhost:8001
+2025-11-14 14:38:21,492 - __main__ - INFO -    localhost:8007
+2025-11-14 14:38:21,492 - __main__ - INFO - 
+2025-11-14 14:38:21,493 - __main__ - INFO - ======================================================================
+2025-11-14 14:38:34,018 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: center.qoder.sh
+2025-11-14 14:38:34,018 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:38:34,019 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: center.qoder.sh:443
+2025-11-14 14:38:43,047 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:38:43,048 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:38:43,048 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:39:04,023 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: center.qoder.sh
+2025-11-14 14:39:04,025 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:39:04,026 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: center.qoder.sh:443
+2025-11-14 14:39:34,007 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: center.qoder.sh
+2025-11-14 14:39:34,008 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:39:34,011 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: center.qoder.sh:443
+2025-11-14 14:40:03,023 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: center.qoder.sh
+2025-11-14 14:40:03,025 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:03,026 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: center.qoder.sh:443
+2025-11-14 14:40:04,034 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: center.qoder.sh
+2025-11-14 14:40:04,036 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:04,037 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: center.qoder.sh:443
+2025-11-14 14:40:11,907 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:40:11,907 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:11,908 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:40:13,229 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:40:13,230 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:13,230 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:40:13,457 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:40:13,457 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:13,458 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:40:13,713 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:40:13,714 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:13,714 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:40:16,308 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: center.qoder.sh
+2025-11-14 14:40:16,310 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:16,311 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: center.qoder.sh:443
+2025-11-14 14:40:16,328 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: center.qoder.sh
+2025-11-14 14:40:16,329 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:16,337 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: center.qoder.sh:443
+2025-11-14 14:40:19,116 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: repo2.qoder.sh
+2025-11-14 14:40:19,117 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:19,117 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: repo2.qoder.sh:443
+2025-11-14 14:40:19,121 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:40:19,123 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:19,124 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:40:19,127 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:40:19,128 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:19,129 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:40:21,139 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: center.qoder.sh
+2025-11-14 14:40:21,140 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:21,143 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: center.qoder.sh:443
+2025-11-14 14:40:21,185 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:40:21,187 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:21,187 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:40:21,217 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:40:21,218 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:21,218 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:40:22,864 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:40:22,864 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:22,865 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:40:23,333 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:40:23,333 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:23,334 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:40:23,542 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:40:23,542 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:23,543 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:40:23,737 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:40:23,738 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:23,738 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:40:34,022 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: center.qoder.sh
+2025-11-14 14:40:34,023 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:40:34,023 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: center.qoder.sh:443
+2025-11-14 14:41:04,016 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: center.qoder.sh
+2025-11-14 14:41:04,017 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:41:04,018 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: center.qoder.sh:443
+2025-11-14 14:41:04,520 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:41:04,520 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:41:04,521 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:41:05,225 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:41:05,226 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:41:05,227 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:41:05,438 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:41:05,439 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:41:05,440 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:41:05,638 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:41:05,639 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:41:05,640 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:41:05,854 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:41:05,855 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:41:05,855 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:41:06,037 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:41:06,038 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:41:06,039 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:41:07,726 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:41:07,727 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:41:07,727 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:41:17,743 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:41:17,745 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:41:17,748 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:41:34,024 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: center.qoder.sh
+2025-11-14 14:41:34,027 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:41:34,028 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: center.qoder.sh:443
+2025-11-14 14:41:37,767 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:41:37,767 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:41:37,768 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:42:03,626 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: center.qoder.sh
+2025-11-14 14:42:03,627 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:42:03,628 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: center.qoder.sh:443
+2025-11-14 14:42:04,023 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: center.qoder.sh
+2025-11-14 14:42:04,024 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:42:04,025 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: center.qoder.sh:443
+2025-11-14 14:42:07,774 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:42:07,775 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:42:07,777 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 14:42:14,732 - __main__ - CRITICAL - [BLOCK] SECURITY BLOCK - External host NOT allowed: api3.qoder.sh
+2025-11-14 14:42:14,732 - __main__ - CRITICAL - [BLOCK] All external connections are blocked for security. Only local connections permitted.
+2025-11-14 14:42:14,733 - __main__ - WARNING - [BLOCKED] Denying CONNECT request to non-whitelisted host: api3.qoder.sh:443
+2025-11-14 22:16:46,364 - __main__ - INFO - ======================================================================
+2025-11-14 22:16:46,365 - __main__ - INFO - Proxy Server Starting
+2025-11-14 22:16:46,365 - __main__ - INFO - ======================================================================
+2025-11-14 22:16:46,365 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 22:16:46,365 - __main__ - INFO - [CONFIG] Timeout: 30 seconds
+2025-11-14 22:16:46,365 - __main__ - INFO - [WHITELIST] Supporting 6 patterns
+2025-11-14 22:16:46,366 - __main__ - INFO - 
+2025-11-14 22:16:46,366 - __main__ - INFO - Supported hosts:
+2025-11-14 22:16:46,366 - __main__ - INFO -    127.0.0.1
+2025-11-14 22:16:46,366 - __main__ - INFO -    127.0.0.1:8001
+2025-11-14 22:16:46,366 - __main__ - INFO -    127.0.0.1:8007
+2025-11-14 22:16:46,367 - __main__ - INFO -    localhost
+2025-11-14 22:16:46,367 - __main__ - INFO -    localhost:8001
+2025-11-14 22:16:46,367 - __main__ - INFO -    localhost:8007
+2025-11-14 22:16:46,367 - __main__ - INFO - 
+2025-11-14 22:16:46,367 - __main__ - INFO - ======================================================================
+2025-11-14 23:02:27,355 - __main__ - INFO - ======================================================================
+2025-11-14 23:02:27,356 - __main__ - INFO - Proxy Server Starting
+2025-11-14 23:02:27,356 - __main__ - INFO - ======================================================================
+2025-11-14 23:02:27,356 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 23:02:27,356 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-14 23:02:27,356 - __main__ - INFO - [WHITELIST] Supporting 26 patterns
+2025-11-14 23:02:27,357 - __main__ - INFO - 
+2025-11-14 23:02:27,357 - __main__ - INFO - Supported hosts:
+2025-11-14 23:02:27,357 - __main__ - INFO -    *.cursor.com
+2025-11-14 23:02:27,357 - __main__ - INFO -    *.cursor.sh
+2025-11-14 23:02:27,358 - __main__ - INFO -    *.cursorapi.com
+2025-11-14 23:02:27,358 - __main__ - INFO -    *.qoder.com
+2025-11-14 23:02:27,358 - __main__ - INFO -    *.qoder.sh
+2025-11-14 23:02:27,359 - __main__ - INFO -    *.tree.ai
+2025-11-14 23:02:27,359 - __main__ - INFO -    api.cursor.sh
+2025-11-14 23:02:27,359 - __main__ - INFO -    api.tree.ai
+2025-11-14 23:02:27,360 - __main__ - INFO -    api1.qoder.sh
+2025-11-14 23:02:27,360 - __main__ - INFO -    api1.tree.ai
+2025-11-14 23:02:27,360 - __main__ - INFO -    api2.cursor.sh
+2025-11-14 23:02:27,361 - __main__ - INFO -    api2.qoder.sh
+2025-11-14 23:02:27,361 - __main__ - INFO -    api2.tree.ai
+2025-11-14 23:02:27,361 - __main__ - INFO -    api3.qoder.sh
+2025-11-14 23:02:27,363 - __main__ - INFO -    center.qoder.sh
+2025-11-14 23:02:27,363 - __main__ - INFO -    cursor.sh
+2025-11-14 23:02:27,364 - __main__ - INFO -    cursorapi.com
+2025-11-14 23:02:27,364 - __main__ - INFO -    download.qoder.com
+2025-11-14 23:02:27,365 - __main__ - INFO -    example.com
+2025-11-14 23:02:27,366 - __main__ - INFO -    github.com
+2025-11-14 23:02:27,367 - __main__ - INFO -    google.com
+2025-11-14 23:02:27,367 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-14 23:02:27,367 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-14 23:02:27,368 - __main__ - INFO -    qts2.qoder.sh
+2025-11-14 23:02:27,368 - __main__ - INFO -    repo2.qoder.sh
+2025-11-14 23:02:27,368 - __main__ - INFO -    tree.ai
+2025-11-14 23:02:27,369 - __main__ - INFO - 
+2025-11-14 23:02:27,369 - __main__ - INFO - ======================================================================
+2025-11-14 23:02:27,421 - __main__ - INFO - [ALLOW] Host allowed (exact): repo2.qoder.sh
+2025-11-14 23:02:27,422 - __main__ - INFO - [CONNECT] Establishing tunnel to repo2.qoder.sh:443
+2025-11-14 23:02:27,937 - __main__ - INFO - [SUCCESS] Connected to repo2.qoder.sh:443
+2025-11-14 23:02:27,939 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 23:02:43,243 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 23:02:43,246 - __main__ - INFO - [ALLOW] Host allowed (exact): download.qoder.com
+2025-11-14 23:02:43,248 - __main__ - INFO - [CONNECT] Establishing tunnel to download.qoder.com:443
+2025-11-14 23:02:43,347 - __main__ - INFO - [SUCCESS] Connected to download.qoder.com:443
+2025-11-14 23:02:43,348 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active

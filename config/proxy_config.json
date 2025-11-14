@@ -1,22 +1,9 @@
 {
-    "description": "Proxy adapter for Cursor AI - routes all internal calls to local ZombieCoder agent",
-    "api_key": "DUMMY_API_KEY_FOR_LOCAL",
-    "port": 5010,
-    "proxy_port": 5010,
-    "bind_host": "127.0.0.1",
-    "target_base": "http://127.0.0.1:8001",
-    "log_file": "logs/proxy_adapter.log",
-    "log_max_bytes": 5242880,
-    "log_backup_count": 3,
-    "description_targets": {
-        "cursor_ai_endpoints": [
-            "/api/chat",
-            "/api/models",
-            "/api/completions",
-            "/v1/chat/completions",
-            "/v1/models",
-            "/v1/completions"
-        ],
-        "forwarded_to": "http://127.0.0.1:8001 (ZombieCoder Agent)"
-    }
+  "proxy_port": 5010,
+  "target_base": "http://127.0.0.1:8001",
+  "bind_host": "127.0.0.1",
+  "model_enforcement": "microsoft/phi-2",
+  "bengali_support": true,
+  "local_only": true,
+  "prevent_cloud_fallback": true
 }

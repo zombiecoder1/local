@@ -1824,3 +1824,394 @@ Please note that you may need to restart your runtime after installation.
 2025-11-14 09:38:17,534 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:38:17] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
 2025-11-14 09:38:33,893 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
 2025-11-14 09:38:33,894 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:38:33] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-14 09:44:04,686 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 09:44:04,686 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 09:44:06,734 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 09:44:06,735 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 09:44:06,738 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 09:44:06,762 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 09:44:06,765 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 09:44:06,971 - __main__ - ERROR - Model server error: 409 - {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-14 09:44:10,457 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-11-14 09:44:10,468 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-11-14 09:49:30,483 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:49:30] "GET / HTTP/1.1" 200 -
+2025-11-14 09:49:32,529 - __main__ - INFO - Adjustment logic check approved: কেমন আছেন? আপনার নাম কি?
+2025-11-14 09:49:32,560 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 09:50:25,124 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 09:50:25,125 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ['Identity revealing information detected: C:\\model']
+2025-11-14 09:50:25,125 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-14 09:50:25,127 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:50:25] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-14 09:51:32,872 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:51:32] "GET / HTTP/1.1" 200 -
+2025-11-14 09:51:37,908 - __main__ - INFO - Adjustment logic check approved: কেমন আছেন? আপনার নাম কি?
+2025-11-14 09:51:37,914 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 09:51:46,067 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 09:51:46,112 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 09:51:46,156 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 09:51:46,157 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:51:46] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 09:52:23,935 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:52:23] "GET / HTTP/1.1" 200 -
+2025-11-14 09:52:25,996 - __main__ - INFO - Adjustment logic check approved: কেমন আছেন? আপনার নাম কি?
+2025-11-14 09:52:26,023 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 09:52:36,423 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 09:52:36,492 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 09:52:36,533 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 09:52:36,534 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:52:36] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 09:52:39,949 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:52:39] "GET / HTTP/1.1" 200 -
+2025-11-14 09:52:41,998 - __main__ - INFO - Adjustment logic check approved: কেমন আছেন? আপনার নাম কি?
+2025-11-14 09:52:42,005 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 09:52:52,203 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 09:52:52,271 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 09:52:52,335 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 09:52:52,353 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:52:52] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 09:52:53,620 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:52:53] "GET / HTTP/1.1" 200 -
+2025-11-14 09:52:55,918 - __main__ - INFO - Adjustment logic check approved: কেমন আছেন? আপনার নাম কি?
+2025-11-14 09:52:55,927 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 09:53:05,020 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 09:53:05,063 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 09:53:05,106 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 09:53:05,109 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:53:05] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 10:16:12,560 - __main__ - ERROR - Chat completions endpoint error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-11-14 10:16:12,639 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 10:16:12] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-14 10:16:29,159 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-14 10:16:29,161 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 10:16:29] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-14 10:16:30,098 - __main__ - INFO - LangChain orchestrator model 'microsoft/phi-2' লোড হয়েছে
+2025-11-14 10:17:54,518 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-14 10:17:54,559 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 10:17:54] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-14 10:18:46,008 - __main__ - ERROR - Chat completions endpoint error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-11-14 10:18:46,026 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 10:18:46] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-14 10:19:05,184 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 10:20:05,260 - __main__ - ERROR - Model server timeout after 60s
+2025-11-14 10:24:03,699 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 10:24:03,886 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 10:24:06,574 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 10:24:06,682 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 10:24:06,819 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 10:24:08,697 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 10:24:08,701 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 10:25:20,845 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 10:26:20,921 - __main__ - ERROR - Model server timeout after 60s
+2025-11-14 10:28:00,925 - __main__ - INFO - LangChain orchestrator model 'microsoft/phi-2' লোড হয়েছে
+2025-11-14 11:41:16,276 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 11:41:18,317 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 11:41:18,318 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 11:41:18,331 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 11:41:18,354 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 11:41:18,355 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 11:41:29,246 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 11:42:26,459 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 11:42:26,459 - __main__ - INFO - Wrapped English response in Bengali context
+2025-11-14 11:42:26,488 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 11:42:26,527 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 11:42:26,529 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 11:42:26] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 11:42:42,134 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 11:42:42] "GET / HTTP/1.1" 200 -
+2025-11-14 11:42:42,185 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 11:42:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-14 12:09:21,112 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 12:09:21,113 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 12:09:21,145 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8155
+2025-11-14 12:09:21,146 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8155
+2025-11-14 12:09:21,148 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 12:09:21,171 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 12:09:21,171 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 12:11:05,635 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:11:05] "GET / HTTP/1.1" 200 -
+2025-11-14 12:11:09,159 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:11:09] "GET /info HTTP/1.1" 200 -
+2025-11-14 12:11:09,303 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:11:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-14 12:11:15,350 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:11:15] "GET / HTTP/1.1" 200 -
+2025-11-14 12:11:17,824 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:11:17] "GET /memory HTTP/1.1" 200 -
+2025-11-14 12:11:26,212 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:11:26] "GET / HTTP/1.1" 200 -
+2025-11-14 12:11:35,918 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:11:35] "GET / HTTP/1.1" 200 -
+2025-11-14 12:11:46,220 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:11:46] "GET / HTTP/1.1" 200 -
+2025-11-14 12:11:55,905 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:11:55] "GET / HTTP/1.1" 200 -
+2025-11-14 12:12:06,442 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:12:06] "GET / HTTP/1.1" 200 -
+2025-11-14 12:12:15,911 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:12:15] "GET / HTTP/1.1" 200 -
+2025-11-14 12:12:50,208 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:12:50] "GET / HTTP/1.1" 200 -
+2025-11-14 12:13:49,909 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:13:49] "GET / HTTP/1.1" 200 -
+2025-11-14 12:13:59,520 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:13:59] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 12:13:59,540 - __main__ - INFO - Adjustment logic check approved: Ping
+2025-11-14 12:14:03,626 - __main__ - ERROR - Model server connection error: HTTPConnectionPool(host='127.0.0.1', port=8155): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F7EAE79E50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-14 12:14:16,191 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:16] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-14 12:14:16,193 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:16] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-14 12:14:16,205 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:16] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-14 12:14:16,209 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:16] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-14 12:14:16,226 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:16] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-14 12:14:16,229 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:16] "GET /health HTTP/1.1" 200 -
+2025-11-14 12:14:16,240 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:16] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-14 12:14:16,242 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:16] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-14 12:14:16,248 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:16] "GET /status HTTP/1.1" 200 -
+2025-11-14 12:14:19,184 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:19] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-14 12:14:19,185 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:19] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-14 12:14:19,188 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:19] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-14 12:14:19,194 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:19] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-14 12:14:19,202 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:19] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-14 12:14:19,209 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:19] "GET /health HTTP/1.1" 200 -
+2025-11-14 12:14:19,210 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:19] "GET /status HTTP/1.1" 200 -
+2025-11-14 12:14:19,213 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:19] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-14 12:14:19,219 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:19] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-14 12:14:22,220 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:22] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-14 12:14:22,223 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:22] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-14 12:14:22,233 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:22] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-14 12:14:22,241 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:22] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-14 12:14:22,244 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:22] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-14 12:14:22,250 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:22] "GET /health HTTP/1.1" 200 -
+2025-11-14 12:14:22,263 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:22] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-14 12:14:22,267 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:22] "GET /status HTTP/1.1" 200 -
+2025-11-14 12:14:22,270 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:22] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-14 12:14:25,201 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:25] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-14 12:14:25,202 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:25] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-14 12:14:25,203 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:25] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-14 12:14:25,206 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:25] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-14 12:14:25,209 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:25] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-14 12:14:25,211 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:25] "GET /health HTTP/1.1" 200 -
+2025-11-14 12:14:25,223 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:25] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-14 12:14:25,237 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:25] "GET /status HTTP/1.1" 200 -
+2025-11-14 12:14:25,240 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:25] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-14 12:14:25,281 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:25] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 12:14:25,293 - __main__ - INFO - Adjustment logic check approved: বাংলায় দুই লাইনের একটি শুভেচ্ছা বার্তা লিখো।
+2025-11-14 12:14:29,455 - __main__ - ERROR - Model server connection error: HTTPConnectionPool(host='127.0.0.1', port=8155): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F7EB3D0510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-14 12:14:50,400 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:14:50] "GET / HTTP/1.1" 200 -
+2025-11-14 12:15:50,402 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:15:50] "GET / HTTP/1.1" 200 -
+2025-11-14 12:15:56,146 - __main__ - INFO - LangChain orchestrator model 'microsoft/phi-2' লোড হয়েছে
+2025-11-14 12:16:33,248 - __main__ - INFO - LangChain orchestrator model 'microsoft/phi-2' লোড হয়েছে
+2025-11-14 12:16:50,314 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:16:50] "GET / HTTP/1.1" 200 -
+2025-11-14 12:17:49,901 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:17:49] "GET / HTTP/1.1" 200 -
+2025-11-14 12:18:50,250 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:18:50] "GET / HTTP/1.1" 200 -
+2025-11-14 12:19:50,182 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:19:50] "GET / HTTP/1.1" 200 -
+2025-11-14 12:20:50,387 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:20:50] "GET / HTTP/1.1" 200 -
+2025-11-14 12:21:42,771 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:42] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-14 12:21:42,818 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:42] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-14 12:21:42,852 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:42] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-14 12:21:42,937 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:42] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-14 12:21:43,082 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:43] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-14 12:21:43,251 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:43] "GET /status HTTP/1.1" 200 -
+2025-11-14 12:21:43,349 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:43] "GET /health HTTP/1.1" 200 -
+2025-11-14 12:21:43,508 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:43] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-14 12:21:43,777 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:43] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-14 12:21:45,664 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:45] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-14 12:21:45,664 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:45] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-14 12:21:45,702 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:45] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-14 12:21:45,728 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:45] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-14 12:21:45,748 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:45] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-14 12:21:45,827 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:45] "GET /status HTTP/1.1" 200 -
+2025-11-14 12:21:45,847 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:45] "GET /health HTTP/1.1" 200 -
+2025-11-14 12:21:45,866 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:45] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-14 12:21:45,912 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:45] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-14 12:21:53,123 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:21:53] "GET / HTTP/1.1" 200 -
+2025-11-14 12:25:36,368 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:25:36] "GET / HTTP/1.1" 200 -
+2025-11-14 12:25:45,350 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:25:45] "GET / HTTP/1.1" 200 -
+2025-11-14 12:25:55,646 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:25:55] "GET / HTTP/1.1" 200 -
+2025-11-14 12:29:40,027 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:29:40] "GET / HTTP/1.1" 200 -
+2025-11-14 12:30:50,393 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:30:50] "GET / HTTP/1.1" 200 -
+2025-11-14 12:30:54,933 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:30:54] "GET / HTTP/1.1" 200 -
+2025-11-14 12:31:00,311 - __main__ - INFO - Adjustment logic check approved: কেমন আছেন? আপনার নাম কি?
+2025-11-14 12:31:01,119 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 12:31:54,460 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:31:54] "GET / HTTP/1.1" 200 -
+2025-11-14 12:31:57,366 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 12:31:57,371 - __main__ - INFO - Wrapped English response in Bengali context
+2025-11-14 12:31:57,711 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 12:31:57,815 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 12:31:57,827 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:31:57] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 12:32:49,922 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:32:49] "GET / HTTP/1.1" 200 -
+2025-11-14 12:33:50,684 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:33:50] "GET / HTTP/1.1" 200 -
+2025-11-14 12:34:50,462 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:34:50] "GET / HTTP/1.1" 200 -
+2025-11-14 12:35:51,418 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:35:51] "GET / HTTP/1.1" 200 -
+2025-11-14 12:36:49,972 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 12:36:49] "GET / HTTP/1.1" 200 -
+2025-11-14 13:10:33,351 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 13:10:33,351 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 13:10:35,394 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 13:10:35,396 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 13:10:35,398 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 13:10:35,435 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 13:10:35,435 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 13:10:38,042 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 13:10:38] "GET /health HTTP/1.1" 200 -
+2025-11-14 13:32:37,863 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 13:32:37,863 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 13:32:39,904 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 13:32:39,907 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 13:32:39,910 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 13:32:39,937 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 13:32:39,937 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 13:32:44,174 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 13:32:44] "GET /health HTTP/1.1" 200 -
+2025-11-14 13:54:49,460 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 13:54:49,460 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 13:54:51,499 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 13:54:51,500 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 13:54:51,502 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 13:54:51,528 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 13:54:51,528 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 13:55:34,032 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 13:55:34] "GET /health HTTP/1.1" 200 -
+2025-11-14 14:05:09,927 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 14:05:09,928 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 14:05:12,018 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 14:05:12,019 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 14:05:12,025 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 14:05:12,051 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 14:05:12,052 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 14:06:09,575 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:06:09] "GET /health HTTP/1.1" 200 -
+2025-11-14 14:15:11,952 - __main__ - ERROR - Chat completions endpoint error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-11-14 14:15:11,953 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:15:11] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-14 14:15:47,809 - __main__ - INFO - Adjustment logic check approved: ??????
+2025-11-14 14:15:47,829 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 14:16:59,907 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 14:16:59,908 - __main__ - INFO - Wrapped English response in Bengali context
+2025-11-14 14:16:59,945 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 14:16:59,974 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 14:16:59,976 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:16:59] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 14:17:24,298 - __main__ - INFO - Adjustment logic check approved: ??????
+2025-11-14 14:17:24,305 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 14:17:32,578 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 14:17:32,579 - __main__ - INFO - Wrapped English response in Bengali context
+2025-11-14 14:17:32,615 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 14:17:32,635 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 14:17:32,636 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:17:32] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 14:27:11,924 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:27:11] "GET /health HTTP/1.1" 200 -
+2025-11-14 14:27:11,934 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 14:27:42,205 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 14:27:42,206 - __main__ - INFO - Wrapped English response in Bengali context
+2025-11-14 14:27:42,243 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 14:27:42,270 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 14:27:42,271 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:27:42] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 14:27:42,496 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 14:27:50,968 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 14:27:50,970 - __main__ - INFO - Wrapped English response in Bengali context
+2025-11-14 14:27:51,009 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 14:27:51,030 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 14:27:51,031 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:27:51] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 14:33:59,630 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:33:59] "GET /health HTTP/1.1" 200 -
+2025-11-14 14:33:59,645 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 14:34:07,698 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 14:34:07,698 - __main__ - INFO - Wrapped English response in Bengali context
+2025-11-14 14:34:07,735 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 14:34:07,754 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 14:34:07,755 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:34:07] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 14:34:07,768 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 14:34:16,751 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 14:34:16,752 - __main__ - INFO - Wrapped English response in Bengali context
+2025-11-14 14:34:16,783 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 14:34:16,802 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 14:34:16,803 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:34:16] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 14:39:51,714 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 14:39:51,715 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 14:39:53,746 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 14:39:53,746 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 14:39:53,749 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 14:39:53,774 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 14:39:53,774 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 14:43:25,949 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:43:25] "GET /health HTTP/1.1" 200 -
+2025-11-14 14:50:13,593 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:50:13] "GET /health HTTP/1.1" 200 -
+2025-11-14 14:50:13,602 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:50:13] "GET / HTTP/1.1" 200 -
+2025-11-14 14:50:13,633 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:50:13] "[33mGET /v1/models HTTP/1.1[0m" 404 -
+2025-11-14 14:50:13,672 - __main__ - ERROR - Model server error: 409 - {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-14 14:50:43,783 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:50:43] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-14 14:51:14,353 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:51:14] "[33mGET /v1/models HTTP/1.1[0m" 404 -
+2025-11-14 14:51:18,296 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:51:18] "GET / HTTP/1.1" 200 -
+2025-11-14 14:51:28,059 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:51:28] "GET /info HTTP/1.1" 200 -
+2025-11-14 14:51:44,644 - __main__ - INFO - LangChain orchestrator model 'microsoft/phi-2' লোড হয়েছে
+2025-11-14 14:53:24,973 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:53:24] "GET /status HTTP/1.1" 200 -
+2025-11-14 14:53:31,237 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-14 14:53:31,241 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:53:31] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-14 14:53:43,341 - __main__ - ERROR - Model server error: 409 - {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-14 14:54:07,725 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-14 14:54:07,824 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:54:07] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-14 14:55:03,452 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:55:03] "GET /health HTTP/1.1" 200 -
+2025-11-14 14:55:03,684 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:55:03] "GET / HTTP/1.1" 200 -
+2025-11-14 14:55:03,721 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:55:03] "GET /info HTTP/1.1" 200 -
+2025-11-14 14:55:03,770 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:55:03] "GET /status HTTP/1.1" 200 -
+2025-11-14 14:55:03,795 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 14:55:03] "GET /memory HTTP/1.1" 200 -
+2025-11-14 14:55:04,058 - __main__ - ERROR - Model server error: 409 - {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-14 14:55:33,959 - __main__ - ERROR - Model server error: 409 - {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-14 15:02:51,585 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 15:02:51] "[33mGET /v1 HTTP/1.1[0m" 404 -
+2025-11-14 15:02:52,848 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 15:02:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-14 15:22:39,242 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 15:22:39,243 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 15:22:47,282 - __main__ - WARNING - No Ollama server detected on ports 8007, 8155, or 11434
+2025-11-14 15:22:47,282 - __main__ - WARNING - Running in offline mode - Ollama server not available
+2025-11-14 15:22:47,287 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 15:22:47,317 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 15:22:47,318 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 15:42:47,544 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 15:42:47] "[33mGET /v1/health HTTP/1.1[0m" 404 -
+2025-11-14 22:10:15,302 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 22:10:15,302 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 22:10:17,378 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 22:10:17,379 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 22:10:17,382 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 22:10:17,435 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 22:10:17,437 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 22:10:39,573 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 22:11:52,057 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 22:11:52,058 - __main__ - INFO - Wrapped English response in Bengali context
+2025-11-14 22:11:52,083 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 22:11:52,104 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 22:11:52,106 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 22:11:52] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 22:28:44,271 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 22:28:44] "GET / HTTP/1.1" 200 -
+2025-11-14 22:28:44,481 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 22:28:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-14 22:38:47,232 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 22:38:47,232 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 22:38:50,807 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 22:38:50,807 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 22:38:50,809 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 22:38:50,841 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 22:38:50,845 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 22:53:06,281 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 22:53:06] "GET / HTTP/1.1" 200 -
+2025-11-14 23:00:45,695 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 23:00:45] "GET / HTTP/1.1" 200 -
+2025-11-14 23:11:39,462 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 23:11:39,463 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 23:11:41,517 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 23:11:41,517 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 23:11:41,521 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 23:11:41,611 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 23:11:41,617 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 23:23:04,503 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 23:23:04] "GET /health HTTP/1.1" 200 -
+2025-11-14 23:33:27,739 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 23:33:27] "[33mGET /v1/models HTTP/1.1[0m" 404 -
+2025-11-14 23:33:33,463 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 23:33:33] "GET /health HTTP/1.1" 200 -
+2025-11-14 23:33:44,485 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 23:33:44] "[33mPOST /api/v1/load_model HTTP/1.1[0m" 404 -
+2025-11-14 23:33:49,335 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 23:33:49] "GET / HTTP/1.1" 200 -
+2025-11-14 23:34:28,331 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'microsoft/phi-2' not found"}
+2025-11-14 23:34:55,102 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 23:34:55] "GET /health HTTP/1.1" 200 -
+2025-11-14 23:35:08,809 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 23:35:08] "GET /info HTTP/1.1" 200 -
+2025-11-14 23:35:15,575 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 23:35:15] "GET /memory HTTP/1.1" 200 -
+2025-11-14 23:35:25,235 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 23:35:25] "GET /status HTTP/1.1" 200 -
+2025-11-14 23:36:04,888 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'microsoft/phi-2' not found"}
+2025-11-14 23:36:13,220 - __main__ - INFO - LangChain orchestrator model 'microsoft/phi-2' লোড হয়েছে
+2025-11-14 23:37:58,438 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 23:37:58] "GET /health HTTP/1.1" 200 -
+2025-11-14 23:38:17,046 - __main__ - INFO - LangChain orchestrator model 'microsoft/phi-2' লোড হয়েছে
+2025-11-14 23:38:20,774 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'microsoft/phi-2' not found"}
+2025-11-14 23:40:23,580 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'microsoft/phi-2' not found"}
+2025-11-14 23:44:13,238 - __main__ - INFO - Adjustment logic check approved: হ্যাল�<, তুমি �.�??
+2025-11-14 23:44:13,957 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'microsoft/phi-2' not found"}
