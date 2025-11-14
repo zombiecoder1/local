@@ -1,0 +1,1826 @@
+2025-11-07 01:18:27,808 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 01:18:27,809 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 01:19:10,579 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 01:19:10,609 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 01:19:10,610 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 01:21:02,443 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 01:21:02,491 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 01:21:02,491 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 01:21:30,140 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:21:30] "GET / HTTP/1.1" 200 -
+2025-11-07 01:21:34,326 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:21:34] "GET /health HTTP/1.1" 200 -
+2025-11-07 01:21:38,516 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:21:38] "GET /status HTTP/1.1" 200 -
+2025-11-07 01:21:40,604 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:21:40] "GET /memory HTTP/1.1" 200 -
+2025-11-07 01:22:42,776 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:22:42] "GET / HTTP/1.1" 200 -
+2025-11-07 01:22:46,934 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:22:46] "GET /health HTTP/1.1" 200 -
+2025-11-07 01:22:51,080 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:22:51] "GET /status HTTP/1.1" 200 -
+2025-11-07 01:22:53,148 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:22:53] "GET /memory HTTP/1.1" 200 -
+2025-11-07 01:51:54,588 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 01:51:54,610 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 01:51:54,611 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 01:52:08,007 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:52:08] "[33mOPTIONS /v1/chat/completions HTTP/1.1[0m" 404 -
+2025-11-07 01:52:14,171 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:52:14] "GET / HTTP/1.1" 200 -
+2025-11-07 01:52:16,307 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:52:16] "GET /health HTTP/1.1" 200 -
+2025-11-07 01:52:18,405 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:52:18] "GET /status HTTP/1.1" 200 -
+2025-11-07 01:52:20,490 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:52:20] "GET /memory HTTP/1.1" 200 -
+2025-11-07 01:52:38,113 - __main__ - ERROR - Ollama API error: 409
+2025-11-07 01:52:38,114 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:52:38] "POST /chat HTTP/1.1" 200 -
+2025-11-07 01:57:42,320 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 01:57:42,342 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 01:57:42,342 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 01:57:53,332 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:57:53] "GET / HTTP/1.1" 200 -
+2025-11-07 01:57:55,409 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:57:55] "GET /health HTTP/1.1" 200 -
+2025-11-07 01:57:57,473 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:57:57] "GET /status HTTP/1.1" 200 -
+2025-11-07 01:57:59,540 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:57:59] "GET /memory HTTP/1.1" 200 -
+2025-11-07 01:58:11,492 - __main__ - ERROR - Model API returned status 409: {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-07 01:58:11,493 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:58:11] "POST /chat HTTP/1.1" 200 -
+2025-11-07 01:58:13,652 - __main__ - ERROR - Model API returned status 409: {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-07 01:58:13,653 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:58:13] "POST /chat HTTP/1.1" 200 -
+2025-11-07 01:58:15,759 - __main__ - ERROR - Model API returned status 409: {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-07 01:58:15,760 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:58:15] "POST /chat HTTP/1.1" 200 -
+2025-11-07 01:58:28,482 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:58:28] "[33mOPTIONS /v1/chat/completions HTTP/1.1[0m" 404 -
+2025-11-07 01:59:18,733 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 01:59:18,753 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 01:59:18,754 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 01:59:36,662 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:59:36] "[33mOPTIONS /v1/chat/completions HTTP/1.1[0m" 404 -
+2025-11-07 01:59:37,263 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:59:37] "[33mOPTIONS /v1/chat/completions HTTP/1.1[0m" 404 -
+2025-11-07 01:59:52,544 - __main__ - ERROR - Local AI call error: HTTPConnectionPool(host='127.0.0.1', port=8155): Read timed out. (read timeout=30)
+2025-11-07 01:59:52,546 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 01:59:52] "POST /chat HTTP/1.1" 200 -
+2025-11-07 02:08:28,726 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 02:08:28,754 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 02:08:28,755 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 02:08:34,398 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:08:34] "GET / HTTP/1.1" 200 -
+2025-11-07 02:08:56,530 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:08:56] "GET /health HTTP/1.1" 200 -
+2025-11-07 02:08:57,880 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:08:57] "GET /status HTTP/1.1" 200 -
+2025-11-07 02:08:58,946 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:08:58] "GET /info HTTP/1.1" 200 -
+2025-11-07 02:08:59,839 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:08:59] "GET /memory HTTP/1.1" 200 -
+2025-11-07 02:09:11,557 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 02:09:11,558 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:09:11] "POST /chat HTTP/1.1" 200 -
+2025-11-07 02:09:12,478 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:09:12] "OPTIONS /chat HTTP/1.1" 200 -
+2025-11-07 02:09:18,495 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:09:18] "GET / HTTP/1.1" 200 -
+2025-11-07 02:09:21,343 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:09:21] "OPTIONS /chat HTTP/1.1" 200 -
+2025-11-07 02:09:39,538 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 02:09:39,571 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 02:09:39,573 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 02:09:45,685 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:09:45] "GET / HTTP/1.1" 200 -
+2025-11-07 02:09:49,045 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:09:49] "GET /health HTTP/1.1" 200 -
+2025-11-07 02:09:51,837 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:09:51] "GET /status HTTP/1.1" 200 -
+2025-11-07 02:09:54,578 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:09:54] "GET /info HTTP/1.1" 200 -
+2025-11-07 02:09:57,317 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:09:57] "GET /memory HTTP/1.1" 200 -
+2025-11-07 02:10:00,430 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:10:00] "OPTIONS /chat HTTP/1.1" 200 -
+2025-11-07 02:10:03,446 - __main__ - ERROR - Model API returned status 409: {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-07 02:10:03,447 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:10:03] "POST /chat HTTP/1.1" 200 -
+2025-11-07 02:10:40,369 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:10:40] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:12:20,950 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 02:12:20,978 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 02:12:20,979 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 02:12:25,267 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:12:25] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:12:26,137 - __main__ - ERROR - Model API returned status 409: {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-07 02:12:26,150 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:12:26] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:12:27,005 - __main__ - ERROR - Model API returned status 409: {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-07 02:12:27,007 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:12:27] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:12:31,897 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:12:31] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:12:44,737 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:12:44] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:33:20,091 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 02:33:20,357 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 02:33:20,359 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 02:34:09,304 - __main__ - ERROR - Local AI call error: HTTPConnectionPool(host='127.0.0.1', port=8155): Read timed out. (read timeout=30)
+2025-11-07 02:34:09,319 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:34:09] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:34:37,496 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:34:37] "[33mGET /v1/agent/info HTTP/1.1[0m" 404 -
+2025-11-07 02:34:40,899 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:34:40] "[33mGET /v1/memory/conversations?limit=5 HTTP/1.1[0m" 404 -
+2025-11-07 02:44:16,674 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:44:16] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:45:22,291 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:45:22] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:45:22,586 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:45:22] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:45:25,747 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:45:25] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:55:16,311 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:16] "GET /health HTTP/1.1" 200 -
+2025-11-07 02:55:18,274 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:18] "GET /health HTTP/1.1" 200 -
+2025-11-07 02:55:20,017 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:20] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:55:21,495 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:21] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:55:22,904 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:22] "[33mGET /v1/agent/info HTTP/1.1[0m" 404 -
+2025-11-07 02:55:24,129 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:24] "[33mGET /v1/memory/conversations?limit=5 HTTP/1.1[0m" 404 -
+2025-11-07 02:55:25,168 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:25] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:55:25,175 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:25] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:55:27,179 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:27] "GET /health HTTP/1.1" 200 -
+2025-11-07 02:55:28,244 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:28] "GET /status HTTP/1.1" 200 -
+2025-11-07 02:55:29,252 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:29] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:55:30,259 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:30] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:55:31,274 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:31] "[33mGET /v1/agent/info HTTP/1.1[0m" 404 -
+2025-11-07 02:55:32,295 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:32] "[33mGET /v1/memory/conversations?limit=5 HTTP/1.1[0m" 404 -
+2025-11-07 02:55:33,310 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:33] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:55:33,316 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:33] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:55:37,622 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:55:37] "[33mGET /v1/memory/conversations?limit=5 HTTP/1.1[0m" 404 -
+2025-11-07 02:55:40,130 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 02:55:40,299 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 02:55:40,305 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 02:56:07,765 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 02:56:07,768 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:56:07] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:57:14,486 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 02:57:14,520 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 02:57:14,521 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 02:57:22,934 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:57:22] "[33mGET /v1/agent/info HTTP/1.1[0m" 404 -
+2025-11-07 02:57:23,016 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:57:23] "[33mGET /v1/memory/conversations?limit=5 HTTP/1.1[0m" 404 -
+2025-11-07 02:57:56,615 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:57:56] "GET /health HTTP/1.1" 200 -
+2025-11-07 02:58:00,132 - __main__ - ERROR - Local AI call error: HTTPConnectionPool(host='127.0.0.1', port=8155): Read timed out. (read timeout=30)
+2025-11-07 02:58:00,207 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:00] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:58:21,558 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:21] "GET /health HTTP/1.1" 200 -
+2025-11-07 02:58:24,779 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:24] "GET /health HTTP/1.1" 200 -
+2025-11-07 02:58:26,673 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:26] "[33mGET /v1/agent/info HTTP/1.1[0m" 404 -
+2025-11-07 02:58:30,976 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:30] "[33mGET /v1/memory/conversations?limit=5 HTTP/1.1[0m" 404 -
+2025-11-07 02:58:43,779 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:43] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:58:44,931 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:44] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:58:46,972 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:46] "[33mGET /v1/agent/info HTTP/1.1[0m" 404 -
+2025-11-07 02:58:48,694 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:48] "[33mGET /v1/memory/conversations?limit=5 HTTP/1.1[0m" 404 -
+2025-11-07 02:58:50,884 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:50] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:58:50,953 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:50] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:58:54,543 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 02:58:54,546 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:54] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:58:54,571 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:54] "GET /health HTTP/1.1" 200 -
+2025-11-07 02:58:56,332 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:56] "GET /status HTTP/1.1" 200 -
+2025-11-07 02:58:58,294 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:58:58] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:59:00,298 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:59:00] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:59:02,312 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:59:02] "[33mGET /v1/agent/info HTTP/1.1[0m" 404 -
+2025-11-07 02:59:04,300 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:59:04] "[33mGET /v1/memory/conversations?limit=5 HTTP/1.1[0m" 404 -
+2025-11-07 02:59:06,308 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:59:06] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:59:06,314 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:59:06] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 02:59:09,923 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:59:09] "GET /health HTTP/1.1" 200 -
+2025-11-07 02:59:11,942 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:59:11] "[33mGET /v1/agent/info HTTP/1.1[0m" 404 -
+2025-11-07 02:59:14,530 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 02:59:14] "[33mGET /v1/memory/conversations?limit=5 HTTP/1.1[0m" 404 -
+2025-11-07 03:19:04,821 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 03:19:04,844 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 03:19:04,845 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 03:20:16,007 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:16] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:20:19,135 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:19] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:20:19,221 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2473,\"n_ctx\":2048}}"}
+2025-11-07 03:20:19,223 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:19] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:20:22,405 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:22] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:20:22,453 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2464,\"n_ctx\":2048}}"}
+2025-11-07 03:20:22,455 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:22] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:20:24,838 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:24] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-07 03:20:26,517 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:26] "GET /v1/memory/conversations?limit=5 HTTP/1.1" 200 -
+2025-11-07 03:20:29,780 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:29] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:20:29,782 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:29] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:20:29,793 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:29] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:20:29,798 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:29] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:20:31,301 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:31] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:20:32,376 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:32] "GET /status HTTP/1.1" 200 -
+2025-11-07 03:20:33,393 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:33] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:20:33,451 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2473,\"n_ctx\":2048}}"}
+2025-11-07 03:20:33,452 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:33] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:20:34,472 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:34] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:20:34,547 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2464,\"n_ctx\":2048}}"}
+2025-11-07 03:20:34,548 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:34] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:20:35,735 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:35] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-07 03:20:36,776 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:36] "GET /v1/memory/conversations?limit=5 HTTP/1.1" 200 -
+2025-11-07 03:20:37,814 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:37] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:20:37,830 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:20:37] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:22:23,382 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:22:23] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:22:23,439 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2522,\"n_ctx\":2048}}"}
+2025-11-07 03:22:23,440 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:22:23] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:22:28,501 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:22:28] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:22:28,539 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2518,\"n_ctx\":2048}}"}
+2025-11-07 03:22:28,540 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:22:28] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:22:31,804 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:22:31] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:22:31,873 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2519,\"n_ctx\":2048}}"}
+2025-11-07 03:22:31,875 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:22:31] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:23:50,510 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:23:50] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:23:50,547 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2520,\"n_ctx\":2048}}"}
+2025-11-07 03:23:50,548 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:23:50] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:23:54,766 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:23:54] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:23:54,814 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2507,\"n_ctx\":2048}}"}
+2025-11-07 03:23:54,817 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:23:54] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:24:51,286 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:24:51] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:24:52,345 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:24:52] "GET /status HTTP/1.1" 200 -
+2025-11-07 03:24:53,373 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:24:53] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:24:53,438 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2471,\"n_ctx\":2048}}"}
+2025-11-07 03:24:53,439 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:24:53] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:24:54,467 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:24:54] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:24:54,528 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2464,\"n_ctx\":2048}}"}
+2025-11-07 03:24:54,529 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:24:54] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:24:55,267 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:24:55] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-07 03:24:55,724 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:24:55] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-07 03:24:56,755 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:24:56] "GET /v1/memory/conversations?limit=5 HTTP/1.1" 200 -
+2025-11-07 03:24:57,773 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:24:57] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:24:57,776 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:24:57] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:25:22,657 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:25:22] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:25:38,030 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:25:38] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-11-07 03:25:38,045 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:25:38] "[33mPOST /api/chat HTTP/1.1[0m" 404 -
+2025-11-07 03:25:56,332 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:25:56] "OPTIONS /v1/api/chat HTTP/1.1" 200 -
+2025-11-07 03:25:56,337 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:25:56] "[33mPOST /v1/api/chat HTTP/1.1[0m" 404 -
+2025-11-07 03:26:00,588 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:26:00] "[33mPOST /v1/api/chat HTTP/1.1[0m" 404 -
+2025-11-07 03:26:13,125 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:26:13] "OPTIONS /v1/api/chat HTTP/1.1" 200 -
+2025-11-07 03:26:13,129 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:26:13] "[33mPOST /v1/api/chat HTTP/1.1[0m" 404 -
+2025-11-07 03:27:13,824 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:27:13] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:27:20,103 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:27:20] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:27:20,176 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2387,\"n_ctx\":2048}}"}
+2025-11-07 03:27:20,179 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:27:20] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:27:23,768 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:27:23] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:27:34,191 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:27:34] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:27:43,798 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:27:43] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:27:54,164 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:27:54] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:28:04,175 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:28:04] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:28:21,618 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:28:21] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:28:24,240 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:28:24] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:28:34,249 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:28:34] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:29:34,302 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:29:34] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:30:12,228 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:30:12] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:30:12,284 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2479,\"n_ctx\":2048}}"}
+2025-11-07 03:30:12,285 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:30:12] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:30:15,772 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:30:15] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:30:15,829 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2518,\"n_ctx\":2048}}"}
+2025-11-07 03:30:15,830 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:30:15] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:30:17,268 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:30:17] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:30:17,318 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2521,\"n_ctx\":2048}}"}
+2025-11-07 03:30:17,319 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:30:17] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:33:23,608 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 03:33:23,645 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 03:33:23,646 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 03:34:37,951 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:34:37] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:35:34,720 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:35:34] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:35:37,991 - __main__ - ERROR - Local AI call error: HTTPConnectionPool(host='127.0.0.1', port=8155): Read timed out. (read timeout=60)
+2025-11-07 03:35:37,992 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:35:37] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:35:40,218 - __main__ - ERROR - Ollama connection error: HTTPConnectionPool(host='127.0.0.1', port=8155): Read timed out. (read timeout=5)
+2025-11-07 03:35:40,219 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:35:40] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:35:45,173 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:35:45] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:35:51,158 - __main__ - ERROR - Ollama connection error: HTTPConnectionPool(host='127.0.0.1', port=8155): Read timed out. (read timeout=5)
+2025-11-07 03:35:51,159 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:35:51] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:36:11,385 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:36:11] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:36:17,328 - __main__ - ERROR - Ollama connection error: HTTPConnectionPool(host='127.0.0.1', port=8155): Read timed out. (read timeout=5)
+2025-11-07 03:36:17,333 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:36:17] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:36:29,824 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:36:29] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:36:35,007 - __main__ - ERROR - Ollama connection error: HTTPConnectionPool(host='127.0.0.1', port=8155): Read timed out. (read timeout=5)
+2025-11-07 03:36:35,008 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:36:35] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:37:18,713 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:37:18] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:37:24,531 - __main__ - ERROR - Ollama connection error: HTTPConnectionPool(host='127.0.0.1', port=8155): Read timed out. (read timeout=5)
+2025-11-07 03:37:24,534 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:37:24] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:45:02,852 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 03:45:02,882 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 03:45:02,882 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 03:45:08,546 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:45:08] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:45:11,447 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 2603
+2025-11-07 03:45:11,516 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2473,\"n_ctx\":2048}}"}
+2025-11-07 03:45:11,523 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:45:11] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:45:12,924 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:45:12] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-07 03:45:14,413 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:45:14] "GET /health HTTP/1.1" 200 -
+2025-11-07 03:45:44,936 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 2579
+2025-11-07 03:45:44,980 - __main__ - ERROR - Model API returned status 502: {"detail":"Proxy error: 502: Runtime error 400: {\"error\":{\"code\":400,\"message\":\"the request exceeds the available context size, try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":2418,\"n_ctx\":2048}}"}
+2025-11-07 03:45:44,982 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:45:44] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:45:59,582 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 03:45:59,608 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 03:45:59,609 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 03:46:04,958 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 523
+2025-11-07 03:46:26,668 - __main__ - INFO - Ollama response received. Keys: ['model', 'runtime_port', 'latency_ms', 'runtime_response']
+2025-11-07 03:46:26,692 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 03:46:26,694 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:46:26] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:46:37,253 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 523
+2025-11-07 03:46:49,533 - __main__ - INFO - Ollama response received. Keys: ['model', 'runtime_port', 'latency_ms', 'runtime_response']
+2025-11-07 03:46:49,553 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 03:46:49,555 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:46:49] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:47:09,918 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:47:09] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:47:09,944 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 562
+2025-11-07 03:47:26,016 - __main__ - INFO - Ollama response received. Keys: ['model', 'runtime_port', 'latency_ms', 'runtime_response']
+2025-11-07 03:47:26,027 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 03:47:26,028 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:47:26] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:47:36,093 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:47:36] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:47:36,119 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 594
+2025-11-07 03:47:56,741 - __main__ - INFO - Ollama response received. Keys: ['model', 'runtime_port', 'latency_ms', 'runtime_response']
+2025-11-07 03:47:56,751 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 03:47:56,752 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:47:56] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:49:08,584 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:49:08] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:49:08,637 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 633
+2025-11-07 03:49:42,172 - __main__ - INFO - Ollama response received. Keys: ['model', 'runtime_port', 'latency_ms', 'runtime_response']
+2025-11-07 03:49:42,192 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 03:49:42,194 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:49:42] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:56:49,601 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 03:56:49,627 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 03:56:49,627 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 03:57:14,238 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:57:14] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:57:14,276 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 878
+2025-11-07 03:57:56,882 - __main__ - INFO - Ollama response received. Keys: ['model', 'runtime_port', 'latency_ms', 'runtime_response']
+2025-11-07 03:57:56,896 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 03:57:56,899 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:57:56] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:59:08,654 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:59:08] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 03:59:08,681 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 878
+2025-11-07 03:59:32,479 - __main__ - INFO - Ollama response received. Keys: ['model', 'runtime_port', 'latency_ms', 'runtime_response']
+2025-11-07 03:59:32,481 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ['ASCII art pattern detected: ...']
+2025-11-07 03:59:32,483 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-07 03:59:32,485 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 03:59:32] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-07 04:01:09,736 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 04:01:09] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 04:01:09,915 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 878
+2025-11-07 04:01:27,066 - __main__ - INFO - Ollama response received. Keys: ['model', 'runtime_port', 'latency_ms', 'runtime_response']
+2025-11-07 04:01:27,071 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ['ASCII art pattern detected: ...']
+2025-11-07 04:01:27,072 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-07 04:01:27,073 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 04:01:27] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-07 04:02:46,180 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 04:02:46,210 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 04:02:46,212 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 04:02:52,302 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 04:02:52] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 04:02:52,332 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 1003
+2025-11-07 04:03:44,603 - __main__ - INFO - Ollama response received. Keys: ['model', 'runtime_port', 'latency_ms', 'runtime_response']
+2025-11-07 04:03:44,634 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 04:03:44,635 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 04:03:44] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 04:03:55,390 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 04:03:55] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 04:03:55,418 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 1003
+2025-11-07 04:04:25,540 - __main__ - INFO - Ollama response received. Keys: ['model', 'runtime_port', 'latency_ms', 'runtime_response']
+2025-11-07 04:04:25,570 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 04:04:25,571 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 04:04:25] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 04:05:22,559 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 04:05:22] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 04:05:22,591 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 1003
+2025-11-07 04:06:12,394 - __main__ - INFO - Ollama response received. Keys: ['model', 'runtime_port', 'latency_ms', 'runtime_response']
+2025-11-07 04:06:12,411 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 04:06:12,413 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 04:06:12] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 10:17:40,555 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-07 10:17:40,696 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-07 10:17:40,697 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-07 10:53:37,820 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 10:53:37] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 10:53:37,877 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 1003
+2025-11-07 10:55:17,248 - __main__ - INFO - Ollama response received. Keys: ['model', 'runtime_port', 'latency_ms', 'runtime_response']
+2025-11-07 10:55:17,250 - __main__ - INFO - Ollama API call completed in 99.415 seconds
+2025-11-07 10:55:18,861 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 10:55:18,949 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 10:55:18] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 11:15:39,280 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:15:39] "GET / HTTP/1.1" 200 -
+2025-11-07 11:15:42,588 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:15:42] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 11:16:09,352 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:16:09] "GET / HTTP/1.1" 200 -
+2025-11-07 11:16:12,701 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:16:12] "GET /status HTTP/1.1" 200 -
+2025-11-07 11:16:15,931 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:16:15] "GET /info HTTP/1.1" 200 -
+2025-11-07 11:16:18,477 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:16:18] "GET /memory HTTP/1.1" 200 -
+2025-11-07 11:16:26,093 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:16:26] "GET /memory HTTP/1.1" 200 -
+2025-11-07 11:16:32,805 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:16:32] "GET /memory HTTP/1.1" 200 -
+2025-11-07 11:16:40,564 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:16:40] "GET /memory HTTP/1.1" 200 -
+2025-11-07 11:16:50,469 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:16:50] "GET /memory HTTP/1.1" 200 -
+2025-11-07 11:17:33,798 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:17:33] "GET /memory HTTP/1.1" 200 -
+2025-11-07 11:17:40,503 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:17:40] "GET /memory HTTP/1.1" 200 -
+2025-11-07 11:17:45,424 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:17:45] "GET /health HTTP/1.1" 200 -
+2025-11-07 11:26:35,477 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:26:35] "GET /health HTTP/1.1" 200 -
+2025-11-07 11:26:57,956 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:26:57] "GET /health HTTP/1.1" 200 -
+2025-11-07 11:27:32,789 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:27:32] "GET /health HTTP/1.1" 200 -
+2025-11-07 11:27:41,981 - __main__ - ERROR - Chat endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-07 11:27:41,982 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:27:41] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-11-07 11:28:38,867 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:28:38] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 11:28:38,900 - __main__ - INFO - Calling Ollama API with model deepseek-coder-1.3b, prompt length: 1003
+2025-11-07 11:29:00,552 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:29:00] "GET /health HTTP/1.1" 200 -
+2025-11-07 11:29:19,499 - __main__ - INFO - Ollama response received. Keys: ['model', 'runtime_port', 'latency_ms', 'runtime_response']
+2025-11-07 11:29:19,501 - __main__ - INFO - Ollama API call completed in 40.627 seconds
+2025-11-07 11:29:19,537 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-07 11:29:19,544 - werkzeug - INFO - 127.0.0.1 - - [07/Nov/2025 11:29:19] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-07 11:55:52,184 - unified_agent_system - INFO - ✅ Memory systems initialized successfully
+2025-11-07 11:55:53,051 - unified_agent_system - ERROR - LangChain orchestrator লোড ত্রুটি: l3cube-pune/bengali-gpt is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+Traceback (most recent call last):
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\utils\_http.py", line 402, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/l3cube-pune/bengali-gpt/resolve/main/tokenizer_config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\transformers\utils\hub.py", line 479, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        local_files_only=local_files_only,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 1007, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<14 lines>...
+        force_download=force_download,
+    )
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 1114, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 1655, in _raise_on_head_call_error
+    raise head_call_error
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 1543, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url, proxies=proxies, timeout=etag_timeout, headers=headers, token=token, endpoint=endpoint
+    )
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 1460, in get_hf_file_metadata
+    r = _request_wrapper(
+        method="HEAD",
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 283, in _request_wrapper
+    response = _request_wrapper(
+        method=method,
+    ...<2 lines>...
+        **params,
+    )
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 307, in _request_wrapper
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\utils\_http.py", line 452, in hf_raise_for_status
+    raise _format(RepositoryNotFoundError, message, response) from e
+huggingface_hub.errors.RepositoryNotFoundError: 401 Client Error. (Request ID: Root=1-690d89ea-4f1a730845f7c3a56af0b15e;02e89610-636b-4f84-9939-fe175bb682b2)
+
+Repository Not Found for url: https://huggingface.co/l3cube-pune/bengali-gpt/resolve/main/tokenizer_config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+Invalid username or password.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\unified_agent_system.py", line 233, in ensure_ready
+    self._build_pipeline()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\unified_agent_system.py", line 208, in _build_pipeline
+    tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\transformers\models\auto\tokenization_auto.py", line 1073, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\transformers\models\auto\tokenization_auto.py", line 905, in get_tokenizer_config
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<12 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\transformers\utils\hub.py", line 322, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\transformers\utils\hub.py", line 511, in cached_files
+    raise OSError(
+    ...<4 lines>...
+    ) from e
+OSError: l3cube-pune/bengali-gpt is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+2025-11-07 11:57:13,604 - unified_agent_system - INFO - ✅ Memory systems initialized successfully
+2025-11-07 12:00:31,710 - unified_agent_system - INFO - Seq2Seq মডেল হিসেবে 'google/mt5-small' লোড করা হয়েছে
+2025-11-07 12:00:31,815 - unified_agent_system - INFO - LangChain orchestrator model 'google/mt5-small' লোড হয়েছে
+2025-11-07 12:05:02,486 - unified_agent_system - INFO - ✅ Memory systems initialized successfully
+2025-11-07 12:05:32,125 - unified_agent_system - INFO - Seq2Seq মডেল হিসেবে 'google/mt5-small' লোড করা হয়েছে
+2025-11-07 12:05:32,849 - unified_agent_system - INFO - LangChain orchestrator model 'google/mt5-small' লোড হয়েছে
+2025-11-07 12:06:20,505 - unified_agent_system - INFO - ✅ Memory systems initialized successfully
+2025-11-07 12:06:20,516 - unified_agent_system - INFO - ✅ Memory systems initialized successfully
+2025-11-07 12:06:40,560 - unified_agent_system - INFO - Seq2Seq মডেল হিসেবে 'google/mt5-small' লোড করা হয়েছে
+2025-11-07 12:06:40,565 - unified_agent_system - INFO - LangChain orchestrator model 'google/mt5-small' লোড হয়েছে
+2025-11-07 12:06:50,914 - unified_agent_system - INFO - ✅ Old memory cleanup completed
+2025-11-07 12:07:51,912 - unified_agent_system - INFO - ✅ Memory systems initialized successfully
+2025-11-07 12:07:51,928 - unified_agent_system - INFO - ✅ Memory systems initialized successfully
+2025-11-07 12:08:07,135 - unified_agent_system - INFO - Seq2Seq মডেল হিসেবে 'google/mt5-small' লোড করা হয়েছে
+2025-11-07 12:08:07,231 - unified_agent_system - INFO - LangChain orchestrator model 'google/mt5-small' লোড হয়েছে
+2025-11-07 12:08:15,999 - unified_agent_system - INFO - ✅ Old memory cleanup completed
+2025-11-07 12:09:23,436 - unified_agent_system - INFO - ✅ Memory systems initialized successfully
+2025-11-07 12:09:23,462 - unified_agent_system - INFO - ✅ Memory systems initialized successfully
+2025-11-07 12:17:08,834 - unified_agent_system - INFO - ✅ Memory systems initialized successfully
+2025-11-07 12:17:08,841 - unified_agent_system - INFO - ✅ Memory systems initialized successfully
+2025-11-07 12:17:09,704 - unified_agent_system - ERROR - LangChain orchestrator লোড ত্রুটি: csebuetnlp/banglat5-base is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+Traceback (most recent call last):
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\utils\_http.py", line 402, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/csebuetnlp/banglat5-base/resolve/main/tokenizer_config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\transformers\utils\hub.py", line 479, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        local_files_only=local_files_only,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 1007, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<14 lines>...
+        force_download=force_download,
+    )
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 1114, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 1655, in _raise_on_head_call_error
+    raise head_call_error
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 1543, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url, proxies=proxies, timeout=etag_timeout, headers=headers, token=token, endpoint=endpoint
+    )
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 1460, in get_hf_file_metadata
+    r = _request_wrapper(
+        method="HEAD",
+    ...<5 lines>...
+        timeout=timeout,
+    )
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 283, in _request_wrapper
+    response = _request_wrapper(
+        method=method,
+    ...<2 lines>...
+        **params,
+    )
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\file_download.py", line 307, in _request_wrapper
+    hf_raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\huggingface_hub\utils\_http.py", line 452, in hf_raise_for_status
+    raise _format(RepositoryNotFoundError, message, response) from e
+huggingface_hub.errors.RepositoryNotFoundError: 401 Client Error. (Request ID: Root=1-690d8ee6-441512b7668c7c7b7fa2a65a;6ad2fef7-d5ca-4482-919d-f252017dff6d)
+
+Repository Not Found for url: https://huggingface.co/csebuetnlp/banglat5-base/resolve/main/tokenizer_config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+Invalid username or password.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\unified_agent_system.py", line 256, in ensure_ready
+    self._build_pipeline()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\unified_agent_system.py", line 216, in _build_pipeline
+    tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\transformers\models\auto\tokenization_auto.py", line 1073, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\transformers\models\auto\tokenization_auto.py", line 905, in get_tokenizer_config
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<12 lines>...
+        _commit_hash=commit_hash,
+    )
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\transformers\utils\hub.py", line 322, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\sahon\AppData\Roaming\Python\Python313\site-packages\transformers\utils\hub.py", line 511, in cached_files
+    raise OSError(
+    ...<4 lines>...
+    ) from e
+OSError: csebuetnlp/banglat5-base is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+2025-11-07 12:17:09,750 - unified_agent_system - ERROR - Message processing error: csebuetnlp/banglat5-base is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+2025-11-08 15:05:51,162 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-08 15:05:51,173 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-08 15:05:51,209 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-08 15:05:51,228 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-08 15:06:07,599 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 15:06:07] "GET /health HTTP/1.1" 200 -
+2025-11-08 15:08:33,420 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 15:08:33] "GET /health HTTP/1.1" 200 -
+2025-11-08 15:09:48,692 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-08 15:09:48,698 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-08 15:09:48,711 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-08 15:09:48,711 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-08 15:09:57,507 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 15:09:57] "GET /health HTTP/1.1" 200 -
+2025-11-08 15:10:36,908 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-11-08 15:29:43,934 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-11-08 15:29:56,747 - __main__ - INFO - LangChain orchestrator model 'deepseek-ai/deepseek-coder-1.3b-base' লোড হয়েছে
+2025-11-08 15:34:38,651 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-08 15:34:38,669 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 15:34:38] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-08 15:55:11,644 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-08 15:55:11,648 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 15:55:11] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-08 15:55:27,464 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-08 15:55:27,469 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 15:55:27] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-08 16:05:46,593 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-08 16:05:46,604 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 16:05:46] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-08 16:18:59,372 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-08 16:18:59,403 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 16:18:59] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-08 16:19:07,989 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 16:19:07] "GET /health HTTP/1.1" 200 -
+2025-11-08 16:19:16,162 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 16:19:16] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:08:13,055 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-08 20:08:13,071 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-08 20:08:13,118 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-08 20:08:13,137 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-08 20:08:58,524 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:08:58] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-08 20:09:18,524 - __main__ - INFO - LangChain orchestrator model 'deepseek-ai/deepseek-coder-1.3b-base' লোড হয়েছে
+2025-11-08 20:11:59,698 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:11:59] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-08 20:12:03,005 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:12:03] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-08 20:12:03,441 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:12:03] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-08 20:12:10,263 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:12:10] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-08 20:13:12,252 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:13:12] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-08 20:17:02,610 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:17:02] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-08 20:19:11,081 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:11] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:11,430 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:11] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:11,755 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:11] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:11,988 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:11] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:12,241 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:12] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:12,482 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:12] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:12,720 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:12] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:12,914 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:12] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:13,138 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:13] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:14,044 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:14] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:14,387 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:14] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:14,701 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:14] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:14,779 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:14] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:15,070 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:15] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:15,333 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:15] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:15,733 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:15] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:16,024 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:16] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:16,320 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:16] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:17,190 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:17] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:17,636 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:17] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:17,943 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:17] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:18,185 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:18] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:18,661 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:18] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:18,896 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:18] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:19,284 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:19] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:19,573 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:19] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:19,938 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:19] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:20,260 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:20] "OPTIONS /v1/chat/completions HTTP/1.1" 200 -
+2025-11-08 20:19:20,493 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:20] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:20,893 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:20] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:21,244 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:21] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:21,468 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:21] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:22,027 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:22] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:23,129 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:23] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:23,478 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:23] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:23,834 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:23] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:24,239 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:24] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:24,454 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:24] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:24,686 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:24] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:25,126 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:25] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:25,422 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:25] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:25,927 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:25] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:26,177 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:26] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:26,459 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:26] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:26,715 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:26] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:27,728 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:27] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:28,110 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:28] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:28,517 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:28] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:29,051 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:29] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:29,617 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:29] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:30,000 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:30] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:30,475 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:30] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:31,130 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:31] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:31,361 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:31] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:31,775 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:31] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:32,000 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:32] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:32,325 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:32] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:32,585 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:32] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:32,851 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:32] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:33,114 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:33] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:33,524 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:33] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:34,142 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:34] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:34,524 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:34] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:34,934 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:34] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:35,228 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:35] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:35,496 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:35] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:35,758 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:35] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:36,011 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:36] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:36,600 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:36] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:36,984 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:36] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:37,383 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:37] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:37,786 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:37] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:38,053 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:38] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:38,323 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:38] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:38,601 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:38] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:38,841 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:38] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:39,183 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:39] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:39,741 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:39] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:40,196 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:40] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:40,480 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:40] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:40,880 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:40] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:41,246 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:41] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:41,479 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:41] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:41,868 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:41] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:42,136 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:42] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:42,422 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:42] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:42,670 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:42] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:42,963 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:42] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:43,380 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:43] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:43,808 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:43] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:44,058 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:44] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:44,665 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:44] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:44,895 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:44] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:45,102 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:45] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:45,447 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:45] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:45,903 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:45] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:46,151 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:46] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:46,395 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:46] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:46,684 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:46] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:46,985 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:46] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:47,357 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:47] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:47,722 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:47] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:47,948 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:47] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:48,173 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:48] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:48,441 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:48] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:48,731 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:48] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:48,993 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:48] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:49,515 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:49] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:49,861 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:49] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:50,244 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:50] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:50,606 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:50] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:50,863 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:50] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:51,128 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:51] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:51,636 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:51] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:51,995 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:51] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:52,235 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:52] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:52,607 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:52] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:52,996 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:52] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:53,777 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:53] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:54,311 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:54] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:54,567 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:54] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:55,012 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:55] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:55,331 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:55] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:19:55,783 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:55] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:56,071 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:56] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:56,667 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:56] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:57,001 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:57] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:57,406 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:57] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:19:57,838 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:57] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:19:58,091 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:58] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:58,478 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:58] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:19:58,877 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:58] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:19:59,249 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:59] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:19:59,491 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:59] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:19:59,878 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:19:59] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:00,180 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:00] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:00,509 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:00] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:00,896 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:00] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:01,290 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:01] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:01,537 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:01] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:01,766 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:01] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:02,189 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:02] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:02,436 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:02] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:02,763 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:02] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:02,995 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:02] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:03,245 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:03] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:03,635 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:03] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:04,012 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:04] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:04,242 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:04] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:04,596 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:04] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:04,826 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:04] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:05,058 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:05] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:05,296 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:05] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:05,526 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:05] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:06,073 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:06] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:06,434 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:06] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:06,801 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:06] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:07,143 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:07] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:07,476 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:07] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:07,713 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:07] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:07,957 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:07] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:08,332 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:08] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:08,555 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:08] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:09,062 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:09] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:09,402 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:09] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:09,637 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:09] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:09,872 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:09] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:10,201 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:10] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:10,539 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:10] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:10,888 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:10] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:11,139 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:11] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:11,399 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:11] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:11,647 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:11] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:11,987 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:11] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:12,579 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:12] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:12,979 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:12] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:13,224 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:13] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:13,451 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:13] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:13,935 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:13] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:14,679 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:14] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:15,085 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:15] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:22,471 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:22] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:22,808 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:22] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:23,261 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:23] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:23,525 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:23] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:23,777 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:23] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:24,012 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:24] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:24,390 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:24] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:24,868 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:24] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:25,114 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:25] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:25,617 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:25] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:26,210 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:26] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:26,517 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:26] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:27,057 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:27] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:27,752 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:27] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:28,156 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:28] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:28,552 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:28] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:28,878 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:28] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:29,168 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:29] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:29,413 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:29] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:29,725 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:29] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:30,229 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:30] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:30,591 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:30] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:30,943 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:30] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:31,170 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:31] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:31,499 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:31] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:31,822 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:31] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:32,133 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:32] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:32,373 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:32] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:32,608 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:32] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:33,082 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:33] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:33,471 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:33] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:33,717 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:33] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:34,070 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:34] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:34,311 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:34] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:34,940 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:34] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:35,215 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:35] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:35,623 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:35] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:35,868 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:35] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:36,119 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:36] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:36,528 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:36] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:36,818 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:36] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:37,197 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:37] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:37,472 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:37] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:38,047 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:38] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:38,343 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:38] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:38,706 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:38] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:39,802 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:39] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:39,808 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:39] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:40,186 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:40] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:40,424 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:40] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:40,994 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:40] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:41,388 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:41] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:41,858 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:41] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:42,231 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:42] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:42,599 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:42] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:43,232 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:43] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:43,893 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:43] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:43,893 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:43] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:44,166 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:44] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:44,975 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:44] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:45,250 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:45] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:45,670 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:45] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:45,939 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:45] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:46,212 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:46] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:46,474 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:46] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:47,159 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:47] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:47,590 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:47] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:47,811 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:47] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:48,160 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:48] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:48,466 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:48] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:49,033 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:49] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:49,266 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:49] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:49,501 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:49] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:49,719 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:49] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:50,353 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:50] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:50,706 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:50] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:50,954 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:50] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:51,260 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:51] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:51,641 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:51] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:52,022 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:52] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:52,425 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:52] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:52,738 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:52] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:53,008 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:53] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:53,457 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:53] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:53,823 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:53] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:54,172 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:54] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:54,505 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:54] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:54,716 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:54] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:55,053 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:55] "OPTIONS /health HTTP/1.1" 200 -
+2025-11-08 20:20:55,308 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:55] "OPTIONS /status HTTP/1.1" 200 -
+2025-11-08 20:20:55,656 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:55] "OPTIONS /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:56,028 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:56] "OPTIONS /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:56,290 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:56] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:56,650 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:56] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:56,924 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:56] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:57,176 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:57] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:57,516 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:57] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:20:58,147 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:58] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:20:58,525 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:58] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:20:58,805 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:58] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:20:59,048 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:59] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:20:59,295 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:20:59] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:21:00,753 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:00] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:21:00,769 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:00] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:21:01,145 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:01] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:21:01,442 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:01] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:21:02,145 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:02] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:21:03,081 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:03] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:21:03,081 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:03] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:21:03,507 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:03] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:21:03,750 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:03] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:21:04,541 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:04] "[33mGET /runtime/check HTTP/1.1[0m" 404 -
+2025-11-08 20:21:04,772 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:04] "GET /v1/memory/conversations HTTP/1.1" 200 -
+2025-11-08 20:21:05,039 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:05] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:21:05,355 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:05] "GET /v1/agent/info HTTP/1.1" 200 -
+2025-11-08 20:21:05,815 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:05] "GET /status HTTP/1.1" 200 -
+2025-11-08 20:21:06,033 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:21:06] "GET /health HTTP/1.1" 200 -
+2025-11-08 20:22:33,284 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:22:33] "GET / HTTP/1.1" 200 -
+2025-11-08 20:22:40,361 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:22:40] "GET / HTTP/1.1" 200 -
+2025-11-08 20:22:50,189 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:22:50] "GET / HTTP/1.1" 200 -
+2025-11-08 20:23:01,492 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:23:01] "GET / HTTP/1.1" 200 -
+2025-11-08 20:23:01,911 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:23:01] "GET / HTTP/1.1" 200 -
+2025-11-08 20:23:10,806 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:23:10] "GET / HTTP/1.1" 200 -
+2025-11-08 20:23:20,613 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:23:20] "GET / HTTP/1.1" 200 -
+2025-11-08 20:23:30,399 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:23:30] "GET / HTTP/1.1" 200 -
+2025-11-08 20:23:50,803 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:23:50] "GET / HTTP/1.1" 200 -
+2025-11-08 20:23:51,438 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:23:51] "GET / HTTP/1.1" 200 -
+2025-11-08 20:24:06,664 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:24:06] "GET / HTTP/1.1" 200 -
+2025-11-08 20:24:16,980 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:24:16] "GET / HTTP/1.1" 200 -
+2025-11-08 20:24:23,526 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:24:23] "GET / HTTP/1.1" 200 -
+2025-11-08 20:24:31,238 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:24:31] "GET / HTTP/1.1" 200 -
+2025-11-08 20:24:41,878 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:24:41] "GET / HTTP/1.1" 200 -
+2025-11-08 20:24:51,797 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:24:51] "GET / HTTP/1.1" 200 -
+2025-11-08 20:25:01,288 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 20:25:01] "GET / HTTP/1.1" 200 -
+2025-11-08 22:36:12,413 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-08 22:36:12,433 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-08 22:36:12,501 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-08 22:36:12,514 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-08 22:38:18,354 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 22:38:18] "GET / HTTP/1.1" 200 -
+2025-11-08 22:38:18,905 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 22:38:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-08 22:40:52,674 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 22:40:52] "GET /health HTTP/1.1" 200 -
+2025-11-08 22:40:52,699 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 22:40:52] "GET /status HTTP/1.1" 200 -
+2025-11-08 22:41:52,282 - __main__ - INFO - LangChain orchestrator model 'deepseek-ai/deepseek-coder-1.3b-base' লোড হয়েছে
+2025-11-08 22:43:06,360 - __main__ - INFO - LangChain orchestrator model 'deepseek-ai/deepseek-coder-1.3b-base' লোড হয়েছে
+2025-11-08 22:53:34,037 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 22:53:34] "GET /health HTTP/1.1" 200 -
+2025-11-08 22:53:34,290 - werkzeug - INFO - 127.0.0.1 - - [08/Nov/2025 22:53:34] "GET /status HTTP/1.1" 200 -
+2025-11-11 00:43:49,754 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 00:43:49,770 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 00:43:49,811 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 00:43:49,813 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 00:43:53,492 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 00:43:53] "GET / HTTP/1.1" 200 -
+2025-11-11 00:43:53,589 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 00:43:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-11 00:46:50,202 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 00:46:50] "GET / HTTP/1.1" 200 -
+2025-11-11 00:46:52,277 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 00:46:52] "GET /status HTTP/1.1" 200 -
+2025-11-11 00:46:54,333 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 00:46:54] "GET /info HTTP/1.1" 200 -
+2025-11-11 00:46:56,404 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 00:46:56] "GET /health HTTP/1.1" 200 -
+2025-11-11 00:46:58,463 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 00:46:58] "GET /memory HTTP/1.1" 200 -
+2025-11-11 00:50:00,303 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 00:50:00,306 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 00:50:00,335 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 00:50:00,336 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 00:50:20,391 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 00:50:20,392 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 00:50:20] "POST /chat HTTP/1.1" 200 -
+2025-11-11 00:50:27,866 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 00:50:27,867 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 00:50:27] "POST /chat HTTP/1.1" 200 -
+2025-11-11 00:50:36,186 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 00:50:36,186 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 00:50:36] "POST /chat HTTP/1.1" 200 -
+2025-11-11 00:56:35,531 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 00:56:35] "GET /health HTTP/1.1" 200 -
+2025-11-11 01:19:01,601 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 01:19:01,604 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 01:19:01,631 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 01:19:01,632 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 01:22:18,642 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 01:22:18,657 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 01:22:18,688 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 01:22:18,689 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 01:24:29,899 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 01:24:29,900 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 01:24:29] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 01:32:48,365 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 01:32:48,367 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 01:32:48,390 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 01:32:48,391 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 01:38:16,850 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-11 01:38:16,853 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 01:38:16] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-11 01:38:58,032 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-11 01:38:58,035 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 01:38:58] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-11 01:39:15,211 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 01:39:15,212 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 01:39:15] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 01:39:31,422 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 01:39:31,423 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 01:39:31] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 01:39:46,235 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 01:39:46,236 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 01:39:46] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 01:40:58,376 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 01:40:58,377 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 01:40:58] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 01:41:14,055 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-11 01:41:14,056 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 01:41:14] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-11 01:41:26,579 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 01:41:26,587 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 01:41:26] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 01:42:03,291 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 01:42:03,292 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 01:42:03] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 01:42:26,615 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 01:42:26,617 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 01:42:26] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 01:42:49,442 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 01:42:49,443 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 01:42:49] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 01:45:18,249 - __main__ - ERROR - Chat completions endpoint error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-11-11 01:45:18,250 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 01:45:18] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-11 04:28:22,699 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 04:28:22,713 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 04:28:22,745 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 04:28:22,746 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 04:31:01,788 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 04:31:01,791 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 04:31:01,822 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 04:31:01,824 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 04:31:40,694 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 04:31:40,695 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:31:40] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 04:33:36,758 - __main__ - ERROR - Chat completions endpoint error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-11-11 04:33:36,759 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:33:36] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-11 04:33:59,172 - __main__ - ERROR - Chat completions endpoint error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-11-11 04:33:59,173 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:33:59] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-11 04:34:39,493 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 04:34:39,495 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:34:39] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 04:35:14,759 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 04:35:14,760 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:35:14] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 04:44:59,301 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:44:59] "[33mGET /v1/api/tags HTTP/1.1[0m" 404 -
+2025-11-11 04:44:59,693 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:44:59] "[33mGET /v1/api/tags HTTP/1.1[0m" 404 -
+2025-11-11 04:45:12,569 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:45:12] "[33mGET /v1/api/tags HTTP/1.1[0m" 404 -
+2025-11-11 04:45:32,357 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:45:32] "[33mGET /api/tags HTTP/1.1[0m" 404 -
+2025-11-11 04:45:32,901 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:45:32] "[33mGET /api/tags HTTP/1.1[0m" 404 -
+2025-11-11 04:45:54,020 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:45:54] "[33mGET /api/tags HTTP/1.1[0m" 404 -
+2025-11-11 04:46:06,628 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:46:06] "[33mGET /v1/chat/completions/api/tags HTTP/1.1[0m" 404 -
+2025-11-11 04:46:07,152 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:46:07] "[33mGET /v1/chat/completions/api/tags HTTP/1.1[0m" 404 -
+2025-11-11 04:46:31,824 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:46:31] "[33mGET /v1/chat/completions/api/tags HTTP/1.1[0m" 404 -
+2025-11-11 04:46:38,547 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:46:38] "[33mGET /v1/api/tags HTTP/1.1[0m" 404 -
+2025-11-11 04:46:39,130 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:46:39] "[33mGET /v1/api/tags HTTP/1.1[0m" 404 -
+2025-11-11 04:46:52,554 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 04:46:52] "[33mGET /v1/api/tags HTTP/1.1[0m" 404 -
+2025-11-11 05:06:33,038 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 05:06:33,051 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 05:06:33,117 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 05:06:33,123 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 05:09:02,545 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:09:02] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:10:39,876 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:10:39,877 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:10:39] "POST /chat HTTP/1.1" 200 -
+2025-11-11 05:17:48,171 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-11 05:17:48,179 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:17:48] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-11 05:18:02,694 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:18:02,694 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:18:02] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:20:35,585 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:20:35,586 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:20:35] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:20:42,406 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:20:42,406 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:20:42] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:20:48,932 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:20:48,933 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:20:48] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:20:57,426 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:20:57,426 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:20:57] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:21:05,805 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:21:05,805 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:21:05] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:21:19,145 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:21:19,145 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:21:19] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:21:19,839 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:21:19] "[33mGET /v1/models HTTP/1.1[0m" 404 -
+2025-11-11 05:21:20,394 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:21:20] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:21:27,999 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:21:27,999 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:21:27] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:23:02,730 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:23:02,730 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:23:02] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:23:09,825 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:23:09,825 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:23:09] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:23:16,484 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:23:16,487 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:23:16] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:23:30,195 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:23:30] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:23:36,549 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:23:36,550 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:23:36] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:23:48,373 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:23:48,374 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:23:48] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:28:21,705 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:28:21,706 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:28:21] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:28:28,093 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:28:28,094 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:28:28] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:32:18,114 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:32:18,115 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:32:18] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:32:28,421 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:32:28] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:32:59,121 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:32:59,121 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:32:59] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:33:17,570 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:33:17,571 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:33:17] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:36:00,263 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:36:00] "GET / HTTP/1.1" 200 -
+2025-11-11 05:36:00,372 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:36:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-11 05:37:06,393 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:37:06,394 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:37:06] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:37:12,955 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:37:12,956 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:37:12] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:37:14,707 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:37:14] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:37:14,725 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:37:14] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:37:37,480 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:37:37,480 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:37:37] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 05:43:15,748 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 05:43:15,765 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 05:43:15,777 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 05:43:15,777 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 05:53:24,527 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:53:24] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:53:36,242 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:53:36] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:53:57,632 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:53:57] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:54:06,892 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:54:06] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:54:25,649 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:54:25] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:54:31,261 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:54:31] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:54:49,951 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:54:49] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:55:24,551 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:55:24] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:55:24,781 - __main__ - ERROR - Chat endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-11 05:55:24,781 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:55:24] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-11-11 05:56:32,351 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:56:32] "GET /health HTTP/1.1" 200 -
+2025-11-11 05:56:40,631 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 05:56:40,632 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 05:56:40] "POST /chat HTTP/1.1" 200 -
+2025-11-11 06:03:16,691 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:03:16] "[33mGET /v1/models HTTP/1.1[0m" 404 -
+2025-11-11 06:03:16,695 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:03:16] "[33mGET /v1/models HTTP/1.1[0m" 404 -
+2025-11-11 06:03:22,273 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:03:22,273 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:03:22] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:03:27,262 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:03:27,262 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:03:27] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:07:08,409 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:07:08,410 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:07:08] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:07:21,903 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:07:21,904 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:07:21] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:07:27,786 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:07:27,787 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:07:27] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:07:33,211 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:07:33,211 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:07:33] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:07:41,044 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:07:41,044 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:07:41] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:07:49,803 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:07:49,810 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:07:49] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:07:57,407 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:07:57,408 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:07:57] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:08:03,830 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:08:03,830 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:08:03] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:08:24,756 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:08:24,757 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:08:24] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:09:43,306 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:09:43,307 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:09:43] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:10:08,348 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:10:08,349 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:10:08] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:10:17,013 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:10:17,014 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:10:17] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:10:23,462 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:10:23,463 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:10:23] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:10:30,060 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:10:30,062 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:10:30] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:10:36,640 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:10:36,641 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:10:36] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:10:46,366 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:10:46,368 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:10:46] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:10:58,544 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:10:58,546 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:10:58] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:11:09,035 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 06:11:09,037 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:11:09] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 06:33:39,088 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:33:39] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 06:33:41,328 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:33:41] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 06:35:53,728 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:35:53] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 06:35:57,647 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:35:57] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 06:39:01,357 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 06:39:01] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 07:16:30,586 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 07:16:30,589 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 07:16:30,613 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 07:16:30,616 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 07:18:51,478 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 07:18:51] "GET /health HTTP/1.1" 200 -
+2025-11-11 07:18:55,554 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 07:18:55] "[33mGET /memory_stats HTTP/1.1[0m" 404 -
+2025-11-11 07:19:49,298 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 07:19:49,300 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 07:19:49,319 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 07:19:49,320 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 07:20:03,921 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 07:20:03] "GET /health HTTP/1.1" 200 -
+2025-11-11 07:20:08,020 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 07:20:08] "GET /info HTTP/1.1" 200 -
+2025-11-11 07:20:14,883 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 07:20:14,884 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 07:20:14] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 07:31:16,927 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 07:31:16,932 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 07:31:16,954 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 07:31:16,955 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 07:33:55,299 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 07:33:55,301 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 07:33:55] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 07:34:35,362 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 07:34:35,365 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 07:34:35,380 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 07:34:35,380 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 07:34:54,700 - __main__ - ERROR - Model server call error: HTTPConnectionPool(host='127.0.0.1', port=8155): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002180643A900>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-11 07:35:39,949 - __main__ - ERROR - Model server call error: HTTPConnectionPool(host='127.0.0.1', port=8155): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000218064556D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-11 07:37:09,173 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 07:37:09,175 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 07:37:09,191 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 07:37:09,192 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 07:37:17,795 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 07:37:17] "GET /health HTTP/1.1" 200 -
+2025-11-11 07:37:25,309 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 07:37:25,310 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 07:37:25] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:00:00,223 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 08:00:00,254 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 08:00:00,457 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 08:00:00,457 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 08:00:05,193 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 08:00:05,193 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 08:00:05,222 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 08:00:05,226 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 08:02:38,994 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:02:38] "GET /health HTTP/1.1" 200 -
+2025-11-11 08:05:10,477 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:05:10] "GET /health HTTP/1.1" 200 -
+2025-11-11 08:05:10,490 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:05:10] "GET /health HTTP/1.1" 200 -
+2025-11-11 08:05:10,559 - __main__ - ERROR - Model server error: 409 - {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-11 08:05:12,904 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-11-11 08:05:49,789 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:05:49] "GET /health HTTP/1.1" 200 -
+2025-11-11 08:05:49,808 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:05:49] "GET /health HTTP/1.1" 200 -
+2025-11-11 08:06:01,765 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ["Uncertain response detected: I'm not sure"]
+2025-11-11 08:06:01,765 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-11 08:06:01,765 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:06:01] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-11 08:07:07,386 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 08:07:07,386 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:07:07] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:08:23,229 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 08:08:23,229 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:08:23] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:10:32,970 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:10:32] "GET /health HTTP/1.1" 200 -
+2025-11-11 08:10:32,981 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:10:32] "GET /health HTTP/1.1" 200 -
+2025-11-11 08:10:42,356 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 08:10:42,372 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:10:42] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:11:25,455 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 08:11:25,455 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:11:25] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:11:57,325 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:11:57] "GET /health HTTP/1.1" 200 -
+2025-11-11 08:11:57,845 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:11:57] "GET /health HTTP/1.1" 200 -
+2025-11-11 08:11:58,362 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:11:58] "GET /info HTTP/1.1" 200 -
+2025-11-11 08:12:07,758 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ['ASCII art pattern detected: ----']
+2025-11-11 08:12:07,758 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-11 08:12:07,758 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:12:07] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-11 08:12:16,873 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 08:12:16,875 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:12:16] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:12:40,246 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-11 08:12:40,246 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:12:40] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-11 08:12:58,641 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-11 08:12:58,641 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:12:58] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-11 08:13:07,393 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-11 08:13:07,393 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:13:07] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-11 08:13:37,153 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 08:13:37,153 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:13:37] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:14:33,952 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 08:14:33,955 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:14:33] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:19:06,361 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:19:06] "GET / HTTP/1.1" 200 -
+2025-11-11 08:19:08,644 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:19:08] "GET /health HTTP/1.1" 200 -
+2025-11-11 08:19:11,026 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:19:11] "GET /status HTTP/1.1" 200 -
+2025-11-11 08:19:13,056 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:19:13] "GET /memory HTTP/1.1" 200 -
+2025-11-11 08:20:07,662 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-11-11 08:20:57,591 - __main__ - INFO - LangChain orchestrator model 'deepseek-ai/deepseek-coder-1.3b-base' লোড হয়েছে
+2025-11-11 08:22:37,409 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:22:37] "GET /health HTTP/1.1" 200 -
+2025-11-11 08:24:03,262 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ["Uncertain response detected: I'm not sure"]
+2025-11-11 08:24:03,278 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-11 08:24:03,330 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:24:03] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-11 08:24:56,745 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:24:56] "GET /health HTTP/1.1" 200 -
+2025-11-11 08:24:57,271 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:24:57] "GET /health HTTP/1.1" 200 -
+2025-11-11 08:24:57,810 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:24:57] "GET /info HTTP/1.1" 200 -
+2025-11-11 08:25:41,440 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 08:25:41,440 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:25:41] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:26:05,944 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 08:26:05,966 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:26:05] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:26:26,610 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 08:26:26,610 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:26:26] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:32:57,527 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 08:32:57,549 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 08:32:57,760 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 08:32:57,764 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 08:34:11,533 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 08:34:11,535 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:34:11] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:35:12,284 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 08:35:12,299 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:35:12] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:52:38,753 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 08:52:38,759 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 08:52:38,797 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 08:52:38,801 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 08:53:26,095 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 08:53:26,112 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:53:26] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 08:54:35,774 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-11 08:54:35,774 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 08:54:35] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-11 09:00:54,078 - __main__ - ERROR - Model server call error: HTTPConnectionPool(host='127.0.0.1', port=8155): Read timed out. (read timeout=60)
+2025-11-11 09:01:56,131 - __main__ - INFO - LangChain orchestrator model 'deepseek-ai/deepseek-coder-1.3b-base' লোড হয়েছে
+2025-11-11 09:26:37,694 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-11 09:26:37,702 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-11 09:26:37,878 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-11 09:26:37,879 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-11 09:27:01,349 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-11 09:27:01,356 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:27:01] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-11 09:27:28,606 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:27:28] "GET /health HTTP/1.1" 200 -
+2025-11-11 09:29:56,603 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:29:56] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:30:01,064 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:30:01] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:30:17,156 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:30:17] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:30:29,637 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:30:29] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:34:27,545 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:34:27] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:34:27,845 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:34:27] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:35:43,598 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:35:43] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:35:45,369 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:35:45] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:35:46,334 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:35:46] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:35:49,795 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:35:49] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:35:52,312 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:35:52] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:35:56,000 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:35:56] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:35:56,202 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:35:56] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:35:58,225 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:35:58] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:35:59,992 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:35:59] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:36:12,630 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:36:12] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:36:38,321 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:36:38] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:36:40,505 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:36:40] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:37:58,299 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:37:58] "GET / HTTP/1.1" 200 -
+2025-11-11 09:37:58,829 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:37:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-11 09:38:30,555 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:38:30] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:38:38,875 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:38:38] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:38:40,706 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:38:40] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:38:42,513 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:38:42] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:38:42,755 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:38:42] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:38:43,858 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:38:43] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:38:44,656 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:38:44] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:38:45,649 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:38:45] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:38:47,982 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:38:47] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:38:48,910 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:38:48] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:38:53,084 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:38:53] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:38:57,794 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:38:57] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:38:59,326 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:38:59] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:39:44,581 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:39:44] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:39:44,835 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:39:44] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:39:50,068 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:39:50] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:39:51,695 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:39:51] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:40:25,281 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:40:25] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:40:29,639 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:40:29] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:40:35,931 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:40:35] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:40:56,335 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:40:56] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:41:10,313 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:41:10] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:42:07,725 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:42:07] "[33mPOST /api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:45:57,993 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:45:57] "GET /health HTTP/1.1" 200 -
+2025-11-11 09:48:26,719 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:48:26] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:48:31,079 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:48:31] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:48:33,862 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:48:33] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:48:39,007 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:48:39] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:48:43,000 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:48:43] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:48:43,510 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:48:43] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-11 09:48:45,452 - werkzeug - INFO - 127.0.0.1 - - [11/Nov/2025 09:48:45] "[33mPOST /v1/api/ollama/completion HTTP/1.1[0m" 404 -
+2025-11-14 08:47:23,746 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 08:47:23,747 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 08:47:25,811 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 08:47:25,811 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 08:47:25,815 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 08:47:25,852 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 08:47:25,853 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 08:47:34,386 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:47:34] "GET /health HTTP/1.1" 200 -
+2025-11-14 08:47:39,598 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:47:39] "GET / HTTP/1.1" 200 -
+2025-11-14 08:47:40,956 - __main__ - ERROR - Chat completions endpoint error: cannot access local variable 'time' where it is not associated with a value
+2025-11-14 08:47:40,958 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:47:40] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-14 08:47:42,012 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:47:42] "GET /status HTTP/1.1" 200 -
+2025-11-14 08:47:57,416 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 08:47:57,416 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 08:47:59,448 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 08:47:59,448 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 08:47:59,450 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 08:47:59,477 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 08:47:59,479 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 08:48:03,172 - __main__ - ERROR - Lock examination error: '<' not supported between instances of 'NoneType' and 'int'
+2025-11-14 08:48:03,174 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:48:03] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 08:48:20,853 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 08:48:20,853 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 08:48:22,890 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 08:48:22,890 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 08:48:22,893 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 08:48:22,916 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 08:48:22,918 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 08:48:27,048 - __main__ - ERROR - Model server error: 409 - {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-14 08:48:31,236 - __main__ - ERROR - LangChain orchestrator লোড ত্রুটি: 
+AutoModelForCausalLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+Traceback (most recent call last):
+  File "C:\Users\sahon\local\unified_agent_system.py", line 344, in _build_pipeline
+    model = AutoModelForSeq2SeqLM.from_pretrained(self.model_name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2157, in __getattribute__
+    requires_backends(cls, cls._backends)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2143, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+AutoModelForSeq2SeqLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahon\local\unified_agent_system.py", line 371, in ensure_ready
+    self._build_pipeline()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sahon\local\unified_agent_system.py", line 348, in _build_pipeline
+    raise causal_exc from seq_exc
+  File "C:\Users\sahon\local\unified_agent_system.py", line 341, in _build_pipeline
+    model = AutoModelForCausalLM.from_pretrained(self.model_name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2157, in __getattribute__
+    requires_backends(cls, cls._backends)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2143, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+AutoModelForCausalLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+2025-11-14 08:48:31,255 - __main__ - ERROR - Message processing error: 
+AutoModelForCausalLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+2025-11-14 08:48:31,256 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:48:31] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 08:50:49,479 - __main__ - INFO - Adjustment logic check approved: আপনার নাম কী?
+2025-11-14 08:50:49,512 - __main__ - ERROR - Model server error: 409 - {"detail":"Model is not running. Load it via /runtime/load/{model} first."}
+2025-11-14 08:50:51,109 - __main__ - ERROR - LangChain orchestrator লোড ত্রুটি: 
+AutoModelForCausalLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+Traceback (most recent call last):
+  File "C:\Users\sahon\local\unified_agent_system.py", line 344, in _build_pipeline
+    model = AutoModelForSeq2SeqLM.from_pretrained(self.model_name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2157, in __getattribute__
+    requires_backends(cls, cls._backends)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2143, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+AutoModelForSeq2SeqLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahon\local\unified_agent_system.py", line 371, in ensure_ready
+    self._build_pipeline()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sahon\local\unified_agent_system.py", line 348, in _build_pipeline
+    raise causal_exc from seq_exc
+  File "C:\Users\sahon\local\unified_agent_system.py", line 341, in _build_pipeline
+    model = AutoModelForCausalLM.from_pretrained(self.model_name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2157, in __getattribute__
+    requires_backends(cls, cls._backends)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2143, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+AutoModelForCausalLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+2025-11-14 08:50:51,130 - __main__ - ERROR - Message processing error: 
+AutoModelForCausalLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+2025-11-14 08:50:51,131 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:50:51] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 08:52:31,091 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 08:52:31,092 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 08:52:33,130 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 08:52:33,131 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 08:52:33,135 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 08:52:33,166 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 08:52:33,168 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 08:52:38,404 - __main__ - INFO - Adjustment logic check approved: আপনার নাম কী?
+2025-11-14 08:52:38,414 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 08:52:52,330 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 08:52:52,332 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ['Identity revealing information detected: ZombieCoder']
+2025-11-14 08:52:52,333 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-14 08:52:52,334 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:52:52] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-14 08:53:41,006 - __main__ - INFO - Adjustment logic check approved: আপনার নাম কী?
+2025-11-14 08:53:41,018 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 08:53:47,996 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 08:53:47,997 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ['Identity revealing information detected: ZombieCoder']
+2025-11-14 08:53:47,997 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-14 08:53:47,998 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:53:47] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-14 08:54:50,565 - __main__ - INFO - Adjustment logic check approved: আপনার নাম কী?
+2025-11-14 08:54:50,575 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 08:54:56,751 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 08:54:56,751 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ['Identity revealing information detected: ZombieCoder']
+2025-11-14 08:54:56,752 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-14 08:54:56,753 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:54:56] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-14 08:55:21,160 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:55:21] "GET /health HTTP/1.1" 200 -
+2025-11-14 08:55:27,019 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 08:55:33,998 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 08:55:33,999 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ['Identity revealing information detected: ZombieCoder']
+2025-11-14 08:55:33,999 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-14 08:55:34,000 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:55:34] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-14 08:55:54,134 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 08:55:54,134 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 08:55:56,230 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 08:55:56,231 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 08:55:56,236 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 08:55:56,265 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 08:55:56,267 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 08:56:02,460 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 08:56:07,857 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 08:56:07,858 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ['Identity revealing information detected: ZombieCoder']
+2025-11-14 08:56:07,859 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-14 08:56:07,860 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:56:07] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-14 08:56:49,908 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 08:56:49,909 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 08:56:51,967 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 08:56:51,967 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 08:56:51,970 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 08:56:52,004 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 08:56:52,006 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 08:56:57,318 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 08:57:03,194 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 08:57:03,228 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 08:57:03,261 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 08:57:03,262 - __main__ - INFO - ✅ Agent identity saved to memory
+2025-11-14 08:57:03,263 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:57:03] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 08:58:01,795 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 08:58:01,796 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 08:58:03,875 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 08:58:03,875 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 08:58:03,879 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 08:58:03,903 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 08:58:03,904 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 08:58:11,439 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 08:58:18,595 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 08:58:18,650 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 08:58:18,683 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 08:58:18,684 - __main__ - INFO - ✅ Agent identity saved to memory
+2025-11-14 08:58:18,685 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:58:18] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 08:59:10,833 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 08:59:10,833 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 08:59:12,911 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 08:59:12,911 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 08:59:12,917 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 08:59:12,946 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 08:59:12,946 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 08:59:20,011 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 08:59:45,195 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 08:59:45,206 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ['Identity revealing information detected: local AI']
+2025-11-14 08:59:45,208 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-14 08:59:45,209 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 08:59:45] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-14 09:00:38,762 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 09:00:38,766 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 09:00:40,808 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 09:00:40,808 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 09:00:40,811 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 09:00:40,836 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 09:00:40,839 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 09:00:47,100 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 09:00:54,545 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 09:00:54,546 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ['Identity revealing information detected: C:\\model']
+2025-11-14 09:00:54,547 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-14 09:00:54,548 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:00:54] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-14 09:01:09,936 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 09:01:16,800 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 09:01:16,836 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 09:01:16,874 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 09:01:16,875 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:01:16] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 09:01:19,968 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:01:19] "GET /status HTTP/1.1" 200 -
+2025-11-14 09:03:01,836 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 09:03:08,350 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 09:03:08,383 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 09:03:08,421 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 09:03:08,422 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:03:08] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 09:07:58,430 - __main__ - INFO - Using model-specific port 8080 for phi-2
+2025-11-14 09:08:04,519 - __main__ - WARNING - Response may not be in Bengali (ratio: 0.00)
+2025-11-14 09:08:04,543 - __main__ - INFO - ✅ Old memory cleanup completed
+2025-11-14 09:08:04,584 - __main__ - INFO - ✅ Agent memory saved: agent_identity
+2025-11-14 09:08:04,585 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:08:04] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 09:18:37,823 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 09:18:37,823 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 09:18:45,860 - __main__ - WARNING - No Ollama server detected on ports 8007, 8155, or 11434
+2025-11-14 09:18:45,860 - __main__ - WARNING - Running in offline mode - Ollama server not available
+2025-11-14 09:18:45,863 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 09:18:45,889 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 09:18:45,890 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 09:22:54,549 - __main__ - ERROR - Model server connection error: HTTPConnectionPool(host='127.0.0.1', port=8155): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000200B844F890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-14 09:22:56,141 - __main__ - ERROR - LangChain orchestrator লোড ত্রুটি: 
+AutoModelForCausalLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+Traceback (most recent call last):
+  File "C:\Users\sahon\local\unified_agent_system.py", line 344, in _build_pipeline
+    model = AutoModelForSeq2SeqLM.from_pretrained(self.model_name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2157, in __getattribute__
+    requires_backends(cls, cls._backends)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2143, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+AutoModelForSeq2SeqLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahon\local\unified_agent_system.py", line 371, in ensure_ready
+    self._build_pipeline()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sahon\local\unified_agent_system.py", line 348, in _build_pipeline
+    raise causal_exc from seq_exc
+  File "C:\Users\sahon\local\unified_agent_system.py", line 341, in _build_pipeline
+    model = AutoModelForCausalLM.from_pretrained(self.model_name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2157, in __getattribute__
+    requires_backends(cls, cls._backends)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2143, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+AutoModelForCausalLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+2025-11-14 09:22:56,172 - __main__ - ERROR - Message processing error: 
+AutoModelForCausalLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+2025-11-14 09:22:56,175 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:22:56] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 09:28:16,753 - __main__ - ERROR - Chat completions endpoint error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-11-14 09:28:16,755 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:28:16] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-14 09:28:27,341 - __main__ - ERROR - Model server connection error: HTTPConnectionPool(host='127.0.0.1', port=8155): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000200B8501370>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-14 09:28:28,725 - __main__ - ERROR - LangChain orchestrator লোড ত্রুটি: 
+AutoModelForCausalLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+Traceback (most recent call last):
+  File "C:\Users\sahon\local\unified_agent_system.py", line 344, in _build_pipeline
+    model = AutoModelForSeq2SeqLM.from_pretrained(self.model_name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2157, in __getattribute__
+    requires_backends(cls, cls._backends)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2143, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+AutoModelForSeq2SeqLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sahon\local\unified_agent_system.py", line 371, in ensure_ready
+    self._build_pipeline()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sahon\local\unified_agent_system.py", line 348, in _build_pipeline
+    raise causal_exc from seq_exc
+  File "C:\Users\sahon\local\unified_agent_system.py", line 341, in _build_pipeline
+    model = AutoModelForCausalLM.from_pretrained(self.model_name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2157, in __getattribute__
+    requires_backends(cls, cls._backends)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sahon\local\venv\Lib\site-packages\transformers\utils\import_utils.py", line 2143, in requires_backends
+    raise ImportError("".join(failed))
+ImportError: 
+AutoModelForCausalLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+2025-11-14 09:28:28,739 - __main__ - ERROR - Message processing error: 
+AutoModelForCausalLM requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+2025-11-14 09:28:28,741 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:28:28] "POST /v1/chat/completions HTTP/1.1" 200 -
+2025-11-14 09:36:03,348 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 09:36:03,349 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 09:36:05,393 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 09:36:05,394 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 09:36:05,398 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 09:36:05,421 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 09:36:05,422 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 09:38:07,069 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:38:07] "GET / HTTP/1.1" 200 -
+2025-11-14 09:38:12,650 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-14 09:38:12,651 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:38:12] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-14 09:38:17,533 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-14 09:38:17,534 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:38:17] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -
+2025-11-14 09:38:33,893 - __main__ - ERROR - Chat completions endpoint error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-11-14 09:38:33,894 - werkzeug - INFO - 127.0.0.1 - - [14/Nov/2025 09:38:33] "[35m[1mPOST /v1/chat/completions HTTP/1.1[0m" 500 -

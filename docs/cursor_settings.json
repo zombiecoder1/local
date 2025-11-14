@@ -1,0 +1,7 @@
+{
+  "cursor.chat.customModel": {
+    "url": "http://127.0.0.1:8001/v1/chat/completions",
+    "apiKey": "DUMMY_API_KEY_FOR_LOCAL"
+  },
+  "cursor.telemetry.enabled": false
+}

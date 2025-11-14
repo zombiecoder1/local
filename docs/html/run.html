@@ -1,0 +1,682 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZombieCoder - Server Startup Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        .section h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        .command-box {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            position: relative;
+            border: 1px solid #444;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.3s;
+        }
+        .copy-btn:hover {
+            background: #5568d3;
+        }
+        .copy-btn.copied {
+            background: #28a745;
+        }
+        .info-box {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .success-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .test-section {
+            background: #fff;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .test-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+            transition: all 0.3s;
+        }
+        .test-btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .status-online {
+            background: #28a745;
+            box-shadow: 0 0 10px #28a745;
+        }
+        .status-offline {
+            background: #dc3545;
+        }
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .badge-success {
+            background: #28a745;
+            color: white;
+        }
+        .badge-info {
+            background: #17a2b8;
+            color: white;
+        }
+        .badge-warning {
+            background: #ffc107;
+            color: #333;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Consolas', monospace;
+            color: #e83e8c;
+        }
+        .editor-config {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #667eea;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background: #f8f9fa;
+            border: none;
+            border-bottom: 2px solid transparent;
+            margin-right: 5px;
+            transition: all 0.3s;
+        }
+        .tab.active {
+            background: white;
+            border-bottom: 2px solid #667eea;
+            color: #667eea;
+            font-weight: bold;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 ZombieCoder Server Startup Guide</h1>
+        <p class="subtitle">কোনো ফোল্ডার থেকে সরাসরি কপি-পেস্ট করে সার্ভার চালু করুন</p>
+
+        <!-- Step 1: Start Services -->
+        <div class="section">
+            <h2>📋 ধাপ ১: সার্ভার চালু করুন</h2>
+            
+            <div class="success-box" style="margin-bottom: 20px;">
+                <strong>🚀 Single Command Startup (Recommended):</strong>
+                <p>একটি command দিয়ে সব services start করুন:</p>
+                <div class="command-box" style="margin-top: 10px;">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                    <!-- Windows PowerShell -->
+                    <span id="windows-single-cmd">.\start_all.ps1</span>
+                </div>
+                <div class="command-box" style="margin-top: 10px;">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                    <!-- WSL/Linux Bash -->
+                    <span id="wsl-single-cmd">bash start_all.sh</span>
+                </div>
+                <div class="command-box" style="margin-top: 10px;">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                    <!-- Python Universal -->
+                    <span id="python-single-cmd">python start_all_services.py</span>
+                </div>
+                <p style="margin-top: 10px;"><strong>💡 Alternative:</strong> নিচের manual steps অনুসরণ করুন</p>
+            </div>
+            
+            <div class="tabs" style="margin-bottom: 20px;">
+                <button class="tab active" onclick="switchStartupTab('wsl')">🐧 WSL (Linux)</button>
+                <button class="tab" onclick="switchStartupTab('windows')">🪟 Windows</button>
+            </div>
+
+            <!-- WSL Tab -->
+            <div id="wsl-startup" class="tab-content active">
+                <h3>🐧 WSL/Linux Commands</h3>
+                
+                <div class="info-box">
+                    <strong>📍 WSL Path:</strong> <code>~/projects/sarver/orchestration</code> বা <code>/mnt/h/WSL/projects/sarver/orchestration</code>
+                </div>
+
+                <h4>Step 1.1: Navigate to Orchestration Folder</h4>
+                <div class="command-box">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+cd ~/projects/sarver/orchestration
+                </div>
+                <div class="info-box">
+                    <strong>💡 Alternative:</strong> <code>cd /mnt/h/WSL/projects/sarver/orchestration</code>
+                </div>
+
+                <h4>Step 1.2: Start Model Server (8007)</h4>
+                <div class="command-box">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+cd /mnt/c/model && python -m uvicorn model_server:app --host 0.0.0.0 --port 8007
+                </div>
+
+                <h4>Step 1.3: Start All Agents</h4>
+                <div class="command-box">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+bash start_all_agents.sh
+                </div>
+                <div class="info-box">
+                    <strong>📋 Agents Started:</strong>
+                    <ul>
+                        <li>Bengali NLP (8002)</li>
+                        <li>Code Generation (8003)</li>
+                        <li>Code Review (8004)</li>
+                        <li>Documentation (8005)</li>
+                        <li>Testing (8006)</li>
+                        <li>Deployment (8008)</li>
+                    </ul>
+                </div>
+
+                <h4>Step 1.4: Start Gateway (8001)</h4>
+                <div class="command-box">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+cd ~/projects/sarver && python zombie_openai_router.py
+                </div>
+
+                <h4>Step 1.5: Verify Services</h4>
+                <div class="command-box">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+bash orchestration/verify_stack.sh
+                </div>
+            </div>
+
+            <!-- Windows Tab -->
+            <div id="windows-startup" class="tab-content">
+                <h3>🪟 Windows Commands (PowerShell/CMD)</h3>
+                
+                <div class="info-box">
+                    <strong>📍 Project Path:</strong> <code>C:\Users\sahon\Desktop\sarvar</code> বা <code>C:\Users\sahon\local</code>
+                </div>
+
+                <h4>Step 1.1: Navigate to Project Folder</h4>
+                <div class="command-box">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+cd C:\Users\sahon\Desktop\sarvar
+                </div>
+
+                <h4>Step 1.2: Start Model Server (8007)</h4>
+                <div class="command-box">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+cd C:\model; python -m uvicorn model_server:app --host 0.0.0.0 --port 8007
+                </div>
+
+                <h4>Step 1.3: Start All Agents (PowerShell)</h4>
+                <div class="command-box">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+cd C:\Users\sahon\Desktop\sarvar; Start-Process python -ArgumentList "agents\bengali-nlp\main.py" -WindowStyle Hidden; Start-Process python -ArgumentList "agents\code-generation\main.py" -WindowStyle Hidden; Start-Process python -ArgumentList "agents\code-review\main.py" -WindowStyle Hidden; Start-Process python -ArgumentList "agents\documentation\main.py" -WindowStyle Hidden; Start-Process python -ArgumentList "agents\testing\main.py" -WindowStyle Hidden; Start-Process python -ArgumentList "agents\deployment\main.py" -WindowStyle Hidden
+                </div>
+                <div class="info-box">
+                    <strong>📋 Agents Started:</strong>
+                    <ul>
+                        <li>Bengali NLP (8002)</li>
+                        <li>Code Generation (8003)</li>
+                        <li>Code Review (8004)</li>
+                        <li>Documentation (8005)</li>
+                        <li>Testing (8006)</li>
+                        <li>Deployment (8008)</li>
+                    </ul>
+                </div>
+
+                <h4>Step 1.4: Start Gateway (8001)</h4>
+                <div class="command-box">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+cd C:\Users\sahon\local; python zombie_openai_router.py
+                </div>
+                <div class="warning-box">
+                    <strong>⚠️ Background:</strong> <code>Start-Process python -ArgumentList "zombie_openai_router.py" -WindowStyle Hidden</code>
+                </div>
+
+                <h4>Step 1.5: Verify Services (PowerShell)</h4>
+                <div class="command-box">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+Get-NetTCPConnection -LocalPort 8001,8002,8003,8004,8005,8006,8007,8008 -ErrorAction SilentlyContinue | Select-Object LocalPort, State | Format-Table
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2: Editor Integration -->
+        <div class="section">
+            <h2>🔌 ধাপ ২: Editor Integration Setup</h2>
+            <p>নিচের editor গুলোর সাথে ZombieCoder Gateway connect করুন:</p>
+
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('cursor')">Cursor AI</button>
+                <button class="tab" onclick="switchTab('vscode')">VS Code Copilot</button>
+                <button class="tab" onclick="switchTab('continue')">Continue Dev</button>
+                <button class="tab" onclick="switchTab('cline')">Cline</button>
+            </div>
+
+            <!-- Cursor AI Tab -->
+            <div id="cursor" class="tab-content active">
+                <h3>Cursor AI Configuration</h3>
+                <div class="editor-config">
+                    <p><strong>File:</strong> <code>.cursor/settings.json</code> (create if not exists)</p>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+{
+    "helloZombie.serverUrl": "http://127.0.0.1:8001/v1",
+    "zombiecoder.apiKey": "sk-sahon-personal-2024",
+    "zombiecoder.defaultModel": "deepseek-coder-1.3b",
+    "cursor.chat.customModel": {
+        "url": "http://127.0.0.1:8001/v1",
+        "apiKey": "sk-sahon-personal-2024",
+        "model": "deepseek-coder-1.3b"
+    },
+    "cursor.telemetry.enabled": false,
+    "ai": {
+        "provider": "custom",
+        "customApiBase": "http://127.0.0.1:8001/v1",
+        "customApiKey": "sk-sahon-personal-2024",
+        "customModel": "deepseek-coder-1.3b",
+        "streaming": true
+    },
+    "cursor.ai.model": "deepseek-coder-1.3b",
+    "cursor.ai.apiEndpoint": "http://127.0.0.1:8001/v1/chat/completions",
+    "cursor.ai.apiKey": "sk-sahon-personal-2024",
+    "cursor.ai.streaming": true
+}
+                    </div>
+                    <div class="info-box">
+                        <strong>📍 Path:</strong> <code>C:\Users\sahon\local\.cursor\settings.json</code><br>
+                        <strong>🔧 Note:</strong> Gateway port: <code>8001</code>, API Key: <code>sk-sahon-personal-2024</code>, default model: <code>deepseek-coder-1.3b</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VS Code Copilot Tab -->
+            <div id="vscode" class="tab-content">
+                <h3>VS Code Copilot Configuration</h3>
+                <div class="editor-config">
+                    <p><strong>File:</strong> <code>.vscode/settings.json</code> (create if not exists)</p>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+{
+  "github.copilot.enable": {
+    "*": true
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "zombiecoder": {
+    "endpoint": "http://127.0.0.1:8001/v1/chat/completions",
+    "apiKey": "sk-sahon-personal-2024",
+                    "model": "local-code-gen",
+    "streaming": true,
+    "healthCheck": true
+  },
+  "continue.enable": true,
+  "continue.models": [
+    {
+      "title": "ZombieCoder Code Gen (Default)",
+      "provider": "openai",
+                    "model": "local-code-gen",
+      "apiBase": "http://127.0.0.1:8001/v1",
+      "apiKey": "sk-sahon-personal-2024"
+    }
+  ]
+}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Continue Dev Tab -->
+            <div id="continue" class="tab-content">
+                <h3>Continue Dev Configuration</h3>
+                <div class="editor-config">
+                    <p><strong>File:</strong> <code>.continue/config.json</code> (create if not exists)</p>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+{
+  "models": [
+    {
+      "title": "ZombieCoder Code Gen (Default)",
+      "provider": "openai",
+                    "model": "local-code-gen",
+      "apiBase": "http://127.0.0.1:8001/v1",
+      "apiKey": "sk-sahon-personal-2024"
+    }
+  ],
+  "defaultModel": "ZombieCoder Code Gen (Default)",
+  "allowAnonymousTelemetry": false,
+  "enableTabAutocomplete": true,
+  "enableStreaming": true
+}
+                    </div>
+                    <div class="info-box">
+                        <strong>📍 Path:</strong> <code>C:\Users\sahon\local\.continue\config.json</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cline Tab -->
+            <div id="cline" class="tab-content">
+                <h3>Cline AI Coding Configuration</h3>
+                <div class="editor-config">
+                    <p><strong>File:</strong> <code>.cline/config.json</code> (create if not exists)</p>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+{
+  "apiProvider": "openai",
+  "apiBase": "http://127.0.0.1:8001/v1",
+  "apiKey": "sk-sahon-personal-2024",
+                    "model": "local-code-gen",
+  "streaming": true,
+  "enableAutoCompletion": true,
+  "enableCodeActions": true
+}
+                    </div>
+                    <div class="info-box">
+                        <strong>📍 Path:</strong> <code>C:\Users\sahon\local\.cline\config.json</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3: Testing -->
+        <div class="section">
+            <h2>🧪 ধাপ ৩: Testing</h2>
+            
+            <div class="test-section">
+                <h3>Streaming & Non-Streaming Test</h3>
+                <p>নিচের test commands দিয়ে verify করুন:</p>
+
+                <h4>Test 1: Quick Health Check (Copy from Any Folder)</h4>
+                <div class="command-box">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                    <!-- Quick health check - Works from any folder -->
+                    curl -sS http://127.0.0.1:8001/health
+                </div>
+
+                <h4>Test 2: Non-Streaming Request (Python One-Liner)</h4>
+                <div class="command-box">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                    <!-- Test non-streaming API - Copy-paste from any folder -->
+                    python -c "import httpx; r=httpx.post('http://127.0.0.1:8001/v1/chat/completions', headers={'Content-Type': 'application/json', 'X-HelloZombie-Status': 'Setup-Complete'}, json={'model': 'deepseek-coder-1.3b', 'messages': [{'role': 'user', 'content': 'হ্যালো ভাইয়া'}], 'stream': False}, timeout=15); print('Status:', r.status_code, 'Response:', r.json()['choices'][0]['message']['content'][:100])"
+                </div>
+                <div class="info-box">
+                    <strong>💡 Note:</strong> এই command যেকোনো folder থেকে run করতে পারবেন, শুধু Python এবং httpx installed থাকতে হবে।
+                </div>
+
+                <h4>Test 3: Comprehensive System Test (From Project Root)</h4>
+                <div class="command-box">
+                    <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                    <!-- Comprehensive test - Run from project root or use absolute path -->
+                    python tests/comprehensive_test.py
+                </div>
+                <div class="info-box">
+                    <strong>📁 File Location:</strong> <code>tests/comprehensive_test.py</code><br>
+                    <strong>📊 Output:</strong> JSON format saved to <code>orchestration/test_results.json</code><br>
+                    <strong>💡 Alternative:</strong> যদি project folder এ না থাকেন: <code>python C:\Users\sahon\Desktop\sarvar\tests\comprehensive_test.py</code>
+                </div>
+            </div>
+
+            <div class="success-box">
+                <strong>✅ Expected Results:</strong>
+                <ul>
+                    <li>Non-streaming: Full response in one JSON object</li>
+                    <li>Streaming: Chunked responses (SSE format)</li>
+                    <li>All models: 6/6 routing tests passed</li>
+                    <li>Response metadata includes provider, model, latency</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Step 4: Documentation Summary -->
+        <div class="section">
+            <h2>📚 Documentation Summary</h2>
+            <p>আমাদের <code>docs/</code> folder এ যে documentation আছে:</p>
+            
+            <ul>
+                <li><strong>COMPLETE_IMPLEMENTATION_PLAN.md</strong> - সম্পূর্ণ implementation plan এবং timeline</li>
+                <li><strong>EDITOR_INTEGRATION_SETUP.md</strong> - Editor integration setup guide (VS Code, Cursor, Continue Dev)</li>
+                <li><strong>WINDOWS_SETUP_AND_RUN.md</strong> - Windows এ setup এবং run করার guide</li>
+                <li><strong>QUICK_START_OLLAMA.md</strong> - Ollama quick start guide</li>
+                <li><strong>METADATA_IMPLEMENTATION.md</strong> - Response metadata implementation details</li>
+                <li><strong>RESPONSE_METADATA_PATTERN.md</strong> - Metadata pattern documentation</li>
+                <li><strong>FINAL_TEST_SUMMARY.md</strong> - Final test results summary</li>
+                <li><strong>FIXES_SUMMARY.md</strong> - Fixes এবং improvements summary</li>
+                <li><strong>ZOMBIE_TRUTH_PULSE_RESULTS.md</strong> - Truth pulse test results</li>
+                <li><strong>বিস্তারিত_কাজের_তালিকা.md</strong> - বিস্তারিত কাজের তালিকা (Bengali)</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>📝 Key Points from Documentation:</strong>
+                <ul>
+                    <li>Gateway port: <code>8001</code></li>
+                    <li>Agents ports: <code>8002, 8003, 8004, 8005, 8006, 8008</code></li>
+                    <li>Model Server port: <code>8007</code></li>
+                    <li>Ollama service: <code>5252</code></li>
+                    <li>API Key: <code>sk-sahon-personal-2024</code></li>
+                    <li>Default model: <code>deepseek-coder-1.3b</code> (DeepSeek Coder 1.3B)</li>
+                    <li>Available models: <code>deepseek-coder-1.3b</code>, <code>local-code-gen</code>, <code>local-code-review</code>, <code>local-docs</code>, <code>local-testing</code>, <code>local-deploy</code></li>
+                    <li>Streaming: Supported (both formats)</li>
+                    <li>Smart routing: Automatic based on model/content</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Step 5: Service Status -->
+        <div class="section">
+            <h2>📊 Service Status Check</h2>
+            <div id="status-container">
+                <p>Click button to check service status:</p>
+                <button class="test-btn" onclick="checkStatus()">Check All Services Status</button>
+                <div id="status-results"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="section" style="background: #667eea; color: white; text-align: center;">
+            <h2 style="color: white;">✅ Ready to Use!</h2>
+            <p>Commands copy করে paste করুন এবং সার্ভারগুলো ready হয়ে যাবে</p>
+            <p style="margin-top: 15px; font-size: 0.9em;">
+                <strong>ZombieCoder Gateway</strong> • Version: 1.0.0-alpha • Provider: Local (Ollama)
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function copyCommand(btn) {
+            const commandBox = btn.parentElement;
+            const text = commandBox.textContent.trim().replace('Copy', '').trim();
+            
+            navigator.clipboard.writeText(text).then(() => {
+                btn.textContent = 'Copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = 'Copy';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+
+        function switchTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function switchStartupTab(tabName) {
+            // Hide all startup tabs
+            document.querySelectorAll('#wsl-startup, #windows-startup').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(tab => {
+                if (tab.textContent.includes('WSL') || tab.textContent.includes('Windows')) {
+                    tab.classList.remove('active');
+                }
+            });
+
+            // Show selected tab
+            if (tabName === 'wsl') {
+                document.getElementById('wsl-startup').classList.add('active');
+                event.target.classList.add('active');
+            } else {
+                document.getElementById('windows-startup').classList.add('active');
+                event.target.classList.add('active');
+            }
+        }
+
+        async function checkStatus() {
+            const resultsDiv = document.getElementById('status-results');
+            resultsDiv.innerHTML = '<p>Checking services...</p>';
+
+            const services = [
+                { name: 'Gateway', port: 8001 },
+                { name: 'Bengali NLP', port: 8002 },
+                { name: 'Code Generation', port: 8003 },
+                { name: 'Code Review', port: 8004 },
+                    { name: 'Documentation', port: 8005 },
+                { name: 'Testing', port: 8006 },
+                    { name: 'Deployment', port: 8008 },
+                    { name: 'Model Server', port: 8007 },
+                { name: 'Ollama Service', port: 5252 }
+            ];
+
+            let html = '<div style="margin-top: 20px;">';
+            for (const service of services) {
+                try {
+                    const response = await fetch(`http://localhost:${service.port}/health`, {
+                        method: 'GET',
+                        signal: AbortSignal.timeout(5000)
+                    });
+                    const status = response.ok ? 'online' : 'offline';
+                    html += `<p><span class="status-indicator status-${status}"></span><strong>${service.name}</strong> (Port ${service.port}): ${status === 'online' ? '✅ Online' : '❌ Offline'}</p>`;
+                } catch (error) {
+                    html += `<p><span class="status-indicator status-offline"></span><strong>${service.name}</strong> (Port ${service.port}): ❌ Offline</p>`;
+                }
+            }
+            html += '</div>';
+            resultsDiv.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

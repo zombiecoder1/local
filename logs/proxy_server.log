@@ -1,0 +1,135 @@
+2025-11-14 08:38:13,827 - __main__ - INFO - ======================================================================
+2025-11-14 08:38:13,828 - __main__ - INFO - Proxy Server Starting
+2025-11-14 08:38:13,828 - __main__ - INFO - ======================================================================
+2025-11-14 08:38:13,828 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 08:38:13,829 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-14 08:38:13,829 - __main__ - INFO - [WHITELIST] Supporting 21 patterns
+2025-11-14 08:38:13,829 - __main__ - INFO - 
+2025-11-14 08:38:13,830 - __main__ - INFO - Supported hosts:
+2025-11-14 08:38:13,840 - __main__ - INFO -    *.cursor.com
+2025-11-14 08:38:13,841 - __main__ - INFO -    *.cursor.sh
+2025-11-14 08:38:13,841 - __main__ - INFO -    *.cursorapi.com
+2025-11-14 08:38:13,841 - __main__ - INFO -    *.qoder.com
+2025-11-14 08:38:13,842 - __main__ - INFO -    *.qoder.sh
+2025-11-14 08:38:13,842 - __main__ - INFO -    api.cursor.sh
+2025-11-14 08:38:13,843 - __main__ - INFO -    api1.qoder.sh
+2025-11-14 08:38:13,843 - __main__ - INFO -    api2.cursor.sh
+2025-11-14 08:38:13,843 - __main__ - INFO -    api2.qoder.sh
+2025-11-14 08:38:13,844 - __main__ - INFO -    api3.qoder.sh
+2025-11-14 08:38:13,844 - __main__ - INFO -    center.qoder.sh
+2025-11-14 08:38:13,844 - __main__ - INFO -    cursor.sh
+2025-11-14 08:38:13,844 - __main__ - INFO -    cursorapi.com
+2025-11-14 08:38:13,845 - __main__ - INFO -    download.qoder.com
+2025-11-14 08:38:13,845 - __main__ - INFO -    example.com
+2025-11-14 08:38:13,845 - __main__ - INFO -    github.com
+2025-11-14 08:38:13,846 - __main__ - INFO -    google.com
+2025-11-14 08:38:13,846 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-14 08:38:13,847 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-14 08:38:13,847 - __main__ - INFO -    qts2.qoder.sh
+2025-11-14 08:38:13,848 - __main__ - INFO -    repo2.qoder.sh
+2025-11-14 08:38:13,848 - __main__ - INFO - 
+2025-11-14 08:38:13,848 - __main__ - INFO - ======================================================================
+2025-11-14 08:40:12,508 - __main__ - INFO - [REQUEST] POST /v1/chat/completions to 127.0.0.1:5010
+2025-11-14 09:22:17,518 - __main__ - INFO - ======================================================================
+2025-11-14 09:22:17,519 - __main__ - INFO - Proxy Server Starting
+2025-11-14 09:22:17,519 - __main__ - INFO - ======================================================================
+2025-11-14 09:22:17,519 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 09:22:17,519 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-14 09:22:17,519 - __main__ - INFO - [WHITELIST] Supporting 21 patterns
+2025-11-14 09:22:17,520 - __main__ - INFO - 
+2025-11-14 09:22:17,520 - __main__ - INFO - Supported hosts:
+2025-11-14 09:22:17,521 - __main__ - INFO -    *.cursor.com
+2025-11-14 09:22:17,522 - __main__ - INFO -    *.cursor.sh
+2025-11-14 09:22:17,522 - __main__ - INFO -    *.cursorapi.com
+2025-11-14 09:22:17,523 - __main__ - INFO -    *.qoder.com
+2025-11-14 09:22:17,524 - __main__ - INFO -    *.qoder.sh
+2025-11-14 09:22:17,524 - __main__ - INFO -    api.cursor.sh
+2025-11-14 09:22:17,525 - __main__ - INFO -    api1.qoder.sh
+2025-11-14 09:22:17,525 - __main__ - INFO -    api2.cursor.sh
+2025-11-14 09:22:17,525 - __main__ - INFO -    api2.qoder.sh
+2025-11-14 09:22:17,526 - __main__ - INFO -    api3.qoder.sh
+2025-11-14 09:22:17,526 - __main__ - INFO -    center.qoder.sh
+2025-11-14 09:22:17,526 - __main__ - INFO -    cursor.sh
+2025-11-14 09:22:17,527 - __main__ - INFO -    cursorapi.com
+2025-11-14 09:22:17,527 - __main__ - INFO -    download.qoder.com
+2025-11-14 09:22:17,527 - __main__ - INFO -    example.com
+2025-11-14 09:22:17,528 - __main__ - INFO -    github.com
+2025-11-14 09:22:17,528 - __main__ - INFO -    google.com
+2025-11-14 09:22:17,528 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-14 09:22:17,529 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-14 09:22:17,529 - __main__ - INFO -    qts2.qoder.sh
+2025-11-14 09:22:17,530 - __main__ - INFO -    repo2.qoder.sh
+2025-11-14 09:22:17,531 - __main__ - INFO - 
+2025-11-14 09:22:17,531 - __main__ - INFO - ======================================================================
+2025-11-14 09:22:50,006 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 09:22:50,007 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 09:22:50,102 - __main__ - INFO - [SUCCESS] Connected to center.qoder.sh:443
+2025-11-14 09:22:50,104 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 09:23:06,841 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 09:23:06,842 - __main__ - INFO - [ALLOW] Host allowed (exact): api3.qoder.sh
+2025-11-14 09:23:06,842 - __main__ - INFO - [CONNECT] Establishing tunnel to api3.qoder.sh:443
+2025-11-14 09:23:06,903 - __main__ - INFO - [SUCCESS] Connected to api3.qoder.sh:443
+2025-11-14 09:23:06,904 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 09:24:50,169 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 09:24:50,170 - __main__ - INFO - [ALLOW] Host allowed (exact): qts2.qoder.sh
+2025-11-14 09:24:50,170 - __main__ - INFO - [CONNECT] Establishing tunnel to qts2.qoder.sh:443
+2025-11-14 09:24:50,267 - __main__ - INFO - [SUCCESS] Connected to qts2.qoder.sh:443
+2025-11-14 09:24:50,269 - __main__ - DEBUG - [TUNNEL] Client->Server: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 09:24:50,269 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 09:24:50,357 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 09:24:50,359 - __main__ - INFO - [REQUEST] POST /v1/chat/completions to 127.0.0.1:5010
+2025-11-14 09:34:50,369 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 09:34:50,372 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 09:34:50,479 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 09:34:50,621 - __main__ - INFO - [ALLOW] Host allowed (exact): repo2.qoder.sh
+2025-11-14 09:34:50,621 - __main__ - INFO - [CONNECT] Establishing tunnel to repo2.qoder.sh:443
+2025-11-14 09:34:50,722 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 09:34:50,751 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 09:34:50,751 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 09:34:51,930 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 09:34:51,952 - __main__ - INFO - [REQUEST] POST /v1/chat/completions to 127.0.0.1:5010
+2025-11-14 09:36:30,906 - __main__ - INFO - ======================================================================
+2025-11-14 09:36:30,917 - __main__ - INFO - Proxy Server Starting
+2025-11-14 09:36:30,918 - __main__ - INFO - ======================================================================
+2025-11-14 09:36:30,919 - __main__ - INFO - [SERVER] Listening on 127.0.0.1:5010
+2025-11-14 09:36:30,920 - __main__ - INFO - [CONFIG] Timeout: 600 seconds
+2025-11-14 09:36:30,920 - __main__ - INFO - [WHITELIST] Supporting 21 patterns
+2025-11-14 09:36:30,920 - __main__ - INFO - 
+2025-11-14 09:36:30,921 - __main__ - INFO - Supported hosts:
+2025-11-14 09:36:30,921 - __main__ - INFO -    *.cursor.com
+2025-11-14 09:36:30,921 - __main__ - INFO -    *.cursor.sh
+2025-11-14 09:36:30,922 - __main__ - INFO -    *.cursorapi.com
+2025-11-14 09:36:30,922 - __main__ - INFO -    *.qoder.com
+2025-11-14 09:36:30,922 - __main__ - INFO -    *.qoder.sh
+2025-11-14 09:36:30,922 - __main__ - INFO -    api.cursor.sh
+2025-11-14 09:36:30,923 - __main__ - INFO -    api1.qoder.sh
+2025-11-14 09:36:30,923 - __main__ - INFO -    api2.cursor.sh
+2025-11-14 09:36:30,923 - __main__ - INFO -    api2.qoder.sh
+2025-11-14 09:36:30,924 - __main__ - INFO -    api3.qoder.sh
+2025-11-14 09:36:30,924 - __main__ - INFO -    center.qoder.sh
+2025-11-14 09:36:30,925 - __main__ - INFO -    cursor.sh
+2025-11-14 09:36:30,925 - __main__ - INFO -    cursorapi.com
+2025-11-14 09:36:30,926 - __main__ - INFO -    download.qoder.com
+2025-11-14 09:36:30,928 - __main__ - INFO -    example.com
+2025-11-14 09:36:30,928 - __main__ - INFO -    github.com
+2025-11-14 09:36:30,929 - __main__ - INFO -    google.com
+2025-11-14 09:36:30,929 - __main__ - INFO -    marketplace.cursorapi.com
+2025-11-14 09:36:30,930 - __main__ - INFO -    prod.authentication.cursor.sh
+2025-11-14 09:36:30,930 - __main__ - INFO -    qts2.qoder.sh
+2025-11-14 09:36:30,931 - __main__ - INFO -    repo2.qoder.sh
+2025-11-14 09:36:30,933 - __main__ - INFO - 
+2025-11-14 09:36:30,933 - __main__ - INFO - ======================================================================
+2025-11-14 09:36:51,017 - __main__ - INFO - [ALLOW] Host allowed (exact): center.qoder.sh
+2025-11-14 09:36:51,019 - __main__ - INFO - [CONNECT] Establishing tunnel to center.qoder.sh:443
+2025-11-14 09:36:51,122 - __main__ - INFO - [SUCCESS] Connected to center.qoder.sh:443
+2025-11-14 09:36:51,137 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 09:37:07,944 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 09:37:07,944 - __main__ - INFO - [ALLOW] Host allowed (exact): api3.qoder.sh
+2025-11-14 09:37:07,945 - __main__ - INFO - [CONNECT] Establishing tunnel to api3.qoder.sh:443
+2025-11-14 09:37:08,028 - __main__ - INFO - [SUCCESS] Connected to api3.qoder.sh:443
+2025-11-14 09:37:08,029 - __main__ - INFO - [TUNNEL] Bidirectional tunnel active
+2025-11-14 09:40:16,369 - __main__ - INFO - [TUNNEL] Tunnel closed
+2025-11-14 09:40:16,370 - __main__ - INFO - [ALLOW] Host allowed (exact): qts2.qoder.sh
+2025-11-14 09:40:16,370 - __main__ - INFO - [CONNECT] Establishing tunnel to qts2.qoder.sh:443
+2025-11-14 09:40:16,484 - __main__ - ERROR - [ERROR] CONNECT error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-11-14 09:40:16,508 - __main__ - INFO - [REQUEST] POST /v1/chat/completions to 127.0.0.1:5010

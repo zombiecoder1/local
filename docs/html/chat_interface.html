@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZombieCoder AI Chat - Ollama Style</title>
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #c9d1d9;
+            --text-secondary: #8b949e;
+            --border-color: #30363d;
+            --accent-blue: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-purple: #a5a5ff;
+            --message-user-bg: #1f6feb;
+            --message-assistant-bg: #21262d;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header h1 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .header-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .model-selector {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 6px 12px;
+            color: var(--text-primary);
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+        .low-color-toggle {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 6px 12px;
+            color: var(--text-primary);
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .low-color-toggle:hover {
+            background: var(--bg-primary);
+        }
+        
+        .low-color-toggle.active {
+            background: var(--accent-green);
+            color: white;
+        }
+        
+        .main-container {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+        }
+        
+        .sidebar {
+            width: 280px;
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border-color);
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .sidebar-section {
+            margin-bottom: 20px;
+        }
+        
+        .sidebar-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        
+        .agent-option {
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin-bottom: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-size: 14px;
+        }
+        
+        .agent-option:hover {
+            background: var(--bg-tertiary);
+        }
+        
+        .agent-option.active {
+            background: var(--accent-blue);
+            color: white;
+        }
+        
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 0;
+            font-size: 13px;
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent-green);
+            box-shadow: 0 0 6px var(--accent-green);
+        }
+        
+        .status-dot.offline {
+            background: #f85149;
+            box-shadow: 0 0 6px #f85149;
+        }
+        
+        .chat-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-primary);
+        }
+        
+        .messages-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .message {
+            max-width: 85%;
+            display: flex;
+            gap: 12px;
+            animation: fadeIn 0.3s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .message.user {
+            align-self: flex-end;
+            flex-direction: row-reverse;
+        }
+        
+        .message-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        
+        .message.user .message-avatar {
+            background: var(--message-user-bg);
+        }
+        
+        .message.assistant .message-avatar {
+            background: var(--accent-purple);
+        }
+        
+        .message-content {
+            background: var(--message-assistant-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 12px 16px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        
+        .message.user .message-content {
+            background: var(--message-user-bg);
+            border-color: var(--message-user-bg);
+            color: white;
+        }
+        
+        .message-content pre {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 12px;
+            overflow-x: auto;
+            margin: 8px 0;
+            font-size: 13px;
+        }
+        
+        .message-content code {
+            background: var(--bg-primary);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        
+        .input-area {
+            border-top: 1px solid var(--border-color);
+            background: var(--bg-secondary);
+            padding: 16px 20px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            gap: 12px;
+            align-items: flex-end;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .input-field {
+            flex: 1;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 12px 16px;
+            color: var(--text-primary);
+            font-size: 14px;
+            resize: none;
+            min-height: 44px;
+            max-height: 200px;
+            font-family: inherit;
+        }
+        
+        .input-field:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.1);
+        }
+        
+        .send-button {
+            background: var(--accent-blue);
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            height: 44px;
+        }
+        
+        .send-button:hover:not(:disabled) {
+            background: #4a9eff;
+            transform: translateY(-1px);
+        }
+        
+        .send-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .typing-indicator {
+            display: flex;
+            gap: 4px;
+            padding: 8px 0;
+        }
+        
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--text-secondary);
+            animation: typing 1.4s infinite;
+        }
+        
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+        
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.7; }
+            30% { transform: translateY(-10px); opacity: 1; }
+        }
+        
+        /* Low Color Mode */
+        body.low-color {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f6f8fa;
+            --bg-tertiary: #ffffff;
+            --text-primary: #24292f;
+            --text-secondary: #656d76;
+            --border-color: #d0d7de;
+            --accent-blue: #0969da;
+            --accent-green: #1a7f37;
+            --message-user-bg: #0969da;
+            --message-assistant-bg: #ffffff;
+        }
+        
+        body.low-color .message-content {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🤖 ZombieCoder AI</h1>
+        <div class="header-controls">
+            <select id="modelSelect" class="model-selector">
+                <option value="auto">Auto (Smart Routing)</option>
+                <option value="local-bengali-nlp">Bengali NLP</option>
+                <option value="local-code-gen">Code Generation</option>
+                <option value="local-code-review">Code Review</option>
+                <option value="local-docs">Documentation</option>
+                <option value="local-testing">Testing</option>
+                <option value="local-deploy">Deployment</option>
+            </select>
+            <button id="lowColorToggle" class="low-color-toggle" onclick="toggleLowColor()">
+                Low Color
+            </button>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">Agents</div>
+                <div class="agent-option active" data-agent="auto">Auto Routing</div>
+                <div class="agent-option" data-agent="bengali_nlp">Bengali NLP</div>
+                <div class="agent-option" data-agent="code_generation">Code Generation</div>
+                <div class="agent-option" data-agent="code_review">Code Review</div>
+                <div class="agent-option" data-agent="documentation">Documentation</div>
+                <div class="agent-option" data-agent="testing">Testing</div>
+                <div class="agent-option" data-agent="deployment">Deployment</div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-title">Status</div>
+                <div class="status-item">
+                    <div class="status-dot" id="gatewayStatus"></div>
+                    <span>Gateway (8001)</span>
+                </div>
+                <div class="status-item">
+                    <div class="status-dot" id="ollamaStatus"></div>
+                    <span>Ollama (5252)</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-area">
+            <div class="messages-container" id="messagesContainer">
+                <div class="message assistant">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <strong>ZombieCoder AI:</strong> হ্যালো! আমি ZombieCoder AI Assistant। আপনি কিভাবে সাহায্য করতে পারি?
+                    </div>
+                </div>
+            </div>
+            
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="messageInput" 
+                        class="input-field" 
+                        placeholder="আপনার বার্তা লিখুন... (Shift+Enter for new line, Enter to send)"
+                        rows="1"
+                    ></textarea>
+                    <button id="sendButton" class="send-button" onclick="sendMessage()">
+                        Send
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const GATEWAY_URL = 'http://127.0.0.1:8001';
+        const API_BASE = 'http://127.0.0.1:8001/v1';
+        const AGENT_INFO = {
+            name: "ZombieCoder Agent (সাহন ভাই)",
+            provider: "ZombieCoder Family Agent System",
+            version: "2.0.0",
+            model: "microsoft/phi-2",
+            language: "বাংলা"
+        };
+        const API_KEY = 'sk-sahon-personal-2024';
+        
+        let isConnected = false;
+        let currentAgent = 'auto';
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            checkServices();
+            setInterval(checkServices, 10000);
+            
+            // Agent selection
+            document.querySelectorAll('.agent-option').forEach(option => {
+                option.addEventListener('click', function() {
+                    document.querySelectorAll('.agent-option').forEach(o => o.classList.remove('active'));
+                    this.classList.add('active');
+                    currentAgent = this.dataset.agent;
+                });
+            });
+            
+            // Input handling
+            const input = document.getElementById('messageInput');
+            input.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendMessage();
+                }
+            });
+            
+            // Auto-resize textarea
+            input.addEventListener('input', function() {
+                this.style.height = 'auto';
+                this.style.height = Math.min(this.scrollHeight, 200) + 'px';
+            });
+        });
+        
+        function toggleLowColor() {
+            document.body.classList.toggle('low-color');
+            const btn = document.getElementById('lowColorToggle');
+            btn.classList.toggle('active');
+            btn.textContent = document.body.classList.contains('low-color') ? 'Full Color' : 'Low Color';
+        }
+        
+        async function checkServices() {
+            // Gateway
+            try {
+                const res = await fetch(`${GATEWAY_URL}/health`);
+                document.getElementById('gatewayStatus').className = res.ok ? 'status-dot' : 'status-dot offline';
+                isConnected = res.ok;
+            } catch {
+                document.getElementById('gatewayStatus').className = 'status-dot offline';
+                isConnected = false;
+            }
+            
+            // Ollama
+            try {
+                const res = await fetch('http://localhost:8007/api/version');
+                document.getElementById('ollamaStatus').className = res.ok ? 'status-dot' : 'status-dot offline';
+            } catch {
+                document.getElementById('ollamaStatus').className = 'status-dot offline';
+            }
+        }
+        
+        async function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+            
+            if (!message || !isConnected) {
+                if (!isConnected) {
+                    addMessage('assistant', '⚠️ Gateway offline. Please start the gateway first.');
+                }
+                return;
+            }
+            
+            addMessage('user', message);
+            input.value = '';
+            input.style.height = 'auto';
+            
+            const sendBtn = document.getElementById('sendButton');
+            sendBtn.disabled = true;
+            
+            const typingId = addTypingIndicator();
+            
+            try {
+                const model = document.getElementById('modelSelect').value;
+                const modelMap = {
+                    'auto': 'microsoft/phi-2',
+                    'bengali_nlp': 'microsoft/phi-2',
+                    'code_generation': 'microsoft/phi-2',
+                    'code_review': 'microsoft/phi-2',
+                    'documentation': 'microsoft/phi-2',
+                    'testing': 'microsoft/phi-2',
+                    'deployment': 'microsoft/phi-2'
+                };
+                
+                const selectedModel = model === 'auto' && currentAgent !== 'auto' 
+                    ? modelMap[currentAgent] || 'microsoft/phi-2'
+                    : model;
+                
+                const response = await fetch(`${GATEWAY_URL}/v1/chat/completions`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${API_KEY}`
+                    },
+                    body: JSON.stringify({
+                        model: selectedModel,
+                        messages: [{ role: 'user', content: message }],
+                        stream: false,
+                        temperature: 0.7,
+                        max_tokens: 2000
+                    })
+                });
+                
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                
+                const data = await response.json();
+                removeTypingIndicator(typingId);
+                addMessage('assistant', data.choices[0].message.content);
+                
+            } catch (error) {
+                removeTypingIndicator(typingId);
+                addMessage('assistant', `❌ Error: ${error.message}`);
+            } finally {
+                sendBtn.disabled = false;
+                input.focus();
+            }
+        }
+        
+        function addMessage(role, content) {
+            const container = document.getElementById('messagesContainer');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${role}`;
+            
+            const avatar = role === 'user' ? '👤' : '🤖';
+            const formattedContent = formatMessage(content);
+            
+            messageDiv.innerHTML = `
+                <div class="message-avatar">${avatar}</div>
+                <div class="message-content">${formattedContent}</div>
+            `;
+            
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+        
+        function addTypingIndicator() {
+            const container = document.getElementById('messagesContainer');
+            const typingDiv = document.createElement('div');
+            typingDiv.id = 'typing-indicator';
+            typingDiv.className = 'message assistant';
+            typingDiv.innerHTML = `
+                <div class="message-avatar">🤖</div>
+                <div class="message-content">
+                    <div class="typing-indicator">
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                    </div>
+                </div>
+            `;
+            container.appendChild(typingDiv);
+            container.scrollTop = container.scrollHeight;
+            return 'typing-indicator';
+        }
+        
+        function removeTypingIndicator(id) {
+            const indicator = document.getElementById(id);
+            if (indicator) indicator.remove();
+        }
+        
+        function formatMessage(text) {
+            // Escape HTML
+            text = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            
+            // Code blocks
+            text = text.replace(/```(\w+)?\n([\s\S]*?)```/g, function(match, lang, code) {
+                return `<pre><code>${code.trim()}</code></pre>`;
+            });
+            
+            // Inline code
+            text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
+            
+            // Links
+            text = text.replace(/https?:\/\/[^\s]+/g, '<a href="$&" target="_blank" style="color: var(--accent-blue);">$&</a>');
+            
+            // Line breaks
+            text = text.replace(/\n/g, '<br>');
+            
+            return text;
+        }
+    </script>
+</body>
+</html>

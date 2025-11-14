@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ZombieCoder - Developer Integration Guide</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#0a0e27 0%,#1a1f3a 100%);color:#e4e9f7;line-height:1.6}
+    .container{max-width:1400px;margin:0 auto;padding:20px}
+    header{background:rgba(15,23,42,0.8);backdrop-filter:blur(10px);padding:30px;border-radius:15px;margin-bottom:30px;border:1px solid rgba(56,189,248,0.2)}
+    h1{font-size:32px;background:linear-gradient(135deg,#38bdf8,#818cf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:10px}
+    .subtitle{color:#94a3b8;font-size:14px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:20px;margin-bottom:30px}
+    .card{background:rgba(30,41,59,0.6);backdrop-filter:blur(10px);border:1px solid rgba(148,163,184,0.1);border-radius:12px;padding:20px;transition:all 0.3s}
+    .card:hover{border-color:rgba(56,189,248,0.4);transform:translateY(-2px);box-shadow:0 10px 30px rgba(56,189,248,0.1)}
+    .card h2{font-size:18px;color:#38bdf8;margin-bottom:15px;display:flex;align-items:center;gap:8px}
+    .card h2::before{content:'🔷';font-size:16px}
+    .endpoint{background:rgba(15,23,42,0.8);padding:12px;border-radius:8px;margin:10px 0;border-left:3px solid #38bdf8}
+    .method{display:inline-block;padding:4px 10px;border-radius:6px;font-size:12px;font-weight:700;margin-right:8px;min-width:60px;text-align:center}
+    .method.get{background:#10b981;color:#fff}
+    .method.post{background:#3b82f6;color:#fff}
+    .method.delete{background:#ef4444;color:#fff}
+    .url{font-family:'Courier New',monospace;color:#94a3b8;font-size:13px}
+    .copy-btn{background:#38bdf8;color:#0f172a;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600;transition:all 0.2s;float:right}
+    .copy-btn:hover{background:#0ea5e9;transform:scale(1.05)}
+    .code-block{background:#0f172a;border:1px solid rgba(56,189,248,0.2);border-radius:8px;padding:15px;margin:15px 0;position:relative;overflow-x:auto}
+    .code-block pre{color:#e2e8f0;font-family:'Courier New',monospace;font-size:13px;margin:0;white-space:pre-wrap}
+    .tag{display:inline-block;padding:3px 8px;background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.3);border-radius:4px;font-size:11px;color:#38bdf8;margin:2px}
+    .status{padding:20px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);border-radius:10px;margin-bottom:20px}
+    .status h3{color:#10b981;margin-bottom:10px}
+    .warning{background:rgba(251,191,36,0.1);border-color:rgba(251,191,36,0.3);color:#fbbf24}
+    .section{margin-bottom:40px}
+    .quick-start{background:linear-gradient(135deg,rgba(56,189,248,0.1),rgba(129,140,248,0.1));padding:25px;border-radius:12px;border:1px solid rgba(129,140,248,0.3);margin-bottom:30px}
+    .quick-start h2{color:#818cf8;margin-bottom:15px}
+    .btn-group{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .btn{padding:10px 20px;border-radius:8px;border:none;cursor:pointer;font-weight:600;transition:all 0.2s;text-decoration:none;display:inline-block}
+    .btn-primary{background:#38bdf8;color:#0f172a}
+    .btn-primary:hover{background:#0ea5e9}
+    .btn-secondary{background:rgba(148,163,184,0.2);color:#e4e9f7;border:1px solid rgba(148,163,184,0.3)}
+    .btn-secondary:hover{background:rgba(148,163,184,0.3)}
+    table{width:100%;border-collapse:collapse;margin:15px 0}
+    th,td{padding:12px;text-align:left;border-bottom:1px solid rgba(148,163,184,0.1)}
+    th{background:rgba(56,189,248,0.1);color:#38bdf8;font-weight:600}
+    td{color:#cbd5e1}
+    .footer{text-align:center;padding:30px;color:#64748b;border-top:1px solid rgba(148,163,184,0.1);margin-top:40px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧟 ZombieCoder Local AI - Developer Integration</h1>
+      <p class="subtitle">GGUF মডেল সার্ভার | Ollama-Compatible API | Lazy Loading Runtime</p>
+    </header>
+
+    <div class="status">
+      <h3>🚀 সার্ভার স্ট্যাটাস</h3>
+      <p><strong>Base URL:</strong> <code>http://127.0.0.1:8155</code></p>
+      <p><strong>UI:</strong> <a href="http://127.0.0.1:8155/static/allindex.html" target="_blank" style="color:#38bdf8">http://127.0.0.1:8155/static/allindex.html</a></p>
+      <p><strong>Health:</strong> <a href="http://127.0.0.1:8155/health" target="_blank" style="color:#10b981">GET /health</a></p>
+    </div>
+
+    <div class="quick-start">
+      <h2>⚡ দ্রুত শুরু</h2>
+      <div class="code-block">
+        <pre># PowerShell থেকে সার্ভার চালু
+cd C:\model
+.\start_server.ps1
+
+# অথবা সরাসরি Python
+cd C:\model
+python -m uvicorn model_server:app --host 0.0.0.0 --port 8155
+
+# অথবা যেকোনো ডিরেক্টরি থেকে
+python C:\model\model_server.py</pre>
+        <button class="copy-btn" onclick="copyCode(this.previousElementSibling)">Copy</button>
+      </div>
+      <div class="btn-group">
+        <a href="http://127.0.0.1:8155/health" class="btn btn-primary" target="_blank">Test Health</a>
+        <a href="http://127.0.0.1:8155/static/allindex.html" class="btn btn-secondary" target="_blank">Open UI</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 style="color:#818cf8;margin-bottom:20px">📡 API এন্ডপয়েন্টস (33 টি)</h2>
+      
+      <div class="grid">
+        <div class="card">
+          <h2>সিস্টেম ও স্বাস্থ্য</h2>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/health</span>
+            <button class="copy-btn" onclick="copyUrl('/health')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/system/info</span>
+            <button class="copy-btn" onclick="copyUrl('/system/info')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/provider/about</span>
+            <button class="copy-btn" onclick="copyUrl('/provider/about')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/monitoring/summary</span>
+            <button class="copy-btn" onclick="copyUrl('/monitoring/summary')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/performance/snapshot</span>
+            <button class="copy-btn" onclick="copyUrl('/performance/snapshot')">Copy</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>মডেল ম্যানেজমেন্ট</h2>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/models/installed</span>
+            <button class="copy-btn" onclick="copyUrl('/models/installed')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/models/available</span>
+            <button class="copy-btn" onclick="copyUrl('/models/available')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/registry/models</span>
+            <button class="copy-btn" onclick="copyUrl('/registry/models')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/registry/validate/{model}</span>
+            <button class="copy-btn" onclick="copyUrl('/registry/validate/{model}')">Copy</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>রানটাইম কন্ট্রোল</h2>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/runtime/status</span>
+            <button class="copy-btn" onclick="copyUrl('/runtime/status')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/runtime/config</span>
+            <button class="copy-btn" onclick="copyUrl('/runtime/config')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method post">POST</span>
+            <span class="url">/runtime/load/{model}?threads=4</span>
+            <button class="copy-btn" onclick="copyUrl('/runtime/load/{model}?threads=4')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method post">POST</span>
+            <span class="url">/runtime/unload/{model}</span>
+            <button class="copy-btn" onclick="copyUrl('/runtime/unload/{model}')">Copy</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>ডাউনলোড ম্যানেজার</h2>
+          <div class="endpoint">
+            <span class="method post">POST</span>
+            <span class="url">/download/start</span>
+            <button class="copy-btn" onclick="copyUrl('/download/start')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/download/status/{model}</span>
+            <button class="copy-btn" onclick="copyUrl('/download/status/{model}')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method post">POST</span>
+            <span class="url">/download/cancel/{model}</span>
+            <button class="copy-btn" onclick="copyUrl('/download/cancel/{model}')">Copy</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>HuggingFace Integration</h2>
+          <div class="endpoint">
+            <span class="method post">POST</span>
+            <span class="url">/auth/hf_token</span>
+            <button class="copy-btn" onclick="copyUrl('/auth/hf_token')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/auth/status</span>
+            <button class="copy-btn" onclick="copyUrl('/auth/status')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/auth/whoami</span>
+            <button class="copy-btn" onclick="copyUrl('/auth/whoami')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/hf/models?search=GGUF&limit=25</span>
+            <button class="copy-btn" onclick="copyUrl('/hf/models?search=GGUF&limit=25')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/hf/popular?limit=10</span>
+            <button class="copy-btn" onclick="copyUrl('/hf/popular?limit=10')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/hf/files/{repo_id}</span>
+            <button class="copy-btn" onclick="copyUrl('/hf/files/{repo_id}')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/hf/small-models</span>
+            <button class="copy-btn" onclick="copyUrl('/hf/small-models')">Copy</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Ollama-Compatible API</h2>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/api/tags</span>
+            <button class="copy-btn" onclick="copyUrl('/api/tags')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method post">POST</span>
+            <span class="url">/api/generate</span>
+            <button class="copy-btn" onclick="copyUrl('/api/generate')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method post">POST</span>
+            <span class="url">/api/chat</span>
+            <button class="copy-btn" onclick="copyUrl('/api/chat')">Copy</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>সেশন ম্যানেজমেন্ট</h2>
+          <div class="endpoint">
+            <span class="method post">POST</span>
+            <span class="url">/api/session/start</span>
+            <button class="copy-btn" onclick="copyUrl('/api/session/start')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/api/session/status/{id}</span>
+            <button class="copy-btn" onclick="copyUrl('/api/session/status/{id}')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method post">POST</span>
+            <span class="url">/api/session/end/{id}</span>
+            <button class="copy-btn" onclick="copyUrl('/api/session/end/{id}')">Copy</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>লগিং</h2>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/logs/recent</span>
+            <button class="copy-btn" onclick="copyUrl('/logs/recent')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/logs/server</span>
+            <button class="copy-btn" onclick="copyUrl('/logs/server')">Copy</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>UI Pages</h2>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/</span>
+            <button class="copy-btn" onclick="copyUrl('/')">Copy</button>
+          </div>
+          <div class="endpoint">
+            <span class="method get">GET</span>
+            <span class="url">/ui</span>
+            <button class="copy-btn" onclick="copyUrl('/ui')">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 style="color:#818cf8;margin-bottom:20px">🔧 VS Code Extension Integration</h2>
+      <div class="card" style="max-width:100%">
+        <h3 style="color:#10b981;margin-bottom:15px">Extension Manifest (package.json)</h3>
+        <div class="code-block">
+<pre>{
+  "name": "zombiecoder-ai",
+  "displayName": "ZombieCoder Local AI",
+  "description": "Local GGUF model integration for VS Code",
+  "version": "0.1.0",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["AI", "Machine Learning"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "ZombieCoder",
+      "properties": {
+        "zombiecoder.serverUrl": {
+          "type": "string",
+          "default": "http://127.0.0.1:8155",
+          "description": "ZombieCoder server URL"
+        },
+        "zombiecoder.defaultModel": {
+          "type": "string",
+          "default": "tinyllama-gguf",
+          "description": "Default model to use"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "zombiecoder.loadModel",
+        "title": "ZombieCoder: Load Model"
+      },
+      {
+        "command": "zombiecoder.generateText",
+        "title": "ZombieCoder: Generate Text"
+      },
+      {
+        "command": "zombiecoder.unloadModel",
+        "title": "ZombieCoder: Unload Model"
+      }
+    ]
+  }
+}</pre>
+          <button class="copy-btn" onclick="copyCode(this.previousElementSibling)">Copy</button>
+        </div>
+
+        <h3 style="color:#10b981;margin:25px 0 15px">Extension TypeScript Code (src/extension.ts)</h3>
+        <div class="code-block">
+<pre>import * as vscode from 'vscode';
+import axios from 'axios';
+
+let baseUrl = 'http://127.0.0.1:8155';
+const HF_TOKEN = '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';
+
+export function activate(context: vscode.ExtensionContext) {
+  const config = vscode.workspace.getConfiguration('zombiecoder');
+  baseUrl = config.get('serverUrl', 'http://127.0.0.1:8155');
+  
+  // Set HuggingFace token on activation
+  axios.post(`${baseUrl}/auth/hf_token`, {token: HF_TOKEN}).catch(() => {});
+
+  // Load Model Command
+  context.subscriptions.push(
+    vscode.commands.registerCommand('zombiecoder.loadModel', async () => {
+      const models = await getInstalledModels();
+      const selected = await vscode.window.showQuickPick(models);
+      if (selected) {
+        await loadModel(selected);
+      }
+    })
+  );
+
+  // Generate Text Command
+  context.subscriptions.push(
+    vscode.commands.registerCommand('zombiecoder.generateText', async () => {
+      const editor = vscode.window.activeTextEditor;
+      if (!editor) return;
+      
+      const selection = editor.selection;
+      const prompt = editor.document.getText(selection) || 
+                     await vscode.window.showInputBox({ prompt: 'Enter prompt' });
+      
+      if (prompt) {
+        const model = config.get('defaultModel', 'tinyllama-gguf');
+        const result = await generate(model, prompt);
+        editor.edit(editBuilder => {
+          editBuilder.replace(selection, result);
+        });
+      }
+    })
+  );
+
+  // Unload Model Command
+  context.subscriptions.push(
+    vscode.commands.registerCommand('zombiecoder.unloadModel', async () => {
+      const runningModels = await getRunningModels();
+      const selected = await vscode.window.showQuickPick(runningModels);
+      if (selected) {
+        await unloadModel(selected);
+      }
+    })
+  );
+}
+
+async function getInstalledModels(): Promise<string[]> {
+  const res = await axios.get(`${baseUrl}/models/installed`);
+  return res.data.models.map((m: any) => m.name);
+}
+
+async function getRunningModels(): Promise<string[]> {
+  const res = await axios.get(`${baseUrl}/runtime/status`);
+  return res.data.models.map((m: any) => m.model);
+}
+
+async function loadModel(model: string) {
+  await vscode.window.withProgress({
+    location: vscode.ProgressLocation.Notification,
+    title: `Loading ${model}...`,
+    cancellable: false
+  }, async () => {
+    await axios.post(`${baseUrl}/runtime/load/${model}?threads=4`);
+    vscode.window.showInformationMessage(`✅ ${model} loaded`);
+  });
+}
+
+async function generate(model: string, prompt: string): Promise<string> {
+  const res = await axios.post(`${baseUrl}/api/generate`, {
+    model,
+    prompt,
+    stream: false
+  });
+  return res.data.response || res.data.content || JSON.stringify(res.data);
+}
+
+async function unloadModel(model: string) {
+  await axios.post(`${baseUrl}/runtime/unload/${model}`);
+  vscode.window.showInformationMessage(`⏹️ ${model} unloaded`);
+}
+
+export function deactivate() {}</pre>
+          <button class="copy-btn" onclick="copyCode(this.previousElementSibling)">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 style="color:#818cf8;margin-bottom:20px">🔗 Cursor MCP Integration</h2>
+      <div class="card" style="max-width:100%">
+        <h3 style="color:#10b981;margin-bottom:15px">C:\Users\sahon\.cursor\mcp.json</h3>
+        <div class="code-block">
+<pre>{
+  "mcpServers": {
+    "zombiecoder-local-ai": {
+      "command": "python",
+      "args": ["-m", "uvicorn", "model_server:app", "--host", "0.0.0.0", "--port", "8155"],
+      "cwd": "C:\\model",
+      "env": { "PYTHONUNBUFFERED": "1" },
+      "type": "http",
+      "baseUrl": "http://127.0.0.1:8155",
+      "name": "ZombieCoder Local AI",
+      "description": "GGUF model server with lazy loading (Ollama-compatible)"
+    }
+  }
+}</pre>
+          <button class="copy-btn" onclick="copyCode(this.previousElementSibling)">Copy</button>
+        </div>
+        <p style="margin-top:15px;color:#94a3b8">✅ এই কনফিগ ইতিমধ্যে <code>C:\Users\sahon\.cursor\mcp.json</code> এ যুক্ত করা হয়েছে</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 style="color:#818cf8;margin-bottom:20px">🌐 Ollama-style Integration</h2>
+      <div class="card" style="max-width:100%">
+        <p>যেকোনো প্রজেক্ট যেখানে Ollama ব্যবহার হয়, সেখানে Base URL পরিবর্তন করুন:</p>
+        <div class="code-block">
+<pre># Python (requests)
+import requests
+
+OLLAMA_BASE_URL = "http://127.0.0.1:8155"  # Ollama এর জায়গায় ZombieCoder
+HF_TOKEN = "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"
+
+# Set HuggingFace token
+requests.post(f"{OLLAMA_BASE_URL}/auth/hf_token", json={"token": HF_TOKEN})
+
+# Get models
+models = requests.get(f"{OLLAMA_BASE_URL}/api/tags").json()
+
+# Generate
+response = requests.post(f"{OLLAMA_BASE_URL}/api/generate", json={
+    "model": "tinyllama-gguf",
+    "prompt": "Hello, world!",
+    "stream": False
+})
+print(response.json())
+
+# JavaScript/Node.js (axios)
+const axios = require('axios');
+
+const OLLAMA_BASE_URL = 'http://127.0.0.1:8155';
+const HF_TOKEN = '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';
+
+// Set HuggingFace token
+await axios.post(`${OLLAMA_BASE_URL}/auth/hf_token`, {token: HF_TOKEN});
+
+const models = await axios.get(`${OLLAMA_BASE_URL}/api/tags`);
+const result = await axios.post(`${OLLAMA_BASE_URL}/api/generate`, {
+  model: 'tinyllama-gguf',
+  prompt: 'Hello, world!',
+  stream: false
+});</pre>
+          <button class="copy-btn" onclick="copyCode(this.previousElementSibling)">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 style="color:#818cf8;margin-bottom:20px">📊 ইনস্টলড মডেল</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>মডেল নাম</th>
+            <th>সাইজ</th>
+            <th>ফরম্যাট</th>
+            <th>URL (Load)</th>
+          </tr>
+        </thead>
+        <tbody id="modelTable">
+          <tr><td colspan="4" style="text-align:center;color:#64748b">সার্ভার চালু করুন...</td></tr>
+        </tbody>
+      </table>
+      <button class="btn btn-primary" onclick="refreshModels()" style="margin-top:10px">🔄 Refresh</button>
+    </div>
+
+    <div class="footer">
+      <p>🧟 ZombieCoder Local AI Framework v0.1.0</p>
+      <p style="margin-top:10px">
+        <span class="tag">GGUF Models</span>
+        <span class="tag">Lazy Loading</span>
+        <span class="tag">Ollama Compatible</span>
+        <span class="tag">HuggingFace Hub</span>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const BASE = 'http://127.0.0.1:8155';
+
+    function copyUrl(endpoint) {
+      const full = BASE + endpoint;
+      navigator.clipboard.writeText(full);
+      alert('✅ Copied: ' + full);
+    }
+
+    function copyCode(pre) {
+      navigator.clipboard.writeText(pre.textContent.trim());
+      alert('✅ Code copied to clipboard!');
+    }
+
+    async function refreshModels() {
+      try {
+        const res = await fetch(BASE + '/models/installed');
+        const data = await res.json();
+        const tbody = document.getElementById('modelTable');
+        tbody.innerHTML = '';
+        
+        for (const m of data.models) {
+          const tr = document.createElement('tr');
+          const size = (m.size_mb / 1024).toFixed(2) + ' GB';
+          const format = m.path.includes('.gguf') ? 'GGUF' : 'Unknown';
+          const loadUrl = `${BASE}/runtime/load/${m.name}?threads=4`;
+          
+          tr.innerHTML = `
+            <td>${m.name}</td>
+            <td>${size}</td>
+            <td><span class="tag">${format}</span></td>
+            <td><code style="font-size:12px;color:#38bdf8;cursor:pointer" onclick="copyUrl('/runtime/load/${m.name}?threads=4')">${loadUrl}</code></td>
+          `;
+          tbody.appendChild(tr);
+        }
+      } catch (e) {
+        document.getElementById('modelTable').innerHTML = '<tr><td colspan="4" style="text-align:center;color:#ef4444">❌ সার্ভার বন্ধ আছে</td></tr>';
+      }
+    }
+
+    // Auto-refresh on load
+    setTimeout(refreshModels, 500);
+  </script>
+</body>
+</html>
+

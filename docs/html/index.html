@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZombieCoder Dashboard - Updated</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .animate-pulse-slow {
+            animation: pulse 2s infinite;
+        }
+
+        .status-badge {
+            transition: all 0.3s ease;
+        }
+
+        .status-badge:hover {
+            transform: translateY(-2px);
+        }
+
+        .log-container {
+            height: 400px;
+            overflow-y: auto;
+            background: #1a1a1a;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            position: relative;
+        }
+
+        .log-entry {
+            padding: 5px 10px;
+            border-bottom: 1px solid #333;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .log-error {
+            color: #ff4444;
+        }
+
+        .log-warn {
+            color: #ffbb33;
+        }
+
+        .log-success {
+            color: #00C851;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex justify-between items-center mb-8">
+            <div>
+                <h1 class="text-4xl font-bold text-blue-400">ZombieCoder Dashboard</h1>
+                <p class="text-gray-400 mt-2">Your Smart AI Assistant - Updated & Organized</p>
+            </div>
+            <button onclick="refreshStatus()"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg flex items-center space-x-2 transition-all duration-300">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                <span>Refresh</span>
+            </button>
+        </div>
+
+        <!-- Overall Status -->
+        <div class="bg-gray-800 rounded-xl p-6 mb-8 transform hover:scale-[1.02] transition-transform duration-300">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-700 rounded-lg p-4">
+                    <h3 class="text-lg font-semibold mb-2">Active Services</h3>
+                    <div id="active-services" class="text-3xl font-bold text-green-400">0/7</div>
+                </div>
+                <div class="bg-gray-700 rounded-lg p-4">
+                    <h3 class="text-lg font-semibold mb-2">System Load</h3>
+                    <div id="system-load" class="text-3xl font-bold text-blue-400">0%</div>
+                </div>
+                <div class="bg-gray-700 rounded-lg p-4">
+                    <h3 class="text-lg font-semibold mb-2">Memory Usage</h3>
+                    <div id="memory-usage" class="text-3xl font-bold text-purple-400">0%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8" id="services-grid">
+            <!-- Services will be dynamically inserted here -->
+        </div>
+
+        <!-- Live Logs -->
+        <div class="bg-gray-800 rounded-xl p-6">
+            <h2 class="text-2xl font-bold mb-4">Live Logs</h2>
+            <div class="flex mb-4">
+                <input type="text" id="log-filter" placeholder="Filter logs..."
+                    class="bg-gray-700 text-white px-4 py-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div id="log-container" class="log-container rounded-lg p-4">
+                <!-- Logs will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const services = [
+            {
+                name: 'ZombieCoder Agent',
+                icon: '🤖',
+                port: 8001,
+                endpoints: [
+                    { name: 'Status', url: '/status' },
+                    { name: 'Health', url: '/health' },
+                    { name: 'Info', url: '/info' },
+                    { name: 'Memory', url: '/memory' }
+                ]
+            },
+            {
+                name: 'Ollama Server',
+                icon: '🦙',
+                port: 8007,
+                endpoints: [
+                    { name: 'Models', url: '/api/tags' },
+                    { name: 'Version', url: '/api/version' }
+                ]
+            },
+            {
+                name: 'Alternative Ollama',
+                icon: '🦙',
+                port: 8155,
+                endpoints: [
+                    { name: 'Models', url: '/api/tags' },
+                    { name: 'Version', url: '/api/version' }
+                ]
+            },
+            {
+                name: 'Default Ollama',
+                icon: '🦙',
+                port: 11434,
+                endpoints: [
+                    { name: 'Models', url: '/api/tags' },
+                    { name: 'Version', url: '/api/version' }
+                ]
+            }
+        ];
+
+        function createServiceCard(service) {
+            return `
+                <div class="bg-gray-800 rounded-xl p-6 service-card transform hover:scale-[1.02] transition-transform duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold">${service.icon} ${service.name}</h3>
+                        <span class="status-badge px-3 py-1 rounded-full text-sm" id="status-${service.port}">
+                            Checking...
+                        </span>
+                    </div>
+                    <div class="text-gray-300 mb-4">
+                        <div>Port: ${service.port}</div>
+                        <div id="latency-${service.port}">Latency: --ms</div>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        ${service.endpoints.map(endpoint => `
+                            <a href="http://localhost:${service.port}${endpoint.url}" target="_blank"
+                                class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition-colors duration-300">
+                                ${endpoint.name}
+                            </a>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Initialize services grid
+        document.getElementById('services-grid').innerHTML = services.map(createServiceCard).join('');
+
+        async function checkEndpoint(port, endpoint) {
+            const service = services.find(s => s.port === parseInt(port));
+            const url = `http://localhost:${port}${endpoint}`;
+            try {
+                const startTime = performance.now();
+                const response = await fetch(url);
+                const endTime = performance.now();
+                const latency = Math.round(endTime - startTime);
+
+                addLog(`Endpoint check: ${service.name} - ${url} - ${response.status === 200 ? 'Success' : 'Failed'} (${latency}ms)`,
+                    response.status === 200 ? 'success' : 'error');
+            } catch (error) {
+                addLog(`Endpoint check failed: ${service.name} - ${url} - ${error.message}`, 'error');
+            }
+        }
+
+        function addLog(message, type = 'info') {
+            const container = document.getElementById('log-container');
+            const entry = document.createElement('div');
+            entry.className = `log-entry log-${type}`;
+            entry.innerHTML = `[${new Date().toLocaleTimeString()}] ${message}`;
+            container.appendChild(entry);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        async function checkServiceStatus(port) {
+            const service = services.find(s => s.port === port);
+            try {
+                const startTime = performance.now();
+
+                // Use different status endpoints for different services
+                let statusUrl = `http://localhost:${port}/`;
+                if (port === 12345) {
+                    statusUrl = `http://localhost:${port}/api/status`;
+                } else if (port === 11434) {
+                    statusUrl = `http://localhost:${port}/api/version`;
+                } else if (port === 8080) {
+                    statusUrl = `http://localhost:${port}/`;
+                }
+
+                // Add CORS headers for Ollama
+                const fetchOptions = {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                };
+
+                const response = await fetch(statusUrl, fetchOptions);
+                const endTime = performance.now();
+                const latency = Math.round(endTime - startTime);
+
+                const statusBadge = document.getElementById(`status-${port}`);
+                const latencyEl = document.getElementById(`latency-${port}`);
+
+                if (response.ok) {
+                    statusBadge.className = 'status-badge px-3 py-1 rounded-full text-sm bg-green-500 text-white';
+                    statusBadge.textContent = 'Online';
+                    latencyEl.textContent = `Latency: ${latency}ms`;
+                    addLog(`${service.name} is online (${latency}ms)`, 'success');
+                } else {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+            } catch (error) {
+                const statusBadge = document.getElementById(`status-${port}`);
+                statusBadge.className = 'status-badge px-3 py-1 rounded-full text-sm bg-red-500 text-white';
+                statusBadge.textContent = 'Offline';
+                document.getElementById(`latency-${port}`).textContent = 'Latency: --ms';
+                addLog(`${service.name} is offline - ${error.message}`, 'error');
+            }
+        }
+
+        async function updateSystemStats() {
+            try {
+                // Count active services
+                let activeCount = 0;
+                services.forEach(service => {
+                    const statusBadge = document.getElementById(`status-${service.port}`);
+                    if (statusBadge && statusBadge.textContent === 'Online') {
+                        activeCount++;
+                    }
+                });
+
+                document.getElementById('active-services').textContent = `${activeCount}/7`;
+
+                // Simulate system load based on active services
+                const systemLoad = Math.min(activeCount * 15, 100);
+                document.getElementById('system-load').textContent = `${systemLoad}%`;
+
+                // Simulate memory usage
+                const memoryUsage = Math.min(activeCount * 12, 100);
+                document.getElementById('memory-usage').textContent = `${memoryUsage}%`;
+
+            } catch (error) {
+                console.error('Failed to update system stats:', error);
+            }
+        }
+
+        async function refreshStatus() {
+            addLog('Dashboard refresh started...', 'info');
+
+            // Check all services
+            const promises = services.map(service => checkServiceStatus(service.port));
+            await Promise.all(promises);
+
+            // Update system stats after a short delay
+            setTimeout(() => {
+                updateSystemStats();
+                addLog('Dashboard refresh completed', 'success');
+            }, 1000);
+        }
+
+        // Filter logs
+        document.getElementById('log-filter').addEventListener('input', (e) => {
+            const filter = e.target.value.toLowerCase();
+            document.querySelectorAll('.log-entry').forEach(entry => {
+                const text = entry.textContent.toLowerCase();
+                entry.style.display = text.includes(filter) ? 'block' : 'none';
+            });
+        });
+
+        // Initial load
+        refreshStatus();
+
+        // Add Ollama specific status check
+        async function checkOllamaStatus() {
+            try {
+                const response = await fetch('http://localhost:11434/api/version');
+                if (response.ok) {
+                    const data = await response.json();
+                    addLog(`Ollama Server: Version ${data.version}`, 'success');
+                    return true;
+                }
+            } catch (error) {
+                addLog(`Ollama Server: ${error.message}`, 'error');
+                return false;
+            }
+        }
+
+        // Auto-refresh every 10 seconds for better monitoring
+        setInterval(refreshStatus, 10000);
+
+        // Add latency testing
+        async function testLatency(port) {
+            const service = services.find(s => s.port === port);
+            try {
+                const startTime = performance.now();
+                let testUrl = `http://localhost:${port}/`;
+                if (port === 12345) {
+                    testUrl = `http://localhost:${port}/api/status`;
+                } else if (port === 11434) {
+                    testUrl = `http://localhost:${port}/api/version`;
+                }
+
+                const response = await fetch(testUrl);
+                const endTime = performance.now();
+                const latency = Math.round(endTime - startTime);
+
+                if (response.ok) {
+                    addLog(`Latency test: ${service.name} - ${latency}ms`, 'success');
+                    return latency;
+                }
+            } catch (error) {
+                addLog(`Latency test failed: ${service.name} - ${error.message}`, 'error');
+            }
+            return null;
+        }
+    </script>
+</body>
+
+</html>

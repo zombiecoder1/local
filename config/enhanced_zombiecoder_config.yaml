@@ -1,0 +1,122 @@
+# এই ফাইলটি config/ ডিরেক্টরিতে তৈরি করুন
+agent:
+  name: "ZombieCoder Family Agent"
+  version: "2.0.0"
+  owner: "Sahon Srabon"
+  company: "Developer Zone"
+  contact: "+8801323-626282"
+  system_description: "Enhanced unified agent with family approach, truth verification, and multi-memory system"
+
+persona:
+  response_prefix: "ভাইয়া"
+  tone: "friendly, truthful, industry-best-practice, family-oriented"
+  language: "bengali"  # Force Bengali language
+  core_rules:
+    - "সবসময় বাংলা ভাষায় উত্তর দেবে"
+    - "সত্য কথা বলবে always - মিথ্যা হলে response দেবে না"
+    - "Industry best practice follow করবে"
+    - "Family-oriented approach maintain করবে"
+    - "User কে ভাইয়া address করবে"
+    - "VSCode Copilot/Cursor AI এর মতো response pattern"
+    - "Trust verification ছাড়া কোন response দেবে না"
+
+capabilities:
+  enabled:
+    - coding
+    - debugging 
+    - frontend
+    - architecture
+    - database
+    - api
+    - security
+    - performance
+    - devops
+    - testing
+
+memory:
+  json_memory:
+    path: "memory/hello_zombie_memory.json"
+    retention_days: 30
+    max_conversations: 1000
+    
+  sqlite_memory:
+    path: "data/memory/hello_zombie_memory.sqlite"
+    retention_days: 30
+    auto_cleanup: true
+    
+  conversation_history:
+    enabled: true
+    max_history_length: 50
+
+langchain:
+  enabled: true
+  capabilities:
+    capability_detection: true
+    prompt_templating: true
+    conversation_chain: true
+  model:
+    name: "deepseek-ai/deepseek-coder-1.3b-base"
+    provider: "huggingface"
+    max_new_tokens: 220
+    temperature: 0.7
+
+ollama:
+  enabled: false
+  note: "LangChain HuggingFace পাইপলাইন চালু থাকায় Ollama নির্ভরতা অপসারণ করা হয়েছে"
+
+api:
+  main_server:
+    url: "http://localhost:12346"
+    endpoints:
+      health: "/health"
+      chat: "/chat"
+      models: "/models"
+      
+  agent_server:
+    port: 8001
+    host: "0.0.0.0"
+    endpoints:
+      - GET /
+      - POST /chat
+      - GET /status
+      - GET /info
+      - GET /memory
+      - GET /health
+
+security:
+  cors_origins:
+    - "vscode://"
+    - "http://localhost:3000"
+    - "http://localhost:8001"
+  terminal_confirmation: true
+  max_request_size: "10MB"
+
+logging:
+  level: "INFO"
+  file: "logs/zombiecoder_agent.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+features:
+  truth_verification: true
+  enhanced_trust_verification: true  # Reject false responses
+  session_management: true  # X-Session-ID header support
+  streaming_support: true  # Streaming responses
+  bengali_language_enforcement: true  # Force Bengali responses
+  crud_testing: true
+  resource_monitoring: true
+  auto_memory_cleanup: true
+  conversation_analytics: true
+
+session:
+  enabled: true
+  header_name: "X-Session-ID"
+  timeout_hours: 24
+  auto_cleanup: true
+
+trust_verification:
+  enabled: true
+  strict_mode: true  # Reject if verification fails
+  min_confidence: 0.5
+  check_bengali: true
+  check_family_prefix: true
+  reject_uncertain_responses: true

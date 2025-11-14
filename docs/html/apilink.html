@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Zombie API Links - Terminal Ready</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        .endpoint { background: #ecf0f1; padding: 15px; margin: 10px 0; border-radius: 5px; border-left: 4px solid #3498db; }
+        .purpose { color: #7f8c8d; font-style: italic; margin-bottom: 10px; }
+        .curl-command { background: #2c3e50; color: #ecf0f1; padding: 10px; border-radius: 3px; font-family: 'Courier New', monospace; font-size: 14px; overflow-x: auto; }
+        .copy-btn { background: #3498db; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-left: 10px; }
+        .copy-btn:hover { background: #2980b9; }
+        .status-indicator { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; }
+        .status-running { background: #27ae60; }
+        .status-stopped { background: #e74c3c; }
+        .test-results { background: #f8f9fa; padding: 15px; border-radius: 5px; margin: 20px 0; }
+        .test-passed { color: #27ae60; font-weight: bold; }
+        .test-failed { color: #e74c3c; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Hello Zombie API Links - Terminal Ready Commands</h1>
+        
+        <div class="test-results">
+            <h3>📊 Latest Test Results</h3>
+            <p><span class="status-indicator status-running"></span><strong>Server Status:</strong> <span class="test-passed">RUNNING (Lock file found)</span></p>
+            <p><span class="status-indicator status-running"></span><strong>Streaming Test:</strong> <span class="test-passed">PASSED</span> (1 SSE events received)</p>
+            <p><span class="status-indicator status-running"></span><strong>Language & Prefix Test:</strong> <span class="test-passed">PASSED</span> (ভাইয়া prefix, বাংলা language)</p>
+            <p><span class="status-indicator status-stopped"></span><strong>Memory Test:</strong> <span class="test-failed">FAILED</span> (Session memory needs review)</p>
+        </div>
+
+        <h2>🔗 Core API Endpoints</h2>
+
+        <div class="endpoint">
+            <div class="purpose"><strong>Purpose:</strong> Check if main server is running</div>
+            <div class="curl-command">
+                curl http://127.0.0.1:8001/health
+                <button class="copy-btn" onclick="copyToClipboard('curl http://127.0.0.1:8001/health')">Copy</button>
+            </div>
+        </div>
+
+        <div class="endpoint">
+            <div class="purpose"><strong>Purpose:</strong> Check Ollama model server status</div>
+            <div class="curl-command">
+                curl http://127.0.0.1:8155/api/tags
+                <button class="copy-btn" onclick="copyToClipboard('curl http://127.0.0.1:8155/api/tags')">Copy</button>
+            </div>
+        </div>
+
+        <div class="endpoint">
+            <div class="purpose"><strong>Purpose:</strong> Check runtime model status</div>
+            <div class="curl-command">
+                curl http://127.0.0.1:8001/status
+                <button class="copy-btn" onclick="copyToClipboard('curl http://127.0.0.1:8001/status')">Copy</button>
+            </div>
+        </div>
+
+        <h2>🤖 Chat & AI Endpoints</h2>
+
+        <div class="endpoint">
+            <div class="purpose"><strong>Purpose:</strong> Test Bengali language and ভাইয়া prefix (Non-streaming)</div>
+            <div class="curl-command">
+                curl -X POST http://127.0.0.1:8001/v1/chat/completions -H "Content-Type: application/json" -H "X-HelloZombie-Status: Setup-Complete" -d "{\"model\": \"deepseek-coder-1.3b\", \"messages\": [{\"role\": \"user\", \"content\": \"আমাকে বাংলা ভাষা ও প্রোগ্রামিং-এর পার্থক্য এক লাইনে বলো\"}], \"stream\": false}"
+                <button class="copy-btn" onclick="copyToClipboard('curl -X POST http://127.0.0.1:8001/v1/chat/completions -H \"Content-Type: application/json\" -H \"X-HelloZombie-Status: Setup-Complete\" -d \"{\\\"model\\\": \\\"deepseek-coder-1.3b\\\", \\\"messages\\\": [{\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"আমাকে বাংলা ভাষা ও প্রোগ্রামিং-এর পার্থক্য এক লাইনে বলো\\\"}], \\\"stream\\\": false}\"')">Copy</button>
+            </div>
+        </div>
+
+        <div class="endpoint">
+            <div class="purpose"><strong>Purpose:</strong> Test streaming with SSE (Server-Sent Events)</div>
+            <div class="curl-command">
+                curl -X POST http://127.0.0.1:8001/v1/chat/completions -H "Content-Type: application/json" -H "X-HelloZombie-Status: Setup-Complete" -H "Accept: text/event-stream" -d "{\"model\": \"deepseek-coder-1.3b\", \"messages\": [{\"role\": \"user\", \"content\": \"Stream a short Bengali greeting\"}], \"stream\": true}"
+                <button class="copy-btn" onclick="copyToClipboard('curl -X POST http://127.0.0.1:8001/v1/chat/completions -H \"Content-Type: application/json\" -H \"X-HelloZombie-Status: Setup-Complete\" -H \"Accept: text/event-stream\" -d \"{\\\"model\\\": \\\"deepseek-coder-1.3b\\\", \\\"messages\\\": [{\\\"role\\\": \\\"user\\\", \\\"content\\\": \\\"Stream a short Bengali greeting\\\"}], \\\"stream\\\": true}\"')">Copy</button>
+            </div>
+        </div>
+
+        <div class="endpoint">
+            <div class="purpose"><strong>Purpose:</strong> Test session-based memory (Native endpoint)</div>
+            <div class="curl-command">
+                curl -X POST http://127.0.0.1:8001/chat -H "Content-Type: application/json" -H "X-HelloZombie-Status: Setup-Complete" -H "X-Session-ID: TEST_SESSION_123" -d "{\"message\": \"আমার নাম কি মনে আছে?\", \"context\": {\"session_id\": \"TEST_SESSION_123\"}}"
+                <button class="copy-btn" onclick="copyToClipboard('curl -X POST http://127.0.0.1:8001/chat -H \"Content-Type: application/json\" -H \"X-HelloZombie-Status: Setup-Complete\" -H \"X-Session-ID: TEST_SESSION_123\" -d \"{\\\"message\\\": \\\"আমার নাম কি মনে আছে?\\\", \\\"context\\\": {\\\"session_id\\\": \\\"TEST_SESSION_123\\\"}}\"')">Copy</button>
+            </div>
+        </div>
+
+        <h2>🔧 Model Management</h2>
+
+        <div class="endpoint">
+            <div class="purpose"><strong>Purpose:</strong> Load tinyllama-gguf model in Ollama runtime</div>
+            <div class="curl-command">
+                curl http://127.0.0.1:8155/api/tags
+                <button class="copy-btn" onclick="copyToClipboard('curl http://127.0.0.1:8155/api/tags')">Copy</button>
+            </div>
+        </div>
+
+        <div class="endpoint">
+            <div class="purpose"><strong>Purpose:</strong> Unload model from runtime</div>
+            <div class="curl-command">
+                curl http://127.0.0.1:8001/v1/agent/info
+                <button class="copy-btn" onclick="copyToClipboard('curl http://127.0.0.1:8001/v1/agent/info')">Copy</button>
+            </div>
+        </div>
+
+        <h2>📊 Performance & Monitoring</h2>
+
+        <div class="endpoint">
+            <div class="purpose"><strong>Purpose:</strong> Get server performance metrics</div>
+            <div class="curl-command">
+                curl http://127.0.0.1:8001/health
+                <button class="copy-btn" onclick="copyToClipboard('curl http://127.0.0.1:8001/health')">Copy</button>
+            </div>
+        </div>
+
+        <div class="endpoint">
+            <div class="purpose"><strong>Purpose:</strong> Get available models list</div>
+            <div class="curl-command">
+                curl http://127.0.0.1:8001/v1/models
+                <button class="copy-btn" onclick="copyToClipboard('curl http://127.0.0.1:8001/v1/models')">Copy</button>
+            </div>
+        </div>
+
+        <h2>🧪 Complete Integration Test</h2>
+
+        <div class="endpoint">
+            <div class="purpose"><strong>Purpose:</strong> Run complete integration test suite</div>
+            <div class="curl-command">
+                python test/final_integration_test.py
+                <button class="copy-btn" onclick="copyToClipboard('python test/final_integration_test.py')">Copy</button>
+            </div>
+        </div>
+
+        <div class="endpoint">
+            <div class="purpose"><strong>Purpose:</strong> Run integration test with virtual environment</div>
+            <div class="curl-command">
+                .\.venv311\Scripts\python test\final_integration_test.py
+                <button class="copy-btn" onclick="copyToClipboard('.\\\\.venv311\\\\Scripts\\\\python test\\\\final_integration_test.py')">Copy</button>
+            </div>
+        </div>
+
+        <h2>📝 Configuration Files</h2>
+        <ul>
+            <li><strong>Agent Config:</strong> <code>agents/hello_zombie.yaml</code></li>
+            <li><strong>JSON Memory:</strong> <code>memory/hello_zombie_memory.json</code></li>
+            <li><strong>SQLite Memory:</strong> <code>data/memory/hello_zombie_memory.sqlite</code></li>
+            <li><strong>Runtime Lock:</strong> <code>data/server.lock</code></li>
+            <li><strong>Server Logs:</strong> <code>log/main_server.log</code></li>
+            <li><strong>Cursor Settings:</strong> <code>c:\Users\sahon\.cursor\mcp.json</code></li>
+        </ul>
+
+        <h2>🎯 Quick Start Commands</h2>
+        <div class="curl-command">
+# 1. Start Ollama server (if not running)<br>
+# ollama serve --port 8155<br><br>
+# 2. Start ZombieCoder Agent Server<br>
+python unified_agent_system.py<br><br>
+# 3. Check server health<br>
+curl http://127.0.0.1:8001/health<br><br>
+# 4. Test Bengali response<br>
+curl -X POST http://127.0.0.1:8001/v1/chat/completions -H "Content-Type: application/json" -H "X-HelloZombie-Status: Setup-Complete" -d "{\"model\": \"deepseek-coder-1.3b\", \"messages\": [{\"role\": \"user\", \"content\": \"হ্যালো ভাইয়া\"}], \"stream\": false}"
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Visual feedback
+                event.target.textContent = 'Copied!';
+                setTimeout(() => {
+                    event.target.textContent = 'Copy';
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+
+        // Auto-refresh status every 30 seconds
+        setInterval(function() {
+            fetch('http://127.0.0.1:8001/health')
+                .then(response => response.json())
+                .then(data => {
+                    // Update status indicators if needed
+                    console.log('Server status:', data.status);
+                })
+                .catch(error => {
+                    console.log('Server not responding');
+                });
+        }, 30000);
+    </script>
+</body>
+</html>

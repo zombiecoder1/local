@@ -1,0 +1,195 @@
+📋 QUICK REFERENCE - All In One
+
+════════════════════════════════════════════════════════════
+
+🚀 START ALL SERVICES (একটি কমান্ড দিয়ে সব!)
+
+.\scripts\start_all_services.ps1
+
+এতেই:
+  ✅ Model Server শুরু হয় (port 8155)
+  ✅ Agent Server শুরু হয় (port 8001)
+  ✅ Proxy Adapter শুরু হয় (port 5010)
+  ✅ রিয়েল-টাইম মনিটরিং শুরু হয়
+  ✅ GET/POST requests দেখা যায়
+  ✅ Status codes দেখা যায়
+  ✅ RAM/CPU monitoring দেখা যায়
+
+════════════════════════════════════════════════════════════
+
+📊 মনিটরিং আউটপুট দেখা:
+
+🔵 [MODEL] (POST) 127.0.0.1 POST /api/generate -> 200
+  ↓ Model Server এ request গেছে, সফল!
+
+🟢 [AGENT] (POST) 127.0.0.1 POST /chat -> 200
+  ↓ Agent Server এ request গেছে, সফল!
+
+🟡 [PROXY] (POST) 127.0.0.1 POST /v1/chat/completions -> 200
+  ↓ Proxy Server এ request গেছে, সফল!
+
+📈 Resource Usage:
+   Model Server (PID 12345): 256.50 MB
+   Agent Server (PID 12346): 189.75 MB
+   Proxy Adapter (PID 12347): 45.25 MB
+
+════════════════════════════════════════════════════════════
+
+🧪 টেস্ট করুন (স্ক্রিপ্ট চলার সময় অন্য terminal এ):
+
+Model Server:
+  curl -X POST http://127.0.0.1:8155/api/generate \
+    -H "Content-Type: application/json" \
+    -d '{"model":"deepseek-coder-1.3b","prompt":"test","stream":false}'
+
+Agent Server:
+  curl -X POST http://127.0.0.1:8001/chat \
+    -H "Content-Type: application/json" \
+    -d '{"message":"test"}'
+
+Proxy Server:
+  curl -X POST http://127.0.0.1:5010/v1/chat/completions \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer DUMMY_API_KEY_FOR_LOCAL" \
+    -d '{"model":"deepseek-coder-1.3b","messages":[{"role":"user","content":"test"}],"stream":false}'
+
+════════════════════════════════════════════════════════════
+
+🔍 লগ দেখুন (অন্য terminal এ):
+
+Model Server:
+  Get-Content logs/model_server.log -Tail 20
+
+Agent Server:
+  Get-Content logs/zombiecoder_agent.log -Tail 20
+
+Proxy Server:
+  Get-Content logs/proxy_adapter.log -Tail 20
+
+রিয়েল-টাইম ফলো করুন:
+  Get-Content logs/proxy_adapter.log -Wait
+
+════════════════════════════════════════════════════════════
+
+📈 রিসোর্স ট্র্যাক করা:
+
+প্রতি 10 সেকেন্ডে দেখা যায়:
+
+📈 Resource Usage:
+   Model Server (PID xxx): yyy MB
+   Agent Server (PID xxx): yyy MB
+   Proxy Adapter (PID xxx): yyy MB
+
+নর্মাল:
+  - Model: ৫০০ MB পর্যন্ত
+  - Agent: ২০০-३०० MB
+  - Proxy: ৫০ MB এর কম
+
+মেমরি লিক হলে হঠাৎ বাড়তে থাকে!
+
+════════════════════════════════════════════════════════════
+
+🎯 রিকোয়েস্ট টাইপ (স্ক্রিপ্ট দেখায়):
+
+(GET) = GET request
+(POST) = POST request
+(PUT) = PUT request
+(DELETE) = DELETE request
+
+Status Codes:
+-> 200 = সফল!
+-> 201 = সফল (তৈরি হয়েছে)
+-> 400 = Bad request
+-> 401 = Unauthorized
+-> 404 = Not found
+-> 500 = Server error
+
+════════════════════════════════════════════════════════════
+
+🛑 বন্ধ করুন:
+
+Ctrl+C
+
+স্বয়ংক্রিয়ভাবে:
+  ✅ তিনটি সার্ভার বন্ধ হবে
+  ✅ Temp ফাইল পরিষ্কার হবে
+  ✅ Status মেসেজ দেখাবে
+
+যদি কাজ না করে:
+  taskkill /F /PID <PID>
+
+════════════════════════════════════════════════════════════
+
+📚 ডকুমেন্টেশন:
+
+- START_HERE_BANGLA.md = বাংলায় সম্পূর্ণ
+- SERVICE_ORCHESTRATOR.md = এই স্ক্রিপ্ট বিস্তারিত
+- PROXY_ADAPTER_GUIDE.md = প্রক্সি বিস্তারিত
+- TROUBLESHOOTING.md = সমস্যা সমাধান
+- docs/README.md = সব গাইড এর ইনডেক্স
+
+════════════════════════════════════════════════════════════
+
+⚙️ কাস্টমাইজেশন:
+
+পোর্ট পরিবর্তন:
+  scripts/start_all_services.ps1 এ লাইন 25-27
+
+Model Server path:
+  scripts/start_all_services.ps1 এ লাইন 58
+
+মনিটরিং ইন্টারভাল:
+  scripts/start_all_services.ps1 এ লাইন 252
+
+════════════════════════════════════════════════════════════
+
+🔑 কী করে:
+
+1. তিনটি PowerShell process শুরু করে (বেকগ্রাউন্ডে)
+2. প্রতিটি সার্ভার আলাদা লগ ফাইলে লগ করে
+3. মূল window এ রিয়েল-টাইম মনিটরিং দেখায়
+4. প্রতি 500ms লগ চেক করে
+5. নতুন entries দেখায় রঙিন format এ
+6. প্রতি 10 সেকেন্ডে RAM/CPU দেখায়
+7. Ctrl+C এ সব gracefully বন্ধ করে
+
+════════════════════════════════════════════════════════════
+
+🎭 উদাহরণ Workflow:
+
+Terminal 1:
+  .\scripts\start_all_services.ps1
+  (রিয়েল-টাইম মনিটরিং দেখা যাচ্ছে)
+
+Terminal 2:
+  curl -X POST http://127.0.0.1:5010/v1/chat/completions ...
+  (request পাঠানো)
+
+Terminal 1:
+  🟡 [PROXY] (POST) ... -> 200
+  (Terminal 1 এ রিয়েল-টাইম দেখা যাবে!)
+
+Terminal 2:
+  (response পাবেন)
+
+════════════════════════════════════════════════════════════
+
+✨ সারাংশ:
+
+One command:
+  .\scripts\start_all_services.ps1
+
+Everything else happens automatically!
+
+────────────────────────────────────────────────────────────
+
+প্রথম ব্যবহারকারীদের জন্য:
+
+1. পড়ুন: START_HERE_BANGLA.md
+2. চালান: .\scripts\start_all_services.ps1
+3. দেখুন: রিয়েল-টাইম মনিটরিং
+4. ট্রাবলশুট: docs/TROUBLESHOOTING.md
+
+────────────────────────────────────────────────────────────
+
+Happy Testing! 🚀

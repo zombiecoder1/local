@@ -1,0 +1,33 @@
+# এই ফাইলটি মূল ডিরেক্টরিতে তৈরি করুন
+flask==2.3.3
+requests>=2.31.0,<3.0.0
+pyyaml==6.0.1
+python-dotenv==1.0.0
+
+# LangChain এবং বাংলা NLP নির্ভরতা
+banglanltk==0.0.4
+langchain>=0.3.10,<0.4.0
+langchain-core>=0.3.63,<0.4.0
+langchain-community>=0.3.10,<0.4.0
+langchain-huggingface>=0.1.2,<0.2.0
+transformers>=4.57.1,<5.0.0
+sentencepiece==0.2.1
+sentence-transformers>=5.1.2,<6.0.0
+torch==2.9.0
+scikit-learn>=1.7.2,<2.0.0
+scipy>=1.16.3,<2.0.0
+numpy>=1.26.4,<3.0.0
+
+# সিস্টেম মনিটরিং (Windows-এ build tools প্রয়োজন হতে পারে)
+psutil>=5.9.8,<6.0.0
+
+# মডেল রানটাইম - Torch CPU wheel অফিসিয়াল চ্যানেল থেকে ইন্সটল করুন
+# pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+
+
+
+
+
+
+

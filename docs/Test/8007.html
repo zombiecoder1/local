@@ -1,0 +1,875 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZombieCoder API Dashboard</title>
+  <style>
+    :root {
+      --bg: #0a0f1c;
+      --bg-card: #0e1424;
+      --bg-input: #111827;
+      --fg: #e6edf3;
+      --muted: #8b9bb3;
+      --accent: #3b82f6;
+      --ok: #10b981;
+      --err: #ef4444;
+      --warning: #f59e0b;
+      --border: #1e293b;
+      --border-light: #334155;
+      --glow: 0 0 15px rgba(59, 130, 246, 0.3);
+      --transition: all 0.2s ease;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+    
+    .monitor-frame {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    
+    .monitor-frame::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    
+    header {
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(10, 15, 28, 0.95);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .logo {
+      color: var(--accent);
+      font-size: 28px;
+    }
+    
+    .sub {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 6px;
+    }
+    
+    .row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 14px;
+    }
+    
+    input, select, button, textarea {
+      background: var(--bg-input);
+      color: var(--fg);
+      border: 1px solid var(--border-light);
+      padding: 10px 14px;
+      font-family: inherit;
+      transition: var(--transition);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(59, 130, 246, 0.2);
+    }
+    
+    input, select {
+      height: 42px;
+    }
+    
+    input.wide {
+      min-width: 360px;
+      flex: 1;
+    }
+    
+    button {
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    button::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transition: left 0.5s;
+    }
+    
+    button:hover::after {
+      left: 100%;
+    }
+    
+    button.primary {
+      background: #1e3a8a;
+      border: 1px solid #3b82f6;
+      color: #dbeafe;
+    }
+    
+    button.primary:hover {
+      background: #1e40af;
+      box-shadow: var(--glow);
+    }
+    
+    button.ghost {
+      background: transparent;
+      border: 1px solid #374151;
+    }
+    
+    button.ghost:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: #4b5563;
+    }
+    
+    button.success {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--ok);
+    }
+    
+    button.success:hover {
+      background: rgba(16, 185, 129, 0.25);
+    }
+    
+    main {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 0;
+      flex: 1;
+      min-height: calc(100vh - 160px);
+    }
+    
+    .sidebar {
+      background: var(--bg-card);
+      border-right: 1px solid var(--border);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    
+    .content {
+      padding: 20px;
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .card h3 {
+      margin: 0 0 16px 0;
+      font-size: 16px;
+      color: #cfe3ff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .card h3 .icon {
+      font-size: 18px;
+    }
+    
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+      overflow: auto;
+      padding-right: 4px;
+    }
+    
+    .list::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    .list::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    
+    .list::-webkit-scrollbar-thumb {
+      background: rgba(59, 130, 246, 0.3);
+    }
+    
+    .ep {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 14px;
+      border: 1px solid var(--border);
+      transition: var(--transition);
+    }
+    
+    .ep:hover {
+      background: rgba(255, 255, 255, 0.03);
+      border-color: var(--border-light);
+    }
+    
+    .method {
+      font-weight: 700;
+      font-size: 11px;
+      padding: 4px 8px;
+      min-width: 60px;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .method-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    .method-link:hover {
+      text-decoration: none;
+    }
+    
+    .GET {
+      color: #60a5fa;
+      background: #0c1b2c;
+      border: 1px solid #1e3a8a;
+    }
+    
+    .POST {
+      color: #34d399;
+      background: #0c2c1e;
+      border: 1px solid #065f46;
+    }
+    
+    .path {
+      font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+      font-size: 13px;
+      color: #c6d9ee;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    
+    .path:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    
+    .desc {
+      font-size: 12px;
+      color: #93a8c2;
+      margin-top: 4px;
+    }
+    
+    .warn {
+      color: var(--warning);
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 2px;
+    }
+    
+    .result {
+      white-space: pre-wrap;
+      font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+      background: #0b1322;
+      border: 1px solid var(--border);
+      padding: 16px;
+      min-height: 160px;
+      max-height: 300px;
+      overflow: auto;
+      font-size: 13px;
+      box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+    
+    .muted {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 6px;
+      display: block;
+    }
+    
+    .badge {
+      font-size: 12px;
+      color: #d2e9ff;
+      background: #10233d;
+      border: 1px solid #284d82;
+      padding: 4px 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    
+    .ok {
+      color: var(--ok);
+    }
+    
+    .err {
+      color: var(--err);
+    }
+    
+    .flex {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .copy {
+      font-size: 12px;
+    }
+    
+    .copy-success {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--ok);
+      color: white;
+      padding: 12px 18px;
+      box-shadow: var(--glow);
+      z-index: 1000;
+      animation: fadeInOut 2s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    @keyframes fadeInOut {
+      0% { opacity: 0; transform: translateY(10px); }
+      20% { opacity: 1; transform: translateY(0); }
+      80% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(10px); }
+    }
+    
+    .category-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 20px 0 10px 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .category-header h3 {
+      margin: 0;
+      font-size: 14px;
+      color: var(--accent);
+    }
+    
+    .category-header .count {
+      background: rgba(59, 130, 246, 0.2);
+      color: var(--accent);
+      font-size: 11px;
+      padding: 2px 6px;
+    }
+    
+    .status-indicator {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 6px;
+    }
+    
+    .status-online {
+      background: var(--ok);
+    }
+    
+    .status-offline {
+      background: var(--err);
+    }
+    
+    .quick-commands {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+    
+    .command-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 14px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    
+    .command-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+    
+    .command-btn .text {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    
+    .command-btn .icon {
+      color: var(--accent);
+      font-size: 16px;
+    }
+    
+    @media (max-width: 1100px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        padding: 14px 18px;
+      }
+      
+      main {
+        padding: 0;
+        gap: 0;
+      }
+      
+      .sidebar, .content {
+        padding: 16px;
+      }
+      
+      input.wide {
+        min-width: 100%;
+      }
+      
+      .quick-commands {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="monitor-frame">
+    <header>
+      <h1><span class="logo">🧟</span> ZombieCoder API Dashboard</h1>
+      <div class="sub">Quickly invoke endpoints, copy curl commands, and view responses</div>
+      <div class="row">
+        <input id="base" class="wide" placeholder="Base URL (e.g., http://localhost:8155)" oninput="setBase()" />
+        <span class="badge">💡 Defaults to current origin</span>
+      </div>
+    </header>
+    <main>
+      <section class="sidebar">
+        <div class="card">
+          <h3><span class="icon">📋</span> Available Endpoints</h3>
+          <div id="list" class="list"></div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="card">
+          <h3><span class="icon">🚀</span> Request Builder</h3>
+          <div class="grid">
+            <div>
+              <label class="muted">HTTP Method</label>
+              <select id="method">
+                <option>GET</option>
+                <option>POST</option>
+              </select>
+            </div>
+            <div>
+              <label class="muted">Endpoint Path</label>
+              <input id="path" class="wide" placeholder="/health" />
+            </div>
+          </div>
+          <div style="margin-top:16px">
+            <label class="muted">Request Body (JSON)</label>
+            <textarea id="body" rows="6" style="width:100%" placeholder="{ }"></textarea>
+          </div>
+          <div class="row" style="margin-top:16px">
+            <button class="primary" onclick="call({p:document.querySelector('#path').value,m:document.querySelector('#method').value})">
+              <span>📤</span> Send Request
+            </button>
+            <button class="ghost" onclick="document.querySelector('#body').value='';">
+              <span>🗑️</span> Clear Body
+            </button>
+          </div>
+          <div style="margin-top:20px">
+            <div class="muted">cURL Command</div>
+            <div class="result" id="curl"></div>
+            <div class="row">
+              <button class="ghost copy" onclick="copyText(document.querySelector('#curl').textContent, 'cURL command')">
+                <span>📋</span> Copy cURL
+              </button>
+            </div>
+          </div>
+          <div style="margin-top:20px">
+            <div class="muted">Response</div>
+            <div class="result" id="out">Select an endpoint then click "Send Request"</div>
+            <div class="row">
+              <button class="ghost copy" onclick="copyText(document.querySelector('#out').textContent, 'Response')">
+                <span>📋</span> Copy Response
+              </button>
+            </div>
+          </div>
+          <div style="margin-top:20px">
+            <h3><span class="icon">⚡</span> Quick Commands</h3>
+            <div class="quick-commands">
+              <div class="command-btn" onclick="copyCmd('run')">
+                <span class="text">Run Server</span>
+                <span class="icon">📋</span>
+              </div>
+              <div class="command-btn" onclick="copyCmd('uvicorn')">
+                <span class="text">Uvicorn Start</span>
+                <span class="icon">📋</span>
+              </div>
+              <div class="command-btn" onclick="copyCmd('open_ui')">
+                <span class="text">Open UI</span>
+                <span class="icon">📋</span>
+              </div>
+              <div class="command-btn" onclick="copyCmd('open_logs')">
+                <span class="text">Open Logs</span>
+                <span class="icon">📋</span>
+              </div>
+              <div class="command-btn" onclick="copyCmd('open_models')">
+                <span class="text">Open Models</span>
+                <span class="icon">📋</span>
+              </div>
+              <div class="command-btn" onclick="copyCmd('open_runtime_log')">
+                <span class="text">Open Runtime Log</span>
+                <span class="icon">📋</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const endpoints = [
+      {cat:"System", m:"GET", p:"/health", d:"Server health"},
+      {cat:"System", m:"GET", p:"/system/info", d:"Hardware info"},
+      {cat:"System", m:"GET", p:"/provider/about", d:"Provider metadata"},
+      {cat:"System", m:"GET", p:"/monitoring/summary", d:"Monitoring summary"},
+      {cat:"System", m:"GET", p:"/performance/snapshot", d:"Performance snapshot"},
+      {cat:"Models", m:"GET", p:"/models/installed", d:"Installed models"},
+      {cat:"Models", m:"GET", p:"/models/available", d:"Recommended models"},
+      {cat:"Registry", m:"GET", p:"/registry/models", d:"Model registry (not implemented)", warn:true},
+      {cat:"Registry", m:"GET", p:"/registry/validate/{model}", d:"Validate model (not implemented)", warn:true},
+      {cat:"Runtime", m:"GET", p:"/runtime/status", d:"Runtime status"},
+      {cat:"Runtime", m:"GET", p:"/runtime/config", d:"Runtime config"},
+      {cat:"Runtime", m:"POST", p:"/runtime/load/{model}?threads=4", d:"Load model"},
+      {cat:"Runtime", m:"POST", p:"/runtime/unload/{model}", d:"Unload model"},
+      {cat:"Download", m:"POST", p:"/download/start", d:"Start HF download"},
+      {cat:"Download", m:"GET", p:"/download/status/{model}", d:"Download status"},
+      {cat:"Download", m:"POST", p:"/download/cancel/{model}", d:"Cancel download"},
+      {cat:"Auth", m:"POST", p:"/auth/hf_token", d:"Set HF token"},
+      {cat:"Auth", m:"GET", p:"/auth/status", d:"Auth status"},
+      {cat:"Auth", m:"GET", p:"/auth/whoami", d:"HF whoami (not implemented)", warn:true},
+      {cat:"HF", m:"GET", p:"/hf/models?search=GGUF&limit=25", d:"Search models (not implemented)", warn:true},
+      {cat:"HF", m:"GET", p:"/hf/popular?limit=10", d:"Popular (not implemented)", warn:true},
+      {cat:"HF", m:"GET", p:"/hf/files/{repo_id}", d:"Repo files (not implemented)", warn:true},
+      {cat:"HF", m:"GET", p:"/hf/small-models", d:"Small picks (not implemented)", warn:true},
+      {cat:"Ollama", m:"GET", p:"/api/tags", d:"List models (ollama-like)"},
+      {cat:"Ollama", m:"POST", p:"/api/generate", d:"Generate"},
+      {cat:"Ollama", m:"POST", p:"/api/chat", d:"Chat"},
+      {cat:"Session", m:"POST", p:"/api/session/start", d:"Start session"},
+      {cat:"Session", m:"GET", p:"/api/session/status/{id}", d:"Session status"},
+      {cat:"Session", m:"POST", p:"/api/session/end/{id}", d:"End session"},
+      {cat:"Logs", m:"GET", p:"/logs/recent", d:"Recent request log"},
+      {cat:"Logs", m:"GET", p:"/logs/server", d:"Server log tail"},
+      {cat:"UI", m:"GET", p:"/", d:"Home"},
+      {cat:"UI", m:"GET", p:"/ui", d:"This dashboard"},
+    ];
+
+    let baseUrl = window.location.origin;
+    
+    function q(sel){ return document.querySelector(sel); }
+    
+    function el(tag, cls){ 
+      const e = document.createElement(tag); 
+      if(cls) e.className = cls; 
+      return e; 
+    }
+    
+    function setBase(){ 
+      baseUrl = q('#base').value.trim() || window.location.origin; 
+    }
+    
+    function copyText(text, description) {
+      navigator.clipboard.writeText(text).then(() => {
+        showCopySuccess(description + ' copied to clipboard!');
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+        showCopySuccess('Failed to copy to clipboard', true);
+      });
+    }
+    
+    function showCopySuccess(message, isError = false) {
+      const existing = document.querySelector('.copy-success');
+      if (existing) existing.remove();
+      
+      const success = el('div', 'copy-success');
+      success.innerHTML = isError ? '❌ ' + message : '✅ ' + message;
+      success.style.background = isError ? 'var(--err)' : 'var(--ok)';
+      
+      document.body.appendChild(success);
+      
+      setTimeout(() => {
+        if (success.parentNode) {
+          success.parentNode.removeChild(success);
+        }
+      }, 2000);
+    }
+    
+    function curlFor(ep, body){
+      const url = baseUrl + ep.p;
+      const m = ep.m || 'GET';
+      if(m === 'GET') return `curl -s "${url}"`;
+      const data = body ? JSON.stringify(body, null, 0) : '{}';
+      return `curl -s -X ${m} "${url}" -H "Content-Type: application/json" -d '${data.replace(/'/g, "'\''")}'`;
+    }
+
+    async function call(ep){
+      const out = q('#out');
+      const path = q('#path').value.trim() || ep.p;
+      const method = q('#method').value || ep.m;
+      const bodyText = q('#body').value.trim();
+      const url = (q('#base').value.trim() || baseUrl) + path;
+      
+      out.textContent = `⏳ ${method} ${url}`;
+      
+      let payload = undefined;
+      try{ 
+        payload = bodyText ? JSON.parse(bodyText) : undefined; 
+      } catch(e){ 
+        out.textContent = `Error: Invalid JSON in request body\n\n${e.message}`;
+        return;
+      }
+      
+      const t0 = performance.now();
+      try{
+        const res = await fetch(url, {
+          method,
+          headers: payload ? { 'Content-Type': 'application/json' } : undefined,
+          body: payload ? JSON.stringify(payload) : undefined,
+        });
+        
+        const txt = await res.text();
+        let data;
+        try { 
+          data = JSON.parse(txt); 
+        } catch { 
+          data = txt; 
+        }
+        
+        const ms = Math.round(performance.now()-t0);
+        out.textContent = JSON.stringify({ 
+          url, 
+          status: res.status, 
+          latency_ms: ms, 
+          data 
+        }, null, 2);
+        
+        q('#curl').textContent = curlFor({p:path, m:method}, payload);
+      } catch(err) {
+        out.textContent = `Error: ${err}`;
+      }
+    }
+
+    function pick(ep){ 
+      q('#path').value = ep.p; 
+      q('#method').value = ep.m; 
+      q('#body').value = sampleBody(ep.p) || ''; 
+      q('#curl').textContent = curlFor(ep, q('#body').value ? JSON.parse(q('#body').value) : undefined); 
+    }
+    
+    function openEndpoint(ep) {
+      const url = baseUrl + ep.p;
+      window.open(url, '_blank');
+    }
+    
+    function sampleBody(path){
+      if(path.startsWith('/runtime/load/')) return '';
+      if(path === '/download/start') return JSON.stringify({ model_name: 'tinyllama-gguf', repo_id: 'TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF' }, null, 2);
+      if(path === '/auth/hf_token') return JSON.stringify({ token: 'hf_xxx' }, null, 2);
+      if(path === '/api/generate') return JSON.stringify({ model:'tinyllama-gguf', prompt:'Hello!', stream:false, options:{ temperature:0.6 } }, null, 2);
+      if(path === '/api/chat') return JSON.stringify({ model:'tinyllama-gguf', messages:[{role:'user', content:'Hi'}], max_tokens:64 }, null, 2);
+      if(path.startsWith('/api/session/end/')) return '';
+      return '';
+    }
+
+    function renderList(){
+      const list = q('#list'); 
+      list.innerHTML = '';
+      
+      const byCat = {};
+      for(const e of endpoints){ 
+        (byCat[e.cat] ||= []).push(e); 
+      }
+      
+      for(const cat of Object.keys(byCat)){
+        const header = el('div', 'category-header');
+        const title = el('h3'); 
+        title.textContent = cat;
+        header.appendChild(title);
+        
+        const count = el('span', 'count');
+        count.textContent = byCat[cat].length;
+        header.appendChild(count);
+        
+        list.appendChild(header);
+        
+        for(const ep of byCat[cat]){
+          const row = el('div','ep');
+          
+          const left = el('div');
+          const topRow = el('div', 'flex');
+          
+          // Method with click functionality
+          const methodLink = el('a', 'method-link');
+          methodLink.href = baseUrl + ep.p;
+          methodLink.target = '_blank';
+          methodLink.onclick = (e) => {
+            e.preventDefault();
+            openEndpoint(ep);
+          };
+          
+          const m = el('span', 'method ' + ep.m); 
+          m.textContent = ep.m; 
+          methodLink.appendChild(m);
+          topRow.appendChild(methodLink);
+          
+          // Path with click functionality
+          const pathLink = el('a', 'method-link');
+          pathLink.href = baseUrl + ep.p;
+          pathLink.target = '_blank';
+          pathLink.onclick = (e) => {
+            e.preventDefault();
+            openEndpoint(ep);
+          };
+          
+          const path = el('span','path'); 
+          path.textContent = ep.p; 
+          pathLink.appendChild(path);
+          topRow.appendChild(document.createTextNode(' ')); 
+          topRow.appendChild(pathLink);
+          
+          left.appendChild(topRow);
+          
+          const desc = el('div','desc'); 
+          desc.textContent = ep.d;
+          left.appendChild(desc);
+          
+          if(ep.warn) {
+            const warn = el('div', 'warn');
+            warn.innerHTML = '⚠️ This endpoint may return 404';
+            left.appendChild(warn);
+          }
+          
+          const btns = el('div','flex');
+          
+          const use = el('button','primary'); 
+          use.innerHTML = '<span>🔧</span> Use'; 
+          use.onclick = () => pick(ep);
+          
+          const cp = el('button','ghost copy'); 
+          cp.innerHTML = '<span>📋</span> cURL'; 
+          cp.onclick = () => { 
+            const bodyTxt = q('#body').value.trim(); 
+            let b; 
+            try{ 
+              b = bodyTxt ? JSON.parse(bodyTxt) : undefined; 
+            } catch(e) { 
+              b = undefined; 
+            } 
+            copyText(curlFor(ep, b), 'cURL command');
+          };
+          
+          btns.appendChild(use);
+          btns.appendChild(cp);
+          
+          row.appendChild(left);
+          row.appendChild(btns);
+          list.appendChild(row);
+        }
+      }
+    }
+
+    function loadDefaults(){
+      q('#base').value = window.location.origin;
+      q('#path').value = '/health'; 
+      q('#method').value = 'GET'; 
+      q('#body').value = '';
+      q('#curl').textContent = 'curl -s "' + window.location.origin + '/health"';
+      renderList();
+    }
+
+    function copyCmd(id){
+      const cmds = {
+        run: 'python run.py',
+        uvicorn: 'python -m uvicorn model_server:app --host 0.0.0.0 --port 8155',
+        open_ui: 'start http://127.0.0.1:8155/ui',
+        open_logs: 'explorer C:\\model\\logs',
+        open_models: 'explorer C:\\model\\models',
+        open_runtime_log: 'notepad C:\\model\\logs\\runner_uvicorn.log',
+      };
+      copyText(cmds[id] || '', 'Command');
+    }
+    
+    window.addEventListener('DOMContentLoaded', loadDefaults);
+  </script>
+</body>
+</html>

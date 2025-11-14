@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Zombie API Console</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0d1117;
+      --bg-card: #161b22;
+      --border-color: #30363d;
+      --text-primary: #e6edf3;
+      --text-secondary: #8b949e;
+      --accent-primary: #007bff;
+      --accent-success: #28a745;
+      --accent-warning: #ffc107;
+      --accent-danger: #dc3545;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container-fluid {
+      padding: 0 15px;
+    }
+    
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      color: #8b949e;
+    }
+    
+    .card-header {
+      background: rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 16px;
+    }
+    
+    .metric-value {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: var(--accent-primary);
+    }
+    
+    .status-ok {
+      color: var(--accent-success);
+      font-weight: bold;
+    }
+    
+    .status-error {
+      color: var(--accent-danger);
+      font-weight: bold;
+    }
+    
+    .status-warning {
+      color: var(--accent-warning);
+      font-weight: bold;
+    }
+    
+    .endpoint-item {
+      padding: 10px;
+      margin: 6px 0;
+      border-left: 3px solid var(--border-color);
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+    
+    .endpoint-item:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateY(-1px);
+    }
+    
+    .endpoint-item.ok {
+      border-left-color: var(--accent-success);
+    }
+    
+    .endpoint-item.error {
+      border-left-color: var(--accent-danger);
+    }
+    
+    .endpoint-item.warning {
+      border-left-color: var(--accent-warning);
+    }
+    
+    .api-console {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    
+    .api-console textarea, 
+    .api-console input, 
+    .api-console select {
+      background: var(--bg-dark);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      border-radius: 6px;
+    }
+    
+    .api-console textarea:focus, 
+    .api-console input:focus, 
+    .api-console select:focus {
+      background: var(--bg-dark);
+      border-color: var(--accent-primary);
+      color: var(--text-primary);
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    
+    .api-output {
+      white-space: pre-wrap;
+      font-family: Consolas, monospace;
+      background: var(--bg-dark);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 12px;
+      min-height: 200px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    
+    .hint {
+      color: var(--text-secondary);
+      font-size: 12px;
+    }
+    
+    .btn-primary {
+      background-color: var(--accent-primary);
+      border-color: var(--accent-primary);
+    }
+    
+    .btn-warning {
+      background-color: var(--accent-warning);
+      border-color: var(--accent-warning);
+      color: #212529;
+    }
+    
+    .btn-danger {
+      background-color: var(--accent-danger);
+      border-color: var(--accent-danger);
+    }
+    
+    .badge {
+      font-size: 0.75em;
+    }
+    
+    .metric-card {
+      text-align: center;
+      padding: 15px;
+    }
+    
+    .metric-card .value {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .metric-card .label {
+      font-size: 0.9em;
+      color: var(--text-secondary);
+    }
+    
+    .section-title {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      color: #8b949e;
+
+    }
+    
+    .tab-content {
+      padding: 15px 0;
+    }
+    
+    .nav-tabs .nav-link {
+      color: var(--text-secondary);
+      border: none;
+    }
+    
+    .nav-tabs .nav-link.active {
+      color: var(--accent-primary);
+      background: transparent;
+      border-bottom: 2px solid var(--accent-primary);
+    }
+    
+    .nav-tabs {
+      border-bottom: 1px solid var(--border-color);
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid py-3">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="mb-0">🧟 Hello Zombie API Console</h2>
+      <div class="d-flex align-items-center">
+        <span class="badge bg-secondary me-2" id="last-update">Updating...</span>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="auto-refresh" checked>
+          <label class="form-check-label" for="auto-refresh">Auto Refresh</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Monitoring Dashboard -->
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">📊 Runtime Monitor</h5>
+            <button class="btn btn-sm btn-primary" onclick="testAll()">🧪 Test All Endpoints</button>
+          </div>
+          <div class="card-body">
+            <div class="row mb-4">
+              <!-- Model Status -->
+              <div class="col-md-4 mb-3">
+                <div class="card metric-card">
+                  <div class="value" id="model-status">Loading...</div>
+                  <div class="label">Model Status</div>
+                </div>
+              </div>
+              
+              <!-- Memory Usage -->
+              <div class="col-md-4 mb-3">
+                <div class="card metric-card">
+                  <div class="value" id="memory-entries">0</div>
+                  <div class="label">Memory Entries</div>
+                </div>
+              </div>
+              
+              <!-- Server Uptime -->
+              <div class="col-md-4 mb-3">
+                <div class="card metric-card">
+                  <div class="value" id="server-uptime">0s</div>
+                  <div class="label">Server Uptime</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Endpoints Health -->
+            <h6 class="section-title">✅ Endpoints Health</h6>
+            <div id="endpoints" class="row">
+              <div class="col-12 text-center text-muted">Loading endpoints...</div>
+            </div>
+            
+            <!-- Dependencies -->
+            <h6 class="section-title mt-4">🧰 Dependencies</h6>
+            <div id="deps" class="row">
+              <div class="col-12 text-center text-muted">Loading dependencies...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Control Panel -->
+      <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-header">
+            <h5 class="mb-0">⚙️ Control Panel</h5>
+          </div>
+          <div class="card-body">
+            <div class="d-grid gap-2">
+              <button class="btn btn-warning" onclick="restartServer()">🔁 Restart Server</button>
+              <button class="btn btn-danger" onclick="resetCache()">🧼 Reset Cache</button>
+              <button class="btn btn-outline-primary" onclick="clearConsole()">🗑️ Clear Console</button>
+            </div>
+            
+            <div class="mt-4">
+              <h6 class="section-title">System Info</h6>
+              <div id="system-info">
+                <div class="text-center text-muted">Loading system info...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- API Console -->
+    <div class="card">
+      <div class="card-header">
+        <h5 class="mb-0">💬 API Console</h5>
+      </div>
+      <div class="card-body">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="base-url" class="form-label">Base URL</label>
+            <input type="text" class="form-control" id="base-url" value="http://127.0.0.1:8001/v1">
+          </div>
+          <div class="col-md-3">
+            <label for="model-select" class="form-label">Model</label>
+            <select class="form-select" id="model-select">
+              <option value="deepseek-coder-1.3b" selected>deepseek-coder-1.3b</option>
+              <option value="tinyllama-gguf">tinyllama-gguf</option>
+              <option value="llama3.2:1b">llama3.2:1b</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label">Request Type</label>
+            <div class="d-flex gap-2">
+              <button class="btn btn-primary flex-fill" onclick="sendRequest(false)">Send (Non-Stream)</button>
+              <button class="btn btn-outline-primary flex-fill" onclick="sendRequest(true)">Send (Stream)</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-3">
+          <label for="message-input" class="form-label">Message</label>
+          <textarea class="form-control" id="message-input" rows="3">বাংলায় দুই লাইনের একটি শুভেচ্ছা বার্তা লিখো।</textarea>
+          <div class="hint mt-1">Header: X-HelloZombie-Status: Setup-Complete</div>
+        </div>
+        
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <strong>Output</strong>
+          <code id="latency" class="hint">Ready</code>
+        </div>
+        <div id="api-output" class="api-output">API response will appear here...</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const BASE_URL = "http://127.0.0.1:8001";
+    const API_BASE = "http://127.0.0.1:8001/v1";
+    let updateInterval;
+
+    // Agent Identity
+    const AGENT_INFO = {
+      name: "ZombieCoder Agent (সাহন ভাই)",
+      provider: "ZombieCoder Family Agent System",
+      version: "2.0.0",
+      model: "deepseek-coder-1.3b",
+      language: "বাংলা",
+      personality: "বন্ধুসুলভ, সত্যবাদী, সহায়ক"
+    };
+
+    // Endpoints to check
+    const endpoints = [
+      { name: "/health", url: BASE_URL + "/health", method: "GET" },
+      { name: "/status", url: BASE_URL + "/status", method: "GET" },
+      { name: "/v1/agent/info", url: API_BASE + "/agent/info", method: "GET" },
+      { name: "/v1/memory/conversations", url: API_BASE + "/memory/conversations", method: "GET" }
+    ];
+
+    async function checkEndpoint(endpoint) {
+      try {
+        const options = {
+          method: endpoint.method,
+          headers: { "Content-Type": "application/json" }
+        };
+        if (endpoint.body) {
+          options.body = endpoint.body;
+        }
+        
+        const res = await fetch(endpoint.url, options);
+        const data = await res.json();
+        return { ok: res.ok, status: res.status, data };
+      } catch (e) {
+        return { ok: false, error: e.message };
+      }
+    }
+
+    async function testAll() {
+      const endpointsDiv = document.getElementById("endpoints");
+      endpointsDiv.innerHTML = '<div class="col-12 text-center text-muted">Testing endpoints...</div>';
+      
+      const results = await Promise.all(endpoints.map(async (ep) => {
+        const result = await checkEndpoint(ep);
+        return { ...ep, result };
+      }));
+      
+      endpointsDiv.innerHTML = results.map(({ name, result }) => {
+        const status = result.ok ? 'ok' : 'error';
+        const icon = result.ok ? '✅' : '❌';
+        const statusText = result.ok ? `Status: ${result.status}` : `Error: ${result.error || 'Connection failed'}`;
+        return `
+          <div class="col-md-6 mb-2">
+            <div class="endpoint-item ${status}">
+              <strong>${icon} ${name}</strong><br>
+              <small>${statusText}</small>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    async function updateModelInfo() {
+      try {
+        const res = await fetch(BASE_URL + "/runtime/check");
+        const data = await res.json();
+        
+        // Update model status
+        document.getElementById("model-status").innerHTML = `
+          <span class="${data.model_available ? 'status-ok' : 'status-error'}">
+            ${data.model_available ? '✅ Available' : '❌ Not Available'}
+          </span>
+        `;
+        
+        // Update memory entries
+        document.getElementById("memory-entries").textContent = data.memory_entries || 0;
+        
+        // Update server uptime
+        const uptimeSeconds = data.server_uptime_seconds || 0;
+        const minutes = Math.floor(uptimeSeconds / 60);
+        const seconds = uptimeSeconds % 60;
+        document.getElementById("server-uptime").textContent = `${minutes}m ${seconds}s`;
+        
+        // Update system info
+        document.getElementById("system-info").innerHTML = `
+          <div class="mb-2">
+            <strong>Model:</strong> ${data.default_model || 'N/A'}
+          </div>
+          <div class="mb-2">
+            <strong>Loaded Agents:</strong> ${data.loaded_agents || 0}
+          </div>
+          <div class="mb-2">
+            <strong>Memory Size:</strong> ${data.memory_size_kb || 0} KB
+          </div>
+        `;
+        
+        // Dependencies
+        const deps = data.dependencies || {};
+        const missingCount = deps.missing ? deps.missing.length : 0;
+        const installedCount = deps.installed_count || 0;
+        
+        document.getElementById("deps").innerHTML = `
+          <div class="col-md-6 mb-2">
+            <div class="endpoint-item ${missingCount === 0 ? 'ok' : 'warning'}">
+              <strong>${missingCount === 0 ? '✅' : '⚠️'} Dependencies</strong><br>
+              <small>Installed: ${installedCount} | Missing: ${missingCount}</small>
+            </div>
+          </div>
+          ${missingCount > 0 ? `
+            <div class="col-12">
+              <div class="alert alert-warning py-2">
+                <small>Missing: ${deps.missing.join(', ')}</small>
+              </div>
+            </div>
+          ` : ''}
+        `;
+        
+        document.getElementById("last-update").textContent = new Date().toLocaleTimeString();
+      } catch (e) {
+        document.getElementById("model-status").innerHTML = `<span class="status-error">Error</span>`;
+        console.error("Failed to update model info:", e);
+      }
+    }
+
+    async function restartServer() {
+      if (!confirm("Are you sure you want to restart the server?")) return;
+      try {
+        const response = await fetch(BASE_URL + "/control/restart", { method: "POST" });
+        if (response.ok) {
+          alert("Server restart initiated.");
+        } else {
+          alert("Failed to restart server. Check if the endpoint exists.");
+        }
+      } catch (e) {
+        alert("Error: " + e.message);
+      }
+    }
+
+    async function resetCache() {
+      if (!confirm("Are you sure you want to reset the cache?")) return;
+      try {
+        const response = await fetch(BASE_URL + "/cache/reset", { method: "POST" });
+        if (response.ok) {
+          alert("Cache reset successfully.");
+        } else {
+          alert("Failed to reset cache. Check if the endpoint exists.");
+        }
+      } catch (e) {
+        alert("Error: " + e.message);
+      }
+    }
+
+    function clearConsole() {
+      document.getElementById("api-output").textContent = "Console cleared...";
+      document.getElementById("latency").textContent = "Ready";
+    }
+
+    async function sendRequest(stream) {
+      const base = document.getElementById('base-url').value.replace(/\/$/, '');
+      const model = document.getElementById('model-select').value;
+      const content = document.getElementById('message-input').value;
+      const out = document.getElementById('api-output');
+      const latency = document.getElementById('latency');
+      
+      out.textContent = 'Sending request...';
+      latency.textContent = 'Processing...';
+      const t0 = performance.now();
+
+      const body = { model, messages: [{ role: 'user', content }], stream: !!stream };
+      const url = base + '/chat/completions';
+      const headers = { 
+        'Content-Type': 'application/json',
+        'X-HelloZombie-Status': 'Setup-Complete' 
+      };
+
+      try {
+        if (!stream) {
+          const r = await fetch(url, { method: 'POST', headers, body: JSON.stringify(body) });
+          const data = await r.json();
+          latency.textContent = Math.round(performance.now() - t0) + ' ms';
+          out.textContent = JSON.stringify(data, null, 2);
+          return;
+        }
+        
+        // Stream response
+        const r = await fetch(url, { method: 'POST', headers, body: JSON.stringify(body) });
+        const reader = r.body.getReader();
+        const dec = new TextDecoder();
+        let buf = '';
+        out.textContent = '';
+        
+        while (true) {
+          const { value, done } = await reader.read();
+          if (done) break;
+          const chunk = dec.decode(value);
+          buf += chunk;
+          out.textContent += chunk;
+          // Auto-scroll to bottom
+          out.scrollTop = out.scrollHeight;
+        }
+        latency.textContent = Math.round(performance.now() - t0) + ' ms';
+      } catch (error) {
+        out.textContent = `Error: ${error.message}`;
+        latency.textContent = 'Failed';
+      }
+    }
+
+    // Auto-refresh every 3 seconds if enabled
+    function startAutoUpdate() {
+      testAll();
+      updateModelInfo();
+      
+      const autoRefreshCheckbox = document.getElementById('auto-refresh');
+      if (autoRefreshCheckbox.checked) {
+        updateInterval = setInterval(() => {
+          testAll();
+          updateModelInfo();
+        }, 3000);
+      }
+    }
+
+    // Toggle auto-refresh
+    document.getElementById('auto-refresh').addEventListener('change', function() {
+      if (this.checked) {
+        startAutoUpdate();
+      } else {
+        clearInterval(updateInterval);
+      }
+    });
+
+    // Start on load
+    startAutoUpdate();
+  </script>
+</body>
+</html>

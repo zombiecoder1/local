@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickly Invoke Endpoints - ZombieCoder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #58a6ff;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        
+        .subtitle {
+            color: #8b949e;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            color: #58a6ff;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #30363d;
+        }
+        
+        .command-group {
+            margin-bottom: 15px;
+        }
+        
+        .command-label {
+            color: #8b949e;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        .command-box {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 12px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 13px;
+            color: #c9d1d9;
+            position: relative;
+            margin-bottom: 8px;
+            overflow-x: auto;
+        }
+        
+        .copy-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: #238636;
+            border: none;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+            transition: background 0.2s;
+        }
+        
+        .copy-btn:hover {
+            background: #2ea043;
+        }
+        
+        .copy-btn.copied {
+            background: #1a7f37;
+        }
+        
+        .info-text {
+            color: #8b949e;
+            font-size: 0.85em;
+            margin-top: 5px;
+            font-style: italic;
+        }
+        
+        .category {
+            margin-bottom: 25px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #238636;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            margin-left: 8px;
+        }
+        
+        .badge-warning {
+            background: #bb8009;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #30363d;
+        }
+        
+        .tab {
+            background: none;
+            border: none;
+            color: #8b949e;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        .tab:hover {
+            color: #c9d1d9;
+        }
+        
+        .tab.active {
+            color: #58a6ff;
+            border-bottom-color: #58a6ff;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Quickly Invoke Endpoints</h1>
+        <p class="subtitle">সব system commands এবং endpoints - কপি-পেস্ট ready</p>
+        
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('startup')">Startup Commands</button>
+            <button class="tab" onclick="switchTab('endpoints')">API Endpoints</button>
+            <button class="tab" onclick="switchTab('testing')">Testing Commands</button>
+            <button class="tab" onclick="switchTab('maintenance')">Maintenance</button>
+        </div>
+        
+        <!-- Startup Commands Tab -->
+        <div id="startup" class="tab-content active">
+            <div class="section">
+                <h2 class="section-title">1. Project Navigation</h2>
+                <div class="command-group">
+                    <span class="command-label">Navigate to project folder:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar
+                    </div>
+                    <div class="info-text">💡 Change this path to your actual project location</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">2. Start All Services</h2>
+                
+                <div class="command-group">
+                    <span class="command-label">Start Model Server (Port 8007):</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\model && python -m uvicorn model_server:app --host 0.0.0.0 --port 8007
+                    </div>
+                    <div class="info-text">📁 Location: C:\model (or H:\WSL\projects\sarver\model_server.py)</div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Start Orchestrator (Port 8100):</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar\orchestration && bash start_orchestrator.sh
+                    </div>
+                    <div class="info-text">📁 Location: orchestration/ folder</div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Start All Services (Automated):</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar && bash orchestration/start_all_services.sh
+                    </div>
+                    <div class="info-text">✅ This script starts: Model Server → Orchestrator → All Agents</div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Start Gateway (Port 8001):</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar && python zombie_openai_router.py
+                    </div>
+                    <div class="info-text">📁 Location: project root (zombie_openai_router.py)</div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Start All Agents Manually:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar && bash start_all_agents.sh
+                    </div>
+                    <div class="info-text">📁 Location: project root (start_all_agents.sh)</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">3. Service URLs</h2>
+                <div class="command-group">
+                    <span class="command-label">Gateway:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        http://localhost:8001
+                    </div>
+                </div>
+                <div class="command-group">
+                    <span class="command-label">Agents:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        Bengali NLP: http://localhost:8002
+Code Generation: http://localhost:8003
+Code Review: http://localhost:8004
+Documentation: http://localhost:8010
+Testing: http://localhost:8006
+Deployment: http://localhost:8007
+                    </div>
+                </div>
+                <div class="command-group">
+                    <span class="command-label">Other Services:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        Orchestrator: http://localhost:8100
+Model Server: http://localhost:8007
+Ollama Service: http://localhost:5252
+Ollama Base: http://localhost:11434
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- API Endpoints Tab -->
+        <div id="endpoints" class="tab-content">
+            <div class="section">
+                <h2 class="section-title">Health Check Endpoints</h2>
+                
+                <div class="command-group">
+                    <span class="command-label">Gateway Health:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        curl -sS http://localhost:8001/health
+                    </div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Orchestrator Health:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        curl -sS http://localhost:8100/health
+                    </div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">All Agents Health:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        curl -sS http://localhost:8002/health
+curl -sS http://localhost:8003/health
+curl -sS http://localhost:8004/health
+curl -sS http://localhost:8010/health
+curl -sS http://localhost:8006/health
+curl -sS http://localhost:8007/health
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Chat Completions API</h2>
+                
+                <div class="command-group">
+                    <span class="command-label">Basic Request (curl):</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        curl -X POST http://localhost:8001/v1/chat/completions \
+  -H "Authorization: Bearer sk-sahon-personal-2024" \
+  -H "Content-Type: application/json" \
+  -d '{"model":"deepseek-coder-1.3b","messages":[{"role":"user","content":"হ্যালো ভাইয়া"}],"stream":false}'
+                    </div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Streaming Request:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        curl -X POST http://localhost:8001/v1/chat/completions \
+  -H "Authorization: Bearer sk-sahon-personal-2024" \
+  -H "Content-Type: application/json" \
+  -d '{"model":"local-code-gen","messages":[{"role":"user","content":"Hello"}],"stream":true}'
+                    </div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Python Request:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        python -c "import httpx; r=httpx.post('http://127.0.0.1:8001/v1/chat/completions', headers={'Content-Type': 'application/json', 'X-HelloZombie-Status': 'Setup-Complete'}, json={'model': 'deepseek-coder-1.3b', 'messages': [{'role': 'user', 'content': 'হ্যালো ভাইয়া'}], 'stream': False}); print(r.json())"
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">List Models</h2>
+                <div class="command-group">
+                    <span class="command-label">Get Available Models:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        curl -sS http://127.0.0.1:8001/status | python -m json.tool
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Agent Status</h2>
+                <div class="command-group">
+                    <span class="command-label">Get All Agents Status:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        curl -sS http://127.0.0.1:8001/v1/agent/info | python -m json.tool
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Testing Commands Tab -->
+        <div id="testing" class="tab-content">
+            <div class="section">
+                <h2 class="section-title">Quick Verification</h2>
+                
+                <div class="command-group">
+                    <span class="command-label">Verify Stack Status:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar && bash orchestration/verify_stack.sh
+                    </div>
+                    <div class="info-text">📁 Location: orchestration/verify_stack.sh</div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Comprehensive Test (JSON Output):</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar && python tests/comprehensive_test.py
+                    </div>
+                    <div class="info-text">📁 Location: tests/comprehensive_test.py | Output: orchestration/test_results.json</div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Test All Services:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar && python tests/test_all_services.py
+                    </div>
+                    <div class="info-text">📁 Location: tests/test_all_services.py</div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Test Agents (Cache & Response):</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar && bash tests/test_agents.sh
+                    </div>
+                    <div class="info-text">📁 Location: tests/test_agents.sh</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Dependencies Check</h2>
+                <div class="command-group">
+                    <span class="command-label">Check & Install Dependencies:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar && bash orchestration/check_dependencies.sh
+                    </div>
+                    <div class="info-text">📁 Location: orchestration/check_dependencies.sh</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Maintenance Tab -->
+        <div id="maintenance" class="tab-content">
+            <div class="section">
+                <h2 class="section-title">Stop Services</h2>
+                
+                <div class="command-group">
+                    <span class="command-label">Stop Orchestrator:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar\orchestration && bash stop_orchestrator.sh
+                    </div>
+                    <div class="info-text">📁 Location: orchestration/stop_orchestrator.sh</div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Stop All Agents:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar && bash stop_all_agents.sh
+                    </div>
+                    <div class="info-text">📁 Location: stop_all_agents.sh</div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Kill All Python Processes (Windows):</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        Get-Process | Where-Object {$_.ProcessName -like "*python*"} | Stop-Process -Force
+                    </div>
+                    <div class="info-text">⚠️ Use with caution - kills all Python processes</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Port Management</h2>
+                
+                <div class="command-group">
+                    <span class="command-label">Check Port Usage (Windows):</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        Get-NetTCPConnection -LocalPort 8001,8002,8003,8004,8010,8006,8007,8100 -ErrorAction SilentlyContinue | Select-Object LocalPort, State
+                    </div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Kill Process on Port (Windows):</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        $port = 8001; Get-NetTCPConnection -LocalPort $port -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }
+                    </div>
+                    <div class="info-text">💡 Change $port variable to target specific port</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Logs & Monitoring</h2>
+                
+                <div class="command-group">
+                    <span class="command-label">View Orchestrator Logs:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        Get-Content C:\Users\sahon\Desktop\sarvar\orchestration\logs\orchestrator.log -Tail 50
+                    </div>
+                    <div class="info-text">📁 Location: orchestration/logs/orchestrator.log</div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">View Gateway Logs:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        Get-Content C:\Users\sahon\Desktop\sarvar\logs\gateway_manual.log -Tail 50
+                    </div>
+                    <div class="info-text">📁 Location: logs/gateway_manual.log</div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">View Agent Logs:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        Get-Content C:\Users\sahon\Desktop\sarvar\logs\documentation.log -Tail 50
+                    </div>
+                    <div class="info-text">📁 Location: logs/{agent_name}.log</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">File Organization</h2>
+                
+                <div class="command-group">
+                    <span class="command-label">Organize Documentation & Test Files:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar && python organize_files.py
+                    </div>
+                    <div class="info-text">📁 Moves .md files to docs/ and test files to tests/</div>
+                </div>
+                
+                <div class="command-group">
+                    <span class="command-label">Create Runtime Locks:</span>
+                    <div class="command-box">
+                        <button class="copy-btn" onclick="copyCommand(this)">Copy</button>
+                        cd C:\Users\sahon\Desktop\sarvar && bash orchestration/create_runtime_locks.sh
+                    </div>
+                    <div class="info-text">📁 Location: orchestration/create_runtime_locks.sh</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function copyCommand(btn) {
+            const commandBox = btn.parentElement;
+            const text = commandBox.textContent.trim().replace('Copy', '').trim();
+            
+            navigator.clipboard.writeText(text).then(() => {
+                btn.textContent = 'Copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = 'Copy';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+        
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            event.target.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+        }
+    </script>
+</body>
+</html>

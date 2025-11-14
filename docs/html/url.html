@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ZombieCoder — Endpoints</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background-color: #4CAF50; color: white; }
+pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
+.status-ok { color: green; }
+.status-error { color: red; }
+</style>
+</head>
+<body>
+<h1>ZombieCoder Main Server</h1>
+
+<h2>Endpoints</h2>
+<ul>
+  <li><a href="http://127.0.0.1:8001/health">Health</a></li>
+  <li><a href="http://127.0.0.1:8001/v1/agent/ping">Agent Ping</a></li>
+  <li><a href="http://127.0.0.1:8001/v1/chat">Chat (POST)</a></li>
+  <li><a href="http://127.0.0.1:8001/v1/chat/stream">Streaming (POST SSE)</a></li>
+  <li><a href="http://127.0.0.1:8001/v1/memory/query?agent=ZombieCoder">Memory Query</a></li>
+</ul>
+
+<p>Default model: <strong>deepseek-coder-1.3b</strong></p>
+<p>Last updated: <span id="updated">2025-11-06T07:30:00</span></p>
+
+<h2>Live Status</h2>
+<table>
+  <tr>
+    <th>Endpoint</th>
+    <th>Status</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>/v1/agent/ping</td>
+    <td id="ping-status">Checking...</td>
+    <td><pre id="ping-result">Loading...</pre></td>
+  </tr>
+  <tr>
+    <td>/health</td>
+    <td id="health-status">Checking...</td>
+    <td><pre id="health-result">Loading...</pre></td>
+  </tr>
+</table>
+
+<script>
+async function ping() {
+  try {
+    const res = await fetch("http://127.0.0.1:8001/v1/agent/ping", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({agent: "ZombieCoder"})
+    });
+    const data = await res.json();
+    document.getElementById("ping-result").innerText = JSON.stringify(data, null, 2);
+    document.getElementById("ping-status").innerHTML = '<span class="status-ok">✅ OK</span>';
+  } catch (e) {
+    document.getElementById("ping-result").innerText = "Error: " + e.message;
+    document.getElementById("ping-status").innerHTML = '<span class="status-error">❌ Error</span>';
+  }
+}
+
+async function health() {
+  try {
+    const res = await fetch("http://127.0.0.1:8001/health");
+    const data = await res.json();
+    document.getElementById("health-result").innerText = JSON.stringify(data, null, 2);
+    document.getElementById("health-status").innerHTML = '<span class="status-ok">✅ OK</span>';
+  } catch (e) {
+    document.getElementById("health-result").innerText = "Error: " + e.message;
+    document.getElementById("health-status").innerHTML = '<span class="status-error">❌ Error</span>';
+  }
+}
+
+setInterval(() => {
+  ping();
+  health();
+}, 2000); // প্রতি ২ সেকেন্ডে রিফ্রেশ
+
+// Initial call
+ping();
+health();
+</script>
+</body>
+</html>
+

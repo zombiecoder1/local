@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZombieCoder Agent API Test - Browser Verification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            padding: 30px;
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .agent-info {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .agent-info h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .agent-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .test-section h2 {
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .test-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+        .test-item h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 5px 5px 5px 0;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #5568d3;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .result.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .result.error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        .result.info {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .status-success {
+            background: #28a745;
+            color: white;
+        }
+        .status-error {
+            background: #dc3545;
+            color: white;
+        }
+        .status-pending {
+            background: #ffc107;
+            color: #333;
+        }
+        .config-info {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        .config-info code {
+            background: #fff;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 ZombieCoder Agent API - Browser Test</h1>
+        <p class="subtitle">সম্পূর্ণ Browser Verification - সব Endpoint Test</p>
+        
+        <div class="agent-info">
+            <h3>এজেন্ট পরিচয় (Agent Identity)</h3>
+            <p><strong>নাম:</strong> ZombieCoder Agent (সাহন ভাই)</p>
+            <p><strong>প্রোভাইডার:</strong> ZombieCoder Family Agent System v2.0.0</p>
+            <p><strong>সার্ভার:</strong> <code>http://127.0.0.1:8001</code></p>
+            <p><strong>মডেল:</strong> <code>deepseek-coder-1.3b</code></p>
+            <p><strong>ভাষা:</strong> বাংলা</p>
+        </div>
+
+        <div class="config-info">
+            <strong>⚙️ Configuration:</strong><br>
+            Base URL: <code>http://127.0.0.1:8001/v1</code><br>
+            CORS: All origins allowed (including null)<br>
+            Headers: X-HelloZombie-Status, X-Session-ID supported
+        </div>
+
+        <!-- Server Status Test -->
+        <div class="test-section">
+            <h2>1. সার্ভার স্ট্যাটাস (Server Status)</h2>
+            <div class="test-item">
+                <h4>Health Check <span id="health-status" class="status-badge status-pending">Pending</span></h4>
+                <button onclick="testHealth()">Test /health</button>
+                <button onclick="testStatus()">Test /status</button>
+                <div id="health-result" class="result info" style="display:none;"></div>
+            </div>
+        </div>
+
+        <!-- Chat Completions Test -->
+        <div class="test-section">
+            <h2>2. Chat Completions API</h2>
+            <div class="test-item">
+                <h4>Non-Streaming Request <span id="chat-status" class="status-badge status-pending">Pending</span></h4>
+                <button onclick="testChatNonStream()">Test Non-Stream</button>
+                <div id="chat-result" class="result info" style="display:none;"></div>
+            </div>
+            <div class="test-item">
+                <h4>Streaming Request <span id="stream-status" class="status-badge status-pending">Pending</span></h4>
+                <button onclick="testChatStream()">Test Stream</button>
+                <div id="stream-result" class="result info" style="display:none;"></div>
+            </div>
+        </div>
+
+        <!-- Agent Info Test -->
+        <div class="test-section">
+            <h2>3. Agent Information</h2>
+            <div class="test-item">
+                <h4>Agent Info Endpoint <span id="info-status" class="status-badge status-pending">Pending</span></h4>
+                <button onclick="testAgentInfo()">Test /v1/agent/info</button>
+                <div id="info-result" class="result info" style="display:none;"></div>
+            </div>
+            <div class="test-item">
+                <h4>Memory Conversations <span id="memory-status" class="status-badge status-pending">Pending</span></h4>
+                <button onclick="testMemory()">Test /v1/memory/conversations</button>
+                <div id="memory-result" class="result info" style="display:none;"></div>
+            </div>
+        </div>
+
+        <!-- CORS Test -->
+        <div class="test-section">
+            <h2>4. CORS Verification</h2>
+            <div class="test-item">
+                <h4>CORS Headers Check <span id="cors-status" class="status-badge status-pending">Pending</span></h4>
+                <button onclick="testCORS()">Test CORS</button>
+                <div id="cors-result" class="result info" style="display:none;"></div>
+            </div>
+        </div>
+
+        <!-- Complete Test Suite -->
+        <div class="test-section">
+            <h2>5. Complete Test Suite</h2>
+            <div class="test-item">
+                <button onclick="runAllTests()" style="background: #28a745; font-size: 16px; padding: 15px 30px;">
+                    🚀 Run All Tests
+                </button>
+                <div id="all-tests-result" class="result info" style="display:none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const BASE_URL = 'http://127.0.0.1:8001';
+        const API_BASE = 'http://127.0.0.1:8001/v1';
+        const AGENT_INFO = {
+            name: "ZombieCoder Agent (সাহন ভাই)",
+            provider: "ZombieCoder Family Agent System",
+            version: "2.0.0",
+            model: "deepseek-coder-1.3b",
+            language: "বাংলা"
+        };
+
+        function updateStatus(elementId, status, message = '') {
+            const element = document.getElementById(elementId);
+            element.className = `status-badge status-${status}`;
+            element.textContent = status === 'success' ? '✅ Success' : status === 'error' ? '❌ Error' : '⏳ Pending';
+        }
+
+        function showResult(elementId, data, type = 'info') {
+            const element = document.getElementById(elementId);
+            element.style.display = 'block';
+            element.className = `result ${type}`;
+            element.textContent = typeof data === 'string' ? data : JSON.stringify(data, null, 2);
+        }
+
+        async function testHealth() {
+            updateStatus('health-status', 'pending');
+            try {
+                const response = await fetch(`${BASE_URL}/health`);
+                const data = await response.json();
+                updateStatus('health-status', 'success');
+                showResult('health-result', {
+                    status: response.status,
+                    headers: Object.fromEntries(response.headers.entries()),
+                    data: data
+                }, 'success');
+            } catch (error) {
+                updateStatus('health-status', 'error');
+                showResult('health-result', `Error: ${error.message}`, 'error');
+            }
+        }
+
+        async function testStatus() {
+            updateStatus('health-status', 'pending');
+            try {
+                const response = await fetch(`${BASE_URL}/status`);
+                const data = await response.json();
+                updateStatus('health-status', 'success');
+                showResult('health-result', {
+                    status: response.status,
+                    agent_name: data.agent_name,
+                    provider_info: data.provider_info,
+                    personal_info: data.personal_info,
+                    ollama_status: data.ollama_status
+                }, 'success');
+            } catch (error) {
+                updateStatus('health-status', 'error');
+                showResult('health-result', `Error: ${error.message}`, 'error');
+            }
+        }
+
+        async function testChatNonStream() {
+            updateStatus('chat-status', 'pending');
+            try {
+                const response = await fetch(`${API_BASE}/chat/completions`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-HelloZombie-Status': 'Setup-Complete'
+                    },
+                    body: JSON.stringify({
+                        model: 'deepseek-coder-1.3b',
+                        messages: [{ role: 'user', content: 'হ্যালো ভাইয়া, তুমি কেমন আছো?' }],
+                        stream: false
+                    })
+                });
+                const data = await response.json();
+                updateStatus('chat-status', 'success');
+                showResult('chat-result', {
+                    status: response.status,
+                    cors_origin: response.headers.get('Access-Control-Allow-Origin'),
+                    session_id: response.headers.get('X-Session-ID'),
+                    response: data.choices[0].message.content,
+                    model: data.model
+                }, 'success');
+            } catch (error) {
+                updateStatus('chat-status', 'error');
+                showResult('chat-result', `Error: ${error.message}`, 'error');
+            }
+        }
+
+        async function testChatStream() {
+            updateStatus('stream-status', 'pending');
+            try {
+                const response = await fetch(`${API_BASE}/chat/completions`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-HelloZombie-Status': 'Setup-Complete'
+                    },
+                    body: JSON.stringify({
+                        model: 'deepseek-coder-1.3b',
+                        messages: [{ role: 'user', content: 'বাংলায় একটি ছোট গল্প বলো' }],
+                        stream: true
+                    })
+                });
+                
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let fullText = '';
+                let chunks = 0;
+
+                while (true) {
+                    const { value, done } = await reader.read();
+                    if (done) break;
+                    const chunk = decoder.decode(value);
+                    fullText += chunk;
+                    chunks++;
+                }
+
+                updateStatus('stream-status', 'success');
+                showResult('stream-result', {
+                    status: response.status,
+                    cors_origin: response.headers.get('Access-Control-Allow-Origin'),
+                    chunks_received: chunks,
+                    stream_preview: fullText.substring(0, 500) + '...'
+                }, 'success');
+            } catch (error) {
+                updateStatus('stream-status', 'error');
+                showResult('stream-result', `Error: ${error.message}`, 'error');
+            }
+        }
+
+        async function testAgentInfo() {
+            updateStatus('info-status', 'pending');
+            try {
+                const response = await fetch(`${API_BASE}/agent/info`);
+                const data = await response.json();
+                updateStatus('info-status', 'success');
+                showResult('info-result', {
+                    status: response.status,
+                    provider_info: data.provider_info,
+                    personal_info: data.personal_info
+                }, 'success');
+            } catch (error) {
+                updateStatus('info-status', 'error');
+                showResult('info-result', `Error: ${error.message}`, 'error');
+            }
+        }
+
+        async function testMemory() {
+            updateStatus('memory-status', 'pending');
+            try {
+                const response = await fetch(`${API_BASE}/memory/conversations?limit=5`);
+                const data = await response.json();
+                updateStatus('memory-status', 'success');
+                showResult('memory-result', {
+                    status: response.status,
+                    total: data.total,
+                    conversations: data.conversations
+                }, 'success');
+            } catch (error) {
+                updateStatus('memory-status', 'error');
+                showResult('memory-result', `Error: ${error.message}`, 'error');
+            }
+        }
+
+        async function testCORS() {
+            updateStatus('cors-status', 'pending');
+            try {
+                // Test OPTIONS preflight
+                const optionsResponse = await fetch(`${API_BASE}/chat/completions`, {
+                    method: 'OPTIONS',
+                    headers: {
+                        'Origin': 'null',
+                        'Access-Control-Request-Method': 'POST',
+                        'Access-Control-Request-Headers': 'Content-Type, X-HelloZombie-Status'
+                    }
+                });
+                
+                const corsHeaders = {
+                    'Access-Control-Allow-Origin': optionsResponse.headers.get('Access-Control-Allow-Origin'),
+                    'Access-Control-Allow-Methods': optionsResponse.headers.get('Access-Control-Allow-Methods'),
+                    'Access-Control-Allow-Headers': optionsResponse.headers.get('Access-Control-Allow-Headers'),
+                    'Access-Control-Allow-Credentials': optionsResponse.headers.get('Access-Control-Allow-Credentials')
+                };
+
+                updateStatus('cors-status', 'success');
+                showResult('cors-result', {
+                    options_status: optionsResponse.status,
+                    cors_headers: corsHeaders,
+                    test: 'CORS preflight successful'
+                }, 'success');
+            } catch (error) {
+                updateStatus('cors-status', 'error');
+                showResult('cors-result', `Error: ${error.message}`, 'error');
+            }
+        }
+
+        async function runAllTests() {
+            const resultElement = document.getElementById('all-tests-result');
+            resultElement.style.display = 'block';
+            resultElement.className = 'result info';
+            resultElement.textContent = 'Running all tests...\n\n';
+
+            const tests = [
+                { name: 'Health Check', fn: testHealth },
+                { name: 'Status Check', fn: testStatus },
+                { name: 'Chat Non-Stream', fn: testChatNonStream },
+                { name: 'Chat Stream', fn: testChatStream },
+                { name: 'Agent Info', fn: testAgentInfo },
+                { name: 'Memory', fn: testMemory },
+                { name: 'CORS', fn: testCORS }
+            ];
+
+            for (const test of tests) {
+                resultElement.textContent += `\n⏳ Running: ${test.name}...\n`;
+                try {
+                    await test.fn();
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    resultElement.textContent += `✅ ${test.name}: PASSED\n`;
+                } catch (error) {
+                    resultElement.textContent += `❌ ${test.name}: FAILED - ${error.message}\n`;
+                }
+            }
+
+            resultElement.textContent += '\n\n✅ All tests completed!';
+            resultElement.className = 'result success';
+        }
+
+        // Auto-run health check on load
+        window.addEventListener('load', () => {
+            testHealth();
+        });
+    </script>
+</body>
+</html>
+

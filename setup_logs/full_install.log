@@ -1,0 +1,1053 @@
+2025-11-08 09:30:00 | === ZombieCoder-Family-Agent Full Auto-Installer Started ===
+2025-11-08 09:30:00 | Python Version: Python 3.13.9
+2025-11-08 09:30:00 | WARNING: MSVC C++ compiler NOT found!
+2025-11-08 09:30:00 | Some packages may fail to build from source.
+2025-11-08 09:30:00 | Creating new virtualenv...
+2025-11-08 09:30:06 | Activating virtualenv...
+2025-11-08 09:30:06 | Upgrading pip, setuptools, wheel...
+2025-11-08 09:30:08 | Requirement already satisfied: pip in c:\windows\system32\.venv\lib\site-packages (25.2)
+2025-11-08 09:30:08 | Collecting pip
+2025-11-08 09:30:08 |   Downloading pip-25.3-py3-none-any.whl.metadata (4.7 kB)
+2025-11-08 09:30:08 | Collecting setuptools
+2025-11-08 09:30:08 |   Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+2025-11-08 09:30:08 | Collecting wheel
+2025-11-08 09:30:08 |   Using cached wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+2025-11-08 09:30:08 | Downloading pip-25.3-py3-none-any.whl (1.8 MB)
+2025-11-08 09:30:09 |    ---------------------------------------- 1.8/1.8 MB 4.9 MB/s  0:00:00
+2025-11-08 09:30:09 | Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+2025-11-08 09:30:09 | Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
+2025-11-08 09:30:09 | Pip cache dir: C:\WINDOWS\system32\pip_cache
+2025-11-08 09:30:09 | Installing requirements from C:\WINDOWS\system32\requirements.txt ...
+2025-11-08 09:30:11 | Package 'sentencepiece' installed successfully: Traceback (most recent call last):   File "<string>", line 1, in <module>     import sentencepiece; print(sentencepiece.__version__)     ^^^^^^^^^^^^^^^^^^^^ ModuleNotFoundError: No module named 'sentencepiece'
+2025-11-08 09:30:11 | Package 'flask' installed successfully: Traceback (most recent call last):   File "<string>", line 1, in <module>     import flask; print(flask.__version__)     ^^^^^^^^^^^^ ModuleNotFoundError: No module named 'flask'
+2025-11-08 09:30:11 | Package 'requests' installed successfully: Traceback (most recent call last):   File "<string>", line 1, in <module>     import requests; print(requests.__version__)     ^^^^^^^^^^^^^^^ ModuleNotFoundError: No module named 'requests'
+2025-11-08 09:30:12 | Package 'langchain' installed successfully: Traceback (most recent call last):   File "<string>", line 1, in <module>     import langchain; print(langchain.__version__)     ^^^^^^^^^^^^^^^^ ModuleNotFoundError: No module named 'langchain'
+2025-11-08 09:30:12 | === ZombieCoder-Family-Agent Full Auto-Installer Finished ===
+2025-11-08 09:31:47 | === ZombieCoder-Family-Agent Full Auto-Installer Started ===
+2025-11-08 09:31:47 | Python Version: Python 3.13.9
+2025-11-08 09:31:47 | WARNING: MSVC C++ compiler NOT found!
+2025-11-08 09:31:47 | Some packages may fail to build from source.
+2025-11-08 09:31:47 | Removing old virtualenv...
+2025-11-08 09:31:47 | Creating new virtualenv...
+2025-11-08 09:31:54 | Activating virtualenv...
+2025-11-08 09:31:54 | Upgrading pip, setuptools, wheel...
+2025-11-08 09:31:56 | Requirement already satisfied: pip in c:\users\sahon\desktop\zombiecoder-family-agent\.venv\lib\site-packages (25.2)
+2025-11-08 09:31:56 | Collecting pip
+2025-11-08 09:31:56 |   Downloading pip-25.3-py3-none-any.whl.metadata (4.7 kB)
+2025-11-08 09:31:56 | Collecting setuptools
+2025-11-08 09:31:56 |   Downloading setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+2025-11-08 09:31:57 | Collecting wheel
+2025-11-08 09:31:57 |   Downloading wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+2025-11-08 09:31:57 | Downloading pip-25.3-py3-none-any.whl (1.8 MB)
+2025-11-08 09:31:57 |    ---------------------------------------- 1.8/1.8 MB 4.3 MB/s  0:00:00
+2025-11-08 09:31:57 | Downloading setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+2025-11-08 09:31:57 |    ---------------------------------------- 1.2/1.2 MB 2.8 MB/s  0:00:00
+2025-11-08 09:31:57 | Downloading wheel-0.45.1-py3-none-any.whl (72 kB)
+2025-11-08 09:31:58 | Pip cache dir: C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\pip_cache
+2025-11-08 09:31:58 | Installing requirements from C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt ...
+2025-11-08 09:32:00 | Collecting flask==2.3.3 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-08 09:32:00 |   Downloading flask-2.3.3-py3-none-any.whl.metadata (3.6 kB)
+2025-11-08 09:32:00 | Collecting requests==2.31.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-08 09:32:00 |   Downloading requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+2025-11-08 09:32:00 | Collecting pyyaml==6.0.1 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 4))
+2025-11-08 09:32:00 |   Downloading PyYAML-6.0.1.tar.gz (125 kB)
+2025-11-08 09:32:01 |   Installing build dependencies: started
+2025-11-08 09:32:05 |   Installing build dependencies: finished with status 'done'
+2025-11-08 09:32:05 |   Getting requirements to build wheel: started
+2025-11-08 09:32:07 |   Getting requirements to build wheel: finished with status 'done'
+2025-11-08 09:32:07 |   Preparing metadata (pyproject.toml): started
+2025-11-08 09:32:08 |   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-11-08 09:32:08 | Collecting python-dotenv==1.0.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 5))
+2025-11-08 09:32:08 |   Downloading python_dotenv-1.0.0-py3-none-any.whl.metadata (21 kB)
+2025-11-08 09:32:09 | Collecting banglanltk==0.0.4 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 8))
+2025-11-08 09:32:09 |   Downloading banglanltk-0.0.4-py3-none-any.whl.metadata (3.9 kB)
+2025-11-08 09:32:09 | Collecting langchain<0.3.0,>=0.2.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-08 09:32:09 |   Downloading langchain-0.2.17-py3-none-any.whl.metadata (7.1 kB)
+2025-11-08 09:32:09 | Collecting langchain-core<0.3.0,>=0.2.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-08 09:32:09 |   Downloading langchain_core-0.2.43-py3-none-any.whl.metadata (6.2 kB)
+2025-11-08 09:32:09 | Collecting langchain-community<0.3.0,>=0.2.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-08 09:32:09 |   Downloading langchain_community-0.2.19-py3-none-any.whl.metadata (2.7 kB)
+2025-11-08 09:32:09 | Collecting langchain-huggingface<0.4.0,>=0.1.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-08 09:32:09 |   Downloading langchain_huggingface-0.3.1-py3-none-any.whl.metadata (996 bytes)
+2025-11-08 09:32:09 | Collecting transformers<5.0.0,>=4.40.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 13))
+2025-11-08 09:32:09 |   Downloading transformers-4.57.1-py3-none-any.whl.metadata (43 kB)
+2025-11-08 09:32:10 | Collecting sentencepiece==0.2.1 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 14))
+2025-11-08 09:32:10 |   Downloading sentencepiece-0.2.1-cp313-cp313-win_amd64.whl.metadata (10 kB)
+2025-11-08 09:32:10 | Collecting psutil<6.0.0,>=5.9.8 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 17))
+2025-11-08 09:32:10 |   Downloading psutil-5.9.8-cp37-abi3-win_amd64.whl.metadata (22 kB)
+2025-11-08 09:32:10 | Collecting Werkzeug>=2.3.7 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-08 09:32:10 |   Downloading werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+2025-11-08 09:32:10 | Collecting Jinja2>=3.1.2 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-08 09:32:10 |   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+2025-11-08 09:32:10 | Collecting itsdangerous>=2.1.2 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-08 09:32:10 |   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+2025-11-08 09:32:10 | Collecting click>=8.1.3 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-08 09:32:10 |   Downloading click-8.3.0-py3-none-any.whl.metadata (2.6 kB)
+2025-11-08 09:32:10 | Collecting blinker>=1.6.2 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-08 09:32:10 |   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+2025-11-08 09:32:10 | Collecting charset-normalizer<4,>=2 (from requests==2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-08 09:32:10 |   Downloading charset_normalizer-3.4.4-cp313-cp313-win_amd64.whl.metadata (38 kB)
+2025-11-08 09:32:10 | Collecting idna<4,>=2.5 (from requests==2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-08 09:32:10 |   Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+2025-11-08 09:32:11 | Collecting urllib3<3,>=1.21.1 (from requests==2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-08 09:32:11 |   Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+2025-11-08 09:32:11 | Collecting certifi>=2017.4.17 (from requests==2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-08 09:32:11 |   Downloading certifi-2025.10.5-py3-none-any.whl.metadata (2.5 kB)
+2025-11-08 09:32:11 | Collecting SQLAlchemy<3,>=1.4 (from langchain<0.3.0,>=0.2.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-08 09:32:11 |   Downloading sqlalchemy-2.0.44-cp313-cp313-win_amd64.whl.metadata (9.8 kB)
+2025-11-08 09:32:12 | Collecting aiohttp<4.0.0,>=3.8.3 (from langchain<0.3.0,>=0.2.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-08 09:32:12 |   Downloading aiohttp-3.13.2-cp313-cp313-win_amd64.whl.metadata (8.4 kB)
+2025-11-08 09:32:12 | Collecting langchain-text-splitters<0.3.0,>=0.2.0 (from langchain<0.3.0,>=0.2.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-08 09:32:12 |   Downloading langchain_text_splitters-0.2.4-py3-none-any.whl.metadata (2.3 kB)
+2025-11-08 09:32:12 | Collecting langsmith<0.2.0,>=0.1.17 (from langchain<0.3.0,>=0.2.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-08 09:32:12 |   Downloading langsmith-0.1.147-py3-none-any.whl.metadata (14 kB)
+2025-11-08 09:32:13 | Collecting numpy<2.0.0,>=1.26.0 (from langchain<0.3.0,>=0.2.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-08 09:32:13 |   Downloading numpy-1.26.4.tar.gz (15.8 MB)
+2025-11-08 09:32:18 |      ---------------------------------------- 15.8/15.8 MB 3.2 MB/s  0:00:04
+2025-11-08 09:32:30 |   Installing build dependencies: started
+2025-11-08 09:32:34 |   Installing build dependencies: finished with status 'done'
+2025-11-08 09:32:34 |   Getting requirements to build wheel: started
+2025-11-08 09:32:35 |   Getting requirements to build wheel: finished with status 'done'
+2025-11-08 09:32:35 |   Installing backend dependencies: started
+2025-11-08 09:32:37 |   Installing backend dependencies: finished with status 'done'
+2025-11-08 09:32:37 |   Preparing metadata (pyproject.toml): started
+2025-11-08 09:33:39 |   Preparing metadata (pyproject.toml): still running...
+2025-11-08 09:34:42 |   Preparing metadata (pyproject.toml): still running...
+2025-11-08 09:35:42 |   Preparing metadata (pyproject.toml): still running...
+2025-11-08 09:36:43 |   Preparing metadata (pyproject.toml): still running...
+2025-11-08 09:37:38 |   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-11-08 09:37:38 | Collecting pydantic<3,>=1 (from langchain<0.3.0,>=0.2.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-08 09:37:38 |   Downloading pydantic-2.12.4-py3-none-any.whl.metadata (89 kB)
+2025-11-08 09:37:38 | Collecting tenacity!=8.4.0,<9.0.0,>=8.1.0 (from langchain<0.3.0,>=0.2.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-08 09:37:38 |   Downloading tenacity-8.5.0-py3-none-any.whl.metadata (1.2 kB)
+2025-11-08 09:37:39 | Collecting jsonpatch<2.0,>=1.33 (from langchain-core<0.3.0,>=0.2.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-08 09:37:39 |   Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+2025-11-08 09:37:39 | Collecting packaging<25,>=23.2 (from langchain-core<0.3.0,>=0.2.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-08 09:37:39 |   Downloading packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+2025-11-08 09:37:39 | Collecting typing-extensions>=4.7 (from langchain-core<0.3.0,>=0.2.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-08 09:37:39 |   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+2025-11-08 09:37:39 | Collecting dataclasses-json<0.7,>=0.5.7 (from langchain-community<0.3.0,>=0.2.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-08 09:37:39 |   Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+2025-11-08 09:37:39 | INFO: pip is looking at multiple versions of langchain-huggingface to determine which version is compatible with other requirements. This could take a while.
+2025-11-08 09:37:39 | Collecting langchain-huggingface<0.4.0,>=0.1.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-08 09:37:39 |   Downloading langchain_huggingface-0.3.0-py3-none-any.whl.metadata (996 bytes)
+2025-11-08 09:37:39 |   Downloading langchain_huggingface-0.2.0-py3-none-any.whl.metadata (941 bytes)
+2025-11-08 09:37:39 |   Downloading langchain_huggingface-0.1.2-py3-none-any.whl.metadata (1.3 kB)
+2025-11-08 09:37:39 | Collecting huggingface-hub>=0.23.0 (from langchain-huggingface<0.4.0,>=0.1.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-08 09:37:39 |   Downloading huggingface_hub-1.1.2-py3-none-any.whl.metadata (13 kB)
+2025-11-08 09:37:39 | Collecting langchain-huggingface<0.4.0,>=0.1.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-08 09:37:39 |   Downloading langchain_huggingface-0.1.1-py3-none-any.whl.metadata (1.3 kB)
+2025-11-08 09:37:40 |   Downloading langchain_huggingface-0.1.0-py3-none-any.whl.metadata (1.3 kB)
+2025-11-08 09:37:40 | Collecting langchain-community<0.3.0,>=0.2.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-08 09:37:40 |   Downloading langchain_community-0.2.18-py3-none-any.whl.metadata (2.7 kB)
+2025-11-08 09:37:40 | INFO: pip is still looking at multiple versions of langchain-huggingface to determine which version is compatible with other requirements. This could take a while.
+2025-11-08 09:37:40 |   Downloading langchain_community-0.2.17-py3-none-any.whl.metadata (2.7 kB)
+2025-11-08 09:37:40 | INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+2025-11-08 09:37:40 |   Downloading langchain_community-0.2.16-py3-none-any.whl.metadata (2.7 kB)
+2025-11-08 09:37:40 |   Downloading langchain_community-0.2.15-py3-none-any.whl.metadata (2.7 kB)
+2025-11-08 09:37:41 |   Downloading langchain_community-0.2.13-py3-none-any.whl.metadata (2.7 kB)
+2025-11-08 09:37:41 |   Downloading langchain_community-0.2.12-py3-none-any.whl.metadata (2.7 kB)
+2025-11-08 09:37:41 |   Downloading langchain_community-0.2.11-py3-none-any.whl.metadata (2.7 kB)
+2025-11-08 09:37:41 |   Downloading langchain_community-0.2.10-py3-none-any.whl.metadata (2.7 kB)
+2025-11-08 09:37:42 |   Downloading langchain_community-0.2.9-py3-none-any.whl.metadata (2.5 kB)
+2025-11-08 09:37:42 |   Downloading langchain_community-0.2.7-py3-none-any.whl.metadata (2.5 kB)
+2025-11-08 09:37:42 |   Downloading langchain_community-0.2.6-py3-none-any.whl.metadata (2.5 kB)
+2025-11-08 09:37:42 |   Downloading langchain_community-0.2.5-py3-none-any.whl.metadata (2.5 kB)
+2025-11-08 09:37:43 |   Downloading langchain_community-0.2.4-py3-none-any.whl.metadata (2.4 kB)
+2025-11-08 09:37:43 |   Downloading langchain_community-0.2.3-py3-none-any.whl.metadata (9.0 kB)
+2025-11-08 09:37:43 |   Downloading langchain_community-0.2.2-py3-none-any.whl.metadata (8.9 kB)
+2025-11-08 09:37:43 |   Downloading langchain_community-0.2.1-py3-none-any.whl.metadata (8.9 kB)
+2025-11-08 09:37:43 |   Downloading langchain_community-0.2.0-py3-none-any.whl.metadata (8.8 kB)
+2025-11-08 09:37:43 | Collecting langchain<0.3.0,>=0.2.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-08 09:37:43 |   Downloading langchain-0.2.16-py3-none-any.whl.metadata (7.1 kB)
+2025-11-08 09:37:43 | INFO: pip is looking at multiple versions of langchain-community to determine which version is compatible with other requirements. This could take a while.
+2025-11-08 09:37:43 | INFO: pip is still looking at multiple versions of langchain-community to determine which version is compatible with other requirements. This could take a while.
+2025-11-08 09:37:44 | INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+2025-11-08 09:37:45 | Collecting langchain-core<0.3.0,>=0.2.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-08 09:37:45 |   Downloading langchain_core-0.2.42-py3-none-any.whl.metadata (6.2 kB)
+2025-11-08 09:37:45 |   Downloading langchain_core-0.2.41-py3-none-any.whl.metadata (6.2 kB)
+2025-11-08 09:37:46 |   Downloading langchain_core-0.2.40-py3-none-any.whl.metadata (6.2 kB)
+2025-11-08 09:37:46 |   Downloading langchain_core-0.2.39-py3-none-any.whl.metadata (6.2 kB)
+2025-11-08 09:37:46 |   Downloading langchain_core-0.2.38-py3-none-any.whl.metadata (6.2 kB)
+2025-11-08 09:37:46 | 
+2025-11-08 09:37:46 | The conflict is caused by:
+2025-11-08 09:37:46 |     The user requested langchain<0.3.0 and >=0.2.0
+2025-11-08 09:37:46 |     langchain-community 0.2.19 depends on langchain<0.3.0 and >=0.2.17
+2025-11-08 09:37:46 |     langchain-community 0.2.18 depends on langchain<0.3.0 and >=0.2.17
+2025-11-08 09:37:46 | 
+2025-11-08 09:37:46 | To fix this you could try to:
+2025-11-08 09:37:46 | 1. loosen the range of package versions you've specified
+2025-11-08 09:37:46 | 2. remove package versions to allow pip to attempt to solve the dependency conflict
+2025-11-08 09:37:46 | 
+2025-11-08 09:37:50 | Package 'sentencepiece' installed successfully: Traceback (most recent call last):   File "<string>", line 1, in <module>     import sentencepiece; print(sentencepiece.__version__)     ^^^^^^^^^^^^^^^^^^^^ ModuleNotFoundError: No module named 'sentencepiece'
+2025-11-08 09:37:50 | Package 'flask' installed successfully: Traceback (most recent call last):   File "<string>", line 1, in <module>     import flask; print(flask.__version__)     ^^^^^^^^^^^^ ModuleNotFoundError: No module named 'flask'
+2025-11-08 09:37:50 | Package 'requests' installed successfully: Traceback (most recent call last):   File "<string>", line 1, in <module>     import requests; print(requests.__version__)     ^^^^^^^^^^^^^^^ ModuleNotFoundError: No module named 'requests'
+2025-11-08 09:37:50 | Package 'langchain' installed successfully: Traceback (most recent call last):   File "<string>", line 1, in <module>     import langchain; print(langchain.__version__)     ^^^^^^^^^^^^^^^^ ModuleNotFoundError: No module named 'langchain'
+2025-11-08 09:37:50 | === ZombieCoder-Family-Agent Full Auto-Installer Finished ===
+2025-11-11 08:26:06 | === ZombieCoder-Family-Agent Full Auto-Installer Started ===
+2025-11-11 08:26:06 | Python Version: Python 3.13.9
+2025-11-11 08:26:06 | WARNING: MSVC C++ compiler NOT found!
+2025-11-11 08:26:06 | Some packages may fail to build from source.
+2025-11-11 08:26:06 | Removing old virtualenv...
+2025-11-11 08:26:07 | Creating new virtualenv...
+2025-11-11 08:26:26 | Activating virtualenv...
+2025-11-11 08:26:26 | Upgrading pip, setuptools, wheel...
+2025-11-11 08:26:31 | Requirement already satisfied: pip in c:\users\sahon\desktop\zombiecoder-family-agent\.venv\lib\site-packages (25.2)
+2025-11-11 08:26:32 | Collecting pip
+2025-11-11 08:26:32 |   Using cached pip-25.3-py3-none-any.whl.metadata (4.7 kB)
+2025-11-11 08:26:32 | Collecting setuptools
+2025-11-11 08:26:32 |   Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+2025-11-11 08:26:32 | Collecting wheel
+2025-11-11 08:26:32 |   Using cached wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+2025-11-11 08:26:32 | Using cached pip-25.3-py3-none-any.whl (1.8 MB)
+2025-11-11 08:26:32 | Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+2025-11-11 08:26:33 | Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
+2025-11-11 08:26:33 | Pip cache dir: C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\pip_cache
+2025-11-11 08:26:33 | Installing requirements from C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt ...
+2025-11-11 08:26:36 | Collecting flask==2.3.3 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:26:37 |   Downloading flask-2.3.3-py3-none-any.whl.metadata (3.6 kB)
+2025-11-11 08:26:38 | Collecting requests<3.0.0,>=2.31.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 08:26:39 |   Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+2025-11-11 08:26:39 | Collecting pyyaml==6.0.1 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 4))
+2025-11-11 08:26:39 |   Downloading PyYAML-6.0.1.tar.gz (125 kB)
+2025-11-11 08:26:41 |   Installing build dependencies: started
+2025-11-11 08:26:47 |   Installing build dependencies: finished with status 'done'
+2025-11-11 08:26:47 |   Getting requirements to build wheel: started
+2025-11-11 08:26:56 |   Getting requirements to build wheel: finished with status 'done'
+2025-11-11 08:26:56 |   Preparing metadata (pyproject.toml): started
+2025-11-11 08:26:57 |   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-11-11 08:26:57 | Collecting python-dotenv==1.0.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 5))
+2025-11-11 08:26:58 |   Downloading python_dotenv-1.0.0-py3-none-any.whl.metadata (21 kB)
+2025-11-11 08:26:58 | Collecting banglanltk==0.0.4 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 8))
+2025-11-11 08:26:59 |   Downloading banglanltk-0.0.4-py3-none-any.whl.metadata (3.9 kB)
+2025-11-11 08:27:00 | Collecting langchain<0.4.0,>=0.3.10 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:00 |   Downloading langchain-0.3.27-py3-none-any.whl.metadata (7.8 kB)
+2025-11-11 08:27:01 | Collecting langchain-core<0.4.0,>=0.3.63 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 08:27:01 |   Downloading langchain_core-0.3.79-py3-none-any.whl.metadata (3.2 kB)
+2025-11-11 08:27:01 | Collecting langchain-community<0.4.0,>=0.3.10 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:01 |   Downloading langchain_community-0.3.31-py3-none-any.whl.metadata (3.0 kB)
+2025-11-11 08:27:01 | Collecting langchain-huggingface<0.2.0,>=0.1.2 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-11 08:27:01 |   Downloading langchain_huggingface-0.1.2-py3-none-any.whl.metadata (1.3 kB)
+2025-11-11 08:27:02 | Collecting transformers<5.0.0,>=4.57.1 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 13))
+2025-11-11 08:27:02 |   Downloading transformers-4.57.1-py3-none-any.whl.metadata (43 kB)
+2025-11-11 08:27:03 | Collecting sentencepiece==0.2.1 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 14))
+2025-11-11 08:27:03 |   Downloading sentencepiece-0.2.1-cp313-cp313-win_amd64.whl.metadata (10 kB)
+2025-11-11 08:27:03 | Collecting sentence-transformers<6.0.0,>=5.1.2 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 15))
+2025-11-11 08:27:03 |   Downloading sentence_transformers-5.1.2-py3-none-any.whl.metadata (16 kB)
+2025-11-11 08:27:04 | Collecting torch==2.9.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:27:04 |   Downloading torch-2.9.0-cp313-cp313-win_amd64.whl.metadata (30 kB)
+2025-11-11 08:27:05 | Collecting scikit-learn<2.0.0,>=1.7.2 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 17))
+2025-11-11 08:27:05 |   Downloading scikit_learn-1.7.2-cp313-cp313-win_amd64.whl.metadata (11 kB)
+2025-11-11 08:27:06 | Collecting scipy<2.0.0,>=1.16.3 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 18))
+2025-11-11 08:27:06 |   Downloading scipy-1.16.3-cp313-cp313-win_amd64.whl.metadata (60 kB)
+2025-11-11 08:27:07 | Collecting numpy<3.0.0,>=1.26.4 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 19))
+2025-11-11 08:27:07 |   Downloading numpy-2.3.4-cp313-cp313-win_amd64.whl.metadata (60 kB)
+2025-11-11 08:27:07 | Collecting psutil<6.0.0,>=5.9.8 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 22))
+2025-11-11 08:27:07 |   Downloading psutil-5.9.8-cp37-abi3-win_amd64.whl.metadata (22 kB)
+2025-11-11 08:27:07 | Collecting Werkzeug>=2.3.7 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:27:08 |   Downloading werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+2025-11-11 08:27:08 | Collecting Jinja2>=3.1.2 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:27:08 |   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+2025-11-11 08:27:08 | Collecting itsdangerous>=2.1.2 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:27:09 |   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+2025-11-11 08:27:09 | Collecting click>=8.1.3 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:27:09 |   Downloading click-8.3.0-py3-none-any.whl.metadata (2.6 kB)
+2025-11-11 08:27:09 | Collecting blinker>=1.6.2 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:27:10 |   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+2025-11-11 08:27:10 | Collecting filelock (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:27:10 |   Downloading filelock-3.20.0-py3-none-any.whl.metadata (2.1 kB)
+2025-11-11 08:27:10 | Collecting typing-extensions>=4.10.0 (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:27:10 |   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+2025-11-11 08:27:11 | Collecting sympy>=1.13.3 (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:27:11 |   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+2025-11-11 08:27:11 | Collecting networkx>=2.5.1 (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:27:11 |   Downloading networkx-3.5-py3-none-any.whl.metadata (6.3 kB)
+2025-11-11 08:27:11 | Collecting fsspec>=0.8.5 (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:27:11 |   Downloading fsspec-2025.10.0-py3-none-any.whl.metadata (10 kB)
+2025-11-11 08:27:12 | Collecting setuptools (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:27:12 |   Downloading setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+2025-11-11 08:27:13 | Collecting charset_normalizer<4,>=2 (from requests<3.0.0,>=2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 08:27:13 |   Downloading charset_normalizer-3.4.4-cp313-cp313-win_amd64.whl.metadata (38 kB)
+2025-11-11 08:27:13 | Collecting idna<4,>=2.5 (from requests<3.0.0,>=2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 08:27:13 |   Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+2025-11-11 08:27:14 | Collecting urllib3<3,>=1.21.1 (from requests<3.0.0,>=2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 08:27:14 |   Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+2025-11-11 08:27:14 | Collecting certifi>=2017.4.17 (from requests<3.0.0,>=2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 08:27:14 |   Downloading certifi-2025.10.5-py3-none-any.whl.metadata (2.5 kB)
+2025-11-11 08:27:14 | Collecting langchain-text-splitters<1.0.0,>=0.3.9 (from langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:14 |   Downloading langchain_text_splitters-0.3.11-py3-none-any.whl.metadata (1.8 kB)
+2025-11-11 08:27:15 | Collecting langsmith>=0.1.17 (from langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:15 |   Downloading langsmith-0.4.42-py3-none-any.whl.metadata (14 kB)
+2025-11-11 08:27:16 | Collecting pydantic<3.0.0,>=2.7.4 (from langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:16 |   Downloading pydantic-2.12.4-py3-none-any.whl.metadata (89 kB)
+2025-11-11 08:27:18 | Collecting SQLAlchemy<3,>=1.4 (from langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:18 |   Downloading sqlalchemy-2.0.44-cp313-cp313-win_amd64.whl.metadata (9.8 kB)
+2025-11-11 08:27:18 | Collecting tenacity!=8.4.0,<10.0.0,>=8.1.0 (from langchain-core<0.4.0,>=0.3.63->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 08:27:18 |   Downloading tenacity-9.1.2-py3-none-any.whl.metadata (1.2 kB)
+2025-11-11 08:27:19 | Collecting jsonpatch<2.0.0,>=1.33.0 (from langchain-core<0.4.0,>=0.3.63->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 08:27:19 |   Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+2025-11-11 08:27:19 | Collecting packaging<26.0.0,>=23.2.0 (from langchain-core<0.4.0,>=0.3.63->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 08:27:20 |   Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+2025-11-11 08:27:23 | Collecting aiohttp<4.0.0,>=3.8.3 (from langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:24 |   Downloading aiohttp-3.13.2-cp313-cp313-win_amd64.whl.metadata (8.4 kB)
+2025-11-11 08:27:24 | Collecting dataclasses-json<0.7.0,>=0.6.7 (from langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:24 |   Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+2025-11-11 08:27:24 | Collecting pydantic-settings<3.0.0,>=2.10.1 (from langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:24 |   Downloading pydantic_settings-2.12.0-py3-none-any.whl.metadata (3.4 kB)
+2025-11-11 08:27:24 | Collecting httpx-sse<1.0.0,>=0.4.0 (from langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:24 |   Downloading httpx_sse-0.4.3-py3-none-any.whl.metadata (9.7 kB)
+2025-11-11 08:27:25 | Collecting huggingface-hub>=0.23.0 (from langchain-huggingface<0.2.0,>=0.1.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-11 08:27:25 |   Downloading huggingface_hub-1.1.2-py3-none-any.whl.metadata (13 kB)
+2025-11-11 08:27:26 | Collecting tokenizers>=0.19.1 (from langchain-huggingface<0.2.0,>=0.1.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-11 08:27:26 |   Downloading tokenizers-0.22.1-cp39-abi3-win_amd64.whl.metadata (6.9 kB)
+2025-11-11 08:27:26 | Collecting huggingface-hub>=0.23.0 (from langchain-huggingface<0.2.0,>=0.1.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-11 08:27:26 |   Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+2025-11-11 08:27:28 | Collecting regex!=2019.12.17 (from transformers<5.0.0,>=4.57.1->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 13))
+2025-11-11 08:27:28 |   Downloading regex-2025.11.3-cp313-cp313-win_amd64.whl.metadata (41 kB)
+2025-11-11 08:27:28 | Collecting safetensors>=0.4.3 (from transformers<5.0.0,>=4.57.1->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 13))
+2025-11-11 08:27:28 |   Downloading safetensors-0.6.2-cp38-abi3-win_amd64.whl.metadata (4.1 kB)
+2025-11-11 08:27:28 | Collecting tqdm>=4.27 (from transformers<5.0.0,>=4.57.1->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 13))
+2025-11-11 08:27:28 |   Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+2025-11-11 08:27:29 | Collecting Pillow (from sentence-transformers<6.0.0,>=5.1.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 15))
+2025-11-11 08:27:29 |   Downloading pillow-12.0.0-cp313-cp313-win_amd64.whl.metadata (9.0 kB)
+2025-11-11 08:27:30 | Collecting joblib>=1.2.0 (from scikit-learn<2.0.0,>=1.7.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 17))
+2025-11-11 08:27:30 |   Downloading joblib-1.5.2-py3-none-any.whl.metadata (5.6 kB)
+2025-11-11 08:27:30 | Collecting threadpoolctl>=3.1.0 (from scikit-learn<2.0.0,>=1.7.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 17))
+2025-11-11 08:27:30 |   Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+2025-11-11 08:27:31 | Collecting aiohappyeyeballs>=2.5.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:31 |   Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+2025-11-11 08:27:31 | Collecting aiosignal>=1.4.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:31 |   Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+2025-11-11 08:27:32 | Collecting attrs>=17.3.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:32 |   Downloading attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+2025-11-11 08:27:32 | Collecting frozenlist>=1.1.1 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:32 |   Downloading frozenlist-1.8.0-cp313-cp313-win_amd64.whl.metadata (21 kB)
+2025-11-11 08:27:33 | Collecting multidict<7.0,>=4.5 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:33 |   Downloading multidict-6.7.0-cp313-cp313-win_amd64.whl.metadata (5.5 kB)
+2025-11-11 08:27:34 | Collecting propcache>=0.2.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:34 |   Downloading propcache-0.4.1-cp313-cp313-win_amd64.whl.metadata (14 kB)
+2025-11-11 08:27:35 | Collecting yarl<2.0,>=1.17.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:35 |   Downloading yarl-1.22.0-cp313-cp313-win_amd64.whl.metadata (77 kB)
+2025-11-11 08:27:36 | Collecting marshmallow<4.0.0,>=3.18.0 (from dataclasses-json<0.7.0,>=0.6.7->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:36 |   Downloading marshmallow-3.26.1-py3-none-any.whl.metadata (7.3 kB)
+2025-11-11 08:27:36 | Collecting typing-inspect<1,>=0.4.0 (from dataclasses-json<0.7.0,>=0.6.7->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:36 |   Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+2025-11-11 08:27:37 | Collecting jsonpointer>=1.9 (from jsonpatch<2.0.0,>=1.33.0->langchain-core<0.4.0,>=0.3.63->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 08:27:37 |   Downloading jsonpointer-3.0.0-py2.py3-none-any.whl.metadata (2.3 kB)
+2025-11-11 08:27:37 | Collecting httpx<1,>=0.23.0 (from langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:37 |   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2025-11-11 08:27:38 | Collecting orjson>=3.9.14 (from langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:38 |   Downloading orjson-3.11.4-cp313-cp313-win_amd64.whl.metadata (42 kB)
+2025-11-11 08:27:39 | Collecting requests-toolbelt>=1.0.0 (from langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:39 |   Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+2025-11-11 08:27:39 | Collecting zstandard>=0.23.0 (from langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:39 |   Downloading zstandard-0.25.0-cp313-cp313-win_amd64.whl.metadata (3.3 kB)
+2025-11-11 08:27:39 | Collecting anyio (from httpx<1,>=0.23.0->langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:39 |   Downloading anyio-4.11.0-py3-none-any.whl.metadata (4.1 kB)
+2025-11-11 08:27:39 | Collecting httpcore==1.* (from httpx<1,>=0.23.0->langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:39 |   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+2025-11-11 08:27:40 | Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:40 |   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2025-11-11 08:27:40 | Collecting annotated-types>=0.6.0 (from pydantic<3.0.0,>=2.7.4->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:40 |   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+2025-11-11 08:27:44 | Collecting pydantic-core==2.41.5 (from pydantic<3.0.0,>=2.7.4->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:44 |   Downloading pydantic_core-2.41.5-cp313-cp313-win_amd64.whl.metadata (7.4 kB)
+2025-11-11 08:27:44 | Collecting typing-inspection>=0.4.2 (from pydantic<3.0.0,>=2.7.4->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:44 |   Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+2025-11-11 08:27:45 | Collecting greenlet>=1 (from SQLAlchemy<3,>=1.4->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:45 |   Downloading greenlet-3.2.4-cp313-cp313-win_amd64.whl.metadata (4.2 kB)
+2025-11-11 08:27:45 | Collecting mypy-extensions>=0.3.0 (from typing-inspect<1,>=0.4.0->dataclasses-json<0.7.0,>=0.6.7->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:27:46 |   Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+2025-11-11 08:27:46 | Collecting colorama (from click>=8.1.3->flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:27:46 |   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+2025-11-11 08:27:46 | Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:27:46 |   Downloading markupsafe-3.0.3-cp313-cp313-win_amd64.whl.metadata (2.8 kB)
+2025-11-11 08:27:47 | Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:27:47 |   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+2025-11-11 08:27:47 | Collecting sniffio>=1.1 (from anyio->httpx<1,>=0.23.0->langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:27:47 |   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2025-11-11 08:27:47 | Downloading flask-2.3.3-py3-none-any.whl (96 kB)
+2025-11-11 08:27:47 | Downloading python_dotenv-1.0.0-py3-none-any.whl (19 kB)
+2025-11-11 08:27:48 | Downloading banglanltk-0.0.4-py3-none-any.whl (462 kB)
+2025-11-11 08:27:48 | Downloading sentencepiece-0.2.1-cp313-cp313-win_amd64.whl (1.1 MB)
+2025-11-11 08:27:49 |    ---------------------------------------- 1.1/1.1 MB 1.4 MB/s  0:00:00
+2025-11-11 08:27:49 | Downloading torch-2.9.0-cp313-cp313-win_amd64.whl (109.3 MB)
+2025-11-11 08:28:44 |    ---------------------------------------- 109.3/109.3 MB 1.9 MB/s  0:00:54
+2025-11-11 08:28:44 | Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+2025-11-11 08:28:44 | Downloading langchain-0.3.27-py3-none-any.whl (1.0 MB)
+2025-11-11 08:28:45 |    ---------------------------------------- 1.0/1.0 MB 1.9 MB/s  0:00:00
+2025-11-11 08:28:45 | Downloading langchain_core-0.3.79-py3-none-any.whl (449 kB)
+2025-11-11 08:28:45 | Downloading langchain_community-0.3.31-py3-none-any.whl (2.5 MB)
+2025-11-11 08:28:46 |    ---------------------------------------- 2.5/2.5 MB 2.4 MB/s  0:00:01
+2025-11-11 08:28:46 | Downloading langchain_huggingface-0.1.2-py3-none-any.whl (21 kB)
+2025-11-11 08:28:46 | Downloading transformers-4.57.1-py3-none-any.whl (12.0 MB)
+2025-11-11 08:28:52 |    ---------------------------------------- 12.0/12.0 MB 2.3 MB/s  0:00:05
+2025-11-11 08:28:52 | Downloading sentence_transformers-5.1.2-py3-none-any.whl (488 kB)
+2025-11-11 08:28:53 | Downloading scikit_learn-1.7.2-cp313-cp313-win_amd64.whl (8.7 MB)
+2025-11-11 08:28:57 |    ---------------------------------------- 8.7/8.7 MB 2.1 MB/s  0:00:04
+2025-11-11 08:28:57 | Downloading scipy-1.16.3-cp313-cp313-win_amd64.whl (38.5 MB)
+2025-11-11 08:29:24 |    ---------------------------------------- 38.5/38.5 MB 1.4 MB/s  0:00:27
+2025-11-11 08:29:24 | Downloading numpy-2.3.4-cp313-cp313-win_amd64.whl (12.8 MB)
+2025-11-11 08:29:36 |    ---------------------------------------- 12.8/12.8 MB 1.1 MB/s  0:00:11
+2025-11-11 08:29:36 | Downloading psutil-5.9.8-cp37-abi3-win_amd64.whl (255 kB)
+2025-11-11 08:29:36 | Downloading aiohttp-3.13.2-cp313-cp313-win_amd64.whl (452 kB)
+2025-11-11 08:29:36 | Downloading charset_normalizer-3.4.4-cp313-cp313-win_amd64.whl (107 kB)
+2025-11-11 08:29:36 | Downloading dataclasses_json-0.6.7-py3-none-any.whl (28 kB)
+2025-11-11 08:29:37 | Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+2025-11-11 08:29:37 | Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+2025-11-11 08:29:37 |    ---------------------------------------- 566.1/566.1 kB 1.1 MB/s  0:00:00
+2025-11-11 08:29:37 | Downloading idna-3.11-py3-none-any.whl (71 kB)
+2025-11-11 08:29:37 | Downloading jsonpatch-1.33-py2.py3-none-any.whl (12 kB)
+2025-11-11 08:29:37 | Downloading langchain_text_splitters-0.3.11-py3-none-any.whl (33 kB)
+2025-11-11 08:29:37 | Downloading langsmith-0.4.42-py3-none-any.whl (401 kB)
+2025-11-11 08:29:38 | Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+2025-11-11 08:29:38 | Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+2025-11-11 08:29:38 | Downloading marshmallow-3.26.1-py3-none-any.whl (50 kB)
+2025-11-11 08:29:38 | Downloading multidict-6.7.0-cp313-cp313-win_amd64.whl (45 kB)
+2025-11-11 08:29:38 | Downloading packaging-25.0-py3-none-any.whl (66 kB)
+2025-11-11 08:29:38 | Downloading pydantic-2.12.4-py3-none-any.whl (463 kB)
+2025-11-11 08:29:39 | Downloading pydantic_core-2.41.5-cp313-cp313-win_amd64.whl (2.0 MB)
+2025-11-11 08:29:42 |    ---------------------------------------- 2.0/2.0 MB 638.0 kB/s  0:00:03
+2025-11-11 08:29:42 | Downloading pydantic_settings-2.12.0-py3-none-any.whl (51 kB)
+2025-11-11 08:29:42 | Downloading sqlalchemy-2.0.44-cp313-cp313-win_amd64.whl (2.1 MB)
+2025-11-11 08:29:45 |    ---------------------------------------- 2.1/2.1 MB 829.8 kB/s  0:00:02
+2025-11-11 08:29:45 | Downloading tenacity-9.1.2-py3-none-any.whl (28 kB)
+2025-11-11 08:29:45 | Downloading tokenizers-0.22.1-cp39-abi3-win_amd64.whl (2.7 MB)
+2025-11-11 08:29:47 |    ---------------------------------------- 2.7/2.7 MB 1.6 MB/s  0:00:01
+2025-11-11 08:29:47 | Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+2025-11-11 08:29:47 | Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+2025-11-11 08:29:47 | Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+2025-11-11 08:29:47 | Downloading yarl-1.22.0-cp313-cp313-win_amd64.whl (86 kB)
+2025-11-11 08:29:47 | Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+2025-11-11 08:29:47 | Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+2025-11-11 08:29:47 | Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+2025-11-11 08:29:47 | Downloading attrs-25.4.0-py3-none-any.whl (67 kB)
+2025-11-11 08:29:47 | Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+2025-11-11 08:29:47 | Downloading certifi-2025.10.5-py3-none-any.whl (163 kB)
+2025-11-11 08:29:48 | Downloading click-8.3.0-py3-none-any.whl (107 kB)
+2025-11-11 08:29:48 | Downloading frozenlist-1.8.0-cp313-cp313-win_amd64.whl (43 kB)
+2025-11-11 08:29:48 | Downloading fsspec-2025.10.0-py3-none-any.whl (200 kB)
+2025-11-11 08:29:48 | Downloading greenlet-3.2.4-cp313-cp313-win_amd64.whl (299 kB)
+2025-11-11 08:29:48 | Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+2025-11-11 08:29:49 | Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+2025-11-11 08:29:49 | Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+2025-11-11 08:29:49 | Downloading joblib-1.5.2-py3-none-any.whl (308 kB)
+2025-11-11 08:29:49 | Downloading jsonpointer-3.0.0-py2.py3-none-any.whl (7.6 kB)
+2025-11-11 08:29:49 | Downloading markupsafe-3.0.3-cp313-cp313-win_amd64.whl (15 kB)
+2025-11-11 08:29:50 | Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+2025-11-11 08:29:50 | Downloading networkx-3.5-py3-none-any.whl (2.0 MB)
+2025-11-11 08:29:51 |    ---------------------------------------- 2.0/2.0 MB 1.3 MB/s  0:00:01
+2025-11-11 08:29:51 | Downloading orjson-3.11.4-cp313-cp313-win_amd64.whl (131 kB)
+2025-11-11 08:29:52 | Downloading propcache-0.4.1-cp313-cp313-win_amd64.whl (40 kB)
+2025-11-11 08:29:52 | Downloading regex-2025.11.3-cp313-cp313-win_amd64.whl (277 kB)
+2025-11-11 08:29:52 | Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+2025-11-11 08:29:52 | Downloading safetensors-0.6.2-cp38-abi3-win_amd64.whl (320 kB)
+2025-11-11 08:29:53 | Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+2025-11-11 08:29:56 |    ---------------------------------------- 6.3/6.3 MB 1.9 MB/s  0:00:03
+2025-11-11 08:29:56 | Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+2025-11-11 08:29:56 |    ---------------------------------------- 536.2/536.2 kB 2.1 MB/s  0:00:00
+2025-11-11 08:29:56 | Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+2025-11-11 08:29:56 | Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+2025-11-11 08:29:56 | Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+2025-11-11 08:29:57 | Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+2025-11-11 08:29:57 | Downloading zstandard-0.25.0-cp313-cp313-win_amd64.whl (506 kB)
+2025-11-11 08:29:57 | Downloading anyio-4.11.0-py3-none-any.whl (109 kB)
+2025-11-11 08:29:57 | Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2025-11-11 08:29:57 | Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2025-11-11 08:29:57 | Downloading filelock-3.20.0-py3-none-any.whl (16 kB)
+2025-11-11 08:29:57 | Downloading pillow-12.0.0-cp313-cp313-win_amd64.whl (7.0 MB)
+2025-11-11 08:30:00 |    ---------------------------------------- 7.0/7.0 MB 2.5 MB/s  0:00:02
+2025-11-11 08:30:00 | Downloading setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+2025-11-11 08:30:01 |    ---------------------------------------- 1.2/1.2 MB 1.9 MB/s  0:00:00
+2025-11-11 08:30:04 | Building wheels for collected packages: pyyaml
+2025-11-11 08:30:04 |   Building wheel for pyyaml (pyproject.toml): started
+2025-11-11 08:30:11 |   Building wheel for pyyaml (pyproject.toml): finished with status 'done'
+2025-11-11 08:30:11 |   Created wheel for pyyaml: filename=pyyaml-6.0.1-cp313-cp313-win_amd64.whl size=45473 sha256=71dd539c89acb795a0b0c8fb3e345b3cd34cc2b01b272b218e4644063c4745d1
+2025-11-11 08:30:11 |   Stored in directory: C:\Users\sahon\AppData\Local\Temp\pip-ephem-wheel-cache-3zbe7ne7\wheels\9c\9e\34\1e1548811b63a9d001469f21797e8b7d5c216d8eb928e7d6ad
+2025-11-11 08:30:11 | Successfully built pyyaml
+2025-11-11 08:30:12 | Installing collected packages: mpmath, banglanltk, zstandard, urllib3, typing-extensions, threadpoolctl, tenacity, sympy, sniffio, setuptools, sentencepiece, safetensors, regex, pyyaml, python-dotenv, psutil, propcache, Pillow, packaging, orjson, numpy, networkx, mypy-extensions, multidict, MarkupSafe, jsonpointer, joblib, itsdangerous, idna, httpx-sse, h11, greenlet, fsspec, frozenlist, filelock, colorama, charset_normalizer, certifi, blinker, attrs, annotated-types, aiohappyeyeballs, yarl, Werkzeug, typing-inspection, typing-inspect, tqdm, SQLAlchemy, scipy, requests, pydantic-core, marshmallow, jsonpatch, Jinja2, httpcore, click, anyio, aiosignal, torch, scikit-learn, requests-toolbelt, pydantic, huggingface-hub, httpx, flask, dataclasses-json, aiohttp, tokenizers, pydantic-settings, langsmith, transformers, langchain-core, sentence-transformers, langchain-text-splitters, langchain-huggingface, langchain, langchain-community
+2025-11-11 08:38:42 | 
+2025-11-11 08:38:42 | Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 Pillow-12.0.0 SQLAlchemy-2.0.44 Werkzeug-3.1.3 aiohappyeyeballs-2.6.1 aiohttp-3.13.2 aiosignal-1.4.0 annotated-types-0.7.0 anyio-4.11.0 attrs-25.4.0 banglanltk-0.0.4 blinker-1.9.0 certifi-2025.10.5 charset_normalizer-3.4.4 click-8.3.0 colorama-0.4.6 dataclasses-json-0.6.7 filelock-3.20.0 flask-2.3.3 frozenlist-1.8.0 fsspec-2025.10.0 greenlet-3.2.4 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 httpx-sse-0.4.3 huggingface-hub-0.36.0 idna-3.11 itsdangerous-2.2.0 joblib-1.5.2 jsonpatch-1.33 jsonpointer-3.0.0 langchain-0.3.27 langchain-community-0.3.31 langchain-core-0.3.79 langchain-huggingface-0.1.2 langchain-text-splitters-0.3.11 langsmith-0.4.42 marshmallow-3.26.1 mpmath-1.3.0 multidict-6.7.0 mypy-extensions-1.1.0 networkx-3.5 numpy-2.3.4 orjson-3.11.4 packaging-25.0 propcache-0.4.1 psutil-5.9.8 pydantic-2.12.4 pydantic-core-2.41.5 pydantic-settings-2.12.0 python-dotenv-1.0.0 pyyaml-6.0.1 regex-2025.11.3 requests-2.32.5 requests-toolbelt-1.0.0 safetensors-0.6.2 scikit-learn-1.7.2 scipy-1.16.3 sentence-transformers-5.1.2 sentencepiece-0.2.1 setuptools-80.9.0 sniffio-1.3.1 sympy-1.14.0 tenacity-9.1.2 threadpoolctl-3.6.0 tokenizers-0.22.1 torch-2.9.0 tqdm-4.67.1 transformers-4.57.1 typing-extensions-4.15.0 typing-inspect-0.9.0 typing-inspection-0.4.2 urllib3-2.5.0 yarl-1.22.0 zstandard-0.25.0
+2025-11-11 08:38:45 | Package 'sentencepiece' installed successfully: 0.2.1
+2025-11-11 08:38:46 | Package 'flask' installed successfully: 2.3.3
+2025-11-11 08:38:47 | Package 'requests' installed successfully: 2.32.5
+2025-11-11 08:38:48 | Package 'langchain' installed successfully: 0.3.27
+2025-11-11 08:38:48 | === ZombieCoder-Family-Agent Full Auto-Installer Finished ===
+2025-11-11 08:45:53 | === ZombieCoder-Family-Agent Full Auto-Installer Started ===
+2025-11-11 08:45:54 | Python Version: Python 3.13.9
+2025-11-11 08:45:54 | WARNING: MSVC C++ compiler NOT found!
+2025-11-11 08:45:54 | Some packages may fail to build from source.
+2025-11-11 08:45:54 | Removing old virtualenv...
+2025-11-11 08:46:36 | Creating new virtualenv...
+2025-11-11 08:47:23 | Activating virtualenv...
+2025-11-11 08:47:24 | Upgrading pip, setuptools, wheel...
+2025-11-11 08:47:33 | Requirement already satisfied: pip in c:\users\sahon\desktop\zombiecoder-family-agent\.venv\lib\site-packages (25.2)
+2025-11-11 08:47:34 | Collecting pip
+2025-11-11 08:47:35 |   Using cached pip-25.3-py3-none-any.whl.metadata (4.7 kB)
+2025-11-11 08:47:38 | Collecting setuptools
+2025-11-11 08:47:39 |   Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+2025-11-11 08:47:40 | Collecting wheel
+2025-11-11 08:47:41 |   Using cached wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+2025-11-11 08:47:42 | Using cached pip-25.3-py3-none-any.whl (1.8 MB)
+2025-11-11 08:47:43 | Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+2025-11-11 08:47:43 | Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
+2025-11-11 08:47:44 | Pip cache dir: C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\pip_cache
+2025-11-11 08:47:44 | Installing requirements from C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt ...
+2025-11-11 08:48:00 | Collecting flask==2.3.3 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:48:00 |   Downloading flask-2.3.3-py3-none-any.whl.metadata (3.6 kB)
+2025-11-11 08:48:00 | Collecting requests<3.0.0,>=2.31.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 08:48:00 |   Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+2025-11-11 08:48:01 | Collecting pyyaml==6.0.1 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 4))
+2025-11-11 08:48:01 |   Downloading PyYAML-6.0.1.tar.gz (125 kB)
+2025-11-11 08:48:02 |   Installing build dependencies: started
+2025-11-11 08:48:40 |   Installing build dependencies: finished with status 'done'
+2025-11-11 08:48:41 |   Getting requirements to build wheel: started
+2025-11-11 08:48:50 |   Getting requirements to build wheel: finished with status 'done'
+2025-11-11 08:48:50 |   Preparing metadata (pyproject.toml): started
+2025-11-11 08:48:51 |   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-11-11 08:48:51 | Collecting python-dotenv==1.0.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 5))
+2025-11-11 08:48:51 |   Downloading python_dotenv-1.0.0-py3-none-any.whl.metadata (21 kB)
+2025-11-11 08:48:52 | Collecting banglanltk==0.0.4 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 8))
+2025-11-11 08:48:52 |   Downloading banglanltk-0.0.4-py3-none-any.whl.metadata (3.9 kB)
+2025-11-11 08:48:52 | Collecting langchain<0.4.0,>=0.3.10 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:48:52 |   Downloading langchain-0.3.27-py3-none-any.whl.metadata (7.8 kB)
+2025-11-11 08:48:53 | Collecting langchain-core<0.4.0,>=0.3.63 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 08:48:53 |   Downloading langchain_core-0.3.79-py3-none-any.whl.metadata (3.2 kB)
+2025-11-11 08:48:53 | Collecting langchain-community<0.4.0,>=0.3.10 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:48:53 |   Downloading langchain_community-0.3.31-py3-none-any.whl.metadata (3.0 kB)
+2025-11-11 08:48:53 | Collecting langchain-huggingface<0.2.0,>=0.1.2 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-11 08:48:53 |   Downloading langchain_huggingface-0.1.2-py3-none-any.whl.metadata (1.3 kB)
+2025-11-11 08:48:54 | Collecting transformers<5.0.0,>=4.57.1 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 13))
+2025-11-11 08:48:54 |   Downloading transformers-4.57.1-py3-none-any.whl.metadata (43 kB)
+2025-11-11 08:48:54 | Collecting sentencepiece==0.2.1 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 14))
+2025-11-11 08:48:54 |   Downloading sentencepiece-0.2.1-cp313-cp313-win_amd64.whl.metadata (10 kB)
+2025-11-11 08:48:54 | Collecting sentence-transformers<6.0.0,>=5.1.2 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 15))
+2025-11-11 08:48:54 |   Downloading sentence_transformers-5.1.2-py3-none-any.whl.metadata (16 kB)
+2025-11-11 08:48:54 | Collecting torch==2.9.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:48:54 |   Downloading torch-2.9.0-cp313-cp313-win_amd64.whl.metadata (30 kB)
+2025-11-11 08:48:55 | Collecting scikit-learn<2.0.0,>=1.7.2 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 17))
+2025-11-11 08:48:55 |   Downloading scikit_learn-1.7.2-cp313-cp313-win_amd64.whl.metadata (11 kB)
+2025-11-11 08:48:55 | Collecting scipy<2.0.0,>=1.16.3 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 18))
+2025-11-11 08:48:56 |   Downloading scipy-1.16.3-cp313-cp313-win_amd64.whl.metadata (60 kB)
+2025-11-11 08:48:56 | Collecting numpy<3.0.0,>=1.26.4 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 19))
+2025-11-11 08:48:57 |   Downloading numpy-2.3.4-cp313-cp313-win_amd64.whl.metadata (60 kB)
+2025-11-11 08:48:58 | Collecting psutil<6.0.0,>=5.9.8 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 22))
+2025-11-11 08:48:58 |   Downloading psutil-5.9.8-cp37-abi3-win_amd64.whl.metadata (22 kB)
+2025-11-11 08:48:58 | Collecting Werkzeug>=2.3.7 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:48:58 |   Downloading werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+2025-11-11 08:48:58 | Collecting Jinja2>=3.1.2 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:48:58 |   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+2025-11-11 08:48:58 | Collecting itsdangerous>=2.1.2 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:48:59 |   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+2025-11-11 08:48:59 | Collecting click>=8.1.3 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:48:59 |   Downloading click-8.3.0-py3-none-any.whl.metadata (2.6 kB)
+2025-11-11 08:48:59 | Collecting blinker>=1.6.2 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:49:00 |   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+2025-11-11 08:49:00 | Collecting filelock (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:49:00 |   Downloading filelock-3.20.0-py3-none-any.whl.metadata (2.1 kB)
+2025-11-11 08:49:01 | Collecting typing-extensions>=4.10.0 (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:49:01 |   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+2025-11-11 08:49:01 | Collecting sympy>=1.13.3 (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:49:01 |   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+2025-11-11 08:49:01 | Collecting networkx>=2.5.1 (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:49:01 |   Downloading networkx-3.5-py3-none-any.whl.metadata (6.3 kB)
+2025-11-11 08:49:01 | Collecting fsspec>=0.8.5 (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:49:01 |   Downloading fsspec-2025.10.0-py3-none-any.whl.metadata (10 kB)
+2025-11-11 08:49:01 | Collecting setuptools (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:49:01 |   Downloading setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+2025-11-11 08:49:01 | Collecting charset_normalizer<4,>=2 (from requests<3.0.0,>=2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 08:49:01 |   Downloading charset_normalizer-3.4.4-cp313-cp313-win_amd64.whl.metadata (38 kB)
+2025-11-11 08:49:01 | Collecting idna<4,>=2.5 (from requests<3.0.0,>=2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 08:49:01 |   Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+2025-11-11 08:49:01 | Collecting urllib3<3,>=1.21.1 (from requests<3.0.0,>=2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 08:49:01 |   Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+2025-11-11 08:49:01 | Collecting certifi>=2017.4.17 (from requests<3.0.0,>=2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 08:49:01 |   Downloading certifi-2025.10.5-py3-none-any.whl.metadata (2.5 kB)
+2025-11-11 08:49:01 | Collecting langchain-text-splitters<1.0.0,>=0.3.9 (from langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:01 |   Downloading langchain_text_splitters-0.3.11-py3-none-any.whl.metadata (1.8 kB)
+2025-11-11 08:49:01 | Collecting langsmith>=0.1.17 (from langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:02 |   Downloading langsmith-0.4.42-py3-none-any.whl.metadata (14 kB)
+2025-11-11 08:49:02 | Collecting pydantic<3.0.0,>=2.7.4 (from langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:02 |   Downloading pydantic-2.12.4-py3-none-any.whl.metadata (89 kB)
+2025-11-11 08:49:03 | Collecting SQLAlchemy<3,>=1.4 (from langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:03 |   Downloading sqlalchemy-2.0.44-cp313-cp313-win_amd64.whl.metadata (9.8 kB)
+2025-11-11 08:49:03 | Collecting tenacity!=8.4.0,<10.0.0,>=8.1.0 (from langchain-core<0.4.0,>=0.3.63->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 08:49:03 |   Downloading tenacity-9.1.2-py3-none-any.whl.metadata (1.2 kB)
+2025-11-11 08:49:03 | Collecting jsonpatch<2.0.0,>=1.33.0 (from langchain-core<0.4.0,>=0.3.63->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 08:49:04 |   Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+2025-11-11 08:49:04 | Collecting packaging<26.0.0,>=23.2.0 (from langchain-core<0.4.0,>=0.3.63->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 08:49:05 |   Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+2025-11-11 08:49:06 | Collecting aiohttp<4.0.0,>=3.8.3 (from langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:06 |   Downloading aiohttp-3.13.2-cp313-cp313-win_amd64.whl.metadata (8.4 kB)
+2025-11-11 08:49:06 | Collecting dataclasses-json<0.7.0,>=0.6.7 (from langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:06 |   Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+2025-11-11 08:49:06 | Collecting pydantic-settings<3.0.0,>=2.10.1 (from langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:06 |   Downloading pydantic_settings-2.12.0-py3-none-any.whl.metadata (3.4 kB)
+2025-11-11 08:49:06 | Collecting httpx-sse<1.0.0,>=0.4.0 (from langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:07 |   Downloading httpx_sse-0.4.3-py3-none-any.whl.metadata (9.7 kB)
+2025-11-11 08:49:07 | Collecting huggingface-hub>=0.23.0 (from langchain-huggingface<0.2.0,>=0.1.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-11 08:49:07 |   Downloading huggingface_hub-1.1.2-py3-none-any.whl.metadata (13 kB)
+2025-11-11 08:49:07 | Collecting tokenizers>=0.19.1 (from langchain-huggingface<0.2.0,>=0.1.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-11 08:49:07 |   Downloading tokenizers-0.22.1-cp39-abi3-win_amd64.whl.metadata (6.9 kB)
+2025-11-11 08:49:07 | Collecting huggingface-hub>=0.23.0 (from langchain-huggingface<0.2.0,>=0.1.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-11 08:49:07 |   Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+2025-11-11 08:49:09 | Collecting regex!=2019.12.17 (from transformers<5.0.0,>=4.57.1->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 13))
+2025-11-11 08:49:09 |   Downloading regex-2025.11.3-cp313-cp313-win_amd64.whl.metadata (41 kB)
+2025-11-11 08:49:09 | Collecting safetensors>=0.4.3 (from transformers<5.0.0,>=4.57.1->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 13))
+2025-11-11 08:49:09 |   Downloading safetensors-0.6.2-cp38-abi3-win_amd64.whl.metadata (4.1 kB)
+2025-11-11 08:49:09 | Collecting tqdm>=4.27 (from transformers<5.0.0,>=4.57.1->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 13))
+2025-11-11 08:49:09 |   Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+2025-11-11 08:49:10 | Collecting Pillow (from sentence-transformers<6.0.0,>=5.1.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 15))
+2025-11-11 08:49:10 |   Downloading pillow-12.0.0-cp313-cp313-win_amd64.whl.metadata (9.0 kB)
+2025-11-11 08:49:10 | Collecting joblib>=1.2.0 (from scikit-learn<2.0.0,>=1.7.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 17))
+2025-11-11 08:49:10 |   Downloading joblib-1.5.2-py3-none-any.whl.metadata (5.6 kB)
+2025-11-11 08:49:10 | Collecting threadpoolctl>=3.1.0 (from scikit-learn<2.0.0,>=1.7.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 17))
+2025-11-11 08:49:10 |   Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+2025-11-11 08:49:10 | Collecting aiohappyeyeballs>=2.5.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:10 |   Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+2025-11-11 08:49:11 | Collecting aiosignal>=1.4.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:11 |   Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+2025-11-11 08:49:11 | Collecting attrs>=17.3.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:11 |   Downloading attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+2025-11-11 08:49:11 | Collecting frozenlist>=1.1.1 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:11 |   Downloading frozenlist-1.8.0-cp313-cp313-win_amd64.whl.metadata (21 kB)
+2025-11-11 08:49:12 | Collecting multidict<7.0,>=4.5 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:12 |   Downloading multidict-6.7.0-cp313-cp313-win_amd64.whl.metadata (5.5 kB)
+2025-11-11 08:49:12 | Collecting propcache>=0.2.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:12 |   Downloading propcache-0.4.1-cp313-cp313-win_amd64.whl.metadata (14 kB)
+2025-11-11 08:49:13 | Collecting yarl<2.0,>=1.17.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:13 |   Downloading yarl-1.22.0-cp313-cp313-win_amd64.whl.metadata (77 kB)
+2025-11-11 08:49:13 | Collecting marshmallow<4.0.0,>=3.18.0 (from dataclasses-json<0.7.0,>=0.6.7->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:13 |   Downloading marshmallow-3.26.1-py3-none-any.whl.metadata (7.3 kB)
+2025-11-11 08:49:13 | Collecting typing-inspect<1,>=0.4.0 (from dataclasses-json<0.7.0,>=0.6.7->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:13 |   Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+2025-11-11 08:49:14 | Collecting jsonpointer>=1.9 (from jsonpatch<2.0.0,>=1.33.0->langchain-core<0.4.0,>=0.3.63->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 08:49:14 |   Downloading jsonpointer-3.0.0-py2.py3-none-any.whl.metadata (2.3 kB)
+2025-11-11 08:49:14 | Collecting httpx<1,>=0.23.0 (from langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:14 |   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2025-11-11 08:49:15 | Collecting orjson>=3.9.14 (from langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:15 |   Downloading orjson-3.11.4-cp313-cp313-win_amd64.whl.metadata (42 kB)
+2025-11-11 08:49:15 | Collecting requests-toolbelt>=1.0.0 (from langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:15 |   Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+2025-11-11 08:49:15 | Collecting zstandard>=0.23.0 (from langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:15 |   Downloading zstandard-0.25.0-cp313-cp313-win_amd64.whl.metadata (3.3 kB)
+2025-11-11 08:49:15 | Collecting anyio (from httpx<1,>=0.23.0->langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:15 |   Downloading anyio-4.11.0-py3-none-any.whl.metadata (4.1 kB)
+2025-11-11 08:49:15 | Collecting httpcore==1.* (from httpx<1,>=0.23.0->langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:15 |   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+2025-11-11 08:49:16 | Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:16 |   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2025-11-11 08:49:16 | Collecting annotated-types>=0.6.0 (from pydantic<3.0.0,>=2.7.4->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:16 |   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+2025-11-11 08:49:18 | Collecting pydantic-core==2.41.5 (from pydantic<3.0.0,>=2.7.4->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:18 |   Downloading pydantic_core-2.41.5-cp313-cp313-win_amd64.whl.metadata (7.4 kB)
+2025-11-11 08:49:18 | Collecting typing-inspection>=0.4.2 (from pydantic<3.0.0,>=2.7.4->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:18 |   Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+2025-11-11 08:49:18 | Collecting greenlet>=1 (from SQLAlchemy<3,>=1.4->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:18 |   Downloading greenlet-3.2.4-cp313-cp313-win_amd64.whl.metadata (4.2 kB)
+2025-11-11 08:49:18 | Collecting mypy-extensions>=0.3.0 (from typing-inspect<1,>=0.4.0->dataclasses-json<0.7.0,>=0.6.7->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 08:49:18 |   Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+2025-11-11 08:49:19 | Collecting colorama (from click>=8.1.3->flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:49:19 |   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+2025-11-11 08:49:19 | Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 08:49:19 |   Downloading markupsafe-3.0.3-cp313-cp313-win_amd64.whl.metadata (2.8 kB)
+2025-11-11 08:49:19 | Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 08:49:19 |   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+2025-11-11 08:49:19 | Collecting sniffio>=1.1 (from anyio->httpx<1,>=0.23.0->langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 08:49:19 |   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2025-11-11 08:49:19 | Downloading flask-2.3.3-py3-none-any.whl (96 kB)
+2025-11-11 08:49:19 | Downloading python_dotenv-1.0.0-py3-none-any.whl (19 kB)
+2025-11-11 08:49:19 | Downloading banglanltk-0.0.4-py3-none-any.whl (462 kB)
+2025-11-11 08:49:20 | Downloading sentencepiece-0.2.1-cp313-cp313-win_amd64.whl (1.1 MB)
+2025-11-11 08:49:20 |    ---------------------------------------- 1.1/1.1 MB 4.5 MB/s  0:00:00
+2025-11-11 08:49:20 | Downloading torch-2.9.0-cp313-cp313-win_amd64.whl (109.3 MB)
+2025-11-11 08:49:56 |    ---------------------------------------- 109.3/109.3 MB 3.0 MB/s  0:00:36
+2025-11-11 08:49:56 | Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+2025-11-11 08:49:56 | Downloading langchain-0.3.27-py3-none-any.whl (1.0 MB)
+2025-11-11 08:49:56 |    ---------------------------------------- 1.0/1.0 MB 3.0 MB/s  0:00:00
+2025-11-11 08:49:56 | Downloading langchain_core-0.3.79-py3-none-any.whl (449 kB)
+2025-11-11 08:49:57 | Downloading langchain_community-0.3.31-py3-none-any.whl (2.5 MB)
+2025-11-11 08:49:57 |    ---------------------------------------- 2.5/2.5 MB 3.1 MB/s  0:00:00
+2025-11-11 08:49:57 | Downloading langchain_huggingface-0.1.2-py3-none-any.whl (21 kB)
+2025-11-11 08:49:57 | Downloading transformers-4.57.1-py3-none-any.whl (12.0 MB)
+2025-11-11 08:50:01 |    ---------------------------------------- 12.0/12.0 MB 3.0 MB/s  0:00:03
+2025-11-11 08:50:01 | Downloading sentence_transformers-5.1.2-py3-none-any.whl (488 kB)
+2025-11-11 08:50:02 | Downloading scikit_learn-1.7.2-cp313-cp313-win_amd64.whl (8.7 MB)
+2025-11-11 08:50:04 |    ---------------------------------------- 8.7/8.7 MB 3.1 MB/s  0:00:02
+2025-11-11 08:50:04 | Downloading scipy-1.16.3-cp313-cp313-win_amd64.whl (38.5 MB)
+2025-11-11 08:50:18 |    ---------------------------------------- 38.5/38.5 MB 2.8 MB/s  0:00:13
+2025-11-11 08:50:18 | Downloading numpy-2.3.4-cp313-cp313-win_amd64.whl (12.8 MB)
+2025-11-11 08:50:22 |    ---------------------------------------- 12.8/12.8 MB 3.1 MB/s  0:00:04
+2025-11-11 08:50:22 | Downloading psutil-5.9.8-cp37-abi3-win_amd64.whl (255 kB)
+2025-11-11 08:50:22 | Downloading aiohttp-3.13.2-cp313-cp313-win_amd64.whl (452 kB)
+2025-11-11 08:50:23 | Downloading charset_normalizer-3.4.4-cp313-cp313-win_amd64.whl (107 kB)
+2025-11-11 08:50:23 | Downloading dataclasses_json-0.6.7-py3-none-any.whl (28 kB)
+2025-11-11 08:50:23 | Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+2025-11-11 08:50:23 | Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+2025-11-11 08:50:23 |    ---------------------------------------- 566.1/566.1 kB 3.7 MB/s  0:00:00
+2025-11-11 08:50:23 | Downloading idna-3.11-py3-none-any.whl (71 kB)
+2025-11-11 08:50:23 | Downloading jsonpatch-1.33-py2.py3-none-any.whl (12 kB)
+2025-11-11 08:50:23 | Downloading langchain_text_splitters-0.3.11-py3-none-any.whl (33 kB)
+2025-11-11 08:50:23 | Downloading langsmith-0.4.42-py3-none-any.whl (401 kB)
+2025-11-11 08:50:23 | Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+2025-11-11 08:50:23 | Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+2025-11-11 08:50:23 | Downloading marshmallow-3.26.1-py3-none-any.whl (50 kB)
+2025-11-11 08:50:23 | Downloading multidict-6.7.0-cp313-cp313-win_amd64.whl (45 kB)
+2025-11-11 08:50:23 | Downloading packaging-25.0-py3-none-any.whl (66 kB)
+2025-11-11 08:50:23 | Downloading pydantic-2.12.4-py3-none-any.whl (463 kB)
+2025-11-11 08:50:23 | Downloading pydantic_core-2.41.5-cp313-cp313-win_amd64.whl (2.0 MB)
+2025-11-11 08:50:24 |    ---------------------------------------- 2.0/2.0 MB 3.5 MB/s  0:00:00
+2025-11-11 08:50:24 | Downloading pydantic_settings-2.12.0-py3-none-any.whl (51 kB)
+2025-11-11 08:50:24 | Downloading sqlalchemy-2.0.44-cp313-cp313-win_amd64.whl (2.1 MB)
+2025-11-11 08:50:25 |    ---------------------------------------- 2.1/2.1 MB 3.1 MB/s  0:00:00
+2025-11-11 08:50:25 | Downloading tenacity-9.1.2-py3-none-any.whl (28 kB)
+2025-11-11 08:50:25 | Downloading tokenizers-0.22.1-cp39-abi3-win_amd64.whl (2.7 MB)
+2025-11-11 08:50:26 |    ---------------------------------------- 2.7/2.7 MB 3.3 MB/s  0:00:00
+2025-11-11 08:50:26 | Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+2025-11-11 08:50:26 | Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+2025-11-11 08:50:26 | Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+2025-11-11 08:50:26 | Downloading yarl-1.22.0-cp313-cp313-win_amd64.whl (86 kB)
+2025-11-11 08:50:26 | Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+2025-11-11 08:50:26 | Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+2025-11-11 08:50:26 | Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+2025-11-11 08:50:26 | Downloading attrs-25.4.0-py3-none-any.whl (67 kB)
+2025-11-11 08:50:26 | Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+2025-11-11 08:50:26 | Downloading certifi-2025.10.5-py3-none-any.whl (163 kB)
+2025-11-11 08:50:26 | Downloading click-8.3.0-py3-none-any.whl (107 kB)
+2025-11-11 08:50:26 | Downloading frozenlist-1.8.0-cp313-cp313-win_amd64.whl (43 kB)
+2025-11-11 08:50:26 | Downloading fsspec-2025.10.0-py3-none-any.whl (200 kB)
+2025-11-11 08:50:26 | Downloading greenlet-3.2.4-cp313-cp313-win_amd64.whl (299 kB)
+2025-11-11 08:50:26 | Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+2025-11-11 08:50:26 | Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+2025-11-11 08:50:26 | Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+2025-11-11 08:50:26 | Downloading joblib-1.5.2-py3-none-any.whl (308 kB)
+2025-11-11 08:50:26 | Downloading jsonpointer-3.0.0-py2.py3-none-any.whl (7.6 kB)
+2025-11-11 08:50:27 | Downloading markupsafe-3.0.3-cp313-cp313-win_amd64.whl (15 kB)
+2025-11-11 08:50:27 | Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+2025-11-11 08:50:27 | Downloading networkx-3.5-py3-none-any.whl (2.0 MB)
+2025-11-11 08:50:27 |    ---------------------------------------- 2.0/2.0 MB 4.5 MB/s  0:00:00
+2025-11-11 08:50:27 | Downloading orjson-3.11.4-cp313-cp313-win_amd64.whl (131 kB)
+2025-11-11 08:50:27 | Downloading propcache-0.4.1-cp313-cp313-win_amd64.whl (40 kB)
+2025-11-11 08:50:27 | Downloading regex-2025.11.3-cp313-cp313-win_amd64.whl (277 kB)
+2025-11-11 08:50:27 | Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+2025-11-11 08:50:27 | Downloading safetensors-0.6.2-cp38-abi3-win_amd64.whl (320 kB)
+2025-11-11 08:50:27 | Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+2025-11-11 08:50:29 |    ---------------------------------------- 6.3/6.3 MB 3.3 MB/s  0:00:01
+2025-11-11 08:50:30 | Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+2025-11-11 08:50:30 |    ---------------------------------------- 536.2/536.2 kB 3.4 MB/s  0:00:00
+2025-11-11 08:50:30 | Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+2025-11-11 08:50:30 | Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+2025-11-11 08:50:30 | Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+2025-11-11 08:50:30 | Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+2025-11-11 08:50:30 | Downloading zstandard-0.25.0-cp313-cp313-win_amd64.whl (506 kB)
+2025-11-11 08:50:30 | Downloading anyio-4.11.0-py3-none-any.whl (109 kB)
+2025-11-11 08:50:30 | Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2025-11-11 08:50:30 | Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2025-11-11 08:50:30 | Downloading filelock-3.20.0-py3-none-any.whl (16 kB)
+2025-11-11 08:50:30 | Downloading pillow-12.0.0-cp313-cp313-win_amd64.whl (7.0 MB)
+2025-11-11 08:50:32 |    ---------------------------------------- 7.0/7.0 MB 3.4 MB/s  0:00:02
+2025-11-11 08:50:32 | Downloading setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+2025-11-11 08:50:33 |    ---------------------------------------- 1.2/1.2 MB 3.0 MB/s  0:00:00
+2025-11-11 08:50:36 | Building wheels for collected packages: pyyaml
+2025-11-11 08:50:36 |   Building wheel for pyyaml (pyproject.toml): started
+2025-11-11 08:50:48 |   Building wheel for pyyaml (pyproject.toml): finished with status 'done'
+2025-11-11 08:50:48 |   Created wheel for pyyaml: filename=pyyaml-6.0.1-cp313-cp313-win_amd64.whl size=45473 sha256=4930bd516e7d1b98b068332604157441c9a91fbc82ea9c5b9515cac6c811cdbf
+2025-11-11 08:50:48 |   Stored in directory: C:\Users\sahon\AppData\Local\Temp\pip-ephem-wheel-cache-dewa5hsu\wheels\9c\9e\34\1e1548811b63a9d001469f21797e8b7d5c216d8eb928e7d6ad
+2025-11-11 08:50:48 | Successfully built pyyaml
+2025-11-11 08:50:49 | Installing collected packages: mpmath, banglanltk, zstandard, urllib3, typing-extensions, threadpoolctl, tenacity, sympy, sniffio, setuptools, sentencepiece, safetensors, regex, pyyaml, python-dotenv, psutil, propcache, Pillow, packaging, orjson, numpy, networkx, mypy-extensions, multidict, MarkupSafe, jsonpointer, joblib, itsdangerous, idna, httpx-sse, h11, greenlet, fsspec, frozenlist, filelock, colorama, charset_normalizer, certifi, blinker, attrs, annotated-types, aiohappyeyeballs, yarl, Werkzeug, typing-inspection, typing-inspect, tqdm, SQLAlchemy, scipy, requests, pydantic-core, marshmallow, jsonpatch, Jinja2, httpcore, click, anyio, aiosignal, torch, scikit-learn, requests-toolbelt, pydantic, huggingface-hub, httpx, flask, dataclasses-json, aiohttp, tokenizers, pydantic-settings, langsmith, transformers, langchain-core, sentence-transformers, langchain-text-splitters, langchain-huggingface, langchain, langchain-community
+2025-11-11 09:10:08 | 
+2025-11-11 09:10:09 | Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 Pillow-12.0.0 SQLAlchemy-2.0.44 Werkzeug-3.1.3 aiohappyeyeballs-2.6.1 aiohttp-3.13.2 aiosignal-1.4.0 annotated-types-0.7.0 anyio-4.11.0 attrs-25.4.0 banglanltk-0.0.4 blinker-1.9.0 certifi-2025.10.5 charset_normalizer-3.4.4 click-8.3.0 colorama-0.4.6 dataclasses-json-0.6.7 filelock-3.20.0 flask-2.3.3 frozenlist-1.8.0 fsspec-2025.10.0 greenlet-3.2.4 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 httpx-sse-0.4.3 huggingface-hub-0.36.0 idna-3.11 itsdangerous-2.2.0 joblib-1.5.2 jsonpatch-1.33 jsonpointer-3.0.0 langchain-0.3.27 langchain-community-0.3.31 langchain-core-0.3.79 langchain-huggingface-0.1.2 langchain-text-splitters-0.3.11 langsmith-0.4.42 marshmallow-3.26.1 mpmath-1.3.0 multidict-6.7.0 mypy-extensions-1.1.0 networkx-3.5 numpy-2.3.4 orjson-3.11.4 packaging-25.0 propcache-0.4.1 psutil-5.9.8 pydantic-2.12.4 pydantic-core-2.41.5 pydantic-settings-2.12.0 python-dotenv-1.0.0 pyyaml-6.0.1 regex-2025.11.3 requests-2.32.5 requests-toolbelt-1.0.0 safetensors-0.6.2 scikit-learn-1.7.2 scipy-1.16.3 sentence-transformers-5.1.2 sentencepiece-0.2.1 setuptools-80.9.0 sniffio-1.3.1 sympy-1.14.0 tenacity-9.1.2 threadpoolctl-3.6.0 tokenizers-0.22.1 torch-2.9.0 tqdm-4.67.1 transformers-4.57.1 typing-extensions-4.15.0 typing-inspect-0.9.0 typing-inspection-0.4.2 urllib3-2.5.0 yarl-1.22.0 zstandard-0.25.0
+2025-11-11 09:10:15 | Package 'sentencepiece' installed successfully: 0.2.1
+2025-11-11 09:10:19 | Package 'flask' installed successfully: 2.3.3
+2025-11-11 09:10:23 | Package 'requests' installed successfully: 2.32.5
+2025-11-11 09:10:28 | Package 'langchain' installed successfully: 0.3.27
+2025-11-11 09:10:29 | === ZombieCoder-Family-Agent Full Auto-Installer Finished ===
+2025-11-11 09:56:30 | === ZombieCoder-Family-Agent Full Auto-Installer Started ===
+2025-11-11 09:56:30 | Python Version: Python 3.13.9
+2025-11-11 09:56:30 | WARNING: MSVC C++ compiler NOT found!
+2025-11-11 09:56:30 | Some packages may fail to build from source.
+2025-11-11 09:56:30 | Removing old virtualenv...
+2025-11-11 09:56:45 | Creating new virtualenv...
+2025-11-11 09:57:02 | Activating virtualenv...
+2025-11-11 09:57:02 | Upgrading pip, setuptools, wheel...
+2025-11-11 09:57:04 | Requirement already satisfied: pip in c:\users\sahon\desktop\zombiecoder-family-agent\.venv\lib\site-packages (25.2)
+2025-11-11 09:57:04 | Collecting pip
+2025-11-11 09:57:04 |   Using cached pip-25.3-py3-none-any.whl.metadata (4.7 kB)
+2025-11-11 09:57:05 | Collecting setuptools
+2025-11-11 09:57:05 |   Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+2025-11-11 09:57:05 | Collecting wheel
+2025-11-11 09:57:05 |   Using cached wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+2025-11-11 09:57:05 | Using cached pip-25.3-py3-none-any.whl (1.8 MB)
+2025-11-11 09:57:05 | Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+2025-11-11 09:57:05 | Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
+2025-11-11 09:57:05 | Pip cache dir: C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\pip_cache
+2025-11-11 09:57:05 | Installing requirements from C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt ...
+2025-11-11 09:57:07 | Collecting flask==2.3.3 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 09:57:07 |   Downloading flask-2.3.3-py3-none-any.whl.metadata (3.6 kB)
+2025-11-11 09:57:07 | Collecting requests<3.0.0,>=2.31.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 09:57:07 |   Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+2025-11-11 09:57:07 | Collecting pyyaml==6.0.1 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 4))
+2025-11-11 09:57:07 |   Downloading PyYAML-6.0.1.tar.gz (125 kB)
+2025-11-11 09:57:08 |   Installing build dependencies: started
+2025-11-11 09:57:12 |   Installing build dependencies: finished with status 'done'
+2025-11-11 09:57:12 |   Getting requirements to build wheel: started
+2025-11-11 09:57:17 |   Getting requirements to build wheel: finished with status 'done'
+2025-11-11 09:57:17 |   Preparing metadata (pyproject.toml): started
+2025-11-11 09:57:18 |   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-11-11 09:57:18 | Collecting python-dotenv==1.0.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 5))
+2025-11-11 09:57:18 |   Downloading python_dotenv-1.0.0-py3-none-any.whl.metadata (21 kB)
+2025-11-11 09:57:19 | Collecting banglanltk==0.0.4 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 8))
+2025-11-11 09:57:19 |   Downloading banglanltk-0.0.4-py3-none-any.whl.metadata (3.9 kB)
+2025-11-11 09:57:19 | Collecting langchain<0.4.0,>=0.3.10 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:19 |   Downloading langchain-0.3.27-py3-none-any.whl.metadata (7.8 kB)
+2025-11-11 09:57:19 | Collecting langchain-core<0.4.0,>=0.3.63 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 09:57:19 |   Downloading langchain_core-0.3.79-py3-none-any.whl.metadata (3.2 kB)
+2025-11-11 09:57:19 | Collecting langchain-community<0.4.0,>=0.3.10 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:19 |   Downloading langchain_community-0.3.31-py3-none-any.whl.metadata (3.0 kB)
+2025-11-11 09:57:19 | Collecting langchain-huggingface<0.2.0,>=0.1.2 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-11 09:57:19 |   Downloading langchain_huggingface-0.1.2-py3-none-any.whl.metadata (1.3 kB)
+2025-11-11 09:57:19 | Collecting transformers<5.0.0,>=4.57.1 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 13))
+2025-11-11 09:57:19 |   Downloading transformers-4.57.1-py3-none-any.whl.metadata (43 kB)
+2025-11-11 09:57:20 | Collecting sentencepiece==0.2.1 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 14))
+2025-11-11 09:57:20 |   Downloading sentencepiece-0.2.1-cp313-cp313-win_amd64.whl.metadata (10 kB)
+2025-11-11 09:57:20 | Collecting sentence-transformers<6.0.0,>=5.1.2 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 15))
+2025-11-11 09:57:20 |   Downloading sentence_transformers-5.1.2-py3-none-any.whl.metadata (16 kB)
+2025-11-11 09:57:20 | Collecting torch==2.9.0 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 09:57:20 |   Downloading torch-2.9.0-cp313-cp313-win_amd64.whl.metadata (30 kB)
+2025-11-11 09:57:20 | Collecting scikit-learn<2.0.0,>=1.7.2 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 17))
+2025-11-11 09:57:20 |   Downloading scikit_learn-1.7.2-cp313-cp313-win_amd64.whl.metadata (11 kB)
+2025-11-11 09:57:21 | Collecting scipy<2.0.0,>=1.16.3 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 18))
+2025-11-11 09:57:21 |   Downloading scipy-1.16.3-cp313-cp313-win_amd64.whl.metadata (60 kB)
+2025-11-11 09:57:21 | Collecting numpy<3.0.0,>=1.26.4 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 19))
+2025-11-11 09:57:21 |   Downloading numpy-2.3.4-cp313-cp313-win_amd64.whl.metadata (60 kB)
+2025-11-11 09:57:21 | Collecting psutil<6.0.0,>=5.9.8 (from -r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 22))
+2025-11-11 09:57:21 |   Downloading psutil-5.9.8-cp37-abi3-win_amd64.whl.metadata (22 kB)
+2025-11-11 09:57:21 | Collecting Werkzeug>=2.3.7 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 09:57:21 |   Downloading werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+2025-11-11 09:57:21 | Collecting Jinja2>=3.1.2 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 09:57:21 |   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+2025-11-11 09:57:21 | Collecting itsdangerous>=2.1.2 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 09:57:21 |   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+2025-11-11 09:57:21 | Collecting click>=8.1.3 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 09:57:21 |   Downloading click-8.3.0-py3-none-any.whl.metadata (2.6 kB)
+2025-11-11 09:57:22 | Collecting blinker>=1.6.2 (from flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 09:57:22 |   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+2025-11-11 09:57:22 | Collecting filelock (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 09:57:22 |   Downloading filelock-3.20.0-py3-none-any.whl.metadata (2.1 kB)
+2025-11-11 09:57:22 | Collecting typing-extensions>=4.10.0 (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 09:57:22 |   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+2025-11-11 09:57:22 | Collecting sympy>=1.13.3 (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 09:57:22 |   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+2025-11-11 09:57:22 | Collecting networkx>=2.5.1 (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 09:57:22 |   Downloading networkx-3.5-py3-none-any.whl.metadata (6.3 kB)
+2025-11-11 09:57:22 | Collecting fsspec>=0.8.5 (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 09:57:22 |   Downloading fsspec-2025.10.0-py3-none-any.whl.metadata (10 kB)
+2025-11-11 09:57:22 | Collecting setuptools (from torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 09:57:22 |   Downloading setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+2025-11-11 09:57:22 | Collecting charset_normalizer<4,>=2 (from requests<3.0.0,>=2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 09:57:22 |   Downloading charset_normalizer-3.4.4-cp313-cp313-win_amd64.whl.metadata (38 kB)
+2025-11-11 09:57:22 | Collecting idna<4,>=2.5 (from requests<3.0.0,>=2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 09:57:22 |   Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+2025-11-11 09:57:23 | Collecting urllib3<3,>=1.21.1 (from requests<3.0.0,>=2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 09:57:23 |   Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+2025-11-11 09:57:23 | Collecting certifi>=2017.4.17 (from requests<3.0.0,>=2.31.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 3))
+2025-11-11 09:57:23 |   Downloading certifi-2025.10.5-py3-none-any.whl.metadata (2.5 kB)
+2025-11-11 09:57:23 | Collecting langchain-text-splitters<1.0.0,>=0.3.9 (from langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:23 |   Downloading langchain_text_splitters-0.3.11-py3-none-any.whl.metadata (1.8 kB)
+2025-11-11 09:57:23 | Collecting langsmith>=0.1.17 (from langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:23 |   Downloading langsmith-0.4.42-py3-none-any.whl.metadata (14 kB)
+2025-11-11 09:57:23 | Collecting pydantic<3.0.0,>=2.7.4 (from langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:23 |   Downloading pydantic-2.12.4-py3-none-any.whl.metadata (89 kB)
+2025-11-11 09:57:24 | Collecting SQLAlchemy<3,>=1.4 (from langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:24 |   Downloading sqlalchemy-2.0.44-cp313-cp313-win_amd64.whl.metadata (9.8 kB)
+2025-11-11 09:57:24 | Collecting tenacity!=8.4.0,<10.0.0,>=8.1.0 (from langchain-core<0.4.0,>=0.3.63->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 09:57:24 |   Downloading tenacity-9.1.2-py3-none-any.whl.metadata (1.2 kB)
+2025-11-11 09:57:24 | Collecting jsonpatch<2.0.0,>=1.33.0 (from langchain-core<0.4.0,>=0.3.63->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 09:57:24 |   Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+2025-11-11 09:57:24 | Collecting packaging<26.0.0,>=23.2.0 (from langchain-core<0.4.0,>=0.3.63->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 09:57:24 |   Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+2025-11-11 09:57:25 | Collecting aiohttp<4.0.0,>=3.8.3 (from langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:25 |   Downloading aiohttp-3.13.2-cp313-cp313-win_amd64.whl.metadata (8.4 kB)
+2025-11-11 09:57:25 | Collecting dataclasses-json<0.7.0,>=0.6.7 (from langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:25 |   Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+2025-11-11 09:57:25 | Collecting pydantic-settings<3.0.0,>=2.10.1 (from langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:25 |   Downloading pydantic_settings-2.12.0-py3-none-any.whl.metadata (3.4 kB)
+2025-11-11 09:57:25 | Collecting httpx-sse<1.0.0,>=0.4.0 (from langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:25 |   Downloading httpx_sse-0.4.3-py3-none-any.whl.metadata (9.7 kB)
+2025-11-11 09:57:25 | Collecting huggingface-hub>=0.23.0 (from langchain-huggingface<0.2.0,>=0.1.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-11 09:57:25 |   Downloading huggingface_hub-1.1.2-py3-none-any.whl.metadata (13 kB)
+2025-11-11 09:57:26 | Collecting tokenizers>=0.19.1 (from langchain-huggingface<0.2.0,>=0.1.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-11 09:57:26 |   Downloading tokenizers-0.22.1-cp39-abi3-win_amd64.whl.metadata (6.9 kB)
+2025-11-11 09:57:26 | Collecting huggingface-hub>=0.23.0 (from langchain-huggingface<0.2.0,>=0.1.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 12))
+2025-11-11 09:57:26 |   Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+2025-11-11 09:57:26 | Collecting regex!=2019.12.17 (from transformers<5.0.0,>=4.57.1->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 13))
+2025-11-11 09:57:26 |   Downloading regex-2025.11.3-cp313-cp313-win_amd64.whl.metadata (41 kB)
+2025-11-11 09:57:26 | Collecting safetensors>=0.4.3 (from transformers<5.0.0,>=4.57.1->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 13))
+2025-11-11 09:57:26 |   Downloading safetensors-0.6.2-cp38-abi3-win_amd64.whl.metadata (4.1 kB)
+2025-11-11 09:57:26 | Collecting tqdm>=4.27 (from transformers<5.0.0,>=4.57.1->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 13))
+2025-11-11 09:57:27 |   Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+2025-11-11 09:57:27 | Collecting Pillow (from sentence-transformers<6.0.0,>=5.1.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 15))
+2025-11-11 09:57:27 |   Downloading pillow-12.0.0-cp313-cp313-win_amd64.whl.metadata (9.0 kB)
+2025-11-11 09:57:27 | Collecting joblib>=1.2.0 (from scikit-learn<2.0.0,>=1.7.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 17))
+2025-11-11 09:57:27 |   Downloading joblib-1.5.2-py3-none-any.whl.metadata (5.6 kB)
+2025-11-11 09:57:27 | Collecting threadpoolctl>=3.1.0 (from scikit-learn<2.0.0,>=1.7.2->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 17))
+2025-11-11 09:57:27 |   Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+2025-11-11 09:57:27 | Collecting aiohappyeyeballs>=2.5.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:27 |   Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+2025-11-11 09:57:27 | Collecting aiosignal>=1.4.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:27 |   Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+2025-11-11 09:57:27 | Collecting attrs>=17.3.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:27 |   Downloading attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+2025-11-11 09:57:27 | Collecting frozenlist>=1.1.1 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:27 |   Downloading frozenlist-1.8.0-cp313-cp313-win_amd64.whl.metadata (21 kB)
+2025-11-11 09:57:28 | Collecting multidict<7.0,>=4.5 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:28 |   Downloading multidict-6.7.0-cp313-cp313-win_amd64.whl.metadata (5.5 kB)
+2025-11-11 09:57:28 | Collecting propcache>=0.2.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:28 |   Downloading propcache-0.4.1-cp313-cp313-win_amd64.whl.metadata (14 kB)
+2025-11-11 09:57:28 | Collecting yarl<2.0,>=1.17.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:28 |   Downloading yarl-1.22.0-cp313-cp313-win_amd64.whl.metadata (77 kB)
+2025-11-11 09:57:29 | Collecting marshmallow<4.0.0,>=3.18.0 (from dataclasses-json<0.7.0,>=0.6.7->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:29 |   Downloading marshmallow-3.26.1-py3-none-any.whl.metadata (7.3 kB)
+2025-11-11 09:57:29 | Collecting typing-inspect<1,>=0.4.0 (from dataclasses-json<0.7.0,>=0.6.7->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:29 |   Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+2025-11-11 09:57:29 | Collecting jsonpointer>=1.9 (from jsonpatch<2.0.0,>=1.33.0->langchain-core<0.4.0,>=0.3.63->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 10))
+2025-11-11 09:57:29 |   Downloading jsonpointer-3.0.0-py2.py3-none-any.whl.metadata (2.3 kB)
+2025-11-11 09:57:29 | Collecting httpx<1,>=0.23.0 (from langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:29 |   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+2025-11-11 09:57:30 | Collecting orjson>=3.9.14 (from langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:30 |   Downloading orjson-3.11.4-cp313-cp313-win_amd64.whl.metadata (42 kB)
+2025-11-11 09:57:30 | Collecting requests-toolbelt>=1.0.0 (from langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:30 |   Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+2025-11-11 09:57:30 | Collecting zstandard>=0.23.0 (from langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:30 |   Downloading zstandard-0.25.0-cp313-cp313-win_amd64.whl.metadata (3.3 kB)
+2025-11-11 09:57:30 | Collecting anyio (from httpx<1,>=0.23.0->langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:30 |   Downloading anyio-4.11.0-py3-none-any.whl.metadata (4.1 kB)
+2025-11-11 09:57:30 | Collecting httpcore==1.* (from httpx<1,>=0.23.0->langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:30 |   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+2025-11-11 09:57:30 | Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:30 |   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2025-11-11 09:57:30 | Collecting annotated-types>=0.6.0 (from pydantic<3.0.0,>=2.7.4->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:30 |   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+2025-11-11 09:57:31 | Collecting pydantic-core==2.41.5 (from pydantic<3.0.0,>=2.7.4->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:31 |   Downloading pydantic_core-2.41.5-cp313-cp313-win_amd64.whl.metadata (7.4 kB)
+2025-11-11 09:57:31 | Collecting typing-inspection>=0.4.2 (from pydantic<3.0.0,>=2.7.4->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:31 |   Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+2025-11-11 09:57:32 | Collecting greenlet>=1 (from SQLAlchemy<3,>=1.4->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:32 |   Downloading greenlet-3.2.4-cp313-cp313-win_amd64.whl.metadata (4.2 kB)
+2025-11-11 09:57:32 | Collecting mypy-extensions>=0.3.0 (from typing-inspect<1,>=0.4.0->dataclasses-json<0.7.0,>=0.6.7->langchain-community<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 11))
+2025-11-11 09:57:32 |   Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+2025-11-11 09:57:32 | Collecting colorama (from click>=8.1.3->flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 09:57:32 |   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+2025-11-11 09:57:32 | Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->flask==2.3.3->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 2))
+2025-11-11 09:57:32 |   Downloading markupsafe-3.0.3-cp313-cp313-win_amd64.whl.metadata (2.8 kB)
+2025-11-11 09:57:32 | Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.9.0->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 16))
+2025-11-11 09:57:32 |   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+2025-11-11 09:57:32 | Collecting sniffio>=1.1 (from anyio->httpx<1,>=0.23.0->langsmith>=0.1.17->langchain<0.4.0,>=0.3.10->-r C:\Users\sahon\Desktop\ZombieCoder-Family-Agent\requirements.txt (line 9))
+2025-11-11 09:57:32 |   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2025-11-11 09:57:32 | Downloading flask-2.3.3-py3-none-any.whl (96 kB)
+2025-11-11 09:57:32 | Downloading python_dotenv-1.0.0-py3-none-any.whl (19 kB)
+2025-11-11 09:57:33 | Downloading banglanltk-0.0.4-py3-none-any.whl (462 kB)
+2025-11-11 09:57:33 | Downloading sentencepiece-0.2.1-cp313-cp313-win_amd64.whl (1.1 MB)
+2025-11-11 09:57:33 |    ---------------------------------------- 1.1/1.1 MB 6.7 MB/s  0:00:00
+2025-11-11 09:57:33 | Downloading torch-2.9.0-cp313-cp313-win_amd64.whl (109.3 MB)
+2025-11-11 09:58:09 |    ---------------------------------------- 109.3/109.3 MB 3.1 MB/s  0:00:35
+2025-11-11 09:58:09 | Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+2025-11-11 09:58:09 | Downloading langchain-0.3.27-py3-none-any.whl (1.0 MB)
+2025-11-11 09:58:09 |    ---------------------------------------- 1.0/1.0 MB 3.4 MB/s  0:00:00
+2025-11-11 09:58:09 | Downloading langchain_core-0.3.79-py3-none-any.whl (449 kB)
+2025-11-11 09:58:09 | Downloading langchain_community-0.3.31-py3-none-any.whl (2.5 MB)
+2025-11-11 09:58:10 |    ---------------------------------------- 2.5/2.5 MB 3.1 MB/s  0:00:00
+2025-11-11 09:58:10 | Downloading langchain_huggingface-0.1.2-py3-none-any.whl (21 kB)
+2025-11-11 09:58:10 | Downloading transformers-4.57.1-py3-none-any.whl (12.0 MB)
+2025-11-11 09:58:14 |    ---------------------------------------- 12.0/12.0 MB 3.1 MB/s  0:00:03
+2025-11-11 09:58:14 | Downloading sentence_transformers-5.1.2-py3-none-any.whl (488 kB)
+2025-11-11 09:58:14 | Downloading scikit_learn-1.7.2-cp313-cp313-win_amd64.whl (8.7 MB)
+2025-11-11 09:58:17 |    ---------------------------------------- 8.7/8.7 MB 3.1 MB/s  0:00:02
+2025-11-11 09:58:17 | Downloading scipy-1.16.3-cp313-cp313-win_amd64.whl (38.5 MB)
+2025-11-11 09:58:30 |    ---------------------------------------- 38.5/38.5 MB 3.0 MB/s  0:00:12
+2025-11-11 09:58:30 | Downloading numpy-2.3.4-cp313-cp313-win_amd64.whl (12.8 MB)
+2025-11-11 09:58:34 |    ---------------------------------------- 12.8/12.8 MB 3.1 MB/s  0:00:04
+2025-11-11 09:58:34 | Downloading psutil-5.9.8-cp37-abi3-win_amd64.whl (255 kB)
+2025-11-11 09:58:34 | Downloading aiohttp-3.13.2-cp313-cp313-win_amd64.whl (452 kB)
+2025-11-11 09:58:34 | Downloading charset_normalizer-3.4.4-cp313-cp313-win_amd64.whl (107 kB)
+2025-11-11 09:58:34 | Downloading dataclasses_json-0.6.7-py3-none-any.whl (28 kB)
+2025-11-11 09:58:34 | Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+2025-11-11 09:58:34 | Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+2025-11-11 09:58:34 |    ---------------------------------------- 566.1/566.1 kB 3.1 MB/s  0:00:00
+2025-11-11 09:58:34 | Downloading idna-3.11-py3-none-any.whl (71 kB)
+2025-11-11 09:58:34 | Downloading jsonpatch-1.33-py2.py3-none-any.whl (12 kB)
+2025-11-11 09:58:34 | Downloading langchain_text_splitters-0.3.11-py3-none-any.whl (33 kB)
+2025-11-11 09:58:34 | Downloading langsmith-0.4.42-py3-none-any.whl (401 kB)
+2025-11-11 09:58:35 | Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+2025-11-11 09:58:35 | Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+2025-11-11 09:58:35 | Downloading marshmallow-3.26.1-py3-none-any.whl (50 kB)
+2025-11-11 09:58:35 | Downloading multidict-6.7.0-cp313-cp313-win_amd64.whl (45 kB)
+2025-11-11 09:58:35 | Downloading packaging-25.0-py3-none-any.whl (66 kB)
+2025-11-11 09:58:35 | Downloading pydantic-2.12.4-py3-none-any.whl (463 kB)
+2025-11-11 09:58:35 | Downloading pydantic_core-2.41.5-cp313-cp313-win_amd64.whl (2.0 MB)
+2025-11-11 09:58:35 |    ---------------------------------------- 2.0/2.0 MB 3.1 MB/s  0:00:00
+2025-11-11 09:58:35 | Downloading pydantic_settings-2.12.0-py3-none-any.whl (51 kB)
+2025-11-11 09:58:36 | Downloading sqlalchemy-2.0.44-cp313-cp313-win_amd64.whl (2.1 MB)
+2025-11-11 09:58:36 |    ---------------------------------------- 2.1/2.1 MB 3.0 MB/s  0:00:00
+2025-11-11 09:58:36 | Downloading tenacity-9.1.2-py3-none-any.whl (28 kB)
+2025-11-11 09:58:36 | Downloading tokenizers-0.22.1-cp39-abi3-win_amd64.whl (2.7 MB)
+2025-11-11 09:58:37 |    ---------------------------------------- 2.7/2.7 MB 3.1 MB/s  0:00:00
+2025-11-11 09:58:37 | Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+2025-11-11 09:58:37 | Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+2025-11-11 09:58:37 | Downloading urllib3-2.5.0-py3-none-any.whl (129 kB)
+2025-11-11 09:58:37 | Downloading yarl-1.22.0-cp313-cp313-win_amd64.whl (86 kB)
+2025-11-11 09:58:37 | Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+2025-11-11 09:58:37 | Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+2025-11-11 09:58:37 | Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+2025-11-11 09:58:37 | Downloading attrs-25.4.0-py3-none-any.whl (67 kB)
+2025-11-11 09:58:37 | Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+2025-11-11 09:58:37 | Downloading certifi-2025.10.5-py3-none-any.whl (163 kB)
+2025-11-11 09:58:37 | Downloading click-8.3.0-py3-none-any.whl (107 kB)
+2025-11-11 09:58:37 | Downloading frozenlist-1.8.0-cp313-cp313-win_amd64.whl (43 kB)
+2025-11-11 09:58:37 | Downloading fsspec-2025.10.0-py3-none-any.whl (200 kB)
+2025-11-11 09:58:38 | Downloading greenlet-3.2.4-cp313-cp313-win_amd64.whl (299 kB)
+2025-11-11 09:58:38 | Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+2025-11-11 09:58:38 | Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+2025-11-11 09:58:38 | Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+2025-11-11 09:58:38 | Downloading joblib-1.5.2-py3-none-any.whl (308 kB)
+2025-11-11 09:58:38 | Downloading jsonpointer-3.0.0-py2.py3-none-any.whl (7.6 kB)
+2025-11-11 09:58:38 | Downloading markupsafe-3.0.3-cp313-cp313-win_amd64.whl (15 kB)
+2025-11-11 09:58:38 | Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+2025-11-11 09:58:38 | Downloading networkx-3.5-py3-none-any.whl (2.0 MB)
+2025-11-11 09:58:38 |    ---------------------------------------- 2.0/2.0 MB 3.8 MB/s  0:00:00
+2025-11-11 09:58:39 | Downloading orjson-3.11.4-cp313-cp313-win_amd64.whl (131 kB)
+2025-11-11 09:58:39 | Downloading propcache-0.4.1-cp313-cp313-win_amd64.whl (40 kB)
+2025-11-11 09:58:39 | Downloading regex-2025.11.3-cp313-cp313-win_amd64.whl (277 kB)
+2025-11-11 09:58:39 | Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+2025-11-11 09:58:39 | Downloading safetensors-0.6.2-cp38-abi3-win_amd64.whl (320 kB)
+2025-11-11 09:58:39 | Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+2025-11-11 09:58:41 |    ---------------------------------------- 6.3/6.3 MB 3.1 MB/s  0:00:02
+2025-11-11 09:58:41 | Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+2025-11-11 09:58:41 |    ---------------------------------------- 536.2/536.2 kB 3.3 MB/s  0:00:00
+2025-11-11 09:58:41 | Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+2025-11-11 09:58:41 | Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+2025-11-11 09:58:41 | Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+2025-11-11 09:58:41 | Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+2025-11-11 09:58:41 | Downloading zstandard-0.25.0-cp313-cp313-win_amd64.whl (506 kB)
+2025-11-11 09:58:42 | Downloading anyio-4.11.0-py3-none-any.whl (109 kB)
+2025-11-11 09:58:42 | Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2025-11-11 09:58:42 | Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2025-11-11 09:58:42 | Downloading filelock-3.20.0-py3-none-any.whl (16 kB)
+2025-11-11 09:58:42 | Downloading pillow-12.0.0-cp313-cp313-win_amd64.whl (7.0 MB)
+2025-11-11 09:58:44 |    ---------------------------------------- 7.0/7.0 MB 3.4 MB/s  0:00:02
+2025-11-11 09:58:44 | Downloading setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+2025-11-11 09:58:44 |    ---------------------------------------- 1.2/1.2 MB 3.2 MB/s  0:00:00
+2025-11-11 09:58:48 | Building wheels for collected packages: pyyaml
+2025-11-11 09:58:48 |   Building wheel for pyyaml (pyproject.toml): started
+2025-11-11 09:58:56 |   Building wheel for pyyaml (pyproject.toml): finished with status 'done'
+2025-11-11 09:58:56 |   Created wheel for pyyaml: filename=pyyaml-6.0.1-cp313-cp313-win_amd64.whl size=45473 sha256=04610e0f5fd05ea7c36910175e2a44af4882ce1b3feb432c6eb6d400b95b0c2d
+2025-11-11 09:58:56 |   Stored in directory: C:\Users\sahon\AppData\Local\Temp\pip-ephem-wheel-cache-xvb00znb\wheels\9c\9e\34\1e1548811b63a9d001469f21797e8b7d5c216d8eb928e7d6ad
+2025-11-11 09:58:56 | Successfully built pyyaml
+2025-11-11 09:58:56 | Installing collected packages: mpmath, banglanltk, zstandard, urllib3, typing-extensions, threadpoolctl, tenacity, sympy, sniffio, setuptools, sentencepiece, safetensors, regex, pyyaml, python-dotenv, psutil, propcache, Pillow, packaging, orjson, numpy, networkx, mypy-extensions, multidict, MarkupSafe, jsonpointer, joblib, itsdangerous, idna, httpx-sse, h11, greenlet, fsspec, frozenlist, filelock, colorama, charset_normalizer, certifi, blinker, attrs, annotated-types, aiohappyeyeballs, yarl, Werkzeug, typing-inspection, typing-inspect, tqdm, SQLAlchemy, scipy, requests, pydantic-core, marshmallow, jsonpatch, Jinja2, httpcore, click, anyio, aiosignal, torch, scikit-learn, requests-toolbelt, pydantic, huggingface-hub, httpx, flask, dataclasses-json, aiohttp, tokenizers, pydantic-settings, langsmith, transformers, langchain-core, sentence-transformers, langchain-text-splitters, langchain-huggingface, langchain, langchain-community
+2025-11-11 10:05:09 | 
+2025-11-11 10:05:09 | Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 Pillow-12.0.0 SQLAlchemy-2.0.44 Werkzeug-3.1.3 aiohappyeyeballs-2.6.1 aiohttp-3.13.2 aiosignal-1.4.0 annotated-types-0.7.0 anyio-4.11.0 attrs-25.4.0 banglanltk-0.0.4 blinker-1.9.0 certifi-2025.10.5 charset_normalizer-3.4.4 click-8.3.0 colorama-0.4.6 dataclasses-json-0.6.7 filelock-3.20.0 flask-2.3.3 frozenlist-1.8.0 fsspec-2025.10.0 greenlet-3.2.4 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 httpx-sse-0.4.3 huggingface-hub-0.36.0 idna-3.11 itsdangerous-2.2.0 joblib-1.5.2 jsonpatch-1.33 jsonpointer-3.0.0 langchain-0.3.27 langchain-community-0.3.31 langchain-core-0.3.79 langchain-huggingface-0.1.2 langchain-text-splitters-0.3.11 langsmith-0.4.42 marshmallow-3.26.1 mpmath-1.3.0 multidict-6.7.0 mypy-extensions-1.1.0 networkx-3.5 numpy-2.3.4 orjson-3.11.4 packaging-25.0 propcache-0.4.1 psutil-5.9.8 pydantic-2.12.4 pydantic-core-2.41.5 pydantic-settings-2.12.0 python-dotenv-1.0.0 pyyaml-6.0.1 regex-2025.11.3 requests-2.32.5 requests-toolbelt-1.0.0 safetensors-0.6.2 scikit-learn-1.7.2 scipy-1.16.3 sentence-transformers-5.1.2 sentencepiece-0.2.1 setuptools-80.9.0 sniffio-1.3.1 sympy-1.14.0 tenacity-9.1.2 threadpoolctl-3.6.0 tokenizers-0.22.1 torch-2.9.0 tqdm-4.67.1 transformers-4.57.1 typing-extensions-4.15.0 typing-inspect-0.9.0 typing-inspection-0.4.2 urllib3-2.5.0 yarl-1.22.0 zstandard-0.25.0
+2025-11-11 10:05:11 | Package 'sentencepiece' installed successfully: 0.2.1
+2025-11-11 10:05:12 | Package 'flask' installed successfully: 2.3.3
+2025-11-11 10:05:12 | Package 'requests' installed successfully: 2.32.5
+2025-11-11 10:05:13 | Package 'langchain' installed successfully: 0.3.27
+2025-11-11 10:05:13 | === ZombieCoder-Family-Agent Full Auto-Installer Finished ===
