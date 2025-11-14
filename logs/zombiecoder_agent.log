@@ -2215,3 +2215,28 @@ Please note that you may need to restart your runtime after installation.
 2025-11-14 23:40:23,580 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'microsoft/phi-2' not found"}
 2025-11-14 23:44:13,238 - __main__ - INFO - Adjustment logic check approved: হ্যাল�<, তুমি �.�??
 2025-11-14 23:44:13,957 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'microsoft/phi-2' not found"}
+2025-11-14 23:56:23,816 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-14 23:56:23,816 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-14 23:56:25,878 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-14 23:56:25,878 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-14 23:56:25,883 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-14 23:56:25,918 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-14 23:56:25,920 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-14 23:56:42,679 - __main__ - ERROR - Model server error: 404 - {"detail":"Model 'microsoft/phi-2' not found"}
+2025-11-14 23:57:44,498 - __main__ - INFO - LangChain orchestrator model 'microsoft/phi-2' লোড হয়েছে
+2025-11-15 00:05:45,858 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification. Warnings: ['Identity revealing information detected: Developer Zone']
+2025-11-15 00:05:45,864 - __main__ - WARNING - Response rejected by trust verification: Response failed trust verification
+2025-11-15 00:05:45,972 - werkzeug - INFO - 127.0.0.1 - - [15/Nov/2025 00:05:45] "[31m[1mPOST /v1/chat/completions HTTP/1.1[0m" 400 -
+2025-11-15 01:52:36,445 - __main__ - WARNING - banglanltk প্যাকেজ লোড করা যায়নি - সাধারণ টেক্সট নরমালাইজেশন ফfallback ব্যবহার করা হবে
+2025-11-15 01:52:36,446 - __main__ - INFO - HuggingFacePipeline ইমপোর্ট সোর্স: langchain_community
+2025-11-15 01:52:38,528 - __main__ - INFO - Found Ollama server at: http://127.0.0.1:8007
+2025-11-15 01:52:38,528 - __main__ - INFO - Agent will use Ollama server: http://127.0.0.1:8007
+2025-11-15 01:52:38,540 - __main__ - INFO - ✅ Memory systems initialized successfully
+2025-11-15 01:52:38,590 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8001
+ * Running on http://192.168.1.218:8001
+2025-11-15 01:52:38,602 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
