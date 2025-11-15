@@ -8,7 +8,7 @@ const path = require('path');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.API_GATEWAY_PORT || process.env.PORT || 49100;
+const PORT = process.env.API_GATEWAY_PORT || process.env.PORT || 5010;
 
 // Middleware
 app.use(helmet());
