@@ -1,0 +1,9 @@
+{
+    "model": "microsoft/phi-2",
+    "messages": [
+        {
+            "role": "user",
+            "content": "হ্যালো, তুমি কি লোকাল সার্ভার?"
+        }
+    ]
+}

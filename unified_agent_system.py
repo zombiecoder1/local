@@ -6,68 +6,6 @@
 "যেখানে কোড ও কথা বলে, পরিবারের মত সহায়তা করে"
 """
 
-# ============ ZOMBIECODER LOCAL AGENT SYSTEM DIRECTIVE ============
-# The agent MUST follow all instructions below exactly.
-#
-# 1) Proxy Server Integration:
-#    - All proxy server files must be located under:
-#        C:\Users\sahon\local\Proxy Server
-#    - Required files:
-#        proxy_server_enforced.js
-#        proxy_server.js (optional fallback)
-#        package.json
-#    - If missing, create them exactly as previously provided.
-#
-# 2) Git Versioning:
-#    - Before starting any service, ALWAYS run:
-#        git add .
-#        git commit -m "auto: update before start"
-#    - NEVER skip this step.
-#
-# 3) Service Linking:
-#    - The agent MUST ensure:
-#        Proxy runs on port 5010
-#        Main agent runs on port 8001
-#        No cloud endpoints or fallbacks are ever used.
-#
-# 4) Editor Support:
-#    - The agent MUST expose:
-#        /v1/models
-#        /v1/models/microsoft/phi-2
-#        /v1/chat/completions (OpenAI-compatible)
-#      If missing, the proxy must shim these endpoints.
-#
-# 5) Model Handling:
-#    - Auto-load "microsoft/phi-2" on agent startup.
-#    - No repeated downloads.
-#    - No cloud fallback.
-#    - If model not found → load from local storage.
-#
-# 6) Startup Order:
-#    Step 1) Commit changes
-#    Step 2) Start Python agent
-#    Step 3) After 3 seconds, start Proxy Server
-#    Step 4) Verify:
-#         GET http://127.0.0.1:8001/health
-#         GET http://127.0.0.1:5010/health
-#
-# 7) Stability Requirements:
-#    - Prevent reload loops
-#    - Serve instant response to editor
-#    - Enforce Bengali-friendly system prompt
-#    - Detect and block malformed JSON
-#    - Log every request in logs/proxy_out.log
-#
-# 8) Final Responsibility:
-#    - After every change, agent MUST:
-#         Validate ports 5010 and 8001
-#         Validate "model_ready:true"
-#         Validate editor can connect
-#    - The system must run fully offline.
-#    - Any cloud communication → MUST be blocked and logged.
-#
-# ============ END OF DIRECTIVE ============
-
 import os
 import json
 import time

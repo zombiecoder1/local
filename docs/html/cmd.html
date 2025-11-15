@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laravel Commands Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar {
+      background-color: #007BFF;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    .navbar button {
+      background-color: #0056b3;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .navbar button:hover {
+      background-color: #00408d;
+    }
+.commands-container {
+    padding: 70px;
+    margin-top: -60px;
+
+}
+h3 {
+    display: none;
+}
+    .commands-container h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .command {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
+    .command pre {
+      margin: 0;
+      font-family: Consolas, monospace;
+      background-color: #f1f1f1;
+      padding: 5px;
+      border-radius: 3px;
+      flex: 1;
+    }
+
+    .command button {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .command button:hover {
+      background-color: #388E3C;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px;
+      }
+
+      .navbar button {
+        flex: 1;
+        margin: 0 5px;
+      }
+
+      .commands-container {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Laravel Commands Viewer</h1>
+  </header>
+
+  <div class="navbar" id="category-navbar">
+    <button onclick="showCommands('all')">All Commands</button>
+    <button onclick="showCommands('cache')">Cache Clear</button>
+    <button onclick="showCommands('storage')">Storage & Permissions</button>
+    <button onclick="showCommands('composer')">Composer</button>
+    <button onclick="showCommands('database')">Database</button>
+    <button onclick="showCommands('route')">Route Management</button>
+    <button onclick="showCommands('file')">File Creation</button>
+    <button onclick="showCommands('test')">Testing</button>
+    
+    <button onclick="showCommands('queue')">Queues & Jobs</button>
+  </div>
+
+  <div class="commands-container" id="commands-section"></div>
+
+  <script>
+    const commands = {
+      cache: [
+        "php artisan cache:clear",
+        "php artisan config:clear",
+        "php artisan route:clear",
+        "php artisan view:clear",
+        "php artisan optimize:clear",
+        "php artisan optimize"
+      ],
+      storage: [
+        "php artisan storage:link",        
+        "rm -rf public/storage",
+        "chmod -R 775 storage",
+        "chmod -R 775 bootstrap/cache",
+        "chmod -R 777 public/storage"
+      ],
+  composer: [
+    "composer install",
+    "composer update",
+    "composer dump-autoload",
+    "composer require [package-name]",
+    "composer remove [package-name]",
+  ],
+
+      database: [
+        "php artisan migrate",
+        "php artisan migrate:rollback",
+        "php artisan migrate:refresh",
+        "php artisan migrate:fresh",
+        "php artisan migrate:fresh --seed",
+        "php artisan db:seed"
+      ],
+      route: [
+        "php artisan route:list",
+        "php artisan route:cache",
+        "php artisan route:clear"
+      ],
+      file: [
+        "php artisan make:controller [Name]",
+        "php artisan make:model [Name]",
+        "php artisan make:model [Name] -m",
+        "php artisan make:migration [Name]",
+        "php artisan make:middleware [Name]",
+        "php artisan make:request [Name]",
+        "php artisan make:event [Name]",
+        "php artisan make:listener [Name]",
+        "php artisan make:policy [Name]",
+        "php artisan make:provider [Name]",
+        "php artisan make:test [Name]"
+      ],
+      test: [
+        "php artisan test",
+        "php artisan test --filter [Name]"
+      ],
+      queue: [
+        "php artisan queue:work",
+        "php artisan queue:restart",
+        "php artisan queue:failed",
+        "php artisan queue:retry [ID]",
+        "php artisan queue:flush",
+        "php artisan make:job [Name]"
+      ]
+    };
+
+    function showCommands(category) {
+      const commandsSection = document.getElementById("commands-section");
+      commandsSection.innerHTML = `<h3>${category === 'all' ? 'All Commands' : category.replace(/_/g, ' ') + ' Commands'}</h3>`;
+
+      if (category === 'all') {
+        Object.keys(commands).forEach(cat => {
+          commandsSection.innerHTML += `<h4>${cat.replace(/_/g, ' ')}</h4>`;
+          commands[cat].forEach(command => {
+            commandsSection.innerHTML += createCommandHTML(command);
+          });
+        });
+      } else {
+        commands[category].forEach(command => {
+          commandsSection.innerHTML += createCommandHTML(command);
+        });
+      }
+    }
+
+    function createCommandHTML(command) {
+      return `
+        <div class="command">
+          <pre>${command}</pre>
+          <button onclick="copyCommand('${command}')">Copy</button>
+        </div>
+      `;
+    }
+
+    function copyCommand(command) {
+      navigator.clipboard.writeText(command.split("#")[0].trim()).then(() => {
+        alert("Command copied to clipboard!");
+      });
+    }
+
+    window.onload = () => showCommands('all');
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

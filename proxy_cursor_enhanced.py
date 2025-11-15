@@ -47,6 +47,13 @@ SUPPORTED_HOSTS = {
     '*.qoder.sh': True,
     '*.qoder.com': True,
     
+    # Tree AI Servers
+    'api.tree.ai': True,
+    'api1.tree.ai': True,
+    'api2.tree.ai': True,
+    'tree.ai': True,
+    '*.tree.ai': True,
+    
     # Test servers
     'example.com': True,
     'google.com': True,
@@ -82,6 +89,11 @@ def is_host_allowed(hostname: str) -> bool:
     # Catch-all: All *.qoder.* domains
     if fnmatch.fnmatch(hostname, '*.qoder.*'):
         logger.info(f"[ALLOW] Host {hostname} matches *.qoder.* pattern")
+        return True
+    
+    # Catch-all: All *.tree.ai domains
+    if fnmatch.fnmatch(hostname, '*.tree.ai'):
+        logger.info(f"[ALLOW] Host {hostname} matches *.tree.ai pattern")
         return True
     
     logger.warning(f"[BLOCK] Host NOT allowed: {hostname}")

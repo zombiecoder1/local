@@ -1,1 +1,0 @@
-Write-Host "Testing PowerShell script execution" -ForegroundColor Green

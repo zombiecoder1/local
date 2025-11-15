@@ -3,6 +3,7 @@ const http = require('http');
 const socketIo = require('socket.io');
 const path = require('path');
 const fetch = require('node-fetch');
+const os = require('os');
 
 const app = express();
 const server = http.createServer(app);
@@ -61,19 +62,57 @@ async function checkAllServices() {
   return results;
 }
 
+// Function to get system memory info
+function getMemoryInfo() {
+  const totalMem = os.totalmem();
+  const freeMem = os.freemem();
+  const usedMem = totalMem - freeMem;
+  const memUsagePercent = (usedMem / totalMem) * 100;
+  
+  return {
+    total: totalMem,
+    used: usedMem,
+    free: freeMem,
+    percent: memUsagePercent
+  };
+}
+
+// Function to get cache info (simulated for now)
+function getCacheInfo() {
+  // In a real implementation, this would fetch actual cache data
+  // For now, we'll simulate cache info
+  return {
+    size: Math.floor(Math.random() * 100),
+    entries: Math.floor(Math.random() * 50),
+    hitRate: Math.random()
+  };
+}
+
 // WebSocket connection
 io.on('connection', (socket) => {
   console.log('Client connected');
   
   // Send initial status
   checkAllServices().then(status => {
-    socket.emit('statusUpdate', status);
+    // Add memory and cache info to the status
+    const enhancedStatus = {
+      ...status,
+      memory: getMemoryInfo(),
+      cache: getCacheInfo()
+    };
+    socket.emit('statusUpdate', enhancedStatus);
   });
 
   // Periodically send updates
   const interval = setInterval(async () => {
     const status = await checkAllServices();
-    socket.emit('statusUpdate', status);
+    // Add memory and cache info to the status
+    const enhancedStatus = {
+      ...status,
+      memory: getMemoryInfo(),
+      cache: getCacheInfo()
+    };
+    socket.emit('statusUpdate', enhancedStatus);
   }, 5000);
 
   socket.on('disconnect', () => {

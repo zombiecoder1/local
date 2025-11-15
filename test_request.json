@@ -1,0 +1,9 @@
+{
+  "model": "microsoft/phi-2",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Are you using the local AI server?"
+    }
+  ]
+}

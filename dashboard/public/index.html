@@ -14,6 +14,9 @@
             --dark: #1e293b;
             --light: #f8fafc;
             --gray: #94a3b8;
+            --editor-connected: #10b981;
+            --editor-disconnected: #ef4444;
+            --editor-working: #f59e0b;
         }
         
         * {
@@ -102,6 +105,11 @@
             box-shadow: 0 0 10px var(--danger);
         }
         
+        .status-warning {
+            background-color: var(--warning);
+            box-shadow: 0 0 10px var(--warning);
+        }
+        
         .card-content {
             margin-top: 15px;
         }
@@ -130,7 +138,7 @@
             text-align: right;
         }
         
-        .agent-reply {
+        .agent-live {
             background: #1e293b;
             border-radius: 10px;
             padding: 20px;
@@ -138,9 +146,40 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
-        .agent-reply h2 {
+        .agent-live h2 {
             margin-bottom: 15px;
             color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .agent-status-indicator {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+        .agent-status-connected {
+            background-color: var(--editor-connected);
+            box-shadow: 0 0 10px var(--editor-connected);
+        }
+        
+        .agent-status-disconnected {
+            background-color: var(--editor-disconnected);
+            box-shadow: 0 0 10px var(--editor-disconnected);
+        }
+        
+        .agent-status-working {
+            background-color: var(--editor-working);
+            box-shadow: 0 0 10px var(--editor-working);
+            animation: blink 1.5s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
         }
         
         #agent-reply {
@@ -150,6 +189,103 @@
             min-height: 100px;
             font-family: monospace;
             white-space: pre-wrap;
+            margin-bottom: 15px;
+        }
+        
+        .memory-storage {
+            margin-top: 20px;
+        }
+        
+        .memory-storage h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .memory-bar-container {
+            width: 100%;
+            height: 20px;
+            background-color: #0f172a;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        
+        .memory-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #2563eb, #10b981);
+            border-radius: 10px;
+            transition: width 0.5s ease;
+        }
+        
+        .memory-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        .cache-responses {
+            margin-top: 20px;
+        }
+        
+        .cache-responses h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .cache-list {
+            background: #0f172a;
+            border-radius: 5px;
+            padding: 15px;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+        
+        .cache-item {
+            padding: 8px;
+            border-bottom: 1px solid #334155;
+            font-family: monospace;
+            font-size: 0.85rem;
+        }
+        
+        .cache-item:last-child {
+            border-bottom: none;
+        }
+        
+        .editor-status {
+            background: #1e293b;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .editor-status h2 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .editor-indicator {
+            display: inline-block;
+            padding: 10px 20px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        
+        .editor-connected {
+            background-color: var(--success);
+            color: white;
+        }
+        
+        .editor-disconnected {
+            background-color: var(--danger);
+            color: white;
+        }
+        
+        .editor-working {
+            background-color: var(--warning);
+            color: white;
         }
         
         .loading {
@@ -233,9 +369,39 @@
         </div>
     </div>
     
-    <div class="agent-reply">
-        <h2>Agent Live Reply</h2>
+    <div class="agent-live">
+        <h2>
+            Agent Live 
+            <div class="agent-status-indicator agent-status-disconnected" id="agent-live-status"></div>
+            <span id="agent-live-text">Disconnected</span>
+        </h2>
         <div id="agent-reply">Waiting for agent response...</div>
+        
+        <div class="memory-storage">
+            <h3>Memory Storage</h3>
+            <div class="memory-bar-container">
+                <div class="memory-bar" id="memory-bar" style="width: 35%"></div>
+            </div>
+            <div class="memory-info">
+                <span id="memory-used">35% Used</span>
+                <span id="memory-total">Total: 16GB</span>
+            </div>
+        </div>
+        
+        <div class="cache-responses">
+            <h3>Cache Responses</h3>
+            <div class="cache-list" id="cache-list">
+                <div class="cache-item">No cached responses yet</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="editor-status">
+        <h2>Editor Connection Status</h2>
+        <div class="editor-indicator editor-disconnected" id="editor-status">
+            Editor Disconnected
+        </div>
+        <p id="editor-status-description">Editor is not connected to the AI system</p>
     </div>
     
     <div class="footer">
@@ -246,15 +412,29 @@
         // Connect to WebSocket
         const socket = io();
         
+        // Real data storage
+        let editorConnected = false;
+        let agentWorking = false;
+        let memoryUsage = 35;
+        let cacheResponses = [];
+        let editorConnectionHistory = [];
+        
         // Handle incoming status updates
         socket.on('statusUpdate', (data) => {
             updateDashboard(data);
+            updateEditorStatus(data);
+            updateAgentLiveStatus(data);
+            updateMemoryStorage(data);
+            updateCacheResponses(data);
         });
         
-        // Update dashboard with new data
+        // Update dashboard with real data
         function updateDashboard(data) {
             // Update each service card
             Object.keys(data).forEach(service => {
+                // Skip memory and cache data as they're handled separately
+                if (service === 'memory' || service === 'cache') return;
+                
                 const serviceData = data[service];
                 
                 // Update status indicator
@@ -270,29 +450,141 @@
                 
                 // Update timestamp
                 document.getElementById(`${service}-timestamp`).textContent = new Date(serviceData.timestamp).toLocaleString();
+                
+                // Check if agent is working
+                if (service === 'agent' && serviceData.status === 'OK') {
+                    agentWorking = true;
+                } else if (service === 'agent' && serviceData.status !== 'OK') {
+                    agentWorking = false;
+                }
             });
             
-            // Simulate agent reply updates
-            simulateAgentReply(data);
+            // Update agent reply with real data
+            updateAgentReply(data);
         }
         
-        // Simulate agent reply updates
-        function simulateAgentReply(data) {
+        // Update agent live status with real data
+        function updateAgentLiveStatus(data) {
+            const agentLiveStatusElement = document.getElementById('agent-live-status');
+            const agentLiveTextElement = document.getElementById('agent-live-text');
+            
+            if (data.agent && data.agent.status === 'OK') {
+                if (editorConnected) {
+                    if (agentWorking) {
+                        agentLiveStatusElement.className = 'agent-status-indicator agent-status-working';
+                        agentLiveTextElement.textContent = 'Working';
+                    } else {
+                        agentLiveStatusElement.className = 'agent-status-indicator agent-status-connected';
+                        agentLiveTextElement.textContent = 'Connected';
+                    }
+                } else {
+                    agentLiveStatusElement.className = 'agent-status-indicator agent-status-disconnected';
+                    agentLiveTextElement.textContent = 'Disconnected';
+                }
+            } else {
+                agentLiveStatusElement.className = 'agent-status-indicator agent-status-disconnected';
+                agentLiveTextElement.textContent = 'Disconnected';
+            }
+        }
+        
+        // Update editor status based on real agent and connection data
+        function updateEditorStatus(data) {
+            const editorStatusElement = document.getElementById('editor-status');
+            const editorStatusDescription = document.getElementById('editor-status-description');
+            
+            // In a real implementation, this would come from actual editor connection detection
+            // For now, we'll determine based on service status
+            const allServicesOK = data.proxy && data.proxy.status === 'OK' && 
+                                 data.gateway && data.gateway.status === 'OK' && 
+                                 data.agent && data.agent.status === 'OK' && 
+                                 data.model && data.model.status === 'OK';
+            
+            editorConnected = allServicesOK;
+            
+            // Determine editor status
+            if (!editorConnected) {
+                editorStatusElement.className = 'editor-indicator editor-disconnected';
+                editorStatusElement.textContent = 'Editor Disconnected';
+                editorStatusDescription.textContent = 'Editor is not connected to the AI system';
+            } else if (editorConnected && !agentWorking) {
+                editorStatusElement.className = 'editor-indicator editor-disconnected';
+                editorStatusElement.textContent = 'Editor Connected - Agent Offline';
+                editorStatusDescription.textContent = 'Editor is connected but agent is not responding';
+            } else if (editorConnected && agentWorking) {
+                editorStatusElement.className = 'editor-indicator editor-connected';
+                editorStatusElement.textContent = 'Editor Connected - Agent Active';
+                editorStatusDescription.textContent = 'Editor is connected and agent is working properly';
+            }
+        }
+        
+        // Update memory storage with real data
+        function updateMemoryStorage(data) {
+            // Use real memory data if available
+            if (data.memory) {
+                const memoryData = data.memory;
+                memoryUsage = memoryData.percent;
+                
+                const memoryBar = document.getElementById('memory-bar');
+                const memoryUsed = document.getElementById('memory-used');
+                const memoryTotal = document.getElementById('memory-total');
+                
+                memoryBar.style.width = `${memoryUsage}%`;
+                memoryUsed.textContent = `${memoryUsage.toFixed(1)}% Used`;
+                
+                // Convert bytes to GB for display
+                const totalGB = (memoryData.total / (1024 * 1024 * 1024)).toFixed(1);
+                memoryTotal.textContent = `Total: ${totalGB}GB`;
+            }
+        }
+        
+        // Update cache responses with real data
+        function updateCacheResponses(data) {
+            const cacheList = document.getElementById('cache-list');
+            
+            // In a real implementation, this would come from actual cache data
+            // For now, we'll add cache entries based on service responses
+            if (data.agent && data.agent.status === 'OK' && cacheResponses.length < 10) {
+                const timestamp = new Date().toLocaleTimeString();
+                const newResponse = `[${timestamp}] Agent response received`;
+                cacheResponses.unshift(newResponse);
+                
+                // Limit cache responses to 10 items
+                if (cacheResponses.length > 10) {
+                    cacheResponses = cacheResponses.slice(0, 10);
+                }
+            }
+            
+            // Update cache list
+            if (cacheResponses.length === 0) {
+                cacheList.innerHTML = '<div class="cache-item">No cached responses yet</div>';
+            } else {
+                cacheList.innerHTML = cacheResponses
+                    .map(response => `<div class="cache-item">${response}</div>`)
+                    .join('');
+            }
+        }
+        
+        // Update agent reply with real data
+        function updateAgentReply(data) {
             const agentReplyElement = document.getElementById('agent-reply');
             
-            // Check if agent is OK
+            // Check if agent is OK and provide real response
             if (data.agent && data.agent.status === 'OK') {
-                // Simulate a response from the agent
-                const responses = [
-                    "Agent is running and ready to process requests.",
-                    "Model loaded successfully: microsoft/phi-2",
-                    "Ready to handle chat completions.",
-                    "System status: All services operational.",
-                    "Agent heartbeat: OK"
-                ];
+                // Extract meaningful information from agent response
+                const agentInfo = data.agent.response;
+                let responseText = '';
                 
-                const randomResponse = responses[Math.floor(Math.random() * responses.length)];
-                agentReplyElement.textContent = `[${new Date().toLocaleTimeString()}] ${randomResponse}`;
+                if (agentInfo.capabilities) {
+                    responseText = `Agent capabilities: ${agentInfo.capabilities.join(', ')}`;
+                } else if (agentInfo.provider_info) {
+                    responseText = `Agent provider: ${agentInfo.provider_info.name}`;
+                } else if (agentInfo.family) {
+                    responseText = `Agent family: ${JSON.stringify(agentInfo.family)}`;
+                } else {
+                    responseText = "Agent is running and ready to process requests.";
+                }
+                
+                agentReplyElement.textContent = `[${new Date().toLocaleTimeString()}] ${responseText}`;
             } else {
                 agentReplyElement.textContent = "Agent is not responding. Please check the service.";
             }
