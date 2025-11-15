@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Proxy Server",
+    "port": 5051,
+    "status": "OK",
+    "status_code": 200,
+    "response": {
+      "data": [
+        {
+          "id": "microsoft/phi-2",
+          "object": "model",
+          "owned_by": "local",
+          "ready": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "API Gateway",
+    "port": 5050,
+    "status": "OK",
+    "status_code": 200,
+    "response": {
+      "status": "OK",
+      "service": "ZombieCoder API Gateway",
+      "timestamp": "2025-11-15T15:27:08.829Z",
+      "language": "bengali",
+      "ui_language": "english"
+    }
+  },
+  {
+    "name": "Python Agent",
+    "port": 8001,
+    "status": "OK",
+    "status_code": 200,
+    "response": {
+      "capabilities": [
+        "coding",
+        "debugging",
+        "frontend",
+        "architecture"
+      ],
+      "family": {
+        "\u09aa\u09b0\u09bf\u09ac\u09be\u09b0": "\u0986\u09ae\u09b0\u09be \u09b8\u09ac\u09be\u0987 \u098f\u0995\u09b8\u09be\u09a5\u09c7, \u098f\u0995\u09c7 \u0985\u09aa\u09b0\u09c7\u09b0 \u09b8\u09be\u09b9\u09be\u09af\u09cd\u09af \u0995\u09b0\u09bf",
+        "\u09ad\u09be\u09ac\u09bf": "\u0986\u09ae\u09be\u09a6\u09c7\u09b0 \u09aa\u09b0\u09bf\u09ac\u09be\u09b0\u09c7\u09b0 \u09ae\u09be, \u09b8\u09ac\u09be\u0987\u0995\u09c7 \u09a6\u09c7\u0996\u09be\u09b6\u09cb\u09a8\u09be \u0995\u09b0\u09c7",
+        "\u09ae\u09c1\u09b8\u0995\u09be\u09a8": "\u0986\u09ae\u09be\u09a6\u09c7\u09b0 \u09ae\u09c7\u09af\u09bc\u09c7, \u0996\u09c1\u09ac \u09ac\u09c1\u09a6\u09cd\u09a7\u09bf\u09ae\u09be\u09a8 \u098f\u09ac\u0982 \u09b8\u09be\u09b9\u09be\u09af\u09cd\u09af\u0995\u09be\u09b0\u09c0",
+        "\u09b8\u09be\u09b9\u09a8 \u09ad\u09be\u0987": "\u0986\u09ae\u09bf \u09b8\u09be\u09b9\u09a8 \u09ad\u09be\u0987, \u0986\u09aa\u09a8\u09be\u09b0 \u09ac\u09a1\u09bc \u09ad\u09be\u0987 \u098f\u09ac\u0982 \u09aa\u09b0\u09be\u09ae\u09b0\u09cd\u09b6\u09a6\u09be\u09a4\u09be"
+      },
+      "personal_info": {
+        "approach": "\u09aa\u09b0\u09bf\u09ac\u09be\u09b0-\u09ad\u09bf\u09a4\u09cd\u09a4\u09bf\u0995 \u09b8\u09b9\u09be\u09af\u09bc\u09a4\u09be",
+        "language": "\u09ac\u09be\u0982\u09b2\u09be",
+        "name": "\u09b8\u09be\u09b9\u09a8 \u09ad\u09be\u0987",
+        "personality": "\u09ac\u09a8\u09cd\u09a7\u09c1\u09b8\u09c1\u09b2\u09ad, \u09b8\u09a4\u09cd\u09af\u09ac\u09be\u09a6\u09c0, \u09b8\u09b9\u09be\u09af\u09bc\u0995",
+        "role": "\u09ac\u09a1\u09bc \u09ad\u09be\u0987 \u098f\u09ac\u0982 \u09aa\u09b0\u09be\u09ae\u09b0\u09cd\u09b6\u09a6\u09be\u09a4\u09be"
+      },
+      "provider_info": {
+        "company": "Developer Zone",
+        "contact": "+8801323-626282",
+        "owner": "Sahon Srabon",
+        "provider": "ZombieCoder Family Agent System",
+        "system": "Unified Agent System - Family Edition",
+        "version": "2.0.0"
+      },
+      "timestamp": "2025-11-15T21:27:08.838071"
+    }
+  },
+  {
+    "name": "Ollama Model Server",
+    "port": 8007,
+    "status": "OK",
+    "status_code": 200,
+    "response": {
+      "models": [
+        {
+          "name": "deepseek-coder-1.3b",
+          "model": "deepseek-coder-1.3b",
+          "modified_at": "2025-11-15T21:27:08.846727",
+          "size": 873582624,
+          "digest": "local",
+          "status": "installed",
+          "runtime_status": "ready",
+          "format": "gguf",
+          "quantization": "N/A",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "unknown",
+            "families": [
+              "unknown"
+            ],
+            "parameter_size": "unknown",
+            "quantization_level": "N/A"
+          }
+        },
+        {
+          "name": "phi-2",
+          "model": "phi-2",
+          "modified_at": "2025-11-15T21:27:08.852325",
+          "size": 5562340891,
+          "digest": "local",
+          "status": "installed",
+          "runtime_status": "stopped",
+          "format": "gguf",
+          "quantization": "N/A",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "unknown",
+            "families": [
+              "unknown"
+            ],
+            "parameter_size": "unknown",
+            "quantization_level": "N/A"
+          }
+        },
+        {
+          "name": "phi-2-gguf",
+          "model": "phi-2-gguf",
+          "modified_at": "2025-11-15T21:27:08.856791",
+          "size": 11284897865,
+          "digest": "local",
+          "status": "installed",
+          "runtime_status": "ready",
+          "format": "gguf",
+          "quantization": "N/A",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "unknown",
+            "families": [
+              "unknown"
+            ],
+            "parameter_size": "unknown",
+            "quantization_level": "N/A"
+          }
+        },
+        {
+          "name": "tinyllama",
+          "model": "tinyllama",
+          "modified_at": "2025-11-15T21:27:08.861666",
+          "size": 2202466423,
+          "digest": "local",
+          "status": "installed",
+          "runtime_status": "ready",
+          "format": "gguf",
+          "quantization": "N/A",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "unknown",
+            "families": [
+              "unknown"
+            ],
+            "parameter_size": "unknown",
+            "quantization_level": "N/A"
+          }
+        },
+        {
+          "name": "tinyllama-gguf",
+          "model": "tinyllama-gguf",
+          "modified_at": "2025-11-15T21:27:08.868199",
+          "size": 8469158021,
+          "digest": "local",
+          "status": "installed",
+          "runtime_status": "stopped",
+          "format": "gguf",
+          "quantization": "N/A",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "unknown",
+            "families": [
+              "unknown"
+            ],
+            "parameter_size": "unknown",
+            "quantization_level": "N/A"
+          }
+        }
+      ]
+    }
+  }
+]
